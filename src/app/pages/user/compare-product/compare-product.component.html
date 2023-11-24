@@ -1,0 +1,189 @@
+<section>
+  <div class="container">
+    <div class="compare">
+      <table class="table tab-content table-bordered table-striped table-compare">
+        <tbody>
+        <tr class="specs-group">
+          <th colspan="4">Thông tin chung</th>
+        </tr>
+        <tr class="specs equaHeight" data-obj="h3">
+          <td class="text " style="width:17.5%;">Hình ảnh, giá</td>
+          <td *ngFor="let item of productDetails" class="item image" style="width:27.5%; height: 380px">
+            <div class="image">
+              <a style="cursor: pointer">
+                <img class="img-fluid" height="300px" src="{{item.images}}" width="300px">
+              </a>
+            </div>
+            <h3 style="height: 43.2px;">
+              <a (click)="handlerNavigate(item.pid)" class="hover" style="cursor: pointer">{{item.title}}</a>
+            </h3>
+            <div class="price-note mt30">
+              <p class="price">
+                <strong>{{item.discountPrice | currency : 'VND'}}</strong>
+              </p>
+            </div>
+          </td>
+          <td class="item" style="width:27.5%">
+            <div class="add-product">
+              <h3 style="height: 21.6px;">
+                Bạn muốn so sánh thêm sản phẩm?
+              </h3>
+              <div class="input">
+                <input placeholder="Tim kiem san pham" type="text">
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr class="specs" data-obj="h3">
+          <th class="text ">Bảo hanh</th>
+          <td class="item">bao hanh 12 thang</td>
+          <td class="item">bao hanh 12 thang</td>
+        </tr>
+        <tr class="specs-group">
+          <th class="text" colspan="4">Cấu hình</th>
+        </tr>
+        <tr *ngIf="productDetails[0]?.laptopConfig" class="specs">
+          <th class="text ">Hãng CPU</th>
+          <td *ngFor="let item of productDetails" class="item"><span>{{item.laptopConfig.cpu}}</span></td>
+        </tr>
+        <tr *ngIf="productDetails[0]?.laptopConfig" class="specs">
+          <th class="text ">Ram</th>
+          <td *ngFor="let item of productDetails" class="item"><span>{{item.laptopConfig.ram}}</span></td>
+
+        </tr>
+        <tr *ngIf="productDetails[0]?.laptopConfig" class="specs">
+          <th class="text ">Ổ cứng</th>
+          <td *ngFor="let item of productDetails" class="data"><span>{{item.laptopConfig.hardDrive}}</span></td>
+
+        </tr>
+        <tr *ngIf="productDetails[0]?.laptopConfig" class="specs">
+          <th class="text ">Màn hình</th>
+          <td *ngFor="let item of productDetails" class="data"><span>{{item.laptopConfig.screen}}</span></td>
+        </tr>
+        <tr *ngIf="productDetails[0]?.laptopConfig" class="specs">
+          <th class="text">Card màn hình</th>
+          <td *ngFor="let item of productDetails" class="data"><span>{{item.laptopConfig.graphic}}</span></td>
+        </tr>
+        <tr *ngIf="productDetails[0]?.laptopConfig" class="specs">
+          <th class="text">Cổng kết nối</th>
+          <td *ngFor="let item of productDetails" class="data"><span>{{item.laptopConfig.connector}}</span></td>
+        </tr>
+        <tr *ngIf="productDetails[0]?.laptopConfig" class="specs">
+          <th class="text">Đặc biệt</th>
+          <td *ngFor="let item of productDetails" class="data"><span>{{item.laptopConfig.special}}</span></td>
+        </tr>
+        <tr *ngIf="productDetails[0]?.laptopConfig" class="specs">
+          <th class="text">Hệ điều hành</th>
+          <td *ngFor="let item of productDetails" class="data"><span>{{item.laptopConfig.operatingSystem}}</span></td>
+        </tr>
+        <tr *ngIf="productDetails[0]?.laptopConfig" class="specs">
+          <th class="text">Thiết kế</th>
+          <td *ngFor="let item of productDetails" class="data"><span>{{item.laptopConfig.design}}</span></td>
+        </tr>
+        <tr *ngIf="productDetails[0]?.laptopConfig" class="specs">
+          <th class="text">Khích thước</th>
+          <td *ngFor="let item of productDetails" class="data"><span>{{item.laptopConfig.sizeMass}}</span></td>
+        </tr>
+        <tr *ngIf="productDetails[0]?.laptopConfig" class="specs">
+          <th class="text">Thời điểm ra mắt</th>
+          <td *ngFor="let item of productDetails" class="data"><span>{{item.laptopConfig.releaseTime}}</span></td>
+        </tr>
+
+        <!--        config accessory-->
+        <tr *ngIf="productDetails[0]?.accessoryConfig" class="specs">
+          <td class="text">Tương thích
+          </td>
+          <td *ngFor="let item of productDetails" class="data">{{item.accessoryConfig.compatible}}</td>
+        </tr>
+        <tr *ngIf="productDetails[0]?.accessoryConfig" class="specs">
+          <td class="text">Độ phân giải
+          </td>
+          <td *ngFor="let item of productDetails" class="data">{{item.accessoryConfig.resolution}}</td>
+        </tr>
+        <tr *ngIf="productDetails[0]?.accessoryConfig" class="specs">
+          <td class="text">Cách kết nối
+          </td>
+          <td *ngFor="let item of productDetails" class="data">{{item.accessoryConfig.howToConnect}}</td>
+        </tr>
+        <tr *ngIf="productDetails[0]?.accessoryConfig" class="specs">
+          <td class="text">Độ dài dây / Khoảng cách kết nối
+          </td>
+          <td *ngFor="let item of productDetails" class="data">{{item.accessoryConfig.wireLength}}</td>
+        </tr>
+        <tr *ngIf="productDetails[0]?.accessoryConfig" class="specs">
+          <td class="text">Loại pin
+          </td>
+          <td *ngFor="let item of productDetails" class="data">{{item.accessoryConfig.typePin}}</td>
+        </tr>
+        <tr *ngIf="productDetails[0]?.accessoryConfig" class="specs">
+          <td class="text">Trọng lượng
+          </td>
+          <td *ngFor="let item of productDetails" class="data">{{item.accessoryConfig.weight}}</td>
+        </tr>
+        <tr *ngIf="productDetails[0]?.accessoryConfig" class="specs">
+          <td class="text">Thương hiệu của
+          </td>
+          <td *ngFor="let item of productDetails" class="data">{{item.accessoryConfig.brand}}</td>
+        </tr>
+        <tr *ngIf="productDetails[0]?.accessoryConfig" class="specs">
+          <td class="text">Sản xuất tại
+          </td>
+          <td *ngFor="let item of productDetails" class="data">{{item.accessoryConfig.madeIn}}</td>
+        </tr>
+        <tr *ngIf="productDetails[0]?.accessoryConfig" class="specs">
+          <td class="text">Hãng
+          </td>
+          <td *ngFor="let item of productDetails" class="data">{{item.accessoryConfig.manufacturer}}</td>
+        </tr>
+        <!--        config smartphone-->
+        <tr *ngIf="productDetails[0]?.smartPhoneConfig" class="specs">
+          <td class="text">Màn hình
+          </td>
+          <td *ngFor="let item of productDetails" class="data">{{item.smartPhoneConfig.screen}}</td>
+        </tr>
+        <tr *ngIf="productDetails[0]?.smartPhoneConfig" class="specs">
+          <td class="text">Hệ điều hành
+          </td>
+          <td *ngFor="let item of productDetails" class="data">{{item.smartPhoneConfig.operatingSystem}}</td>
+        </tr>
+        <tr *ngIf="productDetails[0]?.smartPhoneConfig" class="specs">
+          <td class="text">Camera trước
+          </td>
+          <td *ngFor="let item of productDetails" class="data">{{item.smartPhoneConfig.beforeCamera}}</td>
+        </tr>
+        <tr *ngIf="productDetails[0]?.smartPhoneConfig" class="specs">
+          <td class="text">Camera sau
+          </td>
+          <td *ngFor="let item of productDetails" class="data">{{item.smartPhoneConfig.afterCamera}}</td>
+        </tr>
+        <tr *ngIf="productDetails[0]?.smartPhoneConfig" class="specs">
+          <td class="text">Chip
+          </td>
+          <td *ngFor="let item of productDetails" class="data">{{item.smartPhoneConfig.chip}}</td>
+        </tr>
+        <tr *ngIf="productDetails[0]?.smartPhoneConfig" class="specs">
+          <td class="text">Ram
+          </td>
+          <td *ngFor="let item of productDetails" class="data">{{item.smartPhoneConfig.ram}}</td>
+        </tr>
+        <tr *ngIf="productDetails[0]?.smartPhoneConfig" class="specs">
+          <td class="text">Dung lượng lưu trữ
+          </td>
+          <td *ngFor="let item of productDetails" class="data">{{item.smartPhoneConfig.storage}}</td>
+        </tr>
+        <tr *ngIf="productDetails[0]?.smartPhoneConfig" class="specs">
+          <td class="text">Sim
+          </td>
+          <td *ngFor="let item of productDetails" class="data">{{item.smartPhoneConfig.sim}}</td>
+        </tr>
+        <tr *ngIf="productDetails[0]?.smartPhoneConfig" class="specs">
+          <td class="text">Pin
+          </td>
+          <td *ngFor="let item of productDetails" class="data">{{item.smartPhoneConfig.pin}}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</section>

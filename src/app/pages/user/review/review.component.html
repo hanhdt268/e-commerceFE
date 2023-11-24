@@ -1,0 +1,37 @@
+<div class="container-fluid">
+  <h2>Đánh giá sản phẩm</h2>
+  <div class="container mt20" style="display: flex;justify-content: center">
+    <img class="img-fluid" height="100px" src="{{product?.images}}" width="100px">
+  </div>
+  <div class="container mt20" style="display: flex;justify-content: center">
+    <h3>{{product?.title}}</h3>
+
+  </div>
+
+  <div class="text-center">
+    <img class="img-fluid" height="100px" src="{{reviews.image}}" width="100px">
+  </div>
+  <app-upload-file (giveUrlToCreate)="openLoadImage($event)"></app-upload-file>
+  <div class="rating mt10">
+    <div class="text-center">
+      <ng-container *ngFor="let i of stars">
+        <i (click)="updateRating(i)" [ngClass]="{'active': i<=reviews.value}"
+           class="fas fa-star"></i>
+      </ng-container>
+    </div>
+  </div>
+  <div class="mt20" style="display: flex; justify-content: center">
+    <form (ngSubmit)="omSubmit()">
+      <mat-form-field appearance="fill" style="width: 500px">
+        <mat-label>Nhập đánh giá</mat-label>
+        <textarea [(ngModel)]="reviews.content" matInput name="content"
+                  placeholder="Nhập đánh giá..."
+                  rows="7" type="text"></textarea>
+
+      </mat-form-field>
+      <div class="mt10 text-center">
+        <button color="primary" mat-raised-button>Đánh giá</button>
+      </div>
+    </form>
+  </div>
+</div>

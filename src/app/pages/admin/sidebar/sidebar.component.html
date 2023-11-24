@@ -1,0 +1,188 @@
+<!--<mat-card class="mt10" style="background-color: #ffffff">-->
+<!--  <mat-action-list>-->
+<!--    <div matSubheader>Menu</div>-->
+<!--    <button mat-list-item routerLink="/admin">-->
+<!--      <mat-icon mat-list-icon>dashboard</mat-icon>-->
+<!--      Dashboard-->
+<!--    </button>-->
+<!--    <button mat-list-item routerLink="/admin/categories">-->
+<!--      <mat-icon mat-list-icon>category</mat-icon>-->
+<!--      Quản lý thể loại-->
+<!--    </button>-->
+<!--    <button mat-list-item routerLink="/admin/manufacturer">-->
+<!--      <mat-icon mat-list-icon>trolley</mat-icon>-->
+<!--      Quản lý hãng-->
+<!--    </button>-->
+<!--    &lt;!&ndash;      <button mat-list-item routerLink="/admin/add-category">&ndash;&gt;-->
+<!--    &lt;!&ndash;        <mat-icon mat-list-icon>add_circle_outline</mat-icon>&ndash;&gt;-->
+<!--    &lt;!&ndash;        Add Categories&ndash;&gt;-->
+<!--    &lt;!&ndash;      </button>&ndash;&gt;-->
+<!--    <button mat-list-item routerLink="/admin/product/0">-->
+<!--      <mat-icon mat-list-icon>list</mat-icon>-->
+<!--      Quản lý sản phẩm-->
+<!--    </button>-->
+<!--    <button mat-list-item routerLink="/admin/product">-->
+<!--      <mat-icon mat-list-icon>add</mat-icon>-->
+<!--      Thêm sản phẩm-->
+<!--    </button>-->
+<!--    <button mat-list-item routerLink="/admin/orderDetails">-->
+<!--      <mat-icon mat-list-icon>check_box</mat-icon>-->
+<!--      Quản lý đơn hàng-->
+<!--    </button>-->
+<!--    <button mat-list-item routerLink="/admin/manager-comment">-->
+<!--      <mat-icon mat-list-icon>comment</mat-icon>-->
+<!--      Quản lý bình luận-->
+<!--    </button>-->
+<!--    <button mat-list-item routerLink="/admin/profile">-->
+<!--      <mat-icon mat-list-icon>account_circle</mat-icon>-->
+<!--      Thông tin cá nhân-->
+<!--    </button>-->
+<!--  </mat-action-list>-->
+<!--</mat-card>-->
+<!--<div class="wrapper">-->
+<!--  <nav id="sidebar">-->
+<!--    <div class="sidebar-header">-->
+<!--      <h3 [routerLink]="'/client-dashboard/0'">Bootstrap Sidebar</h3>-->
+<!--    </div>-->
+<!--    <ul class="list-unstyled components">-->
+<!--      <li class="activee"-->
+<!--          *ngFor="let item of category">-->
+<!--        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"-->
+<!--           [class.active]="item.cId === this.demo" (click)="handlerManufacturer(item.cId)"-->
+<!--           class="dropdown-toggle arrow-left">{{item.title}}</a>-->
+<!--        <ul class="collapse list-unstyled item"  id="homeSubmenu">-->
+<!--          <li >-->
+<!--            <a *ngFor="let i of category.manufacturers"  style="cursor: pointer"-->
+<!--               [routerLink]="'/client-dashboard/'+i.mId">{{i.title}}</a>-->
+<!--          </li>-->
+<!--        </ul>-->
+<!--      </li>-->
+<!--    </ul>-->
+<!--  </nav>-->
+<!--<nav class="navbar">-->
+<!--  <div class="logo_item">-->
+<!--    <i class="bx bx-menu" id="sidebarOpen"></i>-->
+<!--    <img src="images/logo.png" alt="">CodingNepal-->
+<!--  </div>-->
+
+<!--  <div class="search_bar">-->
+<!--    <input type="text" placeholder="Search"/>-->
+<!--  </div>-->
+
+<!--  <div class="navbar_content">-->
+<!--    <i class="bi bi-grid"></i>-->
+<!--    <i class='bx bx-sun' id="darkLight"></i>-->
+<!--    <i class='bx bx-bell'></i>-->
+<!--    <img src="images/profile.jpg" alt="" class="profile"/>-->
+<!--  </div>-->
+<!--</nav>-->
+
+<!-- sidebar -->
+
+<nav class="sidebar">
+  <div class="menu_content">
+    <ul class="menu_items">
+      <div class="menu_title menu_dahsboard"></div>
+      <li class="item" routerLink="/admin">
+        <div class="nav_link submenu_item">
+                <span class="navlink_icon">
+                 <i class='bx bxs-dashboard'></i>
+                </span>
+          <span class="navlink">Dashboard</span>
+        </div>
+      </li>
+      <li class="item" routerLink="/admin/categories">
+        <div class="nav_link submenu_item">
+                <span class="navlink_icon">
+                 <i class='bx bxs-category'></i>
+                </span>
+          <span class="navlink">Quản lý thể loại</span>
+        </div>
+      </li>
+      <li class="item" routerLink="/admin/manufacturer">
+        <div class="nav_link submenu_item">
+                <span class="navlink_icon">
+               <i class='bx bxs-devices'></i>
+                </span>
+          <span class="navlink">Quản lý hãng</span>
+        </div>
+      </li>
+
+      <li class="item" routerLink="/admin/product/0">
+        <div class="nav_link submenu_item">
+                <span class="navlink_icon">
+                 <i class='bx bx-calendar-check'></i>
+                </span>
+          <span class="navlink">Quản lý sản phẩm</span>
+        </div>
+      </li>
+      <li class="item" routerLink="/admin/product">
+        <div class="nav_link submenu_item">
+                <span class="navlink_icon">
+                 <i class='bx bxs-add-to-queue'></i>
+                </span>
+          <span class="navlink">Thêm sản phẩm</span>
+        </div>
+      </li>
+      <li class="item" routerLink="/admin/orderDetails">
+        <div class="nav_link submenu_item">
+                <span class="navlink_icon">
+                 <i class='bx bxs-notepad'></i>
+                </span>
+          <span class="navlink">Quản lý đơn hàng</span>
+        </div>
+      </li>
+      <li class="item" routerLink="/admin/manager-account">
+        <div class="nav_link submenu_item">
+                <span class="navlink_icon">
+                 <i class='bx bx-user-check'></i>
+                </span>
+          <span class="navlink">Quản lý khách hàng</span>
+        </div>
+      </li>
+      <li class="item" routerLink="/admin/manager-comment">
+        <div class="nav_link submenu_item">
+                <span class="navlink_icon">
+                <i class='bx bx-comment-detail'></i>
+                </span>
+          <span class="navlink">Quản lý bình luận</span>
+        </div>
+      </li>
+      <li class="item" routerLink="/profile">
+        <div class="nav_link submenu_item">
+                <span class="navlink_icon">
+                    <i class='bx bxs-user-detail'></i>
+                </span>
+          <span class="navlink">Thông tin cá nhân</span>
+        </div>
+      </li>
+
+      <!-- duplicate or remove this li tag if you want to add or remove navlink with submenu -->
+      <!-- start -->
+
+      <!-- end -->
+
+      <!-- duplicate this li tag if you want to add or remove  navlink with submenu -->
+      <!-- start -->
+
+      <!-- end -->
+    </ul>
+
+
+    <!-- Sidebar Open / Close -->
+    <div class="bottom_content">
+      <div class="bottom expand_sidebar">
+        <span> Expand</span>
+        <i class='bx bxs-right-arrow-circle'></i>
+      </div>
+      <div class="bottom collapse_sidebar">
+        <span> Collapse</span>
+        <i class='bx bxs-left-arrow-circle'></i>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+

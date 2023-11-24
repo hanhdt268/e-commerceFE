@@ -1,0 +1,52 @@
+<mat-card>
+  <h1>View order details</h1>
+  <mat-card-content>
+    <div class="bootstrap-wrapper">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <div class="w100" style="display: flex; justify-content: center">
+            <img class="img-fluid" height="100px" src="{{orderDetails.product.images}}"
+                 width="100px">
+          </div>
+          <h2 style="display: flex; justify-content: center">{{orderDetails.product.title}}</h2>
+          <mat-form-field appearance="outline" class="w100">
+            <mat-label>Tên</mat-label>
+            <input disabled matInput name="title" required
+                   type="text">{{orderDetails.oderFullName}}
+          </mat-form-field>
+          <mat-form-field appearance="outline" class="w100">
+            <mat-label>Địa chỉ</mat-label>
+            <input disabled matInput name="title" required
+                   type="text">{{orderDetails.oderFullOder}}
+          </mat-form-field>
+          <mat-form-field appearance="outline" class="w100">
+            <mat-label>Số điện thoại</mat-label>
+            <input disabled matInput name="title" required
+                   type="text">{{orderDetails.oderContactNumber}}
+          </mat-form-field>
+          <mat-form-field appearance="outline" class="w100">
+            <mat-label>Số lượng</mat-label>
+            <input disabled matInput name="title" required
+                   type="text">{{orderDetails.quantity}}
+          </mat-form-field>
+          <mat-form-field appearance="outline" class="w100">
+            <mat-label>Tổng tiền</mat-label>
+            <input disabled matInput name="title" required
+                   type="text">{{orderDetails.oderAmount | currency: 'VND'}}
+          </mat-form-field>
+          <mat-form-field appearance="outline" class="w100">
+            <mat-label>Trạng thái</mat-label>
+            <input disabled matInput name="title" required
+                   type="text">{{orderDetails.oderStatus}}
+          </mat-form-field>
+          <mat-form-field appearance="outline" class="w100">
+            <mat-label>Ghi chú</mat-label>
+            <input disabled matInput name="title" required
+                   type="text">{{orderDetails.note}}
+          </mat-form-field>
+       
+        </div>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

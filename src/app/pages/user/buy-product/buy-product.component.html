@@ -1,0 +1,127 @@
+<div class="container mt20">
+  <div class="card p-3">
+    <div class="row">
+
+      <div class="col-12">
+        <table class="table">
+          <thead class="thead">
+          <tr>
+            <th>Images</th>
+            <th>Name</th>
+            <th>Amount</th>
+            <th>Quantity</th>
+            <th>Total</th>
+          </tr>
+          </thead>
+          <tbody class="tbody">
+          <tr *ngFor="let cart of productDetails">
+            <td><img class="img-fluid" height="80px" src="{{cart.product.images}}" width="80px"></td>
+            <td>{{cart.product.title}}</td>
+            <td>{{cart.product.discountPrice | currency: 'VND'}}</td>
+            <td>
+              <!--              <form #oderForm="ngForm" (ngSubmit)="placeOder(oderForm)">-->
+              <!--                <input [(ngModel)]="orderDetails.quantity" required matInput name="quantity"-->
+              <!--                       id="quantity"-->
+              <!--                       placeholder="Enter Here" type="text" #quantity-->
+              <!--                       (change)="onQuantityChanged(quantity.value, product.pId)" class="form-select"-->
+              <!--                       [ngModel]="getQuantityForProduct(product.pId)" value="1">-->
+              <!--              </form>-->
+              <!--              <button (click)="decrease(product.pId)">-->
+              <!--                <mat-icon>remove</mat-icon>-->
+              <!--              </button>-->
+              <!--              <input [(ngModel)]="orderDetails.quantity"-->
+              <!--                     name="quantity">-->
+              <!--              <button-->
+              <!--                type="button"-->
+              <!--                class="btn quantity-btn"-->
+              <!--                (click)="increase(product.pId)"-->
+              <!--              >-->
+              <!--                <mat-icon>add</mat-icon>-->
+              <!--              </button>-->
+              <!--              <select-->
+              <!--                #quantity-->
+              <!--                (change)="onQuantityChanged(quantity.value, product.pid, product.quantum)"-->
+              <!--                [ngModel]="getQuantityForProduct(product.pid)"-->
+              <!--              >-->
+              <!--                <option value="1">1</option>-->
+              <!--                <option value="2">2</option>-->
+              <!--                <option value="3">3</option>-->
+              <!--              </select>-->
+              <div class="quantity">
+                <!--                <button (click)="decrease(product.pid, product.quantum)"-->
+                <!--                        class="quantity-btn" id="decrease">- -->
+                <!--                </button>-->
+                <input [(ngModel)]="cart.quantity"
+                       class="quantity-input" type="text">
+                <!--                <button (click)="increase(product.pid, product.quantum)"-->
+                <!--                        class="quantity-btn" id="increase">+-->
+                <!--                </button>-->
+              </div>
+            </td>
+            <td>{{getCalculatedProduct(cart.product.pid, cart.product.discountPrice, cart.quantity) | currency: 'VND'}}</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <th>Total</th>
+            <th>{{getCalculatedGrandTotal() | currency: 'VND'}}</th>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-6 offset-3 mt20">
+        <form (ngSubmit)="placeOder()" [formGroup]="form">
+          <mat-form-field appearance="fill" class="w100">
+            <mat-label>Full Name</mat-label>
+            <input [(ngModel)]="orderDetails.fullName" formControlName="fullName" matInput placeholder="Enter Here"
+                   required
+                   type="text">
+            <mat-hint
+              *ngIf="(form.controls['fullName'].dirty || form.controls['fullName'].touched) && form.hasError('required', 'fullName')"
+              class="text-danger">fullName is required !!
+            </mat-hint>
+          </mat-form-field>
+          <mat-form-field appearance="fill" class="w100">
+            <mat-label>Full Address</mat-label>
+            <input [(ngModel)]="orderDetails.fullAddress" formControlName="fullAddress" matInput
+                   placeholder="Enter Here"
+                   required
+                   type="text">
+            <mat-hint
+              *ngIf="(form.controls['fullAddress'].dirty || form.controls['fullAddress'].touched) && form.hasError('required', 'fullAddress')"
+              class="text-danger">Full Address is required !!
+            </mat-hint>
+          </mat-form-field>
+          <mat-form-field appearance="fill" class="w100">
+            <mat-label>Contact Number</mat-label>
+            <input [(ngModel)]="orderDetails.contactNumber" formControlName="contactNumber" matInput
+                   placeholder="Enter Here"
+                   required type="text">
+            <mat-hint
+              *ngIf="(form.controls['contactNumber'].dirty || form.controls['contactNumber'].touched) && form.hasError('required', 'contactNumber')"
+              class="text-danger">Contact Number is required !!
+            </mat-hint>
+          </mat-form-field>
+          <mat-form-field appearance="fill" class="w100">
+            <mat-label>Note</mat-label>
+
+            <textarea [(ngModel)]="orderDetails.note" formControlName="note" matInput
+                      placeholder="Ex. It makes me feel..."></textarea>
+            <mat-hint
+              *ngIf="(form.controls['note'].dirty || form.controls['note'].touched) && form.hasError('required', 'note')"
+              class="text-danger">Note is required !!
+            </mat-hint>
+          </mat-form-field>
+          <div *ngIf="checkPlacedOrder" class="progress-1"></div>
+          <div class="text-center">
+            <button *ngIf="isShow" [disabled]="form.invalid" color="primary" mat-stroked-button type="submit">Place
+              Oder
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+

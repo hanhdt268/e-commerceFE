@@ -1,0 +1,154 @@
+
+.Delivered {
+  color: #0edc0e;
+}
+
+.Hoàn {
+  color: #0edc0e;
+
+}
+
+.giao {
+  color: #0edc0e;
+}
+
+.confirm {
+  color: #fdd03e;
+}
+
+.receive {
+  color: #fdd03e;
+}
+
+.Cancel {
+  color: red;
+}
+
+.VYJdTQ {
+  width: 100%;
+  margin-bottom: 12px;
+  display: flex;
+  overflow: hidden;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #fff;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+.gAImis {
+  border-color: #1a42af;;
+}
+
+.VYJdTQ .active {
+  color: #1a42af;;
+  border-bottom: 3px solid #1a42af;;
+  width: 100%;
+  border-radius: 1px;
+  transition: 0.5s ease;
+}
+
+._20hgQK {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.OFl2GI {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 16px 0;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: rgba(0, 0, 0, .8);
+  background: #fff;
+  border-bottom: 2px solid rgba(0, 0, 0, .09);
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  transition: color .2s;
+}
+
+
+.VYJdTQ .OFl2GI:hover {
+  color: #1a42af;;
+}
+
+table {
+  width: 100%;
+
+}
+
+tr.example-detail-row {
+  height: 0;
+}
+
+tr.example-element-row:not(.example-expanded-row):hover {
+  background: #1390e8;
+}
+
+tr.example-element-row:not(.example-expanded-row):active {
+  background: #efefef;
+}
+
+.example-element-row td {
+  border-bottom-width: 0;
+}
+
+.example-element-detail {
+  overflow: hidden;
+  display: flex;
+}
+
+.example-element-diagram {
+  min-width: 80px;
+  border: 2px solid black;
+  padding: 8px;
+  font-weight: lighter;
+  margin: 8px 0;
+  height: 104px;
+}
+
+.example-element-symbol {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: normal;
+}
+
+.example-element-description {
+  padding: 16px;
+}
+
+.example-element-description-attribution {
+  opacity: 0.5;
+}
+
+.inner-table {
+  width: 100%;
+}
+
+.inner-table mat-form-field {
+  margin-top: 15px;
+  width: 100%;
+}
+
+
+/* Import Google font - Poppins */
+
+
+
+
+

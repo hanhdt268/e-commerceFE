@@ -1,0 +1,170 @@
+.container {
+  min-width: 1200px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.compare {
+  margin: 30px 0;
+  padding: 25px;
+  background: #fff;
+  box-shadow: 0 3px 6px #00000029;
+  border-radius: 14px;
+  font-size: 14px;
+}
+
+.compare table {
+  border-collapse: collapse;
+}
+
+.table {
+  width: 100%;
+}
+
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+.compare table .specs-group th {
+  font-weight: bold;
+  color: #fff;
+  background: #1a42af;;
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.compare table th {
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  vertical-align: top;
+}
+
+.compare table .specs .text {
+  font-weight: bold;
+  background: #efefef;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.compare h3 a:hover {
+  color: #4070f4;
+}
+
+.compare table td:nth-child(2n+1) {
+  background: #fafafa;
+}
+
+
+.compare table .specs td.image {
+  position: relative;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.compare table .specs div.image {
+  text-align: center;
+}
+
+a, a:link, a:visited {
+  text-decoration: none;
+  color: #00483d;
+}
+
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+.compare h3 {
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 15px;
+  color: #555;
+  margin: 0 0 10px 0;
+}
+
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.compare p.price {
+  font-size: 25px;
+  color: #fd475a;
+  margin: 0 0 10px 0;
+  text-align: center;
+  clear: both;
+}
+
+.compare p.price strong {
+  display: block;
+  clear: both;
+}
+
+.compare table .add-product {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.compare table .add-product h3 {
+  font-size: 14px;
+}
+
+.compare table .add-product .input {
+  margin-top: 30px;
+  background: #e5e5e5;
+  border-radius: 15px;
+  padding: 5px 10px;
+  position: relative;
+}
+
+.compare table .add-product .input input {
+  padding: 8px 10px;
+  font-size: 14px;
+  color: #333;
+  border: 1px solid #eee;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 7px 0;
+  font-weight: bold;
+  background: #e5e5e5;
+}
+
+.compare table .specs .text {
+  font-weight: bold;
+  background: #efefef;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.compare table td, .compare table th {
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  vertical-align: top;
+}
+
+td {
+  display: table-cell;
+  vertical-align: inherit;
+}

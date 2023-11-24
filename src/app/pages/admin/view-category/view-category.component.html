@@ -1,0 +1,39 @@
+<div class="container mt20">
+  <button (click)="openDialog()" color="primary" mat-raised-button>Add New Category</button>
+</div>
+
+<div class="container-fluid mt20">
+  <table [dataSource]="dataSource" class="mat-elevation-z8 mt10" mat-table matSort
+  >
+
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+
+    <!-- Position Column -->
+    <ng-container matColumnDef="Id">
+      <th *matHeaderCellDef mat-header-cell mat-sort-header sortActionDescription="Sort by id"> STT</th>
+      <td *matCellDef="let element; let i = index" mat-cell> {{i + 1}} </td>
+    </ng-container>
+    <ng-container matColumnDef="CategoryTitle">
+      <th *matHeaderCellDef mat-header-cell> CategoryTitle
+      </th>
+      <td *matCellDef="let element" mat-cell>{{element.title}}</td>
+    </ng-container>
+    <ng-container matColumnDef="Action">
+      <th *matHeaderCellDef mat-header-cell mat-sort-header sortActionDescription="Sort by action"> Action</th>
+      <td *matCellDef="let element" mat-cell>
+        <button (click)="openDialogUpdate(element.cateId)" color="primary" mat-icon-button>
+          <mat-icon>edit</mat-icon>
+        </button>
+        <button (click)="delete(element.cateId)" color="warn" mat-icon-button>
+          <mat-icon>delete</mat-icon>
+        </button>
+      </td>
+    </ng-container>
+    <tr *matHeaderRowDef="displayedColumns" mat-header-row></tr>
+    <tr *matRowDef="let row; columns: displayedColumns;" mat-row></tr>
+  </table>
+
+
+</div>
+

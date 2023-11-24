@@ -1,0 +1,33 @@
+<div class="bootstrap-wrapper">
+  <div class="container-fluid">
+    <div class="row">
+      <h1 class="text-center">Update Profile</h1>
+      <div class="col-md-8 offset-md-2">
+        <form (ngSubmit)="updateUser()" *ngIf="user" [formGroup]="form">
+          <mat-form-field appearance="fill" class="w100">
+            <mat-label>Enter Email</mat-label>
+            <input [(ngModel)]="user.email" formControlName="email" matInput placeholder="Enter Here" type="text">
+          </mat-form-field>
+          <mat-form-field appearance="fill" class="w100">
+            <mat-label>Enter Address</mat-label>
+            <input [(ngModel)]="user.address" formControlName="address" matInput placeholder="Enter Here" type="text">
+          </mat-form-field>
+          <mat-form-field appearance="fill" class="w100">
+            <mat-label>Enter Phone</mat-label>
+            <input [(ngModel)]="user.phone" formControlName="phone" matInput placeholder="Enter Here" type="text">
+          </mat-form-field>
+          <mat-form-field appearance="fill" class="w100">
+            <mat-label>Enter fullName</mat-label>
+            <input [(ngModel)]="user.fullName" formControlName="fullName" matInput placeholder="Enter Here"
+                   type="text">
+          </mat-form-field>
+          <div class="container text-center">
+            <button [disabled]="form.invalid" color="primary" mat-raised-button>Update</button>
+            <!--             <button color="warn" class="ml20"  (click)="closeDialog()" mat-raised-button>Close</button>-->
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+

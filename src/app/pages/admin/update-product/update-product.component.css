@@ -1,0 +1,48 @@
+.w100 {
+  width: 100%;
+}
+
+mat-grid-tile {
+  border: 1px solid rgb(243, 234, 225);
+}
+
+/*.aabc{*/
+/*  --bs-gutter-x: 15.5rem;*/
+/*}*/
+.btn-remove-image {
+  position: absolute;
+  cursor: pointer;
+  top: -1px;
+  right: -1px;
+  background-color: red;
+  color: white;
+  border-radius: 10%;
+  width: 20px;
+  height: auto;
+  text-align: center;
+}
+
+
+/*.dropzone{*/
+/*    height: 100px;*/
+/*    min-width: 100px;*/
+/*    display: table;*/
+/*    background-color: #eee;*/
+/*    width: 300px;*/
+/*    border: dashed 1px #aaa;*/
+/*    border-radius: 10px;*/
+/*    margin-left: auto;*/
+/*    margin-right: auto;*/
+
+/*}*/
+/*.text-wrapper{*/
+/*    display: table-cell;*/
+/*    vertical-align: middle;*/
+/*}*/
+/*!* .centerd{*/
+/*    text-align: center;*/
+/*} *!*/
+/*.browse-button{*/
+/*    color: blue;*/
+/*    cursor: pointer;*/
+/*}*/

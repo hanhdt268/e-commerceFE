@@ -1,0 +1,149 @@
+<section id="content">
+  <main>
+    <div class="head-title">
+      <div class="left">
+        <h1>Dashboard</h1>
+        <ul class="breadcrumb">
+          <li>
+            <a href="#">Dashboard</a>
+          </li>
+          <li><i class='bx bx-chevron-right'></i></li>
+          <li>
+            <a class="active" href="#">Home</a>
+          </li>
+        </ul>
+      </div>
+      <a class="btn-download" style="cursor: pointer">
+        <i class='bx bxs-cloud-download'></i>
+        <span (click)="test()" class="text">Download PDF</span>
+      </a>
+    </div>
+
+    <ul class="box-info">
+      <li>
+        <i class='bx bxs-calendar-check'></i>
+        <span class="text">
+						<h3>{{quantity}}</h3>
+						<p>Số lượng đơn hàng đã bán</p>
+					</span>
+      </li>
+      <li>
+        <i class='bx bxs-dollar-circle'></i>
+        <span class="text">
+						<h3>{{total | currency: 'VND'}}</h3>
+						<p>Tổng tiền đã bán</p>
+					</span>
+      </li>
+    </ul>
+
+
+    <br>
+    <ul class="box-info">
+      <li>
+        <!--        <i class='bx bxs-calendar-check'></i>-->
+        <mat-icon color="primary" style="width: 80px; height: 80px;border-radius: 10px;
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;">local_shipping
+        </mat-icon>
+        <span class="text">
+						<h3>{{statusPlaced}}</h3>
+						<p>Đơn hàng đang giao</p>
+					</span>
+      </li>
+      <li>
+        <mat-icon style="width: 80px;color: #1e7e34; height: 80px;border-radius: 10px;
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;">check_circle
+        </mat-icon>
+        <span class="text">
+						<h3>{{statusDelivered}}</h3>
+						<p>Đơn hàng đã giao</p>
+					</span>
+      </li>
+      <li>
+        <!--        <i class=' bxs-dollar-circle'></i>-->
+        <mat-icon color="warn" style="width: 80px; height: 80px;border-radius: 10px;
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;">disabled_by_default
+        </mat-icon>
+        <span class="text">
+						<h3>{{statusCancel}}</h3>
+						<p>Đơn hàng đã bị hủy</p>
+					</span>
+      </li>
+    </ul>
+  </main>
+</section>
+<div class="row">
+  <div class="col-md-6" id="chart">
+    <mat-card>
+      <apx-chart
+        [chart]="chart" [dataLabels]="dataLable" [series]="series1" [title]="title" [xaxis]="xavis"
+        [yaxis]="yavis"
+      ></apx-chart>
+    </mat-card>
+  </div>
+  <div class="col-md-6" id="chart1">
+    <mat-card>
+      <apx-chart
+        [chart]="chart1" [labels]="xavis1" [series]="series2" [title]="title1" [yaxis]="dataLable1"
+      ></apx-chart>
+    </mat-card>
+  </div>
+</div>
+
+<!--<div class="mt10">-->
+<!--  <strong style="font-size: 25px">Top 4 sản phẩm bán chạy nhất: </strong>-->
+<!--  <div>-->
+<!--    <table [dataSource]="selectTopOrder" class="mat-elevation-z8 mt20" mat-table>-->
+
+<!--      &lt;!&ndash;- Note that these columns can be defined in any order.-->
+<!--            The actual rendered columns are set as a property on the row definition" &ndash;&gt;-->
+
+<!--      &lt;!&ndash; Position Column &ndash;&gt;-->
+<!--      <ng-container matColumnDef="Id">-->
+<!--        <th *matHeaderCellDef mat-header-cell> ProductID</th>-->
+<!--        <td *matCellDef="let element" mat-cell> {{element.product_p_id}} </td>-->
+<!--      </ng-container>-->
+
+<!--      <ng-container matColumnDef="Images">-->
+<!--        <th *matHeaderCellDef mat-header-cell> Images</th>-->
+<!--        <td *matCellDef="let element" mat-cell><img class="img-fluid" height="80px" src="{{element.images}}"-->
+<!--                                                    width="80px"></td>-->
+<!--      </ng-container>-->
+<!--      &lt;!&ndash; Name Column &ndash;&gt;-->
+<!--      <ng-container matColumnDef="Product Name">-->
+<!--        <th *matHeaderCellDef mat-header-cell>Product Name</th>-->
+<!--        <td *matCellDef="let element" mat-cell> {{element.title}} </td>-->
+<!--      </ng-container>-->
+
+<!--      <ng-container matColumnDef="Amount">-->
+<!--        <th *matHeaderCellDef mat-header-cell>Amount</th>-->
+<!--        <td *matCellDef="let element" mat-cell> {{element.amount | currency: 'VND'}}</td>-->
+<!--      </ng-container>-->
+
+<!--      <ng-container matColumnDef="Quantity">-->
+<!--        <th *matHeaderCellDef mat-header-cell> Quantity</th>-->
+<!--        <td *matCellDef="let element" mat-cell> {{element.T}} </td>-->
+<!--      </ng-container>-->
+
+<!--      &lt;!&ndash; Weight Column &ndash;&gt;-->
+
+<!--      &lt;!&ndash; images Column &ndash;&gt;-->
+
+<!--      &lt;!&ndash; edit Column &ndash;&gt;-->
+
+
+<!--      <tr *matHeaderRowDef="displayedColumns" mat-header-row></tr>-->
+<!--      <tr *matRowDef="let row; columns: displayedColumns;" mat-row></tr>-->
+<!--    </table>-->
+<!--  </div>-->
+<!--</div>-->
+
+

@@ -1,0 +1,28 @@
+table {
+  width: 100%;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-btn {
+  background-color: #1a42af;;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.quantity-input {
+  width: 50px;
+  text-align: center;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+.quantity-btn:hover {
+  background-color: #4070f4;
+}

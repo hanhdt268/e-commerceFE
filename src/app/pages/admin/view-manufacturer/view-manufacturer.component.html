@@ -1,0 +1,62 @@
+<div class="container mt20">
+  <button (click)="openDialog()" color="primary" mat-raised-button>Add New Manufacturer</button>
+</div>
+
+<div class="container-fluid mt20">
+  <div class="text-center delete" style="display: flex;justify-content: end">
+    <button (click)="deleteAll()" [disabled]="!checkSelected" color="primary" mat-raised-button>
+      <mat-icon>delete</mat-icon>
+      Delete
+    </button>
+  </div>
+  <table [dataSource]="dataSource" class="mat-elevation-z8 " mat-table matSort
+  >
+
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+
+    <!-- Position Column -->
+    <ng-container matColumnDef="checkbox">
+      <th *matHeaderCellDef mat-header-cell>
+        <mat-checkbox
+          (change)="selectAll($event.checked)"
+          [checked]="allComplete"
+          class="example-margin">
+
+        </mat-checkbox>
+      </th>
+      <td *matCellDef="let element;let i = index" mat-cell>
+
+        <mat-checkbox
+          (change)="updateChecked(element.manuId, $event.checked, i)"
+          [checked]="element.checked"></mat-checkbox>
+      </td>
+    </ng-container>
+    <ng-container matColumnDef="Id">
+      <th *matHeaderCellDef mat-header-cell mat-sort-header="length" sortActionDescription="Sort by id"> STT</th>
+      <td *matCellDef="let element;let i = index" mat-cell> {{i + 1}} </td>
+    </ng-container>
+    <ng-container matColumnDef="ManufacturerName">
+      <th *matHeaderCellDef mat-header-cell> Manufacturer Name
+      </th>
+      <td *matCellDef="let element" mat-cell>{{element.title}}</td>
+    </ng-container>
+    <ng-container matColumnDef="Action">
+      <th *matHeaderCellDef mat-header-cell mat-sort-header sortActionDescription="Sort by action"> Action</th>
+      <td *matCellDef="let element" mat-cell>
+        <button (click)="openDialogUpdate(element.manuId)" color="primary" mat-icon-button>
+          <mat-icon>edit</mat-icon>
+        </button>
+        <button (click)="delete(element.manuId)" color="warn" mat-icon-button>
+          <mat-icon>delete</mat-icon>
+        </button>
+      </td>
+    </ng-container>
+
+    <tr *matHeaderRowDef="displayedColumns" mat-header-row></tr>
+    <tr *matRowDef="let row; columns: displayedColumns;" mat-row></tr>
+
+  </table>
+
+</div>
+

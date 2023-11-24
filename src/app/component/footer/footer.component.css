@@ -1,0 +1,160 @@
+.footer {
+  clear: both;
+  border-top: 1px solid #e2e2e2;
+  margin-top: 35px;
+  background: #fff;
+  position: relative;
+  cursor: pointer;
+}
+
+.footer__top {
+  padding: 15px 0 5px;
+}
+
+.clearfix {
+  display: block;
+}
+
+section {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer__col {
+  float: left;
+  width: 24%;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+.f-listmenu li {
+  margin-bottom: 10px;
+}
+
+.f-listmenu li a {
+  color: #333;
+  line-height: 21px;
+}
+
+a {
+  text-decoration: none;
+  transition: .2s;
+  color: #288ad6;
+}
+
+.f-listmenu li a {
+  color: #333;
+  line-height: 21px;
+}
+
+.footer__col:nth-child(2) {
+  width: 19%;
+}
+
+.footer__col {
+  float: left;
+  width: 24%;
+}
+
+.footer__col:nth-child(3) {
+  width: 28%;
+}
+
+p {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  text-rendering: geometricPrecision;
+}
+
+.f-listtel__content {
+  line-height: 21px;
+  margin-top: 10px;
+}
+
+.footer__col:nth-child(4) {
+  width: 29%;
+}
+
+.f-social {
+  margin-bottom: 20px;
+}
+
+.f-social a {
+  color: #2f80ed;
+  margin-right: 10px;
+}
+
+.f-social a {
+  color: #2f80ed;
+  margin-right: 10px;
+}
+
+.f-certify {
+  margin-bottom: 20px;
+}
+
+.f-certify a {
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.icon-congthuong {
+  background-position: -200px -30px;
+  height: 24px;
+  width: 79px;
+}
+
+.icon-khieunai {
+  background-position: -250px 0;
+  height: 25px;
+  width: 25px;
+}
+
+.icon-protected {
+  background-position: -80px -60px;
+  height: 24px;
+  width: 122px;
+}
+
+.f-certify a._ncsc img {
+  width: 85px;
+}
+
+.icon-facebook {
+  background-position: -220px 0;
+  margin-top: 6px;
+
+}
+
+.icon-youtube {
+  background-position: -190px 0;
+  margin-top: 6px;
+}
+
+.imgzalo img {
+  max-width: 18px;
+  margin-top: -5px;
+  vertical-align: middle;
+}
+
+[class^="icon-"], [class*="icon-"] {
+  background-image: url(//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/homev2/desk/icon_common@2x.webp);
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  vertical-align: middle;
+  background-size: 300px 200px;
+}
+
+.copyright {
+  background-color: #f1f1f1;
+  padding: 15px 0;
+}

@@ -1,0 +1,168 @@
+<div class="bootstrap-wrapper">
+  <div class="container-fluid mt20">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="container1">
+          <div class="sp-slideshow">
+
+            <input checked="checked" class="sp-selector-1" id="button-1" name="radio-set" type="radio"/>
+            <label class="button-label-1" for="button-1"></label>
+
+            <input class="sp-selector-2" id="button-2" name="radio-set" type="radio"/>
+            <label class="button-label-2" for="button-2"></label>
+
+            <input class="sp-selector-3" id="button-3" name="radio-set" type="radio"/>
+            <label class="button-label-3" for="button-3"></label>
+
+            <input class="sp-selector-4" id="button-4" name="radio-set" type="radio"/>
+            <label class="button-label-4" for="button-4"></label>
+
+            <input class="sp-selector-5" id="button-5" name="radio-set" type="radio"/>
+            <label class="button-label-5" for="button-5"></label>
+
+            <label class="sp-arrow sp-a1" for="button-1"></label>
+            <label class="sp-arrow sp-a2" for="button-2"></label>
+            <label class="sp-arrow sp-a3" for="button-3"></label>
+            <label class="sp-arrow sp-a4" for="button-4"></label>
+            <label class="sp-arrow sp-a5" for="button-5"></label>
+
+            <div class="sp-content">
+              <div class="sp-parallax-bg"></div>
+              <ul class="sp-slider clearfix">
+                <li class="slider">
+                  <img
+                    alt="image01"
+                    src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/08/banner/njbn454-1920x440.png"/>
+                </li>
+                <li class="slider"><img
+                  alt="image02"
+                  src="https://cdn.tgdd.vn/2023/07/banner/b2s-1200-300-1200x300-1.png"/></li>
+                <li class="slider"><img
+                  src="https://cdn.tgdd.vn/2023/07/banner/gaming-1200-300-1200x300-1.png"
+                ></li>
+                <li class="slider"><img
+                  alt="image04"
+                  src="https://cdn.tgdd.vn/2023/07/banner/acer-1200-300-1200x300-2.png">
+                </li>
+                <li class="slider"><img alt="image05"
+                                        src="https://cdn.tgdd.vn/2023/08/banner/asus-1200-300-1200x300.png"></li>
+              </ul>
+            </div><!-- sp-content -->
+
+
+          </div> <!-- sp-slideshow -->
+
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-9">
+      </div>
+      <div class="col-md-3" style="display: flex; justify-content: flex-end">
+        <mat-form-field>
+          <mat-label>Tính năng sắp xếp</mat-label>
+          <mat-select>
+            <mat-option (click)="handlePriceDesc()" value="option1">Giá cao đến thấp</mat-option>
+            <mat-option (click)="handlePriceAsc()" value="option2">Giá thấp đến cao</mat-option>
+            <mat-option (click)="handleProductByBestSelling()" value="option3">Lượt bán nhiều nhất</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2 mt20">
+        <app-sidebar-user></app-sidebar-user>
+      </div>
+      <div class="col-md-10">
+        <!--        <div *ngIf="manufacturers">-->
+        <!--          <button mat-stroked-button class="ml10" *ngFor="let item of manufacturers"-->
+        <!--                  [routerLink]="'/client-dashboard/manufacturer/'+item.mId">-->
+        <!--            {{item.title}}-->
+        <!--          </button>-->
+        <!--        </div>-->
+
+
+        <mat-grid-list class="mt20" cols="4" gutterSize="10"
+                       rowHeight="4:5"
+                       style="background-color: #fff;">
+          <mat-grid-tile *ngFor="let product1 of productDetails | paginate
+              : {
+                  itemsPerPage: tableSize,
+                  currentPage: pageNumber,
+                  totalItems: count
+                };
+          " style="border-radius: 5%;">
+            <div (click)="showProductDetails(product1.pid)" class="row home-page-product-image" style="cursor: pointer">
+
+              <div class="disable">
+                <div class="image-item">
+                  <img class="img-fluid " height="200px"
+                       src="{{product1.images}}"
+                       style="margin-left: auto;margin-right: auto; ">
+
+                </div>
+              </div>
+              <div class="mt10">
+                <span>{{product1.title}}</span>
+              </div>
+              <div *ngIf="product1.quantum > 0" class="mt10">
+
+                <b style="color: red">{{product1.discountPrice | currency: 'VND'}}</b> &nbsp; <b
+                style="text-decoration: line-through;color: #aaaaaa">{{product1.price | currency: 'VND'}}</b>
+
+              </div>
+              <div *ngIf="product1.quantum <= 0" class="mt10">
+                <h2 style="color: red"><b>Tạm hết hàng</b></h2>
+              </div>
+              <!--              <div class="rating mt10">-->
+              <!--                <ng-container *ngFor="let i of stars">-->
+              <!--                  <i class="fas fa-star abc"-->
+              <!--                  ></i>-->
+              <!--                </ng-container>-->
+              <!--                <ng-container *ngFor="let item of product1.reviews; let i = index"-->
+              <!--                >{{item.value }}-->
+              <!--                </ng-container>-->
+              <!--              </div>-->
+            </div>
+
+          </mat-grid-tile>
+
+        </mat-grid-list>
+        <div class="d-flex justify-content-center mt20">
+          <pagination-controls (pageChange)="onTableDataChange($event)"
+                               nextLabel="Next"
+                               previousLabel="Prev"
+                               style="font-size: 20px;"
+          >
+          </pagination-controls>
+        </div>
+        <!--        <div class="mt20" style="display: flex; justify-content: flex-end">-->
+        <!--          <nav aria-label="Page navigation example">-->
+        <!--            <ul class="pagination">-->
+        <!--              <li class="page-item">-->
+        <!--                <button (click)="previous()" [disabled]="pageNumber == 0" aria-label="Previous" class="page-link">-->
+        <!--                  <span aria-hidden="true">&laquo; Previous</span>-->
+        <!--                </button>-->
+        <!--              </li>-->
+
+        <!--              <li *ngIf="showLoadMoreProduct" class="page-item text">-->
+        <!--                <button (click)="loadMoreProduct()" aria-label="Next"-->
+        <!--                        class="page-link">-->
+        <!--                  <span aria-hidden="true">Next &raquo;</span>-->
+        <!--                </button>-->
+        <!--              </li>-->
+        <!--            </ul>-->
+        <!--          </nav>-->
+        <!--        </div>-->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+

@@ -1,0 +1,97 @@
+<div *ngIf="productDetails" class="container">
+
+  <div class="row">
+    <div class="col-md-12">
+      <h2 class="mt20">Tìm kiếm: <b>{{search}}</b></h2>
+      <div class="row">
+        <div class="col-md-9">
+        </div>
+        <div class="col-md-3" style="display: flex; justify-content: flex-end">
+          <mat-form-field>
+            <mat-label>Tính năng sắp xếp</mat-label>
+            <mat-select [(ngModel)]="selectedValue">
+              <mat-option (click)="setValue(i)" *ngFor="let item of options;let i = index"
+                          [value]="item.value">{{item.viewValue}}</mat-option>
+
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+      <div *ngIf="productDetails.length == 0">
+        <div class="text-center">
+          <img class="img-fluid" height="250px" src="https://fptshop.com.vn/Content/v4/images/noti-search.png"
+               width="250px">
+          <p style="font-size: 20px">Rất tiếc chúng tôi không tìm thấy kết quả của <b>{{search}}</b></p>
+          <div class="fs-senullbob">
+            <h4>Để tìm được kết quả chính xác hơn, xin vui lòng:</h4>
+            <ul>
+              <li>Kiểm tra lỗi chính tả của từ khóa đã nhập
+              </li>
+              <li>Thử lại bằng từ khóa khác
+              </li>
+              <li>Thử lại bằng những từ khóa tổng quát hơn</li>
+              <li>Thử lại bằng những từ khóa ngắn gọn hơn
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <mat-grid-list class="mt20" cols="4" gutterSize="10"
+                     rowHeight="4:5"
+                     style="background-color: #fff;">
+        <mat-grid-tile *ngFor="let product1 of productDetails" style="border-radius: 5%;">
+          <div (click)="showProductDetails(product1.pid)" class="row home-page-product-image" style="cursor: pointer">
+
+            <div class="image-item">
+              <img class="img-fluid" height="200px"
+                   src="{{product1.images}}"
+                   style="margin-left: auto;margin-right: auto;">
+
+            </div>
+            <div class="mt10">
+              <span>{{product1.title}}</span>
+            </div>
+            <div *ngIf="product1.quantum > 0" class="mt10">
+
+              <b style="color: red">{{product1.discountPrice | currency: 'VND'}}</b> &nbsp; <b
+              style="text-decoration: line-through;color: #aaaaaa">{{product1.price | currency: 'VND'}}</b>
+            </div>
+            <div *ngIf="product1.quantum <= 0" class="mt10">
+              <h2 style="color: red"><b>Tạm hết hàng</b></h2>
+            </div>
+            <!--              <div class="rating mt10">-->
+            <!--                <ng-container>-->
+            <!--                  <i class="fas fa-star abc"-->
+            <!--                  ></i>-->
+            <!--                </ng-container>-->
+            <!--                <ng-container *ngFor="let i of product1.reviews"-->
+            <!--                >{{i.value}}-->
+            <!--                </ng-container>-->
+            <!--              </div>-->
+
+            <!--              <div class="mt10 text-center">-->
+            <!--                <button mat-raised-button color="primary" (click)="showProductDetails(product1.pId)">View Details-->
+            <!--                </button>-->
+            <!--              </div>-->
+
+          </div>
+
+        </mat-grid-tile>
+
+      </mat-grid-list>
+      <div *ngIf="showLoadMoreProduct" class="mt20 text-center">
+        <button (click)="loadMoreProduct(selectedValue)" color="primary" mat-raised-button>Xem thêm sản
+          phẩm
+        </button>
+      </div>
+      <div class="mt10">
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+

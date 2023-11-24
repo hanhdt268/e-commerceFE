@@ -1,0 +1,75 @@
+<div class="mt10">
+  <mat-form-field appearance="outline" class="full-width w-50">
+    <mat-label>Search any user</mat-label>
+    <input #searchKeyword
+           matInput name="searchKey" placeholder="Enter Here" required
+           type="text">
+    <span class="focus-input100"></span>
+  </mat-form-field>
+
+  <div>
+    <table [dataSource]="user" class="mat-elevation-z8 mt20" mat-table matSort>
+
+      <!--- Note that these columns can be defined in any order.
+            The actual rendered columns are set as a property on the row definition" -->
+
+      <!-- Position Column -->
+      <ng-container matColumnDef="Id">
+        <th *matHeaderCellDef mat-header-cell mat-sort-header="userID"> Id</th>
+        <td *matCellDef="let element;let i = index" mat-cell> {{i + 1}} </td>
+      </ng-container>
+      <ng-container matColumnDef="Product Image">
+        <th *matHeaderCellDef mat-header-cell>Full Name</th>
+        <td *matCellDef="let element" mat-cell>{{element.fullName}}</td>
+      </ng-container>
+      <!-- Name Column -->
+      <ng-container matColumnDef="Product Name">
+        <th *matHeaderCellDef mat-header-cell mat-sort-header="title">Phone</th>
+        <td *matCellDef="let element" mat-cell> {{element.phone}} </td>
+      </ng-container>
+
+      <!-- Weight Column -->
+      <ng-container matColumnDef="Product ActualPrice">
+        <th *matHeaderCellDef mat-header-cell>Email</th>
+        <td *matCellDef="let element" mat-cell> {{element.email}} </td>
+      </ng-container>
+
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="Product DiscountPrice">
+        <th *matHeaderCellDef mat-header-cell>Address</th>
+        <td *matCellDef="let element" mat-cell> {{element.address}} </td>
+      </ng-container>
+      <ng-container matColumnDef="UseStage">
+        <th *matHeaderCellDef mat-header-cell>User state</th>
+        <td *matCellDef="let element" mat-cell>
+          <mat-checkbox [checked]="element.enabled" color="primary"></mat-checkbox>
+        </td>
+      </ng-container>
+      <!-- images Column -->
+      <ng-container matColumnDef="Actions">
+        <th *matHeaderCellDef mat-header-cell> Actions</th>
+        <td *matCellDef="let element" mat-cell>
+          <!-- <button (click)="openImages(element)" class="img-fluid" color="primary" mat-icon-button>
+            <mat-icon>images</mat-icon>
+          </button> -->
+          <button (click)="lock(element.userID)" *ngIf="this.element.enabled == true" color="accent"
+                  mat-icon-button>
+            <mat-icon>lock_person</mat-icon>
+          </button>
+          <button (click)="unLock(element.userID)" *ngIf="this.element.enabled == false" color="warn" mat-icon-button>
+            <mat-icon>lock_open</mat-icon>
+          </button>
+        </td>
+      </ng-container>
+      <!-- edit Column -->
+
+
+      <tr *matHeaderRowDef="displayedColumns" mat-header-row></tr>
+      <tr *matRowDef="let row; columns: displayedColumns;" mat-row></tr>
+    </table>
+  </div>
+  <mat-paginator #paginator [pageSizeOptions]="[5, 10, 40]" showFirstLastButtons></mat-paginator>
+</div>
+
+
+

@@ -1,0 +1,99 @@
+<div class="bootstrap-wrapper">
+  <div class="container-register100" style="background-image: url('assets/544750.jpg')">
+    <div class="row" style="margin-top: 20px">
+      <div class="wrap-login100 col-md-6 offset-md-3">
+        <h1 class="mt20" style="text-align: center">Sign Up</h1>
+        <!--        {{user | json}}-->
+        <form (ngSubmit)="formSubmit()" [formGroup]="form">
+          <!--          Username field-->
+          <mat-form-field appearance="outline" class="full-width" mat-list-item>
+            <mat-label>Username</mat-label>
+            <input [(ngModel)]="user.username" formControlName="username" matInput placeholder="Enter Here"
+                   required>
+            <mat-hint *ngIf="(form.controls['username'].dirty || form.controls['username'].touched) && form.hasError('required', 'username')"
+                      class="text-danger">
+              Username is required !!
+            </mat-hint>
+          </mat-form-field>
+
+          <!--          Password field-->
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Password</mat-label>
+            <input [(ngModel)]="user.password" formControlName="password" matInput placeholder="Enter Here" required
+                   type="password">
+            <mat-hint *ngIf="(form.controls['password'].dirty || form.controls['password'].touched) && form.hasError('required', 'password')"
+                      class="text-danger">
+              Password is required !!
+            </mat-hint>
+
+          </mat-form-field>
+          <!--          first Name-->
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Full Name</mat-label>
+            <input [(ngModel)]="user.fullName" formControlName="fullName" matInput placeholder="Enter Here" required>
+            <mat-hint *ngIf="(form.controls['fullName'].dirty || form.controls['fullName'].touched) && form.hasError('required', 'fullName')"
+                      class="text-danger">
+              FullName is required !!
+            </mat-hint>
+
+          </mat-form-field>
+          <!--          Last Name-->
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Address</mat-label>
+            <input [(ngModel)]="user.address" formControlName="address" matInput placeholder="Enter Here" required>
+            <mat-hint *ngIf="(form.controls['address'].dirty || form.controls['address'].touched) && form.hasError('required', 'address')"
+                      class="text-danger">
+              Address is required !!
+            </mat-hint>
+
+          </mat-form-field>
+          <!--          Email-->
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Email Address</mat-label>
+            <input [(ngModel)]="user.email" formControlName="email" matInput placeholder="Enter Here" required
+                   type="email">
+            <mat-hint *ngIf="(form.controls['email'].dirty || form.controls['email'].touched) && form.hasError('required', 'email')"
+                      class="text-danger">
+              Email is required !!
+            </mat-hint>
+            <mat-hint *ngIf="(form.controls['email'].dirty || form.controls['email'].touched) && form.hasError('email', 'email')"
+                      class="text-danger">
+              Email not invalid !!
+            </mat-hint>
+
+          </mat-form-field>
+          <!--          Phone-->
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Phone Number</mat-label>
+            <input [(ngModel)]="user.phone" formControlName="phone" matInput placeholder="Enter Here" required
+                   type="text">
+            <mat-hint *ngIf="(form.controls['phone'].dirty || form.controls['phone'].touched) && form.hasError('required', 'phone')"
+                      class="text-danger">
+              Phone is required !!
+            </mat-hint>
+            <mat-hint *ngIf="(form.controls['phone'].dirty || form.controls['phone'].touched) && form.hasError('maxlength', 'phone')"
+                      class="text-danger">
+              Phone max 10 !!
+            </mat-hint>
+            <mat-hint *ngIf="(form.controls['phone'].dirty || form.controls['phone'].touched) && form.hasError('pattern', 'phone')"
+                      class="text-danger">
+              Phone not valid !!
+            </mat-hint>
+
+          </mat-form-field>
+          <div class="container mb20">
+            <a [routerLink]="'/login'">Sign In</a>
+          </div>
+          <div class="container text-center">
+            <button [disabled]="form.invalid" class="full-width" color="primary" mat-raised-button
+                    style="margin-bottom: 10px" type="submit">Sign Up
+            </button>
+          </div>
+        </form>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+

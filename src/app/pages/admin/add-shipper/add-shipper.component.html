@@ -1,0 +1,19 @@
+<!--  <button mat-raised-button color="primary" class="text-center" [routerLink]="'/admin/add-manufacturer'">Add Manufacturer</button>-->
+<div class="bootstrap-wrapper" style="overflow-x: hidden; overflow-y: hidden">
+  <h1 class="mt10">Chọn shipper giao hàng</h1>
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <mat-form-field appearance="fill" class="w100 mt10">
+        <mat-label>Chọn nhân viên giao hàng</mat-label>
+        <mat-select [(ngModel)]="shipper.userID">
+          <mat-option *ngFor="let item of shipper" [value]="item.userID">
+            {{item.fullName}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <div class="mt15 text-center">
+        <button (click)="handlerShipper(shipper.userID)" color="primary" mat-raised-button>Phân công</button>
+      </div>
+    </div>
+  </div>
+</div>

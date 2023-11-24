@@ -1,0 +1,41 @@
+.w100 {
+  width: 100%;
+}
+
+.progress-1 {
+  width: 120px;
+  height: 20px;
+  background: linear-gradient(#000 0 0) 0/0% no-repeat #ddd;
+  animation: p1 2s infinite linear;
+}
+
+@keyframes p1 {
+  100% {
+    background-size: 100%
+  }
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.quantity-input {
+  width: 50px;
+  text-align: center;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+.quantity-btn:hover {
+  background-color: #45a049;
+}

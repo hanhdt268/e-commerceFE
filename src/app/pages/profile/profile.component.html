@@ -1,0 +1,60 @@
+<mat-card *ngIf="user">
+  <h1>Welcome to Profile</h1>
+  <!--  {{user | json}}-->
+  <mat-card-content>
+    <div class="bootstrap-wrapper">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-4">
+            <img [src]="user.avatar" alt="" class="profile-img">
+            <div style="display: flex;justify-content: left">
+              <app-upload-file (giveUrlToCreate)="onLoadAvatar($event)"></app-upload-file>
+            </div>
+
+
+            <form (ngSubmit)="onSubmit()">
+              <button *ngIf="isShow" color="primary" mat-raised-button>Thay đổi avatar</button>
+            </form>
+            <h2 class="mt20">{{user.fullName}}</h2>
+          </div>
+          <div class="col-md-7">
+            <table class="table text-center">
+              <tr>
+                <td>Username</td>
+                <td>{{user.username}}</td>
+              </tr>
+
+              <tr>
+                <td>Email</td>
+                <td>{{user.email}}</td>
+              </tr>
+              <tr>
+                <td>Address</td>
+                <td>{{user.address}}</td>
+              </tr>
+              <tr>
+                <td>Phone</td>
+                <td>{{user.phone}}</td>
+              </tr>
+              <!--              <tr>-->
+              <!--                <td>Role</td>-->
+              <!--                <td>{{user.authorities[0].authority}}</td>-->
+              <!--              </tr>-->
+            </table>
+            <div class="text-center mt20">
+              <button (click)="openDialog()" class="mr10" color="primary"
+                      mat-raised-button> Thay đổi thông tin
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <mat-card-actions class="text-center">
+    </mat-card-actions>
+  </mat-card-content>
+</mat-card>
+
+
+

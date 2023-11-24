@@ -1,0 +1,536 @@
+<div class="bootstrap-wrapper">
+  <div class="container-fluid mt20">
+    <div class="row">
+      <div class="col-md-7">
+        <div class="card image-container p-3">
+          <img [src]="product.productImages[selectedProductIndex].url" class="image-zone">
+        </div>
+        <div class="mt-2">
+          <mat-grid-list cols="3" gutterSize="10" rowHeight="4:3" style="width: 98%;">
+            <mat-grid-tile (click)="changeIndex(i)"
+                           *ngFor="let file of product.productImages;let i = index;"
+                           style="border: 1px solid lightgray">
+              <img [src]="file.url" class="img-fluid" height="200px" width="200px">
+            </mat-grid-tile>
+          </mat-grid-list>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="product-information">
+          <div class="mt10">
+            <h3 style="font-size: 30px">{{product.title}}</h3>
+          </div>
+          <div class="ratingg mt10">
+            <ng-container *ngFor="let i of stars">
+              <i [ngClass]="{'abc': i<=value}"
+                 class="fas fa-star"></i>
+            </ng-container>
+            <ng-container>{{demo}} ({{user}})</ng-container>
+
+          </div>
+          <div class="mt20">
+            <b style="color:red;">{{product.discountPrice | currency: 'VND'}}</b> &nbsp;&nbsp;&nbsp; <b
+            style="text-decoration: line-through;color: #aaaaaa">{{product.price | currency: 'VND'}}</b>
+          </div>
+          <div class="mt20">
+            <p>({{product.quantum}}) Sản phẩm còn hàng</p>
+          </div>
+          <div class="mt20 text-center">
+            <button (click)="addToCart(product.pid)" [disabled]="product.quantum === 0" class="mr10" color="primary"
+                    mat-raised-button
+                    style="padding: 12px">
+              <mat-icon>shopping_cart</mat-icon>
+              Thêm vào giỏ hàng
+            </button>
+            <button (click)="buyProduct(product.pid)" [disabled]="product.quantum === 0" color="warn" mat-raised-button
+                    style="padding: 12px">Mua ngay
+            </button>
+          </div>
+        </div>
+      </div>
+      <div *ngIf="isShowReview" class="row">
+        <div class="col-md-7 mt20">
+          <div class="box-border">
+            <div class="rating">
+              <p class="rating__title">{{product.title}}</p>
+              <div class="rating-star left">
+                <div class="rating-left">
+                  <div class="rating-top">
+                    <p class="point">{{demo}}</p>
+                    <div *ngFor="let i of stars" class="list-star" style="margin: 0px; padding:2px;">
+                      <i [ngClass]="{'abc': i<=value}"
+                         class="fas fa-star"></i>
+                    </div>
+                    <p class="rating-total"> {{user}} đánh giá</p>
+                  </div>
+                  <ul class="rating-list">
+                  </ul>
+                </div>
+              </div>
+              <div class="rating-img right">
+                <ul class="rating-img-list">
+                  <li *ngFor="let reviews of product.reviews" class="js-Showcmt">
+                    <img class=" lazyloaded img-fluid" src="{{reviews.image}}">
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div #rating *ngFor="let reviews of product.reviews; let i = index"
+                 class="comment comment--all ratingLst">
+              <div *ngIf="i<3" class="comment__item par">
+                <div class="item-top">
+                  <p class="txtname">{{reviews.user.fullName}}</p>
+                  <p class="tickbuy">
+                    <i class="fas fa-check-circle check" style="color: #1e7e34"> </i>
+                  </p>
+                </div>
+                <div class="item-rate">
+                  <div *ngFor="let i of stars" class="comment-star">
+                    <i [ngClass]="{'abc': i<=reviews.value}"
+                       class="fas fa-star"></i>
+                  </div>
+                </div>
+                <div class="comment-content">
+                  <p class="cmt-txt">{{reviews.content}}</p>
+                </div>
+                <div class="item-click">
+                  <a class="click-like">
+                    <i class="far fa-thumbs-up"></i>Huu ich
+                  </a>
+                  <a class="click-cmt">
+                    <i class="far fa-comment"></i>
+                    <span class="cmtr">Thảo luận</span>
+                  </a>
+                  <a class="click-use">
+                    {{reviews.dateCreate | date : 'dd-MM-yyyy'}}
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-7 mt20 ">
+          <h1><b>Thông tin sản phẩm</b></h1>
+          <img class="img-fluid" src="{{product.config}}">
+          <p class="mt20" style="font-size: 18px">{{product.description}}</p>
+        </div>
+        <div class="col-md-5 mt20 card">
+          <h1 class="mt20"><b>Cấu Hình  {{product.title}}</b></h1>
+          <img src="{{product.images}}" style="margin-left: auto; margin-right: auto" width="50%">
+          <div *ngIf="product.laptopConfig" class="parameter">
+            <ul class="parameter__list 269533 active">
+              <li data-index="0" data-prop="0">
+                <p class="lileft">CPU</p>
+                <div class="liright">
+                <span class="comma">
+                  {{product.laptopConfig.cpu}}
+                </span>
+                </div>
+              </li>
+              <li data-index="0" data-prop="0">
+                <p class="lileft">RAM</p>
+                <div class="liright">
+                <span class="comma">
+                  {{product.laptopConfig.ram}}
+                </span>
+                </div>
+              </li>
+              <li data-index="0" data-prop="0">
+                <p class="lileft">Ổ cứng: </p>
+                <div class="liright">
+                <span class="comma">
+                  {{product.laptopConfig.hardDrive}}
+                </span>
+                </div>
+              </li>
+              <li data-index="0" data-prop="0">
+                <p class="lileft">Màn hình: </p>
+                <div class="liright">
+                <span class="comma">
+                  {{product.laptopConfig.screen}}
+                </span>
+                </div>
+              </li>
+              <li data-index="0" data-prop="0">
+                <p class="lileft">Card màn hình: </p>
+                <div class="liright">
+                <span class="comma">
+                  {{product.laptopConfig.graphic}}
+                </span>
+                </div>
+              </li>
+              <li data-index="0" data-prop="0">
+                <p class="lileft">Cổng kết nối </p>
+                <div class="liright">
+                <span class="comma">
+                  {{product.laptopConfig.connector}}
+                </span>
+                </div>
+              </li>
+              <li data-index="0" data-prop="0">
+                <p class="lileft">Đặc biệt: </p>
+                <div class="liright">
+                <span class="comma">
+                  {{product.laptopConfig.special}}
+                </span>
+                </div>
+              </li>
+              <li data-index="0" data-prop="0">
+                <p class="lileft">Hệ điều hành: </p>
+                <div class="liright">
+                <span class="comma">
+                  {{product.laptopConfig.operatingSystem}}
+                </span>
+                </div>
+              </li>
+              <li data-index="0" data-prop="0">
+                <p class="lileft">Thiết kế: </p>
+                <div class="liright">
+                <span class="comma">
+                  {{product.laptopConfig.design}}
+                </span>
+                </div>
+              </li>
+              <li data-index="0" data-prop="0">
+                <p class="lileft">Kích thước: </p>
+                <div class="liright">
+                <span class="comma">
+                  {{product.laptopConfig.sizeMass}}
+                </span>
+                </div>
+              </li>
+              <li data-index="0" data-prop="0">
+                <p class="lileft">Thời điểm ra mắt: </p>
+                <div class="liright">
+                <span class="comma">
+                  {{product.laptopConfig.releaseTime}}
+                </span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div *ngIf="product.accessoryConfig" class="parameter">
+            <ul class="parameter__list 269533 active">
+              <li data-index="0" data-prop="0">
+                <p class="lileft">Tương thích:</p>
+                <div class="liright">
+                <span class="comma">
+                  {{product.accessoryConfig.compatible}}
+                </span>
+                </div>
+              </li>
+              <li data-index="0" data-prop="0">
+                <p class="lileft">Độ phân giải:</p>
+                <div class="liright">
+                <span class="comma">
+                  {{product.accessoryConfig.resolution}}
+                </span>
+                </div>
+              </li>
+              <li data-index="0" data-prop="0">
+                <p class="lileft">Cách kết nối: </p>
+                <div class="liright">
+                <span class="comma">
+                  {{product.accessoryConfig.howToConnect}}
+                </span>
+                </div>
+              </li>
+              <li data-index="0" data-prop="0">
+                <p class="lileft">Độ dài dây / Khoảng cách kết nối: </p>
+                <div class="liright">
+                <span class="comma">
+                  {{product.accessoryConfig.wireLength}}
+                </span>
+                </div>
+              </li>
+              <li data-index="0" data-prop="0">
+                <p class="lileft">Loại pin: </p>
+                <div class="liright">
+                <span class="comma">
+                  {{product.accessoryConfig.typePin}}
+                </span>
+                </div>
+              </li>
+              <li data-index="0" data-prop="0">
+                <p class="lileft">Trọng lượng: </p>
+                <div class="liright">
+                <span class="comma">
+                  {{product.accessoryConfig.weight}}
+                </span>
+                </div>
+              </li>
+              <li data-index="0" data-prop="0">
+                <p class="lileft">Thương hiệu của: </p>
+                <div class="liright">
+                <span class="comma">
+                  {{product.accessoryConfig.brand}}
+                </span>
+                </div>
+              </li>
+              <li data-index="0" data-prop="0">
+                <p class="lileft">Sản xuất tại: </p>
+                <div class="liright">
+                <span class="comma">
+                  {{product.accessoryConfig.madeIn}}
+                </span>
+                </div>
+              </li>
+              <li data-index="0" data-prop="0">
+                <p class="lileft">Hãng: </p>
+                <div class="liright">
+                <span class="comma">
+                  {{product.accessoryConfig.manufacturer}}
+                </span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div *ngIf="product.smartPhoneConfig" class="parameter">
+            <ul class="parameter__list 269533 active">
+              <li data-index="0" data-prop="0">
+                <p class="lileft">Màn hình:</p>
+                <div class="liright">
+                <span class="comma">
+                  {{product.smartPhoneConfig.screen}}
+                </span>
+                </div>
+              </li>
+              <li data-index="0" data-prop="0">
+                <p class="lileft">Hệ điều hành:</p>
+                <div class="liright">
+                <span class="comma">
+                  {{product.smartPhoneConfig.operatingSystem}}
+                </span>
+                </div>
+              </li>
+              <li data-index="0" data-prop="0">
+                <p class="lileft">Camera sau: </p>
+                <div class="liright">
+                <span class="comma">
+                  {{product.smartPhoneConfig.afterCamera}}
+                </span>
+                </div>
+              </li>
+              <li data-index="0" data-prop="0">
+                <p class="lileft">Camera trước: </p>
+                <div class="liright">
+                <span class="comma">
+                  {{product.smartPhoneConfig.beforeCamera}}
+                </span>
+                </div>
+              </li>
+              <li data-index="0" data-prop="0">
+                <p class="lileft">Chip: </p>
+                <div class="liright">
+                <span class="comma">
+                  {{product.smartPhoneConfig.chip}}
+                </span>
+                </div>
+              </li>
+              <li data-index="0" data-prop="0">
+                <p class="lileft">RAM:: </p>
+                <div class="liright">
+                <span class="comma">
+                  {{product.smartPhoneConfig.ram}}
+                </span>
+                </div>
+              </li>
+              <li data-index="0" data-prop="0">
+                <p class="lileft">Dung lượng lưu trữ: </p>
+                <div class="liright">
+                <span class="comma">
+                  {{product.smartPhoneConfig.storage}}
+                </span>
+                </div>
+              </li>
+              <li data-index="0" data-prop="0">
+                <p class="lileft">SIM: </p>
+                <div class="liright">
+                <span class="comma">
+                  {{product.smartPhoneConfig.sim}}
+                </span>
+                </div>
+              </li>
+              <li data-index="0" data-prop="0">
+                <p class="lileft">Pin, Sạc: </p>
+                <div class="liright">
+                <span class="comma">
+                  {{product.smartPhoneConfig.pin}}
+                </span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+
+        </div>
+      </div>
+
+
+      <!--      <div class="mt20">-->
+      <!--        <b-->
+      <!--          style="border: 1px solid red;cursor: default; color: white; background-color: #0f6674; padding: 15px; height: 25px">Gợi-->
+      <!--          ý cho-->
+      <!--          bạn</b>-->
+      <!--      </div>-->
+
+
+    </div>
+    <div class="row mt30">
+      <div class="col-5">
+        <div class="header">
+          <h4>
+            <b style="color: white;cursor: default; padding: 15px">Gợi
+              ý cho
+              bạn</b>
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="row card lr-slider  mt20">
+      <mat-grid-list cols="4" gutterSize="10" rowHeight="2:2">
+        <mat-grid-tile *ngFor="let productt of productDetails;let i = index">
+          <div (click)="showProductDetails(productt.pid)"
+               class="row home-page-product-image" style="cursor: pointer">
+            <img class="img-fluid" src="{{productt.images}}" style="margin-left: auto;margin-right: auto"
+                 width="50px">
+            <div class="mt10">
+              <p><b>{{productt.title}}</b></p>
+            </div>
+            <div class="mt10">
+              <b style="color: red">{{productt.discountPrice | currency: 'VND'}}</b> &nbsp; <b
+              style="text-decoration: line-through;color: #aaaaaa">{{productt.price | currency: 'VND'}}</b>
+            </div>
+          </div>
+          <div (click)="handlerCompare(product.pid, productt.pid)" class="info-compare " style="cursor: pointer">
+            <a>
+              <mat-icon class="icon-controls">add_circle</mat-icon>
+              <span>So sánh</span>
+            </a>
+          </div>
+          <!--          <button (click)="handlerCompare(product.pid, productt.pid)">compare</button>-->
+          <!--            <div class="mt10 text-center">-->
+          <!--              <button mat-raised-button color="primary" (click)="showProductDetails(productt.pId)">View Details</button>-->
+          <!--            </div>-->
+
+        </mat-grid-tile>
+      </mat-grid-list>
+      <div class="owl-nav">
+        <button (click)="previous()" [disabled]="pageNumber ==0" class="owl-prev" color="warn" mat-stroked-button
+                role="presentation">
+          <span aria-label="Previous"><</span>
+        </button>
+      </div>
+
+      <div class="owl-nav1">
+        <button (click)="next()" class="owl-prev1" color="warn" mat-stroked-button role="presentation">
+          <span aria-label="Previous">></span>
+        </button>
+      </div>
+    </div>
+    <div class="container card mt30">
+      <div class="row">
+        <h1 class="mt20 text-center">Bình luận {{product.title}}</h1>
+        <form (ngSubmit)="addComment(product.pid)" [formGroup]="formComment" class="text-center">
+          <div class="text-center container-fluid">
+            <div class="form-outline w-100 mt10">
+              <br>
+              <mat-form-field appearance="fill" style="width: 90%">
+                <mat-label>Bình luận</mat-label>
+                <textarea [(ngModel)]="comment.content" formControlName="content" matInput
+                          placeholder="Nhập bình luận..."
+                          rows="7" type="text"></textarea>
+                <mat-hint
+                  *ngIf="(formComment.controls['content'].dirty || formComment.controls['content'].touched) && formComment.hasError('required', 'content')"
+                  class="text-danger">Vui lòng nhập bình luận !!
+                </mat-hint>
+              </mat-form-field>
+              <button [disabled]="formComment.invalid" class="mt20 text-center" color="primary" mat-flat-button
+                      type="submit">Gửi bình luận
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <div *ngFor="let comment of product.comment">
+          <div class="item">
+            <div class="avt">
+              <img src="{{comment.user.avatar}}">
+            </div>
+            <div class="info">
+              <p><strong class="name">{{comment.user.fullName}}</strong></p>
+              <p>
+                <label>
+                  <i>{{comment.date | date: 'dd-MM-yyyy, h:mm a'}}</i>
+                </label>
+              </p>
+              <div class="content">
+                {{comment.content}}
+              </div>
+              <div class="childs">
+                <div class="comment-list">
+                  <div class="item">
+                    <div class="avt">
+                      <img alt="" src="">
+                    </div>
+                    <div class="info">
+                      <p>
+                        <strong class="name">
+                          Do My ling
+                        </strong>
+                      </p>
+                      <p>
+                        <label>
+                          <i>12 gio truoc</i>
+                        </label>
+                      </p>
+                      <div class="content">adsfweews</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="replyHolder replyCommentHolder" style="display: none">
+                  <input placeholder="Nhap binh luan" type="text">
+                  <button>
+                    <i class="icon-sending"></i>
+                  </button>
+                </div>
+                <div class="form-container">
+                  <form>
+                    <div class="rc-form comment-form">
+                      <div class="row">
+                        <div class="col">
+                          <div class="control">
+                            <textarea placeholder="noi dung" title="noi dung"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <p class="note">
+                            adsasdadsffd
+                          </p>
+                        </div>
+                        <div class="col col-end">
+                          <button>
+                            <i class="icon-sending"></i>Gui binh luan
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+<br>
+<app-footer></app-footer>

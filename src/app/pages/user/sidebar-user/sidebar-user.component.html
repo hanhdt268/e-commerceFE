@@ -1,0 +1,166 @@
+<!--<div class="wrapper">-->
+<!--  <nav id="sidebar">-->
+<!--    <div class="sidebar-header">-->
+<!--      <h3 [routerLink]="'/client-dashboard/0'">Bootstrap Sidebar</h3>-->
+<!--    </div>-->
+<!--    <ul class="list-unstyled components">-->
+<!--      <li class="activee"-->
+<!--          *ngFor="let item of category">-->
+<!--        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"-->
+<!--           [class.active]="item.cId === this.demo" (click)="handlerManufacturer(item.cId)"-->
+<!--           class="dropdown-toggle arrow-left">{{item.title}}</a>-->
+<!--        <ul class="collapse list-unstyled item"  id="homeSubmenu">-->
+<!--          <li >-->
+<!--            <a *ngFor="let i of category.manufacturers"  style="cursor: pointer"-->
+<!--               [routerLink]="'/client-dashboard/'+i.mId">{{i.title}}</a>-->
+<!--          </li>-->
+<!--        </ul>-->
+<!--      </li>-->
+<!--    </ul>-->
+<!--  </nav>-->
+<!--<nav class="navbar">-->
+<!--  <div class="logo_item">-->
+<!--    <i class="bx bx-menu" id="sidebarOpen"></i>-->
+<!--    <img src="images/logo.png" alt="">CodingNepal-->
+<!--  </div>-->
+
+<!--  <div class="search_bar">-->
+<!--    <input type="text" placeholder="Search"/>-->
+<!--  </div>-->
+
+<!--  <div class="navbar_content">-->
+<!--    <i class="bi bi-grid"></i>-->
+<!--    <i class='bx bx-sun' id="darkLight"></i>-->
+<!--    <i class='bx bx-bell'></i>-->
+<!--    <img src="images/profile.jpg" alt="" class="profile"/>-->
+<!--  </div>-->
+<!--</nav>-->
+
+<!-- sidebar -->
+<nav class="sidebar">
+  <div class="menu_content">
+    <ul *ngIf="categories" class="menu_items">
+      <div class="menu_title menu_dahsboard"></div>
+      <li [routerLink]="'/homepage/0'" class="item">
+        <div class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-grid-alt"></i>
+              </span>
+          <span class="navlink">Tất cả sản phẩm</span>
+        </div>
+      </li>
+      <!-- duplicate or remove this li tag if you want to add or remove navlink with submenu -->
+      <!-- start -->
+      <li *ngFor="let item of categories" class="item">
+        <div #submenu_item class="nav_link submenu_item"
+        >
+              <span *ngIf="item.title === 'Laptop'" class="navlink_icon">
+                <i class="bx bx-laptop"></i>
+              </span>
+          <span *ngIf="item.title === 'Accessory'" class="navlink_icon">
+         <i class='bx bx-mouse-alt'></i>
+              </span>
+          <span *ngIf="item.title === 'SmartPhone'" class="navlink_icon">
+     <i class='bx bx-mobile'></i>
+              </span>
+          <span class="navlink"
+          >{{item.title}}</span>
+          <i class="bx bx-chevron-right arrow-left"></i>
+        </div>
+
+        <ul *ngFor="let i of item.manufacturers" class="menu_items submenu">
+          <a
+            [routerLink]="'/homepage/'+i.manuId"
+            class="nav_link sublink">{{i.title}}</a>
+        </ul>
+      </li>
+      <!-- end -->
+
+      <!-- duplicate this li tag if you want to add or remove  navlink with submenu -->
+      <!-- start -->
+      <!--      <li class="item" *ngFor="let item of category">-->
+      <!--        <div href="#" class="nav_link submenu_item" #submenu_item>-->
+      <!--              <span class="navlink_icon">-->
+      <!--                <i class="bx bx-grid-alt"></i>-->
+      <!--              </span>-->
+      <!--          <span class="navlink">{{item.title}}</span>-->
+      <!--          <i class="bx bx-chevron-right arrow-left"></i>-->
+      <!--        </div>-->
+
+      <!--        <ul class="menu_items submenu" *ngFor="let i of category[2]?.manufacturers">-->
+      <!--          <a href="#" class="nav_link sublink">{{i.title}}</a>-->
+      <!--        </ul>-->
+      <!--      </li>-->
+      <li class="item">
+        <div class="nav_link submenu_item">
+              <span class="navlink_icon">
+               <i class='bx bxs-watch-alt'></i>
+              </span>
+          <span class="navlink">Smartwatch</span>
+        </div>
+      </li>
+      <li class="item">
+        <div class="nav_link submenu_item">
+              <span class="navlink_icon">
+               <i class='bx bxs-printer'></i>
+              </span>
+          <span class="navlink">PC, Máy in</span>
+        </div>
+      </li>
+      <li class="item">
+        <div class="nav_link submenu_item">
+              <span class="navlink_icon">
+               <i class='bx bx-credit-card-front'></i>
+              </span>
+          <span class="navlink">Sim, thẻ cào</span>
+        </div>
+      </li>
+      <li class="item" routerLink="/admin/categories">
+        <div class="nav_link submenu_item">
+              <span class="navlink_icon">
+               <i class='bx bx-devices'></i>
+              </span>
+          <span class="navlink">Máy cũ giá rẻ</span>
+        </div>
+      </li>
+      <!-- end -->
+    </ul>
+
+
+    <!-- Sidebar Open / Close -->
+    <div class="bottom_content">
+      <div class="bottom expand_sidebar">
+        <span> Expand</span>
+        <i class='bx bxs-right-arrow-circle'></i>
+      </div>
+      <div class="bottom collapse_sidebar">
+        <span> Collapse</span>
+        <i class='bx bxs-left-arrow-circle'></i>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Page Content  -->
+<!--<mat-card>-->
+<!--  <mat-action-list>-->
+<!--    <div class="container" *ngIf="category">-->
+<!--      <div matSubheader>Thể loại có sẳn</div>-->
+<!--      <button mat-list-item routerLink="/client-dashboard/0">-->
+<!--        Tất cả sản phẩm-->
+<!--      </button>-->
+
+
+<!--      &lt;!&ndash;      <button>&ndash;&gt;-->
+<!--      &lt;!&ndash;        <li class="select-box" *ngFor="let item of category">&ndash;&gt;-->
+<!--      &lt;!&ndash;              <span class="arrow-left" [class.active]="item.cId === this.demo" (click)="handlerManufacturer(item.cId)"&ndash;&gt;-->
+<!--      &lt;!&ndash;                    id="spans">{{item.title}} </span>&ndash;&gt;-->
+<!--      &lt;!&ndash;          <div class="item">&ndash;&gt;-->
+<!--      &lt;!&ndash;            <li *ngFor="let i of category.manufacturers">{{i.title}}</li>&ndash;&gt;-->
+<!--      &lt;!&ndash;          </div>&ndash;&gt;-->
+<!--      &lt;!&ndash;        </li>&ndash;&gt;-->
+<!--      &lt;!&ndash;      </button>&ndash;&gt;-->
+<!--    </div>-->
+<!--  </mat-action-list>-->
+<!--</mat-card>-->
+

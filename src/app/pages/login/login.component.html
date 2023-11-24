@@ -1,0 +1,97 @@
+<div class="bootstrap-wrapper">
+  <div class="container-register100">
+    <div class="row" style="margin-top: 20px">
+      <div class="wrap-login100 col-md-6 offset-md-3">
+        <h1 class="login100-form-title mt20 p-b-53" style="text-align: center; color: #1d2124"><b>Sign In</b></h1>
+        <!--        {{user | json}}-->
+        <form (ngSubmit)="formSubmit()" [formGroup]="form" class="login100-form">
+
+          <!--          Username field-->
+          <div class="social">
+            <a class="btn-face m-b-20 mb10 " href="#">
+              <i class="fab fa-facebook-square"></i>
+              Facebook
+            </a>
+            <a class="btn-google m-b-20 mb10" href="#">
+              <img alt="Google" src="assets/icon-google.png">
+              Google
+            </a>
+          </div>
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Username</mat-label>
+            <input [(ngModel)]="loginData.username" class="input100" formControlName="username" matInput
+                   placeholder="Enter Here"
+                   required>
+
+            <span class="focus-input100"></span>
+            <mat-hint
+              *ngIf="(form.controls['username'].dirty || form.controls['username'].touched) && form.hasError('required', 'username')"
+              class="text-danger">UserName is required !!
+            </mat-hint>
+          </mat-form-field>
+
+          <!--          Password field-->
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Password</mat-label>
+            <input [(ngModel)]="loginData.password" formControlName="password" matInput
+                   placeholder="Enter Here" required
+                   type="password">
+            <span class="focus-input100"></span>
+            <mat-hint
+              *ngIf="(form.controls['password'].dirty ||form.controls['username'].touched) && form.hasError('required', 'password')"
+              class="text-danger">Password is required !!
+            </mat-hint>
+          </mat-form-field>
+
+          <div class="container">
+            <a routerLink="/signup">Sign Up?</a>
+          </div>
+          <div class="container">
+            <a routerLink="/forgot-password">Forgot Password?</a>
+          </div>
+          <div class="container text-center" style="padding: 30px">
+            <button [disabled]="form.invalid" class="full" color="primary" mat-raised-button style="margin-bottom: 10px"
+                    type="submit">Sign
+              In
+            </button>
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--<section class="img-fluid">-->
+<!--  <div class="form-box">-->
+<!--    <div class="form-value">-->
+<!--      <form [formGroup]="form" (ngSubmit)="formSubmit()">-->
+<!--        <h2>Login</h2>-->
+<!--        <div class="inputbox" >-->
+<!--&lt;!&ndash;          <mat-icon mat-list-icon>shopping_cart</mat-icon>&ndash;&gt;-->
+<!--          <input  [(ngModel)]="loginData.username" formControlName="username" type="text" required>-->
+<!--          <label > Email</label>-->
+<!--        </div>-->
+<!--        <div class="inputbox" >-->
+
+<!--          <input [(ngModel)]="loginData.password" formControlName="password" type="password" required>-->
+<!--          <label >Password</label>-->
+<!--          <div class="mt20">-->
+<!--            <small  *ngIf="(form.controls['password'].dirty ||form.controls['username'].touched) && form.hasError('required', 'password')" class="text-danger">Password is required</small>-->
+<!--          </div>-->
+<!--        </div>-->
+
+<!--        <div class="forget">-->
+<!--          <label for=""><input type="checkbox">Remember Me  <a>Forget Password</a></label>-->
+
+<!--        </div>-->
+<!--        <button type="submit">Log in</button>-->
+<!--        <div class="register">-->
+<!--          <p>Don't have a account <a routerLink="/signup">Register</a></p>-->
+<!--        </div>-->
+<!--      </form>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+
+

@@ -1,0 +1,93 @@
+<div class="mt10">
+  <mat-form-field appearance="outline" class="full-width w-50">
+    <mat-label>Search any product</mat-label>
+    <input #searchKeyword
+           (keyup)="searchByKeyword(searchKeyword.value)" matInput name="searchKey" placeholder="Enter Here" required
+           type="text">
+    <span class="focus-input100"></span>
+  </mat-form-field>
+  <br>
+  <button [routerLink]="'/admin/product/0'" color="accent" mat-raised-button>
+    All
+  </button>
+  <button *ngFor="let item of category" [routerLink]="'/admin/product/'+item.cateId" class="ml10" color="accent"
+          mat-raised-button>
+    {{item.title}}
+  </button>
+  <table [dataSource]="productDetails | paginate
+              : {
+                  itemsPerPage: tableSize,
+                  currentPage: pageNumber,
+                  totalItems: count,
+                  id: 'lid',
+                }" class="mat-elevation-z8 mt20" mat-table matSort>
+
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+
+    <!-- Position Column -->
+    <ng-container matColumnDef="Id">
+      <th *matHeaderCellDef mat-header-cell mat-sort-header="pid"> STT</th>
+      <td *matCellDef="let element;let i = index" mat-cell> {{i + 1}} </td>
+    </ng-container>
+    <ng-container matColumnDef="Product Image">
+      <th *matHeaderCellDef mat-header-cell> Product Image</th>
+      <td *matCellDef="let element" mat-cell><img class="img-fluid" height="100px" src="{{element.images}}"
+                                                  width="100px"></td>
+    </ng-container>
+    <!-- Name Column -->
+    <ng-container matColumnDef="Product Name">
+      <th *matHeaderCellDef mat-header-cell mat-sort-header="title"> Product Name</th>
+      <td *matCellDef="let element" mat-cell> {{element.title}} </td>
+    </ng-container>
+
+    <!-- Weight Column -->
+    <ng-container matColumnDef="Product ActualPrice">
+      <th *matHeaderCellDef mat-header-cell mat-sort-header="price"> Product ActualPrice</th>
+      <td *matCellDef="let element" mat-cell> {{element.price | currency: 'VND'}} </td>
+    </ng-container>
+
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="Product DiscountPrice">
+      <th *matHeaderCellDef mat-header-cell mat-sort-header="discountPrice"> Product DiscountPrice</th>
+      <td *matCellDef="let element" mat-cell> {{element.discountPrice | currency: 'VND'}} </td>
+    </ng-container>
+
+    <!-- images Column -->
+    <ng-container matColumnDef="Actions">
+      <th *matHeaderCellDef mat-header-cell> Actions</th>
+      <td *matCellDef="let element" mat-cell>
+        <!-- <button (click)="openImages(element)" class="img-fluid" color="primary" mat-icon-button>
+          <mat-icon>images</mat-icon>
+        </button> -->
+        <button (click)="editProductDetails(element.pid)" color="accent"
+                mat-icon-button>
+          <mat-icon>edit</mat-icon>
+        </button>
+        <button (click)="delete(element.pid)" color="warn" mat-icon-button>
+          <mat-icon>delete</mat-icon>
+        </button>
+      </td>
+    </ng-container>
+    <!-- edit Column -->
+
+
+    <tr *matHeaderRowDef="displayedColumns" mat-header-row></tr>
+    <tr *matRowDef="let row; columns: displayedColumns;" mat-row></tr>
+
+  </table>
+
+</div>
+<div class="d-flex justify-content-center mt20">
+  <pagination-controls (pageChange)="onTableDataChange($event)"
+                       id="lid"
+                       nextLabel="Next"
+                       previousLabel="Prev"
+                       style="font-size: 20px;"
+  >
+  </pagination-controls>
+  <!--  <mat-paginator #paginator [pageSizeOptions]="[5, 10, 40]" showFirstLastButtons></mat-paginator>-->
+</div>
+
+
+

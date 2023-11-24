@@ -1,0 +1,40 @@
+<mat-card>
+    <!--  <button mat-raised-button color="primary" class="text-center" [routerLink]="'/admin/add-manufacturer'">Add Manufacturer</button>-->
+    <h1 class="mt10">Add New Manufacturer</h1>
+    <mat-card-content>
+      <div class="bootstrap-wrapper">
+        <div class="row">
+          <div class="col-md-8 offset-md-2">
+            <form [formGroup]="form" (ngSubmit)="formSubmit()">
+              <mat-form-field appearance="outline" class="w100">
+                <mat-label>Title</mat-label>
+                <input [(ngModel)]="manufacturer.title" autofocus matInput formControlName="title"
+                       placeholder="Enter Here" required
+                       type="text">
+                <mat-hint
+                  *ngIf="(form.controls['title'].dirty || form.controls['title'].touched) && form.hasError('required', 'title')"
+                  class="text-danger">Vui lòng nhập hãng sản xuất !!
+                </mat-hint>
+              </mat-form-field>
+              <mat-form-field appearance="fill" class="w100 mt10">
+                <mat-label>Category</mat-label>
+                <mat-select [(ngModel)]="manufacturer.category.cateId" formControlName="category">
+                  <mat-option *ngFor="let item of categories" [value]="item.cateId">
+                    {{item.title}}
+                  </mat-option>
+                </mat-select>
+                <mat-hint
+                  *ngIf="(form.controls['category'].dirty || form.controls['category'].touched) && form.hasError('required', 'category')"
+                  class="text-danger">Vui lòng chọn thể loại !!
+                </mat-hint>
+              </mat-form-field>
+              <div class="container mt15 text-center">
+                <button type="submit" [disabled]="form.invalid" color="primary" mat-raised-button>Add</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+  

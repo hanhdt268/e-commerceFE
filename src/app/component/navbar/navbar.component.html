@@ -1,0 +1,244 @@
+<mat-toolbar color="primary">
+  <div [class.logi-g]="!isLoggedIn" [style.width.px]="width" class="demo123">
+    <button *ngIf="isLoggedIn && isAmin()" aria-label="Example icon-button with menu icon" class="example-icon"
+            mat-icon-button
+            routerLink="/homepage/0">
+      <mat-icon>storefront</mat-icon>
+      <span class="ml10">COSY</span>
+    </button>
+    <button *ngIf="isLoggedIn && !isAmin()" aria-label="Example icon-button with menu icon" class="example-icon"
+            mat-icon-button
+            routerLink="/admin">
+      <mat-icon>storefront</mat-icon>
+      <span class="ml10">Admin</span>
+    </button>
+    <div *ngIf="isLoggedIn && isAmin()" class="search-g">
+      <form (ngSubmit)="handler()" [formGroup]="fromSearch" class="header__search">
+        <div (click)="handlerShow()">
+          <input #fondovalor (clickOutside)="clickOutside()" (keyup)="demo()" [(ngModel)]="valueInput"
+                 class="input-search"
+                 formControlName="search"
+                 maxlength="100"
+                 placeholder="Bạn tìm gì..." required type="text">
+          <button [disabled]="fondovalor.value == ''" type="submit">
+            <i class="icon-search"></i>
+          </button>
+        </div>
+        <div *ngIf="isShow" class="select-box">
+          <div class="history">
+            <span>Lịch sử tìm kiếm</span>
+            <div (click)="removeScroll()" class="close">
+              <span style="margin-left: 9px; font-size: 15px">x</span>
+            </div>
+          </div>
+          <span *ngFor="let item of this.valueSearchInput | slice: 0 : 5;" class="select">
+              <a (click)="handlerSearch(item)">{{item}}</a>
+            </span>
+        </div>
+        <div *ngIf="isShowSearch" class="select-box">
+          <div class="suggest_product">
+            <span style="margin-left: 5px">Gợi ý tìm kiếm</span>
+          </div>
+          <div (click)="handleSelect(i.pid)" *ngFor="let i of dataProductDetails"
+               class="value-select-box" style="overflow-x: hidden">
+            <div class="row">
+              <div class="col-3">
+                <img class="img-fluid " src="{{i.images}}" style="width: 70px;height: 60px; margin-left: 20px">
+              </div>
+              <div class="col-9">
+                <div style="display: flex;flex-direction: column;">
+                  <span style="display: block;text-wrap: wrap;line-height: 20px">{{ i.title}}</span>
+                  <span style="color: #ec0e0e;margin-bottom: 10px">{{i.discountPrice | currency: 'VND'}}</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </form>
+      <button [attr.data-product-count]="shopping" class="shopping_cart"
+              mat-button routerLink="/cart">
+        <mat-icon mat-list-icon>shopping_cart</mat-icon>
+      </button>
+    </div>
+
+    <!--  <button *ngIf="isLoggedIn" [attr.data-product-count]="shopping" mat-stroked-button-->
+    <!--          routerLink="/cart" class="shopping_cart">-->
+    <!--    <mat-icon mat-list-icon>shopping_cart</mat-icon>-->
+    <!--  </button>-->
+    <div *ngIf="!isLoggedIn">
+      <button [routerLink]="'/login'" aria-label="Example icon-button with heart icon"
+              class="example-icon favorite-icon"
+              mat-icon-button routerLinkActive="active"
+              style="font-size: 14px;">Login
+      </button>
+      <button [routerLink]="'/signup'" aria-label="Example icon-button with share icon"
+              class="example-icon"
+              mat-icon-button routerLinkActive="active"
+              style="font-size: 14px;">Register
+      </button>
+    </div>
+
+
+    <nav *ngIf="isLoggedIn && user" class="navbar navbar-expand-lg navbar-light">
+      <!--  <a class="navbar-brand" href="#">Navbar</a>-->
+      <div (clickOutside)="clickOutside1()" *ngIf="isLoggedIn && isClient()"
+           class="dropdown1">
+        <span #notify (click)="deleteCount()" [attr.data-product-count]="notification" class="shopping_cart1"
+              style="cursor: pointer"
+        >
+          <mat-icon mat-list-icon>notifications</mat-icon>
+        </span>
+        <div *ngIf="isShowNotifications" class="notifications">
+          <div class="suggest_product">
+            <span style="margin-left: 5px">Đơn hàng đã mua</span>
+          </div>
+          <div *ngFor="let item of notifications;" class="value-select-box">
+            <div (click)="handlerNotify()" class="row">
+              <div class="col-3">
+                <img class="img-fluid " src="{{item.product.images}}"
+                     style="width: 70px;height: 60px; margin-left: 20px">
+              </div>
+              <div class="col-9">
+                <div style="display: flex;flex-direction: column;">
+                  <span style="display: block;text-wrap: wrap;line-height: 20px">{{ item.product.title}}</span>
+                  <span
+                    style="color: #ec0e0e;margin-bottom: 10px; display: flex; justify-content: end">{{item.date | date: 'dd-MM-yyyy'}}</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!--        <div class="dropdown-options">-->
+        <!--          <h5 style="border: 1px;color: black;background-color: white">Đơn hàng đã mua</h5>-->
+        <!--          <div *ngFor="let item of notifications;let i = index">-->
+        <!--            <a (click)="handlerNotify()" *ngIf="i < 4"><img class="img-fluid" height="70px"-->
+        <!--                                                            src="{{item.product.images}}"-->
+        <!--                                                            style="display: block;text-wrap: wrap;"-->
+        <!--                                                            width="70px"> {{item.product.title}}-->
+        <!--              <p style="display: flex; justify-content: end">{{item.date | date: 'dd-MM-yyyy'}}</p>-->
+        <!--            </a>-->
+        <!--          </div>-->
+        <!--        </div>-->
+      </div>
+      <div class="container">
+        <div class="user">
+          <div class="img-case">
+            <img class="img-fluid" height="50px" src="{{user.avatar}}" style="border-radius: 50%" width="30px">
+          </div>
+        </div>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <button aria-expanded="false" aria-haspopup="true"
+                    class="nav-link"
+                    data-toggle="dropdown"
+                    id="navbarDropdown"
+                    mat-button style="color: white" type="button">
+              {{user.fullName}}
+            </button>
+            <div aria-labelledby="navbarDropdown" class="dropdown-menu dropdown-menu-right"
+                 style="border: none">
+              <!--          <button (click)="logout()" *ngIf="isLoggedIn && !isAmin()" class="dropdown-item" href="#">Đăng xuất</button>-->
+              <button *ngIf="isLoggedIn && isAmin()" class="dropdown-item" routerLink="/myOrders">Quản lý đơn hàng
+              </button>
+              <button *ngIf="isLoggedIn && isAmin()" class="dropdown-item" routerLink="/profile"
+              >Thông tin cá nhân
+              </button>
+              <button (click)="logout()" *ngIf="isLoggedIn"
+                      class="dropdown-item"
+              >Đăng xuất
+              </button>
+              <!--            <button (click)="logout()" *ngIf="isLoggedIn" class="dropdown-item" href="#">Đăng xuất</button>-->
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+  </div>
+</mat-toolbar>
+<!--  <mat-toolbar-row *ngIf="isLoggedIn && isAmin()">-->
+<!--    <div class="container1">-->
+<!--      <div class="row  text-center">-->
+<!--        <div class="col-md-8 offset-md-3 ">-->
+<!--          <div class="d-flex form-inputs ">-->
+<!--            <div class="search" (click)="handleShow()">-->
+<!--              <div class="demo">-->
+<!--                <input class="form-control w100"-->
+<!--                       [(ngModel)]="valueInput"-->
+<!--                       (input)="searchInput($event)"-->
+<!--                       type="search" placeholder="Tìm kiếm sản phẩm...">-->
+<!--              </div>-->
+<!--              <div class="select-box">-->
+<!-- <span (click)="handleSelect(title.title, title.pId)" [style.display]="!this.isShow ? 'block' : 'none'"-->
+<!--       class="value-select-box" *ngFor="let title of dataProductDetails"><img src="{{title.images}}"-->
+<!--                                                                              width="70px" height="70px"-->
+<!--                                                                              class="img-fluid"> {{title.title | slice : 0: 30}}-->
+<!--   ...</span>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <button style="display: block" mat-flat-button class="test">-->
+<!--              <mat-icon mat-list-icon>search</mat-icon>-->
+<!--            </button>-->
+<!--            <button [attr.data-product-count]="shopping" mat-stroked-button-->
+<!--                    routerLink="/cart" class="shopping_cart">-->
+<!--              <mat-icon mat-list-icon>shopping_cart</mat-icon>-->
+<!--            </button>-->
+
+<!--            &lt;!&ndash;          <div class="shopping-cart" data-product-count="0">&ndash;&gt;-->
+<!--            &lt;!&ndash;            <span class="cart-icon">&#128722;</span>&ndash;&gt;-->
+<!--            &lt;!&ndash;          </div>&ndash;&gt;-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </mat-toolbar-row>-->
+
+
+<!--  <button *ngIf="isLoggedIn && user" aria-label="Example icon-button with share icon" class="example-icon mr20"-->
+<!--          mat-icon-button-->
+<!--          routerLink="/myOrders"-->
+<!--          style="margin-right: 50px">{{user.username}}-->
+<!--  </button>-->
+
+
+<!--</mat-toolbar>-->
+<!--<nav class="navbar navbar-expand-lg navbar-light bg-light">-->
+<!--  &lt;!&ndash;  <a class="navbar-brand" href="#">Navbar</a>&ndash;&gt;-->
+<!--  <button aria-label="Example icon-button with menu icon" class="example-icon" mat-icon-button-->
+<!--          routerLink="/client-dashboard/0">-->
+<!--    <mat-icon>storefront</mat-icon>-->
+<!--    <span class="ml10">Shop ABC</span>-->
+<!--  </button>-->
+<!--  <button *ngIf="!isLoggedIn" [routerLink]="'/login'" aria-label="Example icon-button with heart icon"-->
+<!--          class="example-icon abc favorite-icon mr20 m120"-->
+<!--          mat-icon-button-->
+<!--          routerLinkActive="active">Login-->
+<!--  </button>-->
+<!--  <button *ngIf="!isLoggedIn" [routerLink]="'/signup'" aria-label="Example icon-button with share icon"-->
+<!--          class="example-icon abc ml10"-->
+<!--          mat-icon-button-->
+<!--          routerLinkActive="active">Register-->
+<!--  </button>-->
+<!--  <div class="collapse navbar-collapse" id="navbarSupportedContent">-->
+<!--    <ul class="navbar-nav mr-auto">-->
+<!--      <li style="margin-left: 1300px;" class="nav-item dropdown">-->
+<!--        <button mat-icon-button *ngIf="isLoggedIn && user" class="nav-link"-->
+<!--                id="navbarDropdown"-->
+<!--                role="button"-->
+<!--                data-toggle="dropdown"-->
+<!--                aria-haspopup="true" aria-expanded="false">-->
+<!--          <span style="color:#000;">{{user.username}}</span>-->
+<!--        </button>-->
+<!--        <div style="border: none" class="dropdown-menu" aria-labelledby="navbarDropdown">-->
+<!--          &lt;!&ndash;          <button (click)="logout()" *ngIf="isLoggedIn && !isAmin()" class="dropdown-item" href="#">Đăng xuất</button>&ndash;&gt;-->
+<!--          <a *ngIf="isAmin()" class="dropdown-item" routerLink="/myOrders">Quản lý đơn hàng</a>-->
+<!--          <a *ngIf="isAmin()" class="dropdown-item" href="#">Thông tin cá nhân</a>-->
+<!--          <button (click)="logout()" *ngIf="isLoggedIn" class="dropdown-item" href="#">Đăng xuất</button>-->
+<!--        </div>-->
+<!--      </li>-->
+<!--    </ul>-->
+
+<!--  </div>-->
+<!--</nav>-->
