@@ -32,7 +32,7 @@ export class ReviewComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.product = this._activeRoute.snapshot.data['product'];
+    // this.product = this._activeRoute.snapshot.data['product'];
     console.log(this.data.pid)
     this.getProductById();
 

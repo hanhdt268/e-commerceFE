@@ -10,6 +10,7 @@ import {CategoryService} from "../../../service/category.service";
 import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
 import {ProductEnum} from "../../../_model/productEnum";
 import {FileHandle} from "../../../_model/file-handle.model";
+import {AngularFireStorage} from "@angular/fire/compat/storage";
 
 @Component({
   selector: 'app-update-product',
@@ -89,7 +90,8 @@ export class UpdateProductComponent {
               private _sanitizer: DomSanitizer, private _activeRoute: ActivatedRoute,
               private _categories: CategoryService,
               private _manufacturer: ManufacturerService,
-              private _fb: FormBuilder) {
+              private _fb: FormBuilder,
+              private afStorage: AngularFireStorage) {
   }
 
   ngOnInit(): void {
@@ -158,12 +160,12 @@ export class UpdateProductComponent {
   }
 
   addSubmit() {
-    const productFormData = this.prepareFormData(this.product)
-    this._product.addProduct(productFormData).subscribe({
+    // const productFormData = this.prepareFormData(this.product)
+    this._product.updateProduct(this.product).subscribe({
       next: (data: Product) => {
         Swal.fire('Successfully', 'Add Product Successfully', "success")
         this.formProduct.reset()
-        this.product.productImages = [];
+        this.product.imgChildren = [];
       },
       error: (error) => {
         Swal.fire('Error', '', "error");
@@ -173,21 +175,21 @@ export class UpdateProductComponent {
   }
 
 
-  prepareFormData(product: Product): FormData {
-    const formData = new FormData();
-    formData.append(
-      'product',
-      new Blob([JSON.stringify(product)], {type: 'application/json'}),
-    );
-    for (var i = 0; i < product.productImages.length; i++) {
-      formData.append(
-        'imageFile',
-        product.productImages[i].file,
-        product.productImages[i].file.name
-      )
-    }
-    return formData;
-  }
+  // prepareFormData(product: Product): FormData {
+  //   const formData = new FormData();
+  //   formData.append(
+  //     'product',
+  //     new Blob([JSON.stringify(product)], {type: 'application/json'}),
+  //   );
+  //   for (var i = 0; i < product.productImages.length; i++) {
+  //     formData.append(
+  //       'imageFile',
+  //       product.productImages[i].file,
+  //       product.productImages[i].file.name
+  //     )
+  //   }
+  //   return formData;
+  // }
 
   onFileSelected(event: any) {
     // console.log(event)
@@ -200,7 +202,8 @@ export class UpdateProductComponent {
           window.URL.createObjectURL(file)
         )
       }
-      this.product.productImages.push(fileHandle);
+      // @ts-ignore
+      this.product.imgChildren.push(fileHandle);
     }
 
 
@@ -214,7 +217,19 @@ export class UpdateProductComponent {
     // reader.readAsDataURL(file);
   }
 
-  removeImage(i: number) {
-    this.product.productImages.splice(i, 1);
+  removeImage(file: any, i: number) {
+    this.product.imgChildren.splice(i, 1);
+    const url = this.delete(file);
+    console.log(url)
+  }
+
+  async delete(url: any) {
+    return this.afStorage.storage.refFromURL(url).delete();
+  }
+
+  downloadUrl(event: string[]) {
+    // @ts-ignore
+    this.product.imgChildren.push(event)
+    console.log(this.product.imgChildren)
   }
 }

@@ -652,5 +652,23 @@ strong {
   font-size: 14px;
 }
 
+.freeship {
+  background: #1d41a2 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0 0 5px 0;
+}
 
+.freeship span {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 300;
+  line-height: 30px;
+  margin: 0;
+}
 

@@ -9,6 +9,7 @@ import {CategoryService} from 'src/app/service/category.service';
 import {ManufacturerService} from 'src/app/service/manufacturer.service';
 import {ProductService} from 'src/app/service/product.service';
 import Swal from 'sweetalert2';
+import {AngularFireStorage} from "@angular/fire/compat/storage";
 
 @Component({
   selector: 'app-addproduct-ac',
@@ -29,7 +30,7 @@ export class AddproductAcComponent implements OnInit {
     images: '',
     active: true,
     quantum: 0,
-    productImages: [],
+    imgChildren: [],
     productEnum: [],
     accessoryConfig: {
       compatible: '',
@@ -58,7 +59,8 @@ export class AddproductAcComponent implements OnInit {
               private _sanitizer: DomSanitizer, private _activeRoute: ActivatedRoute,
               private _categoriess: CategoryService,
               private _manufacturer: ManufacturerService,
-              private _fb: FormBuilder) {
+              private _fb: FormBuilder,
+              private afStorage: AngularFireStorage) {
   }
 
   ngOnInit(): void {
@@ -110,12 +112,12 @@ export class AddproductAcComponent implements OnInit {
 
 
   addSubmit() {
-    const productFormData = this.prepareFormData(this.product)
-    this._product.addProduct(productFormData).subscribe({
+    // const productFormData = this.prepareFormData(this.product)
+    this._product.addProduct(this.product).subscribe({
       next: (data: Product) => {
         Swal.fire('Successfully', 'Add Product Successfully', "success")
         this.formProduct.reset()
-        this.product.productImages = [];
+        this.product.imgChildren = [];
       },
       error: (error) => {
         Swal.fire('Error', '', "error");
@@ -129,21 +131,21 @@ export class AddproductAcComponent implements OnInit {
     this.product.images = event
   }
 
-  prepareFormData(product: Product): FormData {
-    const formData = new FormData();
-    formData.append(
-      'product',
-      new Blob([JSON.stringify(product)], {type: 'application/json'}),
-    );
-    for (var i = 0; i < product.productImages.length; i++) {
-      formData.append(
-        'imageFile',
-        product.productImages[i].file,
-        product.productImages[i].file.name
-      )
-    }
-    return formData;
-  }
+  // prepareFormData(product: Product): FormData {
+  //   const formData = new FormData();
+  //   formData.append(
+  //     'product',
+  //     new Blob([JSON.stringify(product)], {type: 'application/json'}),
+  //   );
+  //   for (var i = 0; i < product.productImages.length; i++) {
+  //     formData.append(
+  //       'imageFile',
+  //       product.productImages[i].file,
+  //       product.productImages[i].file.name
+  //     )
+  //   }
+  //   return formData;
+  // }
 
   onFileSelected(event: any) {
     // console.log(event)
@@ -156,7 +158,8 @@ export class AddproductAcComponent implements OnInit {
           window.URL.createObjectURL(file)
         )
       }
-      this.product.productImages.push(fileHandle);
+      // @ts-ignore
+      this.product.imgChildren.push(fileHandle);
     }
 
 
@@ -170,8 +173,19 @@ export class AddproductAcComponent implements OnInit {
     // reader.readAsDataURL(file);
   }
 
-  removeImage(i: number) {
-    this.product.productImages.splice(i, 1);
+  removeImage(file: any, i: number) {
+    this.product.imgChildren.splice(i, 1);
+    const url = this.delete(file)
+    console.log(file)
   }
 
+  async delete(url: any) {
+    return this.afStorage.storage.refFromURL(url).delete();
+  }
+
+  downloadUrl(event: string[]) {
+    // @ts-ignore
+    this.product.imgChildren.push(event)
+    console.log(this.product.imgChildren)
+  }
 }

@@ -12,6 +12,7 @@ import {RouterLink, RouterLinkActive} from "@angular/router";
 import {MatListModule} from "@angular/material/list";
 import {MatCardModule} from "@angular/material/card";
 import {AddShipperComponent} from "../add-shipper/add-shipper.component";
+import {NgxPaginationModule} from "ngx-pagination";
 
 @Component({
   selector: 'app-order-details',
@@ -24,7 +25,7 @@ import {AddShipperComponent} from "../add-shipper/add-shipper.component";
     ]),
   ],
   standalone: true,
-  imports: [MatTableModule, NgFor, MatButtonModule, NgIf, MatIconModule, RouterLink, MatListModule, MatCardModule, CurrencyPipe, NgClass, DatePipe, RouterLinkActive],
+  imports: [MatTableModule, NgFor, MatButtonModule, NgIf, MatIconModule, RouterLink, MatListModule, MatCardModule, CurrencyPipe, NgClass, DatePipe, RouterLinkActive, NgxPaginationModule],
 })
 
 export class OrderDetailsComponent implements OnInit, AfterViewInit {
@@ -41,6 +42,9 @@ export class OrderDetailsComponent implements OnInit, AfterViewInit {
   innerDisplayedColumns = ['pId', 'title', 'discountPrice', 'quantity', 'total']
   columnsToDisplayWithExpand = [...this.columnsToDisplay, 'expand'];
 
+  count: number = 0;
+  tableSize: number = 10;
+  pageNumber = 0
 
   constructor(private _order: OrderService, private _dialog: MatDialog) {
   }
@@ -96,12 +100,22 @@ export class OrderDetailsComponent implements OnInit, AfterViewInit {
       width: "35%",
       height: "220px",
     })
-    dialogRef.afterOpened().subscribe(result => {
+    dialogRef.afterClosed().subscribe(result => {
       this.markOrderAsConfirm(orderId);
     })
 
   }
 
+  onTableDataChange(event: any) {
+    this.pageNumber = event;
+    this.getAllOrderDetails("All");
+  }
+
+  onTableSizeChange(event: any): void {
+    this.tableSize = event.target.value;
+    this.pageNumber = 1;
+    this.getAllOrderDetails("All");
+  }
 
   confirm(orderId: any) {
     this._order.markOrderAsConfirm(orderId).subscribe({

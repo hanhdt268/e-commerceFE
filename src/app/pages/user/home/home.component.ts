@@ -7,7 +7,6 @@ import {ManufacturerService} from "../../../service/manufacturer.service";
 import {OrderService} from "../../../service/order.service";
 import {LoginService} from "../../../service/login.service";
 import Swal from "sweetalert2";
-import {map} from "rxjs";
 
 
 @Component({
@@ -28,7 +27,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   isShow: boolean = true;
   @Input() shopping: any = 0;
 
-  productDetails: any = [];
+  productDetails: Product[] = [];
   productDetails1: any = [];
   dataProductDetails: any = [];
   valueInput: string = ''
@@ -72,19 +71,26 @@ export class HomeComponent implements OnInit, AfterViewInit {
         console.log("load specific")
       }
     })
-    // this.showSlides()
+    this.showSlides()
   }
 
   showSlides() {
+    let i = 0;
     let slides: any = document.getElementsByClassName("slider");
-    for (let i = 0; i < slides.length; i++) {
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
     }
+
     this.slideIndex++;
     if (this.slideIndex > slides.length) {
       this.slideIndex = 1;
     }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
     slides[this.slideIndex - 1].style.display = "block";
+    dots[this.slideIndex - 1].className += " active";
     const timeOut = setTimeout(() => {
       this.showSlides()
     }, 2000)
@@ -92,26 +98,18 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
   public getAllProduct(searchKey: string = "") {
-    this._product.getProducts(searchKey)
-      .pipe(
-        // @ts-ignore
-        map((x: Product[], i) => x.map((product: Product) => this._imageProcessing.createImages(product)))
-      )
+    this._product.getAllProduct()
       .subscribe({
         // @ts-ignore
         next: (data: Product[]) => {
           this.productDetails = data
-         
+
           // const test = this.productDetails.map((re: any) => re.reviews).reduce((acc: any, cur: any) =>
           //   acc + cur.length, 0)
           // console.log(test)
 
 
-          if (data.length == 8) {
-            this.showLoadMoreProduct = true
-          } else {
-            this.showLoadMoreProduct = false
-          }
+          this.showLoadMoreProduct = data.length == 8;
 
         },
         error: (error) => {
@@ -123,10 +121,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   public getProductByManufacturer(searchKey: string = "") {
     this._manufacturer.getProductByManufacturer(this.manuId, this.pageNumber, searchKey)
-      .pipe(
-        // @ts-ignore
-        map((x: Product[], i) => x.map((product: Product) => this._imageProcessing.createImages(product)))
-      )
+
       .subscribe({
         // @ts-ignore
         next: (data: Product[]) => {
@@ -188,6 +183,32 @@ export class HomeComponent implements OnInit, AfterViewInit {
     //   }
     // }
     // console.log(total)
-    return this.productDetails.reviews.length
+    // return this.productDetails.reviews.length
   }
+
+  plusSlides(number: number) {
+    // this.showSlides1(this.slideIndex += number);
+  }
+
+  // showSlides1(n: any) {
+  //   let i;
+  //   let slides = document.getElementsByClassName("slider");
+  //   let dots = document.getElementsByClassName("dot");
+  //   if (n > slides.length) {
+  //     this.slideIndex = 1
+  //   }
+  //   if (n < 1) {
+  //     this.slideIndex = slides.length
+  //   }
+  //   for (i = 0; i < slides.length; i++) {
+  //     // @ts-ignore
+  //     slides[i].style.display = "none";
+  //   }
+  //   for (i = 0; i < dots.length; i++) {
+  //     dots[i].className = dots[i].className.replace(" active", "");
+  //   }
+  //   // @ts-ignore
+  //   slides[this.slideIndex - 1].style.display = "block";
+  //   dots[this.slideIndex - 1].className += " active";
+  // }
 }

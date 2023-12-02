@@ -506,8 +506,10 @@
           </div>
         </div> -->
         <div>
-          <input #selectFile (change)="onFileSelected($event)" multiple type="file"
-                 value="select">
+          <!--          <input #selectFile (change)="onFileSelected($event)" multiple type="file"-->
+          <!--                 value="select">-->
+          <app-upload-mutiple-file (giveUrl)="downloadUrl($event)"></app-upload-mutiple-file>
+
         </div>
         <br>
         <div class="mt10">
@@ -516,10 +518,10 @@
           <div class="row">
 
             <mat-grid-list cols="4" rowHeight="1:1">
-              <mat-grid-tile *ngFor="let file of product.productImages; let i = index">
+              <mat-grid-tile *ngFor="let file of product.imgChildren; let i = index">
                 <div style="position: relative">
-                  <span (click)="removeImage(i)" class="btn-remove-image">x</span>
-                  <img [src]="file.url" class="img-fluid" width="100%">
+                  <span (click)="removeImage(file,i)" class="btn-remove-image">x</span>
+                  <img class="img-fluid" src="{{file}}" width="100%">
                 </div>
               </mat-grid-tile>
             </mat-grid-list>

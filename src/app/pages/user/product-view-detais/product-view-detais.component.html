@@ -3,14 +3,14 @@
     <div class="row">
       <div class="col-md-7">
         <div class="card image-container p-3">
-          <img [src]="product.productImages[selectedProductIndex].url" class="image-zone">
+          <img [src]="product.imgChildren[selectedProductIndex]" class="image-zone">
         </div>
         <div class="mt-2">
-          <mat-grid-list cols="3" gutterSize="10" rowHeight="4:3" style="width: 98%;">
+          <mat-grid-list cols="5" gutterSize="10" rowHeight="4:3" style="width: 98%;">
             <mat-grid-tile (click)="changeIndex(i)"
-                           *ngFor="let file of product.productImages;let i = index;"
+                           *ngFor="let file of product.imgChildren;let i = index;"
                            style="border: 1px solid lightgray">
-              <img [src]="file.url" class="img-fluid" height="200px" width="200px">
+              <img class="img-fluid" height="200px" src="{{file}}" width="200px">
             </mat-grid-tile>
           </mat-grid-list>
         </div>
@@ -28,12 +28,31 @@
             <ng-container>{{demo}} ({{user}})</ng-container>
 
           </div>
+
           <div class="mt20">
             <b style="color:red;">{{product.discountPrice | currency: 'VND'}}</b> &nbsp;&nbsp;&nbsp; <b
             style="text-decoration: line-through;color: #aaaaaa">{{product.price | currency: 'VND'}}</b>
           </div>
+          <div class="mt10">
+            <p class="freeship">
+              <mat-icon>local_shipping</mat-icon>
+              <span>Miễn phí ship toàn quốc</span>
+            </p>
+          </div>
           <div class="mt20">
             <p>({{product.quantum}}) Sản phẩm còn hàng</p>
+          </div>
+
+          <div class="mt10">
+            <span>
+              <mat-icon color="primary">workspace_premium</mat-icon>
+              Bảo hành 12 tháng chính hãng
+            </span>
+            <br>
+            <span>
+              <mat-icon color="primary">workspace_premium</mat-icon>
+              Bao xài lỗi 1 đổi 1 trong 30 ngày với lỗi phần cứng do nhà sản xuất.
+            </span>
           </div>
           <div class="mt20 text-center">
             <button (click)="addToCart(product.pid)" [disabled]="product.quantum === 0" class="mr10" color="primary"

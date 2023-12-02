@@ -64,6 +64,21 @@ export class SidebarComponent implements OnInit {
       // @ts-ignore
       sidebar.classList.remove("close");
     }
+
+    var bntContainer = document.getElementById("slide")
+    // @ts-ignore
+    var span = bntContainer.getElementsByClassName("span")
+    for (let i = 0; i < span.length; i++) {
+      span[i].addEventListener('click', function () {
+        var current = document.getElementsByClassName("active1")
+        console.log(current)
+        // @ts-ignore
+        current[0].className = current[0].className.replace(" active1")
+        // @ts-ignore
+        this.className += " active1"
+      })
+
+    }
   }
 
 }

@@ -6,7 +6,6 @@ import {CartService} from "../../../service/cart.service";
 import {Product} from "../../../_model/product.model";
 import {CommentModel} from "../../../_model/comment.model";
 import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
-import {map} from "rxjs";
 import Swal from "sweetalert2";
 import {CommentService} from "../../../service/comment.service";
 
@@ -73,7 +72,7 @@ export class ProductViewDetaisComponent implements OnInit {
 
   changeIndex(index: any) {
     this.selectedProductIndex = index;
-    console.log(index)
+    // console.log(index)
   }
 
   getStars() {
@@ -95,11 +94,7 @@ export class ProductViewDetaisComponent implements OnInit {
 
   public getProductOfCategory(searchKey: string = "") {
     this._productService.getProductBySuggest(this.product.category.cateId, this.product.discountPrice, this.product.price, this.pageNumber)
-      .pipe(
-        // @ts-ignore
 
-        map((x: Product[], i) => x.map((product: Product) => this._imageProcessing.createImages(product)))
-      )
       .subscribe({
         // @ts-ignore
 

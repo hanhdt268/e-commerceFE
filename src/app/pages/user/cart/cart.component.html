@@ -17,21 +17,21 @@
       </td>
     </ng-container>
     <ng-container matColumnDef="Image">
-      <th *matHeaderCellDef mat-header-cell> Image</th>
+      <th *matHeaderCellDef mat-header-cell> Hình ảnh</th>
       <td *matCellDef="let element" mat-cell><img class="img-fluid" height="100px" src="{{element.product.images}}"
                                                   width="100px"></td>
     </ng-container>
     <ng-container matColumnDef="Name">
-      <th *matHeaderCellDef mat-header-cell> Name</th>
+      <th *matHeaderCellDef mat-header-cell> Tên SP</th>
       <td *matCellDef="let element" mat-cell> {{element.product.title}} </td>
     </ng-container>
     <ng-container matColumnDef="DiscountPrice">
-      <th *matHeaderCellDef mat-header-cell> Price</th>
+      <th *matHeaderCellDef mat-header-cell> Giá tiền</th>
       <td *matCellDef="let element"
           mat-cell> {{element.product.discountPrice | currency: 'VND'}} </td>
     </ng-container>
     <ng-container matColumnDef="Quantity">
-      <th *matHeaderCellDef mat-header-cell> Quantity</th>
+      <th *matHeaderCellDef mat-header-cell> Số lượng</th>
       <td *matCellDef="let element" mat-cell>
         <div class="quantity">
           <button (click)="decrease(element.cartId)" class="quantity-btn" id="decrease"
@@ -43,12 +43,12 @@
       </td>
     </ng-container>
     <ng-container matColumnDef="Amount">
-      <th *matHeaderCellDef mat-header-cell> Total</th>
+      <th *matHeaderCellDef mat-header-cell> Tổng tiền</th>
       <td *matCellDef="let element"
           mat-cell> {{getCalculatedProduct(element.product.pid, element.product.discountPrice, element.quantity) | currency: 'VND'}} </td>
     </ng-container>
     <ng-container matColumnDef="Action">
-      <th *matHeaderCellDef mat-header-cell> Action</th>
+      <th *matHeaderCellDef mat-header-cell> ###</th>
       <td *matCellDef="let element" mat-cell>
         <button (click)="delete(element.cartId)" mat-stroked-button>
           <mat-icon color="warn">delete</mat-icon>
@@ -61,7 +61,7 @@
   </table>
 
   <div align="right" class="mt10">
-    <button (click)="handleCheckout()" color="primary" mat-raised-button>Checkout</button>
+    <button (click)="handleCheckout()" color="primary" mat-raised-button>Mua hàng</button>
     <!--    <button data-toggle="modal" data-target="#exampleModal"  mat-raised-button color="primary">edit</button>-->
   </div>
 </div>

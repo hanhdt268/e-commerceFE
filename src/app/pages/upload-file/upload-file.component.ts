@@ -1,5 +1,5 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { AngularFireStorage, AngularFireStorageReference } from '@angular/fire/compat/storage';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {AngularFireStorage, AngularFireStorageReference} from '@angular/fire/compat/storage';
 
 @Component({
   selector: 'app-upload-file',
@@ -22,6 +22,7 @@ export class UploadFileComponent implements OnInit {
 
   onFileChange(event: any) {
     this.selectedFile = event.target.files[0];
+    this.onUpload();
   }
 
   onUpload() {

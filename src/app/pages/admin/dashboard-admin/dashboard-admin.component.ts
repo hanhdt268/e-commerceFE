@@ -86,7 +86,7 @@ export class DashboardAdminComponent implements OnInit {
           amount.push(resp[i].mount)
           month.push(resp[i].mothName)
         }
-        this.title = {text: "Total product sold month by month"}
+        this.title = {text: "Tổng tiền bán ra hàng tháng"}
         this.series1 = [{
           name: 'product',
           data: amount

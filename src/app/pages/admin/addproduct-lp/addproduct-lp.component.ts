@@ -10,6 +10,7 @@ import {CategoryService} from 'src/app/service/category.service';
 import {ManufacturerService} from 'src/app/service/manufacturer.service';
 import {ProductService} from 'src/app/service/product.service';
 import Swal from 'sweetalert2';
+import {AngularFireStorage} from "@angular/fire/compat/storage";
 
 @Component({
   selector: 'app-addproduct-lp',
@@ -32,7 +33,7 @@ export class AddproductLpComponent implements OnInit {
     images: '',
     active: true,
     quantum: 0,
-    productImages: [],
+    imgChildren: [],
     // @ts-ignore
     productEnum: [],
     laptopConfig: {
@@ -64,7 +65,8 @@ export class AddproductLpComponent implements OnInit {
               private _sanitizer: DomSanitizer, private _activeRoute: ActivatedRoute,
               private _categoriess: CategoryService,
               private _manufacturer: ManufacturerService,
-              private _fb: FormBuilder) {
+              private _fb: FormBuilder,
+              private afStorage: AngularFireStorage) {
   }
 
   ngOnInit(): void {
@@ -128,12 +130,12 @@ export class AddproductLpComponent implements OnInit {
   }
 
   addSubmit() {
-    const productFormData = this.prepareFormData(this.product)
-    this._product.addProduct(productFormData).subscribe({
+    // const productFormData = this.prepareFormData(this.product)
+    this._product.addProduct(this.product).subscribe({
       next: (data: Product) => {
         Swal.fire('Successfully', 'Add Product Successfully', "success")
         this.formProduct.reset()
-        this.product.productImages = [];
+        this.product.imgChildren = [];
       },
       error: (error) => {
         Swal.fire('Error', '', "error");
@@ -143,34 +145,39 @@ export class AddproductLpComponent implements OnInit {
   }
 
 
-  prepareFormData(product: Product): FormData {
-    const formData = new FormData();
-    formData.append(
-      'product',
-      new Blob([JSON.stringify(product)], {type: 'application/json'}),
-    );
-    for (var i = 0; i < product.productImages.length; i++) {
-      formData.append(
-        'imageFile',
-        product.productImages[i].file,
-        product.productImages[i].file.name
-      )
-    }
-    return formData;
-  }
+  // prepareFormData(product: Product): FormData {
+  //   const formData = new FormData();
+  //   formData.append(
+  //     'product',
+  //     new Blob([JSON.stringify(product)], {type: 'application/json'}),
+  //   );
+  //   for (var i = 0; i < product.productImages.length; i++) {
+  //     formData.append(
+  //       'imageFile',
+  //       product.productImages[i].file,
+  //       product.productImages[i].file.name
+  //     )
+  //   }
+  //   return formData;
+  // }
 
   onFileSelected(event: any) {
     // console.log(event)
     if (event.target.files) {
-      const file = event.target.files[0];
-      console.log(window.URL.createObjectURL(file))
-      const fileHandle: FileHandle = {
-        file: file,
-        url: this._sanitizer.bypassSecurityTrustUrl(
-          window.URL.createObjectURL(file)
-        )
+      const file = event.target.files;
+      for (const fileElement of file) {
+        const fileHandle: FileHandle = {
+          file: fileElement,
+          url: this._sanitizer.bypassSecurityTrustUrl(
+            window.URL.createObjectURL(fileElement)
+          )
+        }
+        // @ts-ignore
+        this.product.imgChildren.push(fileHandle);
+
       }
-      this.product.productImages.push(fileHandle);
+      // console.log(window.URL.createObjectURL(file))
+
     }
 
 
@@ -184,8 +191,20 @@ export class AddproductLpComponent implements OnInit {
     // reader.readAsDataURL(file);
   }
 
-  removeImage(i: number) {
-    this.product.productImages.splice(i, 1);
+  removeImage(file: any, i: number) {
+    this.product.imgChildren.splice(i, 1);
+    const url = this.delete(file)
+    console.log(url)
+  }
+
+  async delete(url: any) {
+    return this.afStorage.storage.refFromURL(url).delete();
+  }
+
+  downloadUrl(event: string[]) {
+    // @ts-ignore
+    this.product.imgChildren.push(event)
+    console.log(this.product.imgChildren)
   }
 
   openLoadImage(event: any) {

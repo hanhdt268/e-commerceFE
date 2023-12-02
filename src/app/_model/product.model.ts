@@ -1,4 +1,3 @@
-import {FileHandle} from "./file-handle.model"
 import {ProductEnum} from "./productEnum"
 
 export interface Product {
@@ -11,7 +10,7 @@ export interface Product {
   images: string,
   active: boolean,
   quantum: number,
-  productImages: FileHandle[],
+  imgChildren: [],
   productEnum: ProductEnum[],
   laptopConfig: {
     cpu: string,

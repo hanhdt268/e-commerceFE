@@ -156,45 +156,45 @@ mat-grid-list mat-grid-tile .home-page-product-image:hover {
   margin-left: 36px;
 }
 
-.sp-arrow {
-  position: absolute;
-  top: 50%;
-  width: 28px;
-  height: 38px;
-  margin-top: -19px;
-  display: none;
-  opacity: 0.8;
-  cursor: pointer;
-  z-index: 1000;
-  background: transparent url('https://i.imgur.com/yeMfI0Q.png') no-repeat;
-  transition: opacity linear 0.3s;
-}
+/*.sp-arrow {*/
+/*  position: absolute;*/
+/*  top: 50%;*/
+/*  width: 28px;*/
+/*  height: 38px;*/
+/*  margin-top: -19px;*/
+/*  display: none;*/
+/*  opacity: 0.8;*/
+/*  cursor: pointer;*/
+/*  z-index: 1000;*/
+/*  background: transparent url('https://i.imgur.com/yeMfI0Q.png') no-repeat;*/
+/*  transition: opacity linear 0.3s;*/
+/*}*/
 
-.sp-arrow:hover {
-  opacity: 1;
-}
+/*.sp-arrow:hover {*/
+/*  opacity: 1;*/
+/*}*/
 
-.sp-arrow:active {
-  margin-top: -18px;
-}
+/*.sp-arrow:active {*/
+/*  margin-top: -18px;*/
+/*}*/
 
-.sp-selector-1:checked ~ .sp-arrow.sp-a2,
-.sp-selector-2:checked ~ .sp-arrow.sp-a3,
-.sp-selector-3:checked ~ .sp-arrow.sp-a4,
-.sp-selector-4:checked ~ .sp-arrow.sp-a5 {
-  right: 15px;
-  display: block;
-  background-position: top right;
-}
+/*.sp-selector-1:checked ~ .sp-arrow.sp-a2,*/
+/*.sp-selector-2:checked ~ .sp-arrow.sp-a3,*/
+/*.sp-selector-3:checked ~ .sp-arrow.sp-a4,*/
+/*.sp-selector-4:checked ~ .sp-arrow.sp-a5 {*/
+/*  right: 15px;*/
+/*  display: block;*/
+/*  background-position: top right;*/
+/*}*/
 
-.sp-selector-2:checked ~ .sp-arrow.sp-a1,
-.sp-selector-3:checked ~ .sp-arrow.sp-a2,
-.sp-selector-4:checked ~ .sp-arrow.sp-a3,
-.sp-selector-5:checked ~ .sp-arrow.sp-a4 {
-  left: 15px;
-  display: block;
-  background-position: top left;
-}
+/*.sp-selector-2:checked ~ .sp-arrow.sp-a1,*/
+/*.sp-selector-3:checked ~ .sp-arrow.sp-a2,*/
+/*.sp-selector-4:checked ~ .sp-arrow.sp-a3,*/
+/*.sp-selector-5:checked ~ .sp-arrow.sp-a4 {*/
+/*  left: 15px;*/
+/*  display: block;*/
+/*  background-position: top left;*/
+/*}*/
 
 .sp-slideshow input:checked ~ .sp-content {
   transition: background-position linear 0.6s, background-color linear 0.8s;
@@ -265,9 +265,9 @@ input.sp-selector-5:checked ~ .sp-content .sp-parallax-bg {
   box-sizing: border-box;
   height: 100%;
   float: left;
-  opacity: 0.4;
+  /*opacity: 0.4;*/
 
-  transition: opactiy ease-in 0.4s 0.8s;
+  /*transition: opactiy ease-in 0.4s 0.8s;*/
 }
 
 .sp-slider > li img {
@@ -300,20 +300,48 @@ input.sp-selector-5:checked ~ .sp-content .sp-slider {
   left: -400%;
 }
 
-input.sp-selector-1:checked ~ .sp-content .sp-slider > li:first-child,
-input.sp-selector-2:checked ~ .sp-content .sp-slider > li:nth-child(2),
-input.sp-selector-3:checked ~ .sp-content .sp-slider > li:nth-child(3),
-input.sp-selector-4:checked ~ .sp-content .sp-slider > li:nth-child(4),
-input.sp-selector-5:checked ~ .sp-content .sp-slider > li:nth-child(5) {
-  opacity: 1;
-}
+/*input.sp-selector-1:checked ~ .sp-content .sp-slider > li:first-child,*/
+/*input.sp-selector-2:checked ~ .sp-content .sp-slider > li:nth-child(2),*/
+/*input.sp-selector-3:checked ~ .sp-content .sp-slider > li:nth-child(3),*/
+/*input.sp-selector-4:checked ~ .sp-content .sp-slider > li:nth-child(4),*/
+/*input.sp-selector-5:checked ~ .sp-content .sp-slider > li:nth-child(5) {*/
+/*  opacity: 1;*/
+/*}*/
 
 .note {
   padding: 5px;
   text-align: center;
 }
 
+.active {
+  background-color: #79727f;
+  opacity: 1;
+}
 
 
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  z-index: 1000;
+}
 
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
 
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}

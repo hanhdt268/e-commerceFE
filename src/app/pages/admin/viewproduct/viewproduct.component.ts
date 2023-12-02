@@ -7,7 +7,6 @@ import {CategoryService} from 'src/app/service/category.service';
 import {ImageProcessingService} from 'src/app/service/image-processing.service';
 import {ProductService} from 'src/app/service/product.service';
 import Swal from 'sweetalert2';
-import {map} from "rxjs";
 import {ProductEnum} from "../../../_model/productEnum";
 import {MatSort} from "@angular/material/sort";
 import {MatPaginator} from "@angular/material/paginator";
@@ -67,10 +66,6 @@ export class ViewproductComponent implements OnInit {
 
   public getProductByCategory(searchKey: string = "") {
     this._product.getProductOfCategory(this.cateId, this.pageNumber)
-      .pipe(
-        // @ts-ignore
-        map((x: Product[], i) => x.map((product: Product) => this._imageProcessing.createImages(product)))
-      )
       .subscribe({
         // @ts-ignore
         next: (data: Product[]) => {

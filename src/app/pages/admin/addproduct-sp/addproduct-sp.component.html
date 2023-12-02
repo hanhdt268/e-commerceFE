@@ -1,289 +1,289 @@
 <div class="card mt20">
-    <h1>Add New Product</h1>
-    <div class="container">
-  
-      <div class="row mt10">
-        <div class="col-md-6">
-          <div class="text-center">
-            <img src="{{product.images}}" height="100px" width="100px" class="img-fluid">
-          </div>
-          <app-upload-file (giveUrlToCreate)="openLoadImage($event)"></app-upload-file>
-          <form [formGroup]="formProduct" (ngSubmit)="handle()">
-            <mat-form-field appearance="fill" class="w100">
-              <mat-label>Enter Title</mat-label>
-              <input [(ngModel)]="product.title" matInput formControlName="title" placeholder="Enter Here" type="text">
-              <mat-hint
-                *ngIf="(formProduct.controls['title'].dirty || formProduct.controls['title'].touched) && formProduct.hasError('required', 'title')"
-                class="text-danger">Vui lòng tên sản phẩm !!
-              </mat-hint>
-            </mat-form-field>
-  
-            <mat-form-field appearance="fill" class="w100">
-              <mat-label>Enter description</mat-label>
-              <textarea [(ngModel)]="product.description" matInput formControlName="description" placeholder="Enter Here"
-                        rows="5" type="text"></textarea>
-              <mat-hint
-                *ngIf="(formProduct.controls['description'].dirty || formProduct.controls['description'].touched) && formProduct.hasError('required', 'description')"
-                class="text-danger">Vui lòng nhập mô tả sản phẩm !!
-              </mat-hint>
-            </mat-form-field>
-            <mat-form-field appearance="fill" class="w100">
-              <mat-label>Enter ImageD</mat-label>
-              <input [(ngModel)]="product.config" matInput formControlName="config" placeholder="Enter Here" type="text">
-              <mat-hint
-                *ngIf="(formProduct.controls['config'].dirty || formProduct.controls['config'].touched) && formProduct.hasError('required', 'config')"
-                class="text-danger">Vui lòng them ảnh mô tả !!
-              </mat-hint>
-            </mat-form-field>
-            <div class="row">
-              <div class="col-md-6">
-                <mat-form-field appearance="fill" class="w100">
-                  <mat-label>price</mat-label>
-                  <input [(ngModel)]="product.price" matInput formControlName="price" placeholder="Enter Here"
-                         type="number">
-                  <mat-hint
-                    *ngIf="(formProduct.controls['price'].dirty || formProduct.controls['price'].touched) && formProduct.hasError('required', 'price')"
-                    class="text-danger">Vui lòng nhập giá tiền !!
-                  </mat-hint>
-                </mat-form-field>
-              </div>
-              <div class="col-md-6">
-                <mat-form-field appearance="fill" class="w100">
-                  <mat-label>discountPrice</mat-label>
-                  <input [(ngModel)]="product.discountPrice" matInput formControlName="discountPrice"
-                         placeholder="Enter Here" type="number">
-                  <mat-hint
-                    *ngIf="(formProduct.controls['discountPrice'].dirty || formProduct.controls['discountPrice'].touched) && formProduct.hasError('required', 'discountPrice')"
-                    class="text-danger">Vui lòng nhập số tiền giảm giá !!
-                  </mat-hint>
-                </mat-form-field>
-              </div>
-            </div>
-            <mat-form-field appearance="fill" class="w100">
-              <mat-label>Enter quantity</mat-label>
-              <input [(ngModel)]="product.quantum" matInput formControlName="quantum" placeholder="Enter Here"
-                     type="text">
-              <mat-hint
-                *ngIf="(formProduct.controls['quantum'].dirty || formProduct.controls['quantum'].touched) && formProduct.hasError('required', 'quantum')"
-                class="text-danger">Nhập số lượng hàng !!
-              </mat-hint>
-            </mat-form-field>
-            <mat-slide-toggle
-              [(ngModel)]="product.active"
-              [checked]="false"
-              class="mt10"
-              color="accent"
-              formControlName="active">
-              Active
-            </mat-slide-toggle>
-  
-            <mat-form-field appearance="fill" class="w100">
-              <mat-label>{{valueInput}}</mat-label>
-              <input [(ngModel)]="product.productEnum" matInput
-                     formControlName="productEnum"
-                     type="text">
-            </mat-form-field>
-            <br>
-            <!--          category select-->
-            <mat-form-field appearance="fill" class="w100 mt10">
-              <mat-label>Category</mat-label>
-              <mat-select [(ngModel)]="product.category.cateId" formControlName="category">
-                <mat-option *ngFor="let item of categories" [value]="item.cateId">
-                  {{item.title}}
-                </mat-option>
-              </mat-select>
-              <mat-hint
-                *ngIf="(formProduct.controls['category'].dirty || formProduct.controls['category'].touched) && formProduct.hasError('required', 'category')"
-                class="text-danger">Vui lòng chọn thể loại !!
-              </mat-hint>
-            </mat-form-field>
-            <br>
-            <mat-form-field appearance="fill" class="w100 mt10">
-              <mat-label>Manufacturer</mat-label>
-              <mat-select [(ngModel)]="product.manufacturer.manuId" formControlName="manufacturer">
-                <mat-option *ngFor="let item of manufacturers" [value]="item.manuId">
-                  {{item.title}}
-                </mat-option>
-              </mat-select>
-              <mat-hint
-                *ngIf="(formProduct.controls['manufacturer'].dirty || formProduct.controls['manufacturer'].touched) && formProduct.hasError('required', 'manufacturer')"
-                class="text-danger">Vui lòng chọn hãng sản xuất !!
-              </mat-hint>
-            </mat-form-field>
-            <!--          <div [(ngModel)]="product.manufacturer.mId" name="manufacturer">-->
-            <!--            <app-combobox></app-combobox>-->
-            <!--          </div>-->
-  
-  
-            <div class="container text-center">
-              <button color="primary" [disabled]="formProduct.invalid" *ngIf="isNewProduct" type="submit"
-                      mat-raised-button>Add
-              </button>
-            </div>
-  
-          </form>
+  <h1>Add New Product</h1>
+  <div class="container">
+
+    <div class="row mt10">
+      <div class="col-md-6">
+        <div class="text-center">
+          <img class="img-fluid" height="100px" src="{{product.images}}" width="100px">
         </div>
-        <div class="col-6">
-          <form [formGroup]="formProduct">
-            <div class="row">
-              <div class="col-md-4">
-                <mat-form-field appearance="fill" class="w100">
-                  <mat-label>screen</mat-label>
-                  <input [(ngModel)]="product.smartPhoneConfig.screen" matInput formControlName="screen"
-                         placeholder="Enter Here"
-                         type="text">
-                  <mat-hint
-                    *ngIf="(formProduct.controls['screen'].dirty || formProduct.controls['screen'].touched) && formProduct.hasError('required', 'screen')"
-                    class="text-danger">Màn hình: !!
-                  </mat-hint>
-                </mat-form-field>
-              </div>
-              <div class="col-md-4">
-                <mat-form-field appearance="fill" class="w100">
-                  <mat-label>operatingSystem</mat-label>
-                  <input [(ngModel)]="product.smartPhoneConfig.operatingSystem" matInput formControlName="operatingSystem"
-                         placeholder="Enter Here" type="text">
-                  <mat-hint
-                    *ngIf="(formProduct.controls['operatingSystem'].dirty || formProduct.controls['operatingSystem'].touched) && formProduct.hasError('required', 'operatingSystem')"
-                    class="text-danger">Hệ điều hành: !!
-                  </mat-hint>
-                </mat-form-field>
-              </div>
-              <div class="col-md-4">
-                <mat-form-field appearance="fill" class="w100">
-                  <mat-label>afterCamera</mat-label>
-                  <input [(ngModel)]="product.smartPhoneConfig.afterCamera" matInput formControlName="afterCamera"
-                         placeholder="Enter Here" type="text">
-                  <mat-hint
-                    *ngIf="(formProduct.controls['afterCamera'].dirty || formProduct.controls['afterCamera'].touched) && formProduct.hasError('required', 'afterCamera')"
-                    class="text-danger">Camera sau: !!
-                  </mat-hint>
-                </mat-form-field>
-              </div>
+        <app-upload-file (giveUrlToCreate)="openLoadImage($event)"></app-upload-file>
+        <form (ngSubmit)="handle()" [formGroup]="formProduct">
+          <mat-form-field appearance="fill" class="w100">
+            <mat-label>Enter Title</mat-label>
+            <input [(ngModel)]="product.title" formControlName="title" matInput placeholder="Enter Here" type="text">
+            <mat-hint
+              *ngIf="(formProduct.controls['title'].dirty || formProduct.controls['title'].touched) && formProduct.hasError('required', 'title')"
+              class="text-danger">Vui lòng tên sản phẩm !!
+            </mat-hint>
+          </mat-form-field>
+
+          <mat-form-field appearance="fill" class="w100">
+            <mat-label>Enter description</mat-label>
+            <textarea [(ngModel)]="product.description" formControlName="description" matInput placeholder="Enter Here"
+                      rows="5" type="text"></textarea>
+            <mat-hint
+              *ngIf="(formProduct.controls['description'].dirty || formProduct.controls['description'].touched) && formProduct.hasError('required', 'description')"
+              class="text-danger">Vui lòng nhập mô tả sản phẩm !!
+            </mat-hint>
+          </mat-form-field>
+          <mat-form-field appearance="fill" class="w100">
+            <mat-label>Enter ImageD</mat-label>
+            <input [(ngModel)]="product.config" formControlName="config" matInput placeholder="Enter Here" type="text">
+            <mat-hint
+              *ngIf="(formProduct.controls['config'].dirty || formProduct.controls['config'].touched) && formProduct.hasError('required', 'config')"
+              class="text-danger">Vui lòng them ảnh mô tả !!
+            </mat-hint>
+          </mat-form-field>
+          <div class="row">
+            <div class="col-md-6">
+              <mat-form-field appearance="fill" class="w100">
+                <mat-label>price</mat-label>
+                <input [(ngModel)]="product.price" formControlName="price" matInput placeholder="Enter Here"
+                       type="number">
+                <mat-hint
+                  *ngIf="(formProduct.controls['price'].dirty || formProduct.controls['price'].touched) && formProduct.hasError('required', 'price')"
+                  class="text-danger">Vui lòng nhập giá tiền !!
+                </mat-hint>
+              </mat-form-field>
             </div>
-  
-            <div class="row">
-              <div class="col-md-4">
-                <mat-form-field appearance="fill" class="w100">
-                  <mat-label>beforeCamera</mat-label>
-                  <input [(ngModel)]="product.smartPhoneConfig.beforeCamera" matInput formControlName="beforeCamera"
-                         placeholder="Enter Here" type="text">
-                  <mat-hint
-                    *ngIf="(formProduct.controls['beforeCamera'].dirty || formProduct.controls['beforeCamera'].touched) && formProduct.hasError('required', 'beforeCamera')"
-                    class="text-danger">Camera truoc !!
-                  </mat-hint>
-                </mat-form-field>
-  
-              </div>
-              <div class="col-md-4">
-                <mat-form-field appearance="fill" class="w100">
-                  <mat-label>Ram</mat-label>
-                  <input [(ngModel)]="product.smartPhoneConfig.ram" matInput formControlName="ram"
-                         placeholder="Enter Here" type="text">
-                  <mat-hint
-                    *ngIf="(formProduct.controls['ram'].dirty || formProduct.controls['ram'].touched) && formProduct.hasError('required', 'ram')"
-                    class="text-danger">Ram !!
-                  </mat-hint>
-                </mat-form-field>
-              </div>
-              <div class="col-md-4">
-                <mat-form-field appearance="fill" class="w100">
-                  <mat-label>storage</mat-label>
-                  <input [(ngModel)]="product.smartPhoneConfig.storage" matInput formControlName="storage"
-                         placeholder="Enter Here" type="text">
-                  <mat-hint
-                    *ngIf="(formProduct.controls['storage'].dirty || formProduct.controls['storage'].touched) && formProduct.hasError('required', 'storage')"
-                    class="text-danger">Dung lượng: !!
-                  </mat-hint>
-                </mat-form-field>
-              </div>
+            <div class="col-md-6">
+              <mat-form-field appearance="fill" class="w100">
+                <mat-label>discountPrice</mat-label>
+                <input [(ngModel)]="product.discountPrice" formControlName="discountPrice" matInput
+                       placeholder="Enter Here" type="number">
+                <mat-hint
+                  *ngIf="(formProduct.controls['discountPrice'].dirty || formProduct.controls['discountPrice'].touched) && formProduct.hasError('required', 'discountPrice')"
+                  class="text-danger">Vui lòng nhập số tiền giảm giá !!
+                </mat-hint>
+              </mat-form-field>
             </div>
-            <div class="row">
-              <div class="col-md-4">
-                <mat-form-field appearance="fill" class="w100">
-                  <mat-label>sim</mat-label>
-                  <input [(ngModel)]="product.smartPhoneConfig.sim" matInput formControlName="sim"
-                         placeholder="Enter Here"
-                         type="text">
-                  <mat-hint
-                    *ngIf="(formProduct.controls['sim'].dirty || formProduct.controls['sim'].touched) && formProduct.hasError('required', 'sim')"
-                    class="text-danger">Sim !!
-                  </mat-hint>
-                </mat-form-field>
-              </div>
-              <div class="col-md-4">
-                <mat-form-field appearance="fill" class="w100">
-                  <mat-label>pin</mat-label>
-                  <input [(ngModel)]="product.smartPhoneConfig.pin" matInput formControlName="pin"
-                         placeholder="Enter Here" type="text">
-                  <mat-hint
-                    *ngIf="(formProduct.controls['pin'].dirty || formProduct.controls['pin'].touched) && formProduct.hasError('required', 'pin')"
-                    class="text-danger">Pin: !!
-                  </mat-hint>
-                </mat-form-field>
-              </div>
-              <div class="col-md-4">
-                <mat-form-field appearance="fill" class="w100">
-                  <mat-label>Chip</mat-label>
-                  <input [(ngModel)]="product.smartPhoneConfig.chip" matInput formControlName="chip"
-                         placeholder="Enter Here"
-                         type="text">
-                  <mat-hint
-                    *ngIf="(formProduct.controls['chip'].dirty || formProduct.controls['chip'].touched) && formProduct.hasError('required', 'chip')"
-                    class="text-danger">Chip !!
-                  </mat-hint>
-                </mat-form-field>
-              </div>
-            </div>
-          </form>
-          <!-- <div class="dropzone"
-          appDrag
-          (files)="fileDropped($event)"
-          >
-            <div class="text-wrapper">
-              <div class="text-center">
-              Drag and drop your file or
-              <a (click)="selectFile.click()" class="browse-button">browse</a>
-              a file
-              </div>
-            </div>
-          </div> -->
-          <div>
-            <input type="file" multiple value="select" #selectFile
-                   (change)="onFileSelected($event)">
           </div>
+          <mat-form-field appearance="fill" class="w100">
+            <mat-label>Enter quantity</mat-label>
+            <input [(ngModel)]="product.quantum" formControlName="quantum" matInput placeholder="Enter Here"
+                   type="text">
+            <mat-hint
+              *ngIf="(formProduct.controls['quantum'].dirty || formProduct.controls['quantum'].touched) && formProduct.hasError('required', 'quantum')"
+              class="text-danger">Nhập số lượng hàng !!
+            </mat-hint>
+          </mat-form-field>
+          <mat-slide-toggle
+            [(ngModel)]="product.active"
+            [checked]="false"
+            class="mt10"
+            color="accent"
+            formControlName="active">
+            Active
+          </mat-slide-toggle>
+
+          <mat-form-field appearance="fill" class="w100">
+            <mat-label>{{valueInput}}</mat-label>
+            <input [(ngModel)]="product.productEnum" formControlName="productEnum"
+                   matInput
+                   type="text">
+          </mat-form-field>
           <br>
-          <div class="mt10">
-  
-  
-            <div class="row">
-  
-              <mat-grid-list cols="4" rowHeight="1:1">
-                <mat-grid-tile *ngFor="let file of product.productImages; let i = index">
-                  <div style="position: relative">
-                    <span class="btn-remove-image" (click)="removeImage(i)">x</span>
-                    <img [src]="file.url" class="img-fluid" width="100%">
-                  </div>
-                </mat-grid-tile>
-              </mat-grid-list>
-  
-  
-              <!--                  <div *ngFor="let file of product.productImages; let i = index">-->
-              <!--                    <div class="title">-->
-              <!--                      <div style="position: relative">-->
-              <!--                        <span class="btn-remove-image" (click)="removeImage(i)">x</span>-->
-              <!--                        <img  class="img-fluid" [src]="file.url" width="30%">-->
-              <!--                      </div>-->
-              <!--                    </div>-->
-              <!--                  </div>-->
-  
+          <!--          category select-->
+          <mat-form-field appearance="fill" class="w100 mt10">
+            <mat-label>Category</mat-label>
+            <mat-select [(ngModel)]="product.category.cateId" formControlName="category">
+              <mat-option *ngFor="let item of categories" [value]="item.cateId">
+                {{item.title}}
+              </mat-option>
+            </mat-select>
+            <mat-hint
+              *ngIf="(formProduct.controls['category'].dirty || formProduct.controls['category'].touched) && formProduct.hasError('required', 'category')"
+              class="text-danger">Vui lòng chọn thể loại !!
+            </mat-hint>
+          </mat-form-field>
+          <br>
+          <mat-form-field appearance="fill" class="w100 mt10">
+            <mat-label>Manufacturer</mat-label>
+            <mat-select [(ngModel)]="product.manufacturer.manuId" formControlName="manufacturer">
+              <mat-option *ngFor="let item of manufacturers" [value]="item.manuId">
+                {{item.title}}
+              </mat-option>
+            </mat-select>
+            <mat-hint
+              *ngIf="(formProduct.controls['manufacturer'].dirty || formProduct.controls['manufacturer'].touched) && formProduct.hasError('required', 'manufacturer')"
+              class="text-danger">Vui lòng chọn hãng sản xuất !!
+            </mat-hint>
+          </mat-form-field>
+          <!--          <div [(ngModel)]="product.manufacturer.mId" name="manufacturer">-->
+          <!--            <app-combobox></app-combobox>-->
+          <!--          </div>-->
+
+
+          <div class="container text-center">
+            <button *ngIf="isNewProduct" [disabled]="formProduct.invalid" color="primary" mat-raised-button
+                    type="submit">Add
+            </button>
+          </div>
+
+        </form>
+      </div>
+      <div class="col-6">
+        <form [formGroup]="formProduct">
+          <div class="row">
+            <div class="col-md-4">
+              <mat-form-field appearance="fill" class="w100">
+                <mat-label>screen</mat-label>
+                <input [(ngModel)]="product.smartPhoneConfig.screen" formControlName="screen" matInput
+                       placeholder="Enter Here"
+                       type="text">
+                <mat-hint
+                  *ngIf="(formProduct.controls['screen'].dirty || formProduct.controls['screen'].touched) && formProduct.hasError('required', 'screen')"
+                  class="text-danger">Màn hình: !!
+                </mat-hint>
+              </mat-form-field>
             </div>
+            <div class="col-md-4">
+              <mat-form-field appearance="fill" class="w100">
+                <mat-label>operatingSystem</mat-label>
+                <input [(ngModel)]="product.smartPhoneConfig.operatingSystem" formControlName="operatingSystem" matInput
+                       placeholder="Enter Here" type="text">
+                <mat-hint
+                  *ngIf="(formProduct.controls['operatingSystem'].dirty || formProduct.controls['operatingSystem'].touched) && formProduct.hasError('required', 'operatingSystem')"
+                  class="text-danger">Hệ điều hành: !!
+                </mat-hint>
+              </mat-form-field>
+            </div>
+            <div class="col-md-4">
+              <mat-form-field appearance="fill" class="w100">
+                <mat-label>afterCamera</mat-label>
+                <input [(ngModel)]="product.smartPhoneConfig.afterCamera" formControlName="afterCamera" matInput
+                       placeholder="Enter Here" type="text">
+                <mat-hint
+                  *ngIf="(formProduct.controls['afterCamera'].dirty || formProduct.controls['afterCamera'].touched) && formProduct.hasError('required', 'afterCamera')"
+                  class="text-danger">Camera sau: !!
+                </mat-hint>
+              </mat-form-field>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4">
+              <mat-form-field appearance="fill" class="w100">
+                <mat-label>beforeCamera</mat-label>
+                <input [(ngModel)]="product.smartPhoneConfig.beforeCamera" formControlName="beforeCamera" matInput
+                       placeholder="Enter Here" type="text">
+                <mat-hint
+                  *ngIf="(formProduct.controls['beforeCamera'].dirty || formProduct.controls['beforeCamera'].touched) && formProduct.hasError('required', 'beforeCamera')"
+                  class="text-danger">Camera truoc !!
+                </mat-hint>
+              </mat-form-field>
+
+            </div>
+            <div class="col-md-4">
+              <mat-form-field appearance="fill" class="w100">
+                <mat-label>Ram</mat-label>
+                <input [(ngModel)]="product.smartPhoneConfig.ram" formControlName="ram" matInput
+                       placeholder="Enter Here" type="text">
+                <mat-hint
+                  *ngIf="(formProduct.controls['ram'].dirty || formProduct.controls['ram'].touched) && formProduct.hasError('required', 'ram')"
+                  class="text-danger">Ram !!
+                </mat-hint>
+              </mat-form-field>
+            </div>
+            <div class="col-md-4">
+              <mat-form-field appearance="fill" class="w100">
+                <mat-label>storage</mat-label>
+                <input [(ngModel)]="product.smartPhoneConfig.storage" formControlName="storage" matInput
+                       placeholder="Enter Here" type="text">
+                <mat-hint
+                  *ngIf="(formProduct.controls['storage'].dirty || formProduct.controls['storage'].touched) && formProduct.hasError('required', 'storage')"
+                  class="text-danger">Dung lượng: !!
+                </mat-hint>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <mat-form-field appearance="fill" class="w100">
+                <mat-label>sim</mat-label>
+                <input [(ngModel)]="product.smartPhoneConfig.sim" formControlName="sim" matInput
+                       placeholder="Enter Here"
+                       type="text">
+                <mat-hint
+                  *ngIf="(formProduct.controls['sim'].dirty || formProduct.controls['sim'].touched) && formProduct.hasError('required', 'sim')"
+                  class="text-danger">Sim !!
+                </mat-hint>
+              </mat-form-field>
+            </div>
+            <div class="col-md-4">
+              <mat-form-field appearance="fill" class="w100">
+                <mat-label>pin</mat-label>
+                <input [(ngModel)]="product.smartPhoneConfig.pin" formControlName="pin" matInput
+                       placeholder="Enter Here" type="text">
+                <mat-hint
+                  *ngIf="(formProduct.controls['pin'].dirty || formProduct.controls['pin'].touched) && formProduct.hasError('required', 'pin')"
+                  class="text-danger">Pin: !!
+                </mat-hint>
+              </mat-form-field>
+            </div>
+            <div class="col-md-4">
+              <mat-form-field appearance="fill" class="w100">
+                <mat-label>Chip</mat-label>
+                <input [(ngModel)]="product.smartPhoneConfig.chip" formControlName="chip" matInput
+                       placeholder="Enter Here"
+                       type="text">
+                <mat-hint
+                  *ngIf="(formProduct.controls['chip'].dirty || formProduct.controls['chip'].touched) && formProduct.hasError('required', 'chip')"
+                  class="text-danger">Chip !!
+                </mat-hint>
+              </mat-form-field>
+            </div>
+          </div>
+        </form>
+        <!-- <div class="dropzone"
+        appDrag
+        (files)="fileDropped($event)"
+        >
+          <div class="text-wrapper">
+            <div class="text-center">
+            Drag and drop your file or
+            <a (click)="selectFile.click()" class="browse-button">browse</a>
+            a file
+            </div>
+          </div>
+        </div> -->
+        <div>
+          <app-upload-mutiple-file (giveUrl)="downloadUrl($event)"></app-upload-mutiple-file>
+          <!--          <input #selectFile (change)="onFileSelected($event)" multiple type="file"-->
+          <!--                 value="select">-->
+        </div>
+        <br>
+        <div class="mt10">
+
+
+          <div class="row">
+
+            <mat-grid-list cols="4" rowHeight="1:1">
+              <mat-grid-tile *ngFor="let file of product.imgChildren; let i = index">
+                <div style="position: relative">
+                  <span (click)="removeImage(file,i)" class="btn-remove-image">x</span>
+                  <img class="img-fluid" src="{{file}}" width="100%">
+                </div>
+              </mat-grid-tile>
+            </mat-grid-list>
+
+
+            <!--                  <div *ngFor="let file of product.productImages; let i = index">-->
+            <!--                    <div class="title">-->
+            <!--                      <div style="position: relative">-->
+            <!--                        <span class="btn-remove-image" (click)="removeImage(i)">x</span>-->
+            <!--                        <img  class="img-fluid" [src]="file.url" width="30%">-->
+            <!--                      </div>-->
+            <!--                    </div>-->
+            <!--                  </div>-->
+
           </div>
         </div>
       </div>
     </div>
   </div>
-  
-  
-  
-  
+</div>
+
+
+

@@ -3,6 +3,7 @@ import {Injectable} from '@angular/core';
 import {environment} from 'src/environments/environment';
 import {Product} from '../_model/product.model';
 import {ReviewModel} from "../_model/review.model";
+import {catchError, map, throwError} from "rxjs";
 
 @Injectable({
   providedIn: 'root'
@@ -13,12 +14,12 @@ export class ProductService {
   constructor(private _http: HttpClient) {
   }
 
-  public addProduct(product: FormData) {
+  public addProduct(product: any) {
     return this._http.post<Product>(`${this.apiBaseUrl}/product/`, product)
   }
 
   //update product
-  public updateProduct(product: FormData) {
+  public updateProduct(product: any) {
     return this._http.put<Product>(`${this.apiBaseUrl}/product/`, product)
   }
 
@@ -30,6 +31,10 @@ export class ProductService {
   //get all
   public getAllProduct() {
     return this._http.get<Product[]>(`${this.apiBaseUrl}/product/`)
+      .pipe(
+        map((res) => res),
+        catchError((err) => throwError(() => err))
+      )
   }
 
   public createRating(pId: any, review: ReviewModel) {

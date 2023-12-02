@@ -201,10 +201,11 @@ export class NavbarComponent implements OnInit, AfterViewInit {
       this.isShow = this.fondovalor.nativeElement.classList.remove('show')
       this.isShowSearch = this.fondovalor.nativeElement.classList.toggle('showSearch')
       this.dataProductDetails = this.productDetails.filter(
-        (r: any) =>
+        (r: any) => {
           !r.title
             .toLowerCase()
             .search(new RegExp(this.valueInput.toLowerCase()))
+        }
       ).slice(0, 5)
       // const remainingLength = Math.min(5, this.productDetails.length - this.dataProductDetails)
 

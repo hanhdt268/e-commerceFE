@@ -4,7 +4,6 @@ import {ProductService} from "../../../service/product.service";
 import {ImageProcessingService} from "../../../service/image-processing.service";
 import Swal from "sweetalert2";
 import {Product} from "../../../_model/product.model";
-import {map} from "rxjs";
 
 @Component({
   selector: 'app-view-product-by-search',
@@ -47,10 +46,6 @@ export class ViewProductBySearchComponent implements OnInit {
 
   public getAllProduct(searchKey: string = "") {
     this._product.getActiveProduct(this.pageNumber, searchKey)
-      .pipe(
-        // @ts-ignore
-        map((x: Product[], i) => x.map((product: Product) => this._imageProcessing.createImages(product)))
-      )
       .subscribe({
         // @ts-ignore
         next: (data: Product[]) => {
@@ -137,7 +132,7 @@ export class ViewProductBySearchComponent implements OnInit {
       this.handlePriceAsc()
     } else {
       this.pageNumber = 0;
-      
+
       this.handleProductByBestSelling()
     }
 

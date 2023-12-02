@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {ActivatedRouteSnapshot, Resolve, RouterStateSnapshot} from '@angular/router';
-import {map, Observable, of} from 'rxjs';
+import {Observable, of} from 'rxjs';
 import {ProductService} from "./product.service";
 import {Product} from '../_model/product.model';
 import {ImageProcessingService} from './image-processing.service';
@@ -20,7 +20,7 @@ export class ProductResolveService implements Resolve<Product> {
 
       // @ts-ignore
       return this._product.getProductById(id)
-        .pipe(map(p => this._imageProcessing.createImages(p)))
+
     } else {
       //return empty product observable
       // @ts-ignore
@@ -38,7 +38,7 @@ export class ProductResolveService implements Resolve<Product> {
       images: '',
       active: true,
       quantum: '',
-      productImages: [],
+      imgChildren: [],
       laptopConfig: {
         cpu: '',
         ram: '',

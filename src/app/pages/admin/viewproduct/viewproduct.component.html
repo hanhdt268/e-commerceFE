@@ -31,31 +31,31 @@
       <td *matCellDef="let element;let i = index" mat-cell> {{i + 1}} </td>
     </ng-container>
     <ng-container matColumnDef="Product Image">
-      <th *matHeaderCellDef mat-header-cell> Product Image</th>
+      <th *matHeaderCellDef mat-header-cell> Hình ảnh</th>
       <td *matCellDef="let element" mat-cell><img class="img-fluid" height="100px" src="{{element.images}}"
                                                   width="100px"></td>
     </ng-container>
     <!-- Name Column -->
     <ng-container matColumnDef="Product Name">
-      <th *matHeaderCellDef mat-header-cell mat-sort-header="title"> Product Name</th>
+      <th *matHeaderCellDef mat-header-cell mat-sort-header="title"> Tên SP</th>
       <td *matCellDef="let element" mat-cell> {{element.title}} </td>
     </ng-container>
 
     <!-- Weight Column -->
     <ng-container matColumnDef="Product ActualPrice">
-      <th *matHeaderCellDef mat-header-cell mat-sort-header="price"> Product ActualPrice</th>
+      <th *matHeaderCellDef mat-header-cell mat-sort-header="price"> Giá tiền</th>
       <td *matCellDef="let element" mat-cell> {{element.price | currency: 'VND'}} </td>
     </ng-container>
 
     <!-- Symbol Column -->
     <ng-container matColumnDef="Product DiscountPrice">
-      <th *matHeaderCellDef mat-header-cell mat-sort-header="discountPrice"> Product DiscountPrice</th>
+      <th *matHeaderCellDef mat-header-cell mat-sort-header="discountPrice"> Giá tiền giảm</th>
       <td *matCellDef="let element" mat-cell> {{element.discountPrice | currency: 'VND'}} </td>
     </ng-container>
 
     <!-- images Column -->
     <ng-container matColumnDef="Actions">
-      <th *matHeaderCellDef mat-header-cell> Actions</th>
+      <th *matHeaderCellDef mat-header-cell> ###</th>
       <td *matCellDef="let element" mat-cell>
         <!-- <button (click)="openImages(element)" class="img-fluid" color="primary" mat-icon-button>
           <mat-icon>images</mat-icon>
