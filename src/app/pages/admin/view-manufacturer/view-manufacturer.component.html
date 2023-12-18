@@ -1,5 +1,5 @@
 <div class="container mt20">
-  <button (click)="openDialog()" color="primary" mat-raised-button>Add New Manufacturer</button>
+  <button (click)="openDialog()" color="primary" mat-raised-button>Thêm hãng</button>
 </div>
 
 <div class="container-fluid mt20">
@@ -34,15 +34,15 @@
     </ng-container>
     <ng-container matColumnDef="Id">
       <th *matHeaderCellDef mat-header-cell mat-sort-header="length" sortActionDescription="Sort by id"> STT</th>
-      <td *matCellDef="let element;let i = index" mat-cell> {{i + 1}} </td>
+      <td *matCellDef="let element;let i = index" mat-cell> {{ i + 1 }}</td>
     </ng-container>
     <ng-container matColumnDef="ManufacturerName">
-      <th *matHeaderCellDef mat-header-cell> Manufacturer Name
+      <th *matHeaderCellDef mat-header-cell> Tên hãng
       </th>
-      <td *matCellDef="let element" mat-cell>{{element.title}}</td>
+      <td *matCellDef="let element" mat-cell>{{ element.title }}</td>
     </ng-container>
     <ng-container matColumnDef="Action">
-      <th *matHeaderCellDef mat-header-cell mat-sort-header sortActionDescription="Sort by action"> Action</th>
+      <th *matHeaderCellDef mat-header-cell mat-sort-header sortActionDescription="Sort by action"> ###</th>
       <td *matCellDef="let element" mat-cell>
         <button (click)="openDialogUpdate(element.manuId)" color="primary" mat-icon-button>
           <mat-icon>edit</mat-icon>

@@ -66,13 +66,14 @@ export class ViewManufacturerComponent implements OnInit, AfterViewInit {
   }
 
   openDialog() {
-    const manufacturer = this._dialog.open(AddManufacturerComponent, {width: "60%", height: "500px"})
+    const manufacturer = this._dialog.open(AddManufacturerComponent, {width: "40%", height: "300px"})
     manufacturer.afterClosed().subscribe(r => {
       this.getAllManufacturer();
     })
   }
 
   delete(manuId: any) {
+    console.log(manuId)
     Swal.fire({
       icon: 'info',
       title: 'Are you sure?',
@@ -82,7 +83,7 @@ export class ViewManufacturerComponent implements OnInit, AfterViewInit {
       if (result.isConfirmed) {
         this._manufacturer.deleteManufacturer(manuId).subscribe({
           next: (data: any) => {
-            this.dataSource = this.dataSource.filter((manufacturer: any) => manufacturer.manuId != manuId)
+            this.getAllManufacturer();
             Swal.fire('Successfully', 'Manufacturer deleted', 'success')
           },
           error: (error: any) => {

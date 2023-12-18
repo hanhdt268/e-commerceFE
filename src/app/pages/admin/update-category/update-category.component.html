@@ -1,22 +1,21 @@
 <mat-card>
-    <h1>Update New Categories</h1>
-    <mat-card-content>
-      <div class="bootstrap-wrapper">
-        <div class="row">
-          <div class="col-md-8 offset-md-2">
-            <form (ngSubmit)="formSubmit()" *ngIf="category">
-              <mat-form-field appearance="outline" class="w100">
-                <mat-label>Title</mat-label>
-                <input [(ngModel)]="category.title" matInput name="title" placeholder="Enter Here" required
-                       type="text">
-              </mat-form-field>
-              <div class="container mt15 text-center">
-                <button type="submit" color="primary" mat-raised-button>Update</button>
-              </div>
-            </form>
-          </div>
+  <h1>Cập nhật thể loại</h1>
+  <mat-card-content>
+    <div class="bootstrap-wrapper">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <form (ngSubmit)="formSubmit()" *ngIf="category">
+            <mat-form-field appearance="outline" class="w100">
+              <mat-label>Tên</mat-label>
+              <input [(ngModel)]="category.title" matInput name="title" placeholder="Enter Here" required
+                     type="text">
+            </mat-form-field>
+            <div class="container mt15 text-center">
+              <button color="primary" mat-raised-button type="submit">Cập nhật</button>
+            </div>
+          </form>
         </div>
       </div>
-    </mat-card-content>
-  </mat-card>
-  
+    </div>
+  </mat-card-content>
+</mat-card>

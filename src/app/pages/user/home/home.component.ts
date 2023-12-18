@@ -102,7 +102,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
       .subscribe({
         // @ts-ignore
         next: (data: Product[]) => {
-          this.productDetails = data
+          this.productDetails = data.reverse()
 
           // const test = this.productDetails.map((re: any) => re.reviews).reduce((acc: any, cur: any) =>
           //   acc + cur.length, 0)
@@ -125,7 +125,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
       .subscribe({
         // @ts-ignore
         next: (data: Product[]) => {
-          this.productDetails = data;
+          this.productDetails = data.reverse();
           this.dataProductDetails = this.productDetails;
         },
         error: (error) => {

@@ -126,7 +126,7 @@ export class BuyProductComponent implements OnInit {
   public placeOder() {
 
     Swal.fire({
-      title: 'Your oder is place successfully, It will get delivery to you with 4-5 business day',
+      title: 'Bạn đã đặt hàng thành công, Đơn hàng sẽ được giao đến bạn sau 3-4 ngày',
 
       icon: "success",
       timer: 1000,

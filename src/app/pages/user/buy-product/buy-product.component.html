@@ -16,8 +16,8 @@
           <tbody class="tbody">
           <tr *ngFor="let cart of productDetails">
             <td><img class="img-fluid" height="80px" src="{{cart.product.images}}" width="80px"></td>
-            <td>{{cart.product.title}}</td>
-            <td>{{cart.product.discountPrice | currency: 'VND'}}</td>
+            <td>{{ cart.product.title }}</td>
+            <td>{{ cart.product.discountPrice | currency: 'VND' }}</td>
             <td>
               <!--              <form #oderForm="ngForm" (ngSubmit)="placeOder(oderForm)">-->
               <!--                <input [(ngModel)]="orderDetails.quantity" required matInput name="quantity"-->
@@ -58,14 +58,14 @@
                 <!--                </button>-->
               </div>
             </td>
-            <td>{{getCalculatedProduct(cart.product.pid, cart.product.discountPrice, cart.quantity) | currency: 'VND'}}</td>
+            <td>{{ getCalculatedProduct(cart.product.pid, cart.product.discountPrice, cart.quantity) | currency: 'VND' }}</td>
           </tr>
           <tr>
             <td></td>
             <td></td>
             <td></td>
             <th>Tổng tiền</th>
-            <th>{{getCalculatedGrandTotal() | currency: 'VND'}}</th>
+            <th>{{ getCalculatedGrandTotal() | currency: 'VND' }}</th>
           </tr>
           </tbody>
         </table>
@@ -73,50 +73,49 @@
       <div class="col-6 offset-3 mt20">
         <form (ngSubmit)="placeOder()" [formGroup]="form">
           <mat-form-field appearance="fill" class="w100">
-            <mat-label>Full Name</mat-label>
-            <input [(ngModel)]="orderDetails.fullName" formControlName="fullName" matInput placeholder="Enter Here"
+            <mat-label>Họ và tên</mat-label>
+            <input [(ngModel)]="orderDetails.fullName" formControlName="fullName" matInput placeholder="Họ và tên"
                    required
                    type="text">
             <mat-hint
               *ngIf="(form.controls['fullName'].dirty || form.controls['fullName'].touched) && form.hasError('required', 'fullName')"
-              class="text-danger">fullName is required !!
+              class="text-danger">Vui lòng nhập nhập tên !!
             </mat-hint>
           </mat-form-field>
           <mat-form-field appearance="fill" class="w100">
-            <mat-label>Full Address</mat-label>
+            <mat-label>Địa chỉ</mat-label>
             <input [(ngModel)]="orderDetails.fullAddress" formControlName="fullAddress" matInput
-                   placeholder="Enter Here"
+                   placeholder="Địa chỉ"
                    required
                    type="text">
             <mat-hint
               *ngIf="(form.controls['fullAddress'].dirty || form.controls['fullAddress'].touched) && form.hasError('required', 'fullAddress')"
-              class="text-danger">Full Address is required !!
+              class="text-danger">Vui lòng nhập địa chỉ !!
             </mat-hint>
           </mat-form-field>
           <mat-form-field appearance="fill" class="w100">
-            <mat-label>Contact Number</mat-label>
+            <mat-label>Số điện thoai</mat-label>
             <input [(ngModel)]="orderDetails.contactNumber" formControlName="contactNumber" matInput
-                   placeholder="Enter Here"
+                   placeholder="SDT"
                    required type="text">
             <mat-hint
               *ngIf="(form.controls['contactNumber'].dirty || form.controls['contactNumber'].touched) && form.hasError('required', 'contactNumber')"
-              class="text-danger">Contact Number is required !!
+              class="text-danger">Vui lòng nhập sdt !!
             </mat-hint>
           </mat-form-field>
           <mat-form-field appearance="fill" class="w100">
-            <mat-label>Note</mat-label>
+            <mat-label>Ghi chú</mat-label>
 
             <textarea [(ngModel)]="orderDetails.note" formControlName="note" matInput
-                      placeholder="Ex. It makes me feel..."></textarea>
+                      placeholder="Nhập ghi chú..."></textarea>
             <mat-hint
               *ngIf="(form.controls['note'].dirty || form.controls['note'].touched) && form.hasError('required', 'note')"
-              class="text-danger">Note is required !!
+              class="text-danger">Vui lòng nhập ghi chú !!
             </mat-hint>
           </mat-form-field>
           <div *ngIf="checkPlacedOrder" class="progress-1"></div>
           <div class="text-center">
-            <button *ngIf="isShow" [disabled]="form.invalid" color="primary" mat-stroked-button type="submit">Place
-              Oder
+            <button *ngIf="isShow" [disabled]="form.invalid" color="primary" mat-stroked-button type="submit">Đặt hàng
             </button>
           </div>
         </form>

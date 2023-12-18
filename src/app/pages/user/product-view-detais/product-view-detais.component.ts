@@ -53,8 +53,10 @@ export class ProductViewDetaisComponent implements OnInit {
     this.formComment = this._fb.group({
       content: new FormControl('', [Validators.required])
     })
-    if (this.product.reviews.length > 0) {
-      this.isShowReview = true;
+    for (const review of this.product.reviews) {
+      if (review.active) {
+        this.isShowReview = true
+      }
     }
   }
 

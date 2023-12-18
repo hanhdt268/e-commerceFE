@@ -1,0 +1,82 @@
+<section id="content">
+  <main>
+    <div class="head-title">
+      <div class="left">
+        <h1>Dashboard</h1>
+        <ul class="breadcrumb">
+          <li>
+            <a href="#">Dashboard</a>
+          </li>
+          <li><i class='bx bx-chevron-right'></i></li>
+          <li>
+            <a class="active" href="#">Home</a>
+          </li>
+        </ul>
+      </div>
+      <a class="btn-download" style="cursor: pointer">
+        <i class='bx bxs-cloud-download'></i>
+        <!--        <span (click)="test()" class="text">Download PDF</span>-->
+      </a>
+    </div>
+
+    <ul class="box-info">
+      <li>
+        <i class='bx bxs-calendar-check'></i>
+        <span class="text">
+						<h3>{{quantity}}</h3>
+						<p>Số lượng đơn hàng đã bán</p>
+					</span>
+      </li>
+      <li>
+        <i class='bx bxs-dollar-circle'></i>
+        <span class="text">
+						<h3>{{total | currency: 'VND'}}</h3>
+						<p>Tổng tiền đã bán</p>
+					</span>
+      </li>
+    </ul>
+
+
+    <br>
+    <ul class="box-info">
+      <li>
+        <!--        <i class='bx bxs-calendar-check'></i>-->
+        <mat-icon color="primary" style="width: 80px; height: 80px;border-radius: 10px;
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;">local_shipping
+        </mat-icon>
+        <span class="text">
+						<h3>{{statusPlaced}}</h3>
+						<p>Đơn hàng đang giao</p>
+					</span>
+      </li>
+      <li>
+        <mat-icon style="width: 80px;color: #1e7e34; height: 80px;border-radius: 10px;
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;">check_circle
+        </mat-icon>
+        <span class="text">
+						<h3>{{statusDelivered}}</h3>
+						<p>Đơn hàng đã giao</p>
+					</span>
+      </li>
+      <!--      <li>-->
+      <!--        &lt;!&ndash;        <i class=' bxs-dollar-circle'></i>&ndash;&gt;-->
+      <!--        <mat-icon color="warn" style="width: 80px; height: 80px;border-radius: 10px;-->
+      <!--  font-size: 36px;-->
+      <!--  display: flex;-->
+      <!--  justify-content: center;-->
+      <!--  align-items: center;">disabled_by_default-->
+      <!--        </mat-icon>-->
+      <!--        <span class="text">-->
+      <!--						<h3>5</h3>-->
+      <!--						<p>Đơn hàng đã bị hủy</p>-->
+      <!--					</span>-->
+      <!--      </li>-->
+    </ul>
+  </main>
+</section>

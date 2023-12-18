@@ -189,9 +189,10 @@ export class NavbarComponent implements OnInit, AfterViewInit {
     // item.push(valueInput)
 
     console.log(valueInput)
-    forkJoin([this._router.navigate([`homepage/search/${valueInput}`]),
+    forkJoin([this._router.navigate([`homepage/search/${valueInput}`]).then(r => {
+      window.location.reload()
+    }),
       this.fondovalor.nativeElement.value = ""])
-
   }
 
   handlerShow() {
@@ -242,9 +243,10 @@ export class NavbarComponent implements OnInit, AfterViewInit {
   }
 
   handlerSearch(item: any) {
-    this._router.navigate([`homepage/search/${item}`]).then(
+    this._router.navigate([`homepage/search/${item}/${0}`]).then(
       resp => {
         this.isShow = this.fondovalor.nativeElement.classList.remove('show')
+        window.location.reload()
       }
     )
   }
@@ -254,6 +256,7 @@ export class NavbarComponent implements OnInit, AfterViewInit {
       this.isShowSearch = this.fondovalor.nativeElement.classList.remove('showSearch')
       this.fondovalor.nativeElement.value = ""
       window.location.reload()
+
     })
   }
 

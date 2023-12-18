@@ -29,6 +29,9 @@ import {DashboardAdminComponent} from "./pages/admin/dashboard-admin/dashboard-a
 import {DeliveryComponent} from "./pages/shipper/delivery/delivery.component";
 import {ShipperGuard} from "./service/shipper.guard";
 import {CompareProductComponent} from "./pages/user/compare-product/compare-product.component";
+import {CommonComponent} from "./pages/shipper/common/common.component";
+import {StatisticsComponent} from "./pages/shipper/statistics/statistics.component";
+import {ManageReviewComponent} from "./pages/admin/manage-review/manage-review.component";
 
 const routes: Routes = [
   {
@@ -63,6 +66,14 @@ const routes: Routes = [
         path: 'product/:cateId',
         component: ViewproductComponent,
       },
+      {
+        path: "profile",
+        component: ProfileComponent,
+      },
+      {
+        path: "review",
+        component: ManageReviewComponent,
+      },
       // {
       //   path: 'update-product',
       //   component: UpdateProductComponent
@@ -92,6 +103,7 @@ const routes: Routes = [
       }
     ]
   },
+
   {
     path: "homepage",
     component: ClientDashbordComponent,
@@ -103,10 +115,9 @@ const routes: Routes = [
         resolve: {
           product: ProductResolveService,
         },
-
       },
       {
-        path: 'search/:search',
+        path: 'search/:search/:manuId',
         component: ViewProductBySearchComponent,
         resolve: {
           product: ProductResolveService
@@ -131,9 +142,24 @@ const routes: Routes = [
   },
   {
     path: "shipper",
-    component: DeliveryComponent,
-    canActivate: [ShipperGuard]
+    component: CommonComponent,
+    canActivate: [ShipperGuard],
+    children: [
+      {
+        path: "",
+        component: DeliveryComponent,
+      },
+      {
+        path: "dashboard",
+        component: StatisticsComponent,
+      },
+      {
+        path: "profile",
+        component: ProfileComponent,
+      },
+    ]
   },
+
   {
     path: 'cart',
     component: CartComponent,

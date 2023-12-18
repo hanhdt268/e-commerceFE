@@ -67,7 +67,8 @@ export interface Product {
       content: string,
       value: number,
       image: string,
-      dateCreate: Date
+      dateCreate: Date,
+      active: any
       user: any,
       pid: number
     }

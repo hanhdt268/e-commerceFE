@@ -1,31 +1,30 @@
 <mat-card>
-    <!--  <button mat-raised-button color="primary" class="text-center" [routerLink]="'/admin/add-manufacturer'">Add Manufacturer</button>-->
-    <h1 class="mt10">Update Manufacturer</h1>
-    <mat-card-content>
-      <div class="bootstrap-wrapper">
-        <div class="row">
-          <div class="col-md-8 offset-md-2">
-            <form (ngSubmit)="formSubmit()" *ngIf="manufacturer">
-              <mat-form-field appearance="outline" class="w100">
-                <mat-label>Title</mat-label>
-                <input [(ngModel)]="manufacturer.title" matInput name="title" placeholder="Enter Here" required
-                       type="text">
-              </mat-form-field>
-              <mat-form-field appearance="fill" class="w100 mt10">
-                <mat-label>Category</mat-label>
-                <mat-select [(ngModel)]="manufacturer.category.cateId" name="category">
-                  <mat-option *ngFor="let item of categories" [value]="item.cateId">
-                    {{item.title}}
-                  </mat-option>
-                </mat-select>
-              </mat-form-field>
-              <div class="container mt15 text-center">
-                <button type="submit" color="primary" mat-raised-button>Update</button>
-              </div>
-            </form>
-          </div>
+  <!--  <button mat-raised-button color="primary" class="text-center" [routerLink]="'/admin/add-manufacturer'">Add Manufacturer</button>-->
+  <h1 class="mt10">Cập nhật hãng</h1>
+  <mat-card-content>
+    <div class="bootstrap-wrapper">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <form (ngSubmit)="formSubmit()" *ngIf="manufacturer">
+            <mat-form-field appearance="outline" class="w100">
+              <mat-label>Tên hãng</mat-label>
+              <input [(ngModel)]="manufacturer.title" matInput name="title" placeholder="Enter Here" required
+                     type="text">
+            </mat-form-field>
+            <mat-form-field appearance="fill" class="w100 mt10">
+              <mat-label>Thể loại</mat-label>
+              <mat-select [(ngModel)]="manufacturer.category.cateId" name="category">
+                <mat-option *ngFor="let item of categories" [value]="item.cateId">
+                  {{ item.title }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+            <div class="container mt15 text-center">
+              <button color="primary" mat-raised-button type="submit">Cập nhật</button>
+            </div>
+          </form>
         </div>
       </div>
-    </mat-card-content>
-  </mat-card>
-  
+    </div>
+  </mat-card-content>
+</mat-card>

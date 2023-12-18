@@ -1,6 +1,5 @@
 import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {Product} from "../../../_model/product.model";
-import {MyOrderDetails} from "../../../_model/order.model";
 import {ProductService} from "../../../service/product.service";
 import {ActivatedRoute, Router, RouterLink} from "@angular/router";
 import {MatDialog} from "@angular/material/dialog";
@@ -31,7 +30,7 @@ import {MatCardModule} from "@angular/material/card";
 export class MyOrdersComponent implements OnInit {
 
   product!: Product
-  myOrderDetails: MyOrderDetails[] = []
+  myOrderDetails: any[] = []
   status: any = "All"
   pId: any
   user: any;
@@ -40,6 +39,9 @@ export class MyOrdersComponent implements OnInit {
   columnsToDisplay = ['Id', 'orderFullName', 'quantity', 'orderAmount', 'orderStatus', 'paymentMethod']
   innerDisplayedColumns = ['pId', 'title', 'discountPrice', 'quantity', 'total', 'action']
   columnsToDisplayWithExpand = [...this.columnsToDisplay, 'expand'];
+  showReview: any = false
+  statusReview: any = []
+  expandedElement: any | null;
 
   constructor(private _productService: ProductService, private _dialog: MatDialog,
               private _activeRoute: ActivatedRoute,
@@ -70,10 +72,16 @@ export class MyOrdersComponent implements OnInit {
 
   public getOderDetails(statusParameter: any) {
     this._order.getOrderDetails(this.user?.userID, statusParameter).subscribe({
-      next: (response: MyOrderDetails[]) => {
+      next: (response: any[]) => {
         console.log(response)
-        this.myOrderDetails = response;
-
+        this.myOrderDetails = response.reverse();
+        this.statusReview = response.map(x => x.orderStatus)
+        for (let i = 0; i < this.statusReview.length; i++) {
+          if (this.statusReview[i] == 'Hoàn thành') {
+            this.showReview = true
+          }
+        }
+        console.log(this.showReview)
       }, error: (error) => {
         console.log(error)
       }
@@ -120,7 +128,7 @@ export class MyOrdersComponent implements OnInit {
 
   handlerShow(element: any) {
     element.expanded = !element?.expanded
-
+    
   }
 
   cancel(orderId: any) {
@@ -152,5 +160,9 @@ export class MyOrdersComponent implements OnInit {
       width: '55%',
       height: '650px'
     })
+  }
+
+  navigate(pid: number) {
+    this._router.navigate(['productViewDetails', {pid: pid}])
   }
 }

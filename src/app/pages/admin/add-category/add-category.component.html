@@ -1,30 +1,29 @@
 <mat-card>
-    <!--  <button mat-raised-button color="primary" class="text-center" [routerLink]="'/admin/add-manufacturer'">Add Manufacturer</button>-->
-    <h1 class="mt10">Add New Categories</h1>
-    <mat-card-content>
-      <div class="bootstrap-wrapper">
-        <div class="row">
-          <div class="col-md-8 offset-md-2">
-            <form [formGroup]="form" (ngSubmit)="formSubmit()">
-              <mat-form-field appearance="outline" class="w100">
-                <mat-label>Title</mat-label>
-                <input [(ngModel)]="category.title" autofocus matInput formControlName="title" placeholder="Enter Here"
-                       required
-                       type="text">
-                <mat-hint
-                  *ngIf="(form.controls['title'].dirty || form.controls['title'].touched) && form.hasError('required', 'title')"
-                  class="text-danger">Vui lòng nhập tên thể loại !!
-                </mat-hint>
-              </mat-form-field>
-              <div class="container mt15 text-center">
-                <button type="submit" [disabled]="form.invalid" color="primary" mat-raised-button>Add</button>
-              </div>
-            </form>
-          </div>
+  <!--  <button mat-raised-button color="primary" class="text-center" [routerLink]="'/admin/add-manufacturer'">Add Manufacturer</button>-->
+  <h1 class="mt10">Thêm thể loại</h1>
+  <mat-card-content>
+    <div class="bootstrap-wrapper">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <form (ngSubmit)="formSubmit()" [formGroup]="form">
+            <mat-form-field appearance="outline" class="w100">
+              <mat-label>Tên</mat-label>
+              <input [(ngModel)]="category.title" autofocus formControlName="title" matInput placeholder="Enter Here"
+                     required
+                     type="text">
+              <mat-hint
+                *ngIf="(form.controls['title'].dirty || form.controls['title'].touched) && form.hasError('required', 'title')"
+                class="text-danger">Vui lòng nhập tên thể loại !!
+              </mat-hint>
+            </mat-form-field>
+            <div class="container mt15 text-center">
+              <button [disabled]="form.invalid" color="primary" mat-raised-button type="submit">Thêm</button>
+            </div>
+          </form>
         </div>
       </div>
-    </mat-card-content>
-  </mat-card>
-  
-  
-  
+    </div>
+  </mat-card-content>
+</mat-card>
+
+

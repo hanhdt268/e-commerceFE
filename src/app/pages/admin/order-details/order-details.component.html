@@ -1,33 +1,33 @@
 <div class="container-fluid mt20">
 
   <div class="VYJdTQ mt20" id="navbar">
-    <a class="OFl2GI btn active" mat-flat-button><span (click)="getAllOrderDetails('All')"
-                                                       class="_20hgQK"
-                                                       value="All">Tất cả</span>
+    <a (click)="getAllOrderDetails('All')" class="OFl2GI btn active" mat-flat-button><span
+      class="_20hgQK"
+      value="All">Tất cả</span>
     </a>
-    <a class="OFl2GI btn" mat-flat-button><span (click)="getAllOrderDetails('Chờ xác nhận')"
-                                                class="_20hgQK"
-                                                value="Placed">Chờ xác nhận</span>
+    <a (click)="getAllOrderDetails('Chờ xác nhận')" class="OFl2GI btn" mat-flat-button><span
+      class="_20hgQK"
+      value="Placed">Chờ xác nhận</span>
     </a>
-    <a class="OFl2GI btn" mat-flat-button><span
-      (click)="getAllOrderDetails('Chờ lấy hàng')"
+    <a (click)="getAllOrderDetails('Chờ lấy hàng')" class="OFl2GI btn" mat-flat-button><span
+
       class="_20hgQK"
       value="Chờ lấy hàng">Chờ lấy hàng</span>
     </a>
-    <a class="OFl2GI btn" mat-flat-button><span (click)="getAllOrderDetails('Đang giao')" class="_20hgQK"
-                                                value="Đang giao">Đang giao</span>
+    <a (click)="getAllOrderDetails('Đang giao')" class="OFl2GI btn" mat-flat-button><span class="_20hgQK"
+                                                                                          value="Đang giao">Đang giao</span>
     </a>
-    <a class="OFl2GI btn" mat-flat-button><span (click)="getAllOrderDetails('Đã giao')" class="_20hgQK"
-                                                value="Đã giao">Đã giao</span>
+    <a (click)="getAllOrderDetails('Đã giao')" class="OFl2GI btn" mat-flat-button><span class="_20hgQK"
+                                                                                        value="Đã giao">Đã giao</span>
     </a>
-    <a class="OFl2GI btn" mat-flat-button><span (click)="getAllOrderDetails('Hoàn thành')" class="_20hgQK"
-                                                value="Hoàn thành">Hoàn thành</span>
+    <a (click)="getAllOrderDetails('Hoàn thành')" class="OFl2GI btn" mat-flat-button><span class="_20hgQK"
+                                                                                           value="Hoàn thành">Hoàn thành</span>
     </a>
-    <a class="OFl2GI btn" mat-flat-button><span (click)="getAllOrderDetails('Đánh giá')" class="_20hgQK"
-                                                value="Đánh giá">Đánh giá</span>
+    <a (click)="getAllOrderDetails('Đánh giá')" class="OFl2GI btn" mat-flat-button><span class="_20hgQK"
+                                                                                         value="Đánh giá">Đánh giá</span>
     </a>
-    <a class="OFl2GI btn" mat-flat-button><span (click)="getAllOrderDetails('Đã hủy')" class="_20hgQK"
-                                                value="Đã hủy">Đã hủy</span></a>
+    <a (click)="getAllOrderDetails('Đã hủy')" class="OFl2GI btn" mat-flat-button><span class="_20hgQK"
+                                                                                       value="Đã hủy">Đã hủy</span></a>
     <!--  <mat-button-toggle-group aria-label="Font Style">-->
     <!--    <mat-button-toggle class="OFl2GI" value="All" (click)="getOderDetails('All')">All</mat-button-toggle>-->
     <!--    <mat-button-toggle class="OFl2GI gAImis" value="Placed" (click)="getOderDetails('Placed')">Placed-->
@@ -49,20 +49,20 @@
          multiTemplateDataRows>
     <ng-container matColumnDef="Id">
       <th *matHeaderCellDef mat-header-cell> STT</th>
-      <td *matCellDef="let element;let i = dataIndex" mat-cell> {{i + 1}} </td>
+      <td *matCellDef="let element;let i = dataIndex" mat-cell> {{ i + 1 }}</td>
     </ng-container>
     <ng-container matColumnDef="orderFullName">
       <th *matHeaderCellDef mat-header-cell>Tên</th>
-      <td *matCellDef="let element" mat-cell> {{element.orderFullName}} </td>
+      <td *matCellDef="let element" mat-cell> {{ element.orderFullName }}</td>
     </ng-container>
     <ng-container matColumnDef="quantity">
       <th *matHeaderCellDef mat-header-cell> Số lượng</th>
-      <td *matCellDef="let element" mat-cell> {{element.quantity}} </td>
+      <td *matCellDef="let element" mat-cell> {{ element.quantity }}</td>
     </ng-container>
 
     <ng-container matColumnDef="orderAmount">
       <th *matHeaderCellDef mat-header-cell> Tổng tiền</th>
-      <td *matCellDef="let element" mat-cell> {{element.orderAmount | currency: 'VND'}} </td>
+      <td *matCellDef="let element" mat-cell> {{ element.orderAmount | currency: 'VND' }}</td>
     </ng-container>
     <ng-container matColumnDef="orderStatus">
       <th *matHeaderCellDef mat-header-cell> Trạng thái</th>
@@ -74,11 +74,12 @@
          'receive' : element.orderStatus === 'Chờ lấy hàng'
          }"
 
-          mat-cell> {{element.orderStatus}} </td>
+          mat-cell> {{ element.orderStatus }}
+      </td>
     </ng-container>
     <ng-container matColumnDef="paymentMethod">
       <th *matHeaderCellDef mat-header-cell>Ngày đặt hàng</th>
-      <td *matCellDef="let element" mat-cell> {{element.orderDate | date : 'dd-MM-yyyy'}} </td>
+      <td *matCellDef="let element" mat-cell> {{ element.orderDate | date : 'dd-MM-yyyy' }}</td>
     </ng-container>
 
     <!--    <ng-container *ngFor="let column of columnsToDisplay" matColumnDef="{{column}}">-->
@@ -117,28 +118,33 @@
               <ng-container matColumnDef="pId">
                 <th *matHeaderCellDef mat-header-cell> STT</th>
                 <td *matCellDef="let element"
-                    mat-cell> {{element.product.pId}} </td>
+                    mat-cell> {{ element.product.pId }}
+                </td>
               </ng-container>
               <ng-container matColumnDef="title">
                 <th *matHeaderCellDef mat-header-cell> Tên SP</th>
                 <td *matCellDef="let element"
-                    mat-cell> {{element.product.title}} </td>
+                    mat-cell> {{ element.product.title }}
+                </td>
               </ng-container>
               <ng-container matColumnDef="discountPrice">
                 <th *matHeaderCellDef mat-header-cell> Giá tiền</th>
                 <td *matCellDef="let element"
-                    mat-cell> {{element.product.discountPrice | currency: 'VND'}} </td>
+                    mat-cell> {{ element.product.discountPrice | currency: 'VND' }}
+                </td>
               </ng-container>
               <ng-container matColumnDef="quantity">
                 <th *matHeaderCellDef mat-header-cell> Số lượng</th>
                 <td *matCellDef="let element"
-                    mat-cell> {{element.quantity}} </td>
+                    mat-cell> {{ element.quantity }}
+                </td>
               </ng-container>
 
               <ng-container matColumnDef="total">
                 <th *matHeaderCellDef mat-header-cell> Tổng tiền</th>
                 <td *matCellDef="let element"
-                    mat-cell> {{calculation(element.quantity, element.product.discountPrice)| currency: 'VND' }} </td>
+                    mat-cell> {{ calculation(element.quantity, element.product.discountPrice)| currency: 'VND' }}
+                </td>
               </ng-container>
               <!--    <tr *matHeaderRowDef="displayedColumns" mat-header-row></tr>-->
               <tr *matRowDef="let row; columns: innerDisplayedColumns;" mat-row></tr>

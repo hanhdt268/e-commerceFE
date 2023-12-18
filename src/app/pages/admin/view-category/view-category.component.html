@@ -1,5 +1,5 @@
 <div class="container mt20">
-  <button (click)="openDialog()" color="primary" mat-raised-button>Add New Category</button>
+  <button (click)="openDialog()" color="primary" mat-raised-button>Thêm thể loại</button>
 </div>
 
 <div class="container-fluid mt20">
@@ -12,15 +12,15 @@
     <!-- Position Column -->
     <ng-container matColumnDef="Id">
       <th *matHeaderCellDef mat-header-cell mat-sort-header sortActionDescription="Sort by id"> STT</th>
-      <td *matCellDef="let element; let i = index" mat-cell> {{i + 1}} </td>
+      <td *matCellDef="let element; let i = index" mat-cell> {{ i + 1 }}</td>
     </ng-container>
     <ng-container matColumnDef="CategoryTitle">
-      <th *matHeaderCellDef mat-header-cell> CategoryTitle
+      <th *matHeaderCellDef mat-header-cell> Tên thể loại
       </th>
-      <td *matCellDef="let element" mat-cell>{{element.title}}</td>
+      <td *matCellDef="let element" mat-cell>{{ element.title }}</td>
     </ng-container>
     <ng-container matColumnDef="Action">
-      <th *matHeaderCellDef mat-header-cell mat-sort-header sortActionDescription="Sort by action"> Action</th>
+      <th *matHeaderCellDef mat-header-cell mat-sort-header sortActionDescription="Sort by action"> ###</th>
       <td *matCellDef="let element" mat-cell>
         <button (click)="openDialogUpdate(element.cateId)" color="primary" mat-icon-button>
           <mat-icon>edit</mat-icon>

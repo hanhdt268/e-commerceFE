@@ -1,20 +1,23 @@
-import { Component, OnInit } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
-import { CategoryService } from 'src/app/service/category.service';
+import {Component, OnInit} from '@angular/core';
+import {MatDialog} from '@angular/material/dialog';
+import {CategoryService} from 'src/app/service/category.service';
 import Swal from 'sweetalert2';
-import { UpdateCategoryComponent } from '../update-category/update-category.component';
-import { AddCategoryComponent } from '../add-category/add-category.component';
+import {UpdateCategoryComponent} from '../update-category/update-category.component';
+import {AddCategoryComponent} from '../add-category/add-category.component';
 
 @Component({
   selector: 'app-view-category',
   templateUrl: './view-category.component.html',
   styleUrls: ['./view-category.component.css']
 })
-export class ViewCategoryComponent implements OnInit{
+export class ViewCategoryComponent implements OnInit {
   dataSource: any = []
   displayedColumns = ['Id', 'CategoryTitle', 'Action']
+
   constructor(private _category: CategoryService,
-    private _dialog: MatDialog){}
+              private _dialog: MatDialog) {
+  }
+
   ngOnInit(): void {
     this.loadCategory();
   }
@@ -24,7 +27,7 @@ export class ViewCategoryComponent implements OnInit{
     this._category.categories().subscribe({
       next: (data: any) => {
         this.dataSource = data;
-      
+
         console.log(data)
       },
       error: (error) => {
@@ -34,7 +37,7 @@ export class ViewCategoryComponent implements OnInit{
   }
 
   openDialog() {
-    const manufacturer = this._dialog.open(AddCategoryComponent, {width: "60%", height: "500px"})
+    const manufacturer = this._dialog.open(AddCategoryComponent, {width: "40%", height: "300px"})
     manufacturer.afterClosed().subscribe(r => {
       this.loadCategory();
     })

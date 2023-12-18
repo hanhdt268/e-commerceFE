@@ -12,7 +12,7 @@
   </button>
   <button *ngFor="let item of category" [routerLink]="'/admin/product/'+item.cateId" class="ml10" color="accent"
           mat-raised-button>
-    {{item.title}}
+    {{ item.title }}
   </button>
   <table [dataSource]="productDetails | paginate
               : {
@@ -28,7 +28,7 @@
     <!-- Position Column -->
     <ng-container matColumnDef="Id">
       <th *matHeaderCellDef mat-header-cell mat-sort-header="pid"> STT</th>
-      <td *matCellDef="let element;let i = index" mat-cell> {{i + 1}} </td>
+      <td *matCellDef="let element;let i = index" mat-cell> {{ i + 1 }}</td>
     </ng-container>
     <ng-container matColumnDef="Product Image">
       <th *matHeaderCellDef mat-header-cell> Hình ảnh</th>
@@ -38,19 +38,19 @@
     <!-- Name Column -->
     <ng-container matColumnDef="Product Name">
       <th *matHeaderCellDef mat-header-cell mat-sort-header="title"> Tên SP</th>
-      <td *matCellDef="let element" mat-cell> {{element.title}} </td>
+      <td *matCellDef="let element" mat-cell> {{ element.title }}</td>
     </ng-container>
 
     <!-- Weight Column -->
     <ng-container matColumnDef="Product ActualPrice">
       <th *matHeaderCellDef mat-header-cell mat-sort-header="price"> Giá tiền</th>
-      <td *matCellDef="let element" mat-cell> {{element.price | currency: 'VND'}} </td>
+      <td *matCellDef="let element" mat-cell> {{ element.price | currency: 'VND' }}</td>
     </ng-container>
 
     <!-- Symbol Column -->
     <ng-container matColumnDef="Product DiscountPrice">
       <th *matHeaderCellDef mat-header-cell mat-sort-header="discountPrice"> Giá tiền giảm</th>
-      <td *matCellDef="let element" mat-cell> {{element.discountPrice | currency: 'VND'}} </td>
+      <td *matCellDef="let element" mat-cell> {{ element.discountPrice | currency: 'VND' }}</td>
     </ng-container>
 
     <!-- images Column -->
@@ -60,7 +60,7 @@
         <!-- <button (click)="openImages(element)" class="img-fluid" color="primary" mat-icon-button>
           <mat-icon>images</mat-icon>
         </button> -->
-        <button (click)="editProductDetails(element.pid)" color="accent"
+        <button (click)="editProductDetails(element.pid)" color="primary"
                 mat-icon-button>
           <mat-icon>edit</mat-icon>
         </button>

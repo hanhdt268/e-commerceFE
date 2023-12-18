@@ -23,18 +23,22 @@
     </ng-container>
     <ng-container matColumnDef="Name">
       <th *matHeaderCellDef mat-header-cell> Tên SP</th>
-      <td *matCellDef="let element" mat-cell> {{element.product.title}} </td>
+      <td (click)="navigate(element.product.pid)" *matCellDef="let element" mat-cell
+          style="cursor: pointer"> {{ element.product.title }}
+      </td>
     </ng-container>
     <ng-container matColumnDef="DiscountPrice">
       <th *matHeaderCellDef mat-header-cell> Giá tiền</th>
       <td *matCellDef="let element"
-          mat-cell> {{element.product.discountPrice | currency: 'VND'}} </td>
+          mat-cell> {{ element.product.discountPrice | currency: 'VND' }}
+      </td>
     </ng-container>
     <ng-container matColumnDef="Quantity">
       <th *matHeaderCellDef mat-header-cell> Số lượng</th>
       <td *matCellDef="let element" mat-cell>
         <div class="quantity">
-          <button (click)="decrease(element.cartId)" class="quantity-btn" id="decrease"
+          <button (click)="decrease(element.cartId)" [disabled]="element.quantity == 1" class="quantity-btn"
+                  id="decrease"
           >-
           </button>
           <input [(ngModel)]="element.quantity" class="quantity-input" name="quantity" type="text">
@@ -45,7 +49,8 @@
     <ng-container matColumnDef="Amount">
       <th *matHeaderCellDef mat-header-cell> Tổng tiền</th>
       <td *matCellDef="let element"
-          mat-cell> {{getCalculatedProduct(element.product.pid, element.product.discountPrice, element.quantity) | currency: 'VND'}} </td>
+          mat-cell> {{ getCalculatedProduct(element.product.pid, element.product.discountPrice, element.quantity) | currency: 'VND' }}
+      </td>
     </ng-container>
     <ng-container matColumnDef="Action">
       <th *matHeaderCellDef mat-header-cell> ###</th>
@@ -61,7 +66,7 @@
   </table>
 
   <div align="right" class="mt10">
-    <button (click)="handleCheckout()" color="primary" mat-raised-button>Mua hàng</button>
+    <button (click)="handleCheckout()" [disabled]="!checkCart" color="primary" mat-raised-button>Mua hàng</button>
     <!--    <button data-toggle="modal" data-target="#exampleModal"  mat-raised-button color="primary">edit</button>-->
   </div>
 </div>

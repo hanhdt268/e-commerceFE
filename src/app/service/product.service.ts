@@ -3,7 +3,6 @@ import {Injectable} from '@angular/core';
 import {environment} from 'src/environments/environment';
 import {Product} from '../_model/product.model';
 import {ReviewModel} from "../_model/review.model";
-import {catchError, map, throwError} from "rxjs";
 
 @Injectable({
   providedIn: 'root'
@@ -31,10 +30,6 @@ export class ProductService {
   //get all
   public getAllProduct() {
     return this._http.get<Product[]>(`${this.apiBaseUrl}/product/`)
-      .pipe(
-        map((res) => res),
-        catchError((err) => throwError(() => err))
-      )
   }
 
   public createRating(pId: any, review: ReviewModel) {
@@ -89,5 +84,33 @@ export class ProductService {
 
   getProductByBestSelling(pageNumber: any, searchKey: any) {
     return this._http.get(`${this.apiBaseUrl}/product/selling?pageNumber=` + pageNumber + "&searchKey=" + searchKey)
+  }
+
+  getProductByManuAsc(manuId: any) {
+    return this._http.get(`${this.apiBaseUrl}/product/manufacturer/asc/${manuId}`)
+  }
+
+  getProductByManuDesc(manuId: any) {
+    return this._http.get(`${this.apiBaseUrl}/product/manufacturer/desc/${manuId}`)
+  }
+
+  getProductByManuSelling(manuId: any) {
+    return this._http.get(`${this.apiBaseUrl}/product/manufacturer/selling/${manuId}`)
+  }
+
+  getReviews() {
+    return this._http.get(`${this.apiBaseUrl}/review/`)
+  }
+
+  getReviewById(reId: any) {
+    return this._http.get(`${this.apiBaseUrl}/review/${reId}`)
+  }
+
+  updateReview(reId: any) {
+    return this._http.get(`${this.apiBaseUrl}/review/active/${reId}`)
+  }
+
+  inActive(reId: any) {
+    return this._http.get(`${this.apiBaseUrl}/review/inActive/${reId}`)
   }
 }

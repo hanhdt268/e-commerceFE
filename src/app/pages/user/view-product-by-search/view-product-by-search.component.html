@@ -2,16 +2,32 @@
 
   <div class="row">
     <div class="col-md-12">
-      <h2 class="mt20">Tìm kiếm: <b>{{search}}</b></h2>
+      <h2 class="mt20">Tìm kiếm: <b>{{ search }}</b></h2>
       <div class="row">
         <div class="col-md-9">
+          <div id="parentManu" style="display: flex;">
+            <button [routerLink]="'/homepage/search/'+search+'/'+0" class="btn manu"
+                    color="primary" mat-button style=" padding: 5px; margin-left: 5px;">All
+            </button>
+            <button (click)="demo(i)"
+                    *ngFor="let item of manufacturer;let i = index"
+                    [routerLink]="'/homepage/search/'+search+'/'+item.value.manuId" class="btn"
+                    color="primary"
+                    mat-button style=" padding: 5px; margin-left: 5px">{{ item.key }}
+            </button>
+            <!--              <a *ngFor="let i of item.value">-->
+            <!--                <p>{{ i.manuId }}</p>-->
+            <!--              </a>-->
+          </div>
+
         </div>
         <div class="col-md-3" style="display: flex; justify-content: flex-end">
           <mat-form-field>
             <mat-label>Tính năng sắp xếp</mat-label>
             <mat-select [(ngModel)]="selectedValue">
               <mat-option (click)="setValue(i)" *ngFor="let item of options;let i = index"
-                          [value]="item.value">{{item.viewValue}}</mat-option>
+                          [value]="item.value">{{ item.viewValue }}
+              </mat-option>
 
             </mat-select>
           </mat-form-field>
@@ -21,7 +37,7 @@
         <div class="text-center">
           <img class="img-fluid" height="250px" src="https://fptshop.com.vn/Content/v4/images/noti-search.png"
                width="250px">
-          <p style="font-size: 20px">Rất tiếc chúng tôi không tìm thấy kết quả của <b>{{search}}</b></p>
+          <p style="font-size: 20px">Rất tiếc chúng tôi không tìm thấy kết quả của <b>{{ search }}</b></p>
           <div class="fs-senullbob">
             <h4>Để tìm được kết quả chính xác hơn, xin vui lòng:</h4>
             <ul>
@@ -39,7 +55,12 @@
       <mat-grid-list class="mt20" cols="4" gutterSize="10"
                      rowHeight="4:5"
                      style="background-color: #fff;">
-        <mat-grid-tile *ngFor="let product1 of productDetails" style="border-radius: 5%;">
+        <mat-grid-tile *ngFor="let product1 of productDetails | paginate
+              : {
+                  itemsPerPage: tableSize,
+                  currentPage: pageNumber,
+                  totalItems: count
+                };" style="border-radius: 5%;">
           <div (click)="showProductDetails(product1.pid)" class="row home-page-product-image" style="cursor: pointer">
 
             <div class="image-item">
@@ -49,12 +70,12 @@
 
             </div>
             <div class="mt10">
-              <span>{{product1.title}}</span>
+              <span>{{ product1.title }}</span>
             </div>
             <div *ngIf="product1.quantum > 0" class="mt10">
 
-              <b style="color: red">{{product1.discountPrice | currency: 'VND'}}</b> &nbsp; <b
-              style="text-decoration: line-through;color: #aaaaaa">{{product1.price | currency: 'VND'}}</b>
+              <b style="color: red">{{ product1.discountPrice | currency: 'VND' }}</b> &nbsp; <b
+              style="text-decoration: line-through;color: #aaaaaa">{{ product1.price | currency: 'VND' }}</b>
             </div>
             <div *ngIf="product1.quantum <= 0" class="mt10">
               <h2 style="color: red"><b>Tạm hết hàng</b></h2>
@@ -79,15 +100,25 @@
         </mat-grid-tile>
 
       </mat-grid-list>
-      <div *ngIf="showLoadMoreProduct" class="mt20 text-center">
-        <button (click)="loadMoreProduct(selectedValue)" color="primary" mat-raised-button>Xem thêm sản
-          phẩm
-        </button>
-      </div>
-      <div class="mt10">
 
+      <!--      <div *ngIf="showLoadMoreProduct" class="mt20 text-center">-->
+      <!--        <button (click)="loadMoreProduct(selectedValue)" color="primary" mat-raised-button>Xem thêm sản-->
+      <!--          phẩm-->
+      <!--        </button>-->
+      <!--      </div>-->
+      <!--      <div class="mt10">-->
+
+      <!--      </div>-->
+      <div class="d-flex justify-content-center mt20">
+        <pagination-controls (pageChange)="onTableDataChange($event)"
+                             nextLabel="Next"
+                             previousLabel="Prev"
+                             style="font-size: 20px;"
+        >
+        </pagination-controls>
       </div>
     </div>
+
   </div>
 
 </div>

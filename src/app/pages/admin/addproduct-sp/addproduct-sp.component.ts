@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormControl, Validators} from '@angular/forms';
 import {MatSnackBar} from '@angular/material/snack-bar';
 import {DomSanitizer} from '@angular/platform-browser';
@@ -17,7 +17,7 @@ import {AngularFireStorage} from "@angular/fire/compat/storage";
   templateUrl: './addproduct-sp.component.html',
   styleUrls: ['./addproduct-sp.component.css']
 })
-export class AddproductSpComponent {
+export class AddproductSpComponent implements OnInit {
 
   // @ts-ignore
   formProduct: FormGroup

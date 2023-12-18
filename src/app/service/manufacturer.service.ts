@@ -50,5 +50,7 @@ export class ManufacturerService {
 
   public deleteAllId(manuId: any) {
     return this._http.delete(`${this.apiBaseUrl}/manufacturer/delete/${manuId}`)
+
+
   }
 }

@@ -68,7 +68,11 @@ import {ReviewComponent} from './pages/user/review/review.component';
 import {CompareProductComponent} from './pages/user/compare-product/compare-product.component';
 import {NgxPaginationModule} from "ngx-pagination";
 import {AddShipperComponent} from './pages/admin/add-shipper/add-shipper.component';
-import { UploadMutipleFileComponent } from './pages/upload-mutiple-file/upload-mutiple-file.component';
+import {UploadMutipleFileComponent} from './pages/upload-mutiple-file/upload-mutiple-file.component';
+import {DashboardShipperComponent} from './pages/shipper/dashboard-shipper/dashboard-shipper.component';
+import { CommonComponent } from './pages/shipper/common/common.component';
+import { StatisticsComponent } from './pages/shipper/statistics/statistics.component';
+import { ManageReviewComponent } from './pages/admin/manage-review/manage-review.component';
 
 @NgModule({
   declarations: [
@@ -110,7 +114,11 @@ import { UploadMutipleFileComponent } from './pages/upload-mutiple-file/upload-m
     ReviewComponent,
     CompareProductComponent,
     AddShipperComponent,
-    UploadMutipleFileComponent
+    UploadMutipleFileComponent,
+    DashboardShipperComponent,
+    CommonComponent,
+    StatisticsComponent,
+    ManageReviewComponent
   ],
   imports: [
     BrowserModule,

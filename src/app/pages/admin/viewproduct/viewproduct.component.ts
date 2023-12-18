@@ -70,7 +70,7 @@ export class ViewproductComponent implements OnInit {
         // @ts-ignore
         next: (data: Product[]) => {
           console.log(data);
-          this.productDetails = data;
+          this.productDetails = data.reverse();
           // this.dataSource = new MatTableDataSource(data);
           // this.dataSource.paginator = this.paginator;
           // this.dataSource.sort = this.sort;
@@ -87,7 +87,7 @@ export class ViewproductComponent implements OnInit {
 
         next: (data: Product[]) => {
           // console.log(data);
-          this.productDetails = data
+          this.productDetails = data.reverse()
           console.log(this.productDetails)
           // this.dataSource = new MatTableDataSource(data);
           // this.dataSource.paginator = this.paginator;

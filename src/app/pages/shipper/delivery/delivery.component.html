@@ -1,187 +1,169 @@
 <div class="container-fluid mt20">
-  <div class="row">
-    <div class="col-md-2 mt20">
-      <mat-card class="mt10" style="background-color: #ffffff; height: 500px">
-        <mat-action-list>
-          <div matSubheader>Menu</div>
-          <button mat-list-item routerLink="/admin">
-            <mat-icon mat-list-icon>dashboard</mat-icon>
-            Quản lý đơn hàng
-          </button>
-          <button mat-list-item routerLink="/admin/categories">
-            <mat-icon mat-list-icon>category</mat-icon>
-            Thống kê
-          </button>
-          <button mat-list-item routerLink="/admin/manufacturer">
-            <mat-icon mat-list-icon>trolley</mat-icon>
-            Thông tin tài khoản
-          </button>
 
-        </mat-action-list>
-      </mat-card>
-    </div>
-    <div class="col-md-10">
-      <div class="VYJdTQ mt20" id="navbar">
-        <a class="OFl2GI btn active" mat-flat-button><span (click)="getAllOrderDetails('All')"
-                                                           class="_20hgQK"
-                                                           value="All">Tất cả</span>
-        </a>
-        <a class="OFl2GI btn" mat-flat-button><span
-          (click)="getAllOrderDetails('Chờ lấy hàng')"
-          class="_20hgQK"
-          value="Chờ lấy hàng">Chờ lấy hàng</span>
-        </a>
-        <a class="OFl2GI btn" mat-flat-button><span (click)="getAllOrderDetails('Đang giao')" class="_20hgQK"
-                                                    value="Đang giao">Đang giao</span>
-        </a>
-        <a class="OFl2GI btn" mat-flat-button><span (click)="getAllOrderDetails('Đã giao')"
-                                                    class="_20hgQK"
-                                                    value="Placed">Đã giao</span>
-        </a>
-        <a class="OFl2GI btn" mat-flat-button><span (click)="getAllOrderDetails('Hoàn thành')" class="_20hgQK"
-                                                    value="Hoàn thành">Hoàn thành</span>
-        </a>
-        <a class="OFl2GI btn" mat-flat-button><span (click)="getAllOrderDetails('Đánh giá')" class="_20hgQK"
-                                                    value="Đánh giá">Đánh giá</span>
-        </a>
-        <a class="OFl2GI btn" mat-flat-button><span (click)="getAllOrderDetails('Đã hủy')" class="_20hgQK"
-                                                    value="Đã hủy">Đã hủy</span></a>
-        <!--  <mat-button-toggle-group aria-label="Font Style">-->
-        <!--    <mat-button-toggle class="OFl2GI" value="All" (click)="getOderDetails('All')">All</mat-button-toggle>-->
-        <!--    <mat-button-toggle class="OFl2GI gAImis" value="Placed" (click)="getOderDetails('Placed')">Placed-->
-        <!--    </mat-button-toggle>-->
-        <!--    <mat-button-toggle class="OFl2GI" value="Delivered" (click)="getOderDetails('Delivered')">Delivered-->
-        <!--    </mat-button-toggle>-->
-        <!--    <mat-button-toggle value="Cancel" class="OFl2GI" (click)="getOderDetails('Cancel')">Cancel</mat-button-toggle>-->
-        <!--  </mat-button-toggle-group>-->
-      </div>
+  <div class="VYJdTQ mt20" id="navbar">
+    <a (click)="getAllOrderDetails('All')" class="OFl2GI btn active" mat-flat-button><span
+      class="_20hgQK"
+      value="All">Tất cả</span>
+    </a>
+    <a (click)="getAllOrderDetails('Chờ lấy hàng')" class="OFl2GI btn" mat-flat-button><span
 
-      <table [dataSource]="dataSource"
-             class="mat-elevation-z8" mat-table
-             multiTemplateDataRows>
-        <ng-container matColumnDef="Id">
-          <th *matHeaderCellDef mat-header-cell> STT</th>
-          <td *matCellDef="let element;let i = dataIndex" mat-cell> {{i + 1}} </td>
-        </ng-container>
-        <ng-container matColumnDef="orderFullName">
-          <th *matHeaderCellDef mat-header-cell>Tên</th>
-          <td *matCellDef="let element" mat-cell> {{element.orderFullName}} </td>
-        </ng-container>
-        <ng-container matColumnDef="quantity">
-          <th *matHeaderCellDef mat-header-cell> Số lượng</th>
-          <td *matCellDef="let element" mat-cell> {{element.quantity}} </td>
-        </ng-container>
+      class="_20hgQK"
+      value="Chờ lấy hàng">Chờ lấy hàng</span>
+    </a>
+    <a (click)="getAllOrderDetails('Đang giao')" class="OFl2GI btn" mat-flat-button><span class="_20hgQK"
+                                                                                          value="Đang giao">Đang giao</span>
+    </a>
+    <a (click)="getAllOrderDetails('Đã giao')" class="OFl2GI btn" mat-flat-button><span
+      class="_20hgQK"
+      value="Placed">Đã giao</span>
+    </a>
+    <a (click)="getAllOrderDetails('Hoàn thành')" class="OFl2GI btn" mat-flat-button><span class="_20hgQK"
+                                                                                           value="Hoàn thành">Hoàn thành</span>
+    </a>
+    <a class="OFl2GI btn" mat-flat-button><span (click)="getAllOrderDetails('Đánh giá')" class="_20hgQK"
+                                                value="Đánh giá">Đánh giá</span>
+    </a>
+    <a class="OFl2GI btn" mat-flat-button><span (click)="getAllOrderDetails('Đã hủy')" class="_20hgQK"
+                                                value="Đã hủy">Đã hủy</span></a>
+    <!--  <mat-button-toggle-group aria-label="Font Style">-->
+    <!--    <mat-button-toggle class="OFl2GI" value="All" (click)="getOderDetails('All')">All</mat-button-toggle>-->
+    <!--    <mat-button-toggle class="OFl2GI gAImis" value="Placed" (click)="getOderDetails('Placed')">Placed-->
+    <!--    </mat-button-toggle>-->
+    <!--    <mat-button-toggle class="OFl2GI" value="Delivered" (click)="getOderDetails('Delivered')">Delivered-->
+    <!--    </mat-button-toggle>-->
+    <!--    <mat-button-toggle value="Cancel" class="OFl2GI" (click)="getOderDetails('Cancel')">Cancel</mat-button-toggle>-->
+    <!--  </mat-button-toggle-group>-->
+  </div>
 
-        <ng-container matColumnDef="orderAmount">
-          <th *matHeaderCellDef mat-header-cell> Tổng tiền phải thu</th>
-          <td *matCellDef="let element" mat-cell> {{element.orderAmount | currency: 'VND'}} </td>
-        </ng-container>
-        <ng-container matColumnDef="orderStatus">
-          <th *matHeaderCellDef mat-header-cell> Trạng thái</th>
-          <td *matCellDef="let element" [ngClass]="{'Hoàn' : element.orderStatus === 'Hoàn thành','giao' : element.orderStatus === 'Đã giao',
+  <table [dataSource]="dataSource"
+         class="mat-elevation-z8" mat-table
+         multiTemplateDataRows>
+    <ng-container matColumnDef="Id">
+      <th *matHeaderCellDef mat-header-cell> STT</th>
+      <td *matCellDef="let element;let i = dataIndex" mat-cell> {{ i + 1 }}</td>
+    </ng-container>
+    <ng-container matColumnDef="orderFullName">
+      <th *matHeaderCellDef mat-header-cell>Tên</th>
+      <td *matCellDef="let element" mat-cell> {{ element.orderFullName }}</td>
+    </ng-container>
+    <ng-container matColumnDef="quantity">
+      <th *matHeaderCellDef mat-header-cell> Số lượng</th>
+      <td *matCellDef="let element" mat-cell> {{ element.quantity }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="orderAmount">
+      <th *matHeaderCellDef mat-header-cell> Tổng tiền phải thu</th>
+      <td *matCellDef="let element" mat-cell> {{ element.orderAmount | currency: 'VND' }}</td>
+    </ng-container>
+    <ng-container matColumnDef="orderStatus">
+      <th *matHeaderCellDef mat-header-cell> Trạng thái</th>
+      <td *matCellDef="let element" [ngClass]="{'Hoàn' : element.orderStatus === 'Hoàn thành','giao' : element.orderStatus === 'Đã giao',
          'Delivered' : element.orderStatus === 'Đang giao',
          'Cancel' : element.orderStatus === 'Đã hủy',
          'confirm' : element.orderStatus === 'Chờ xác nhận',
          'receive' : element.orderStatus === 'Chờ lấy hàng'
-         }" mat-cell> {{element.orderStatus}} </td>
-        </ng-container>
-        <ng-container matColumnDef="paymentMethod">
-          <th *matHeaderCellDef mat-header-cell>Ngày đặt hàng</th>
-          <td *matCellDef="let element" mat-cell> {{element.orderDate | date: 'dd-MM-yyyy'}} </td>
-        </ng-container>
+         }" mat-cell> {{ element.orderStatus }}
+      </td>
+    </ng-container>
+    <ng-container matColumnDef="paymentMethod">
+      <th *matHeaderCellDef mat-header-cell>Ngày đặt hàng</th>
+      <td *matCellDef="let element" mat-cell> {{ element.orderDate | date: 'dd-MM-yyyy' }}</td>
+    </ng-container>
 
-        <!--    <ng-container *ngFor="let column of columnsToDisplay" matColumnDef="{{column}}">-->
+    <!--    <ng-container *ngFor="let column of columnsToDisplay" matColumnDef="{{column}}">-->
 
-        <!--      <th *matHeaderCellDef mat-header-cell> {{column}} </th>-->
-        <!--      <td *matCellDef="let element" mat-cell> {{element[column]}}-->
-        <!--      </td>-->
-        <!--    </ng-container>-->
-        <ng-container matColumnDef="action">
-          <th *matHeaderCellDef mat-header-cell>Action</th>
-          <td *matCellDef="let element" mat-cell>
-            <button (click)="receive(element.orderId)" *ngIf="element.orderStatus == 'Chờ lấy hàng'" class="mr10"
-                    color="primary" mat-raised-button>
-              Nhận đơn
-            </button>
-            <button (click)="delivered(element.orderId)" *ngIf="element.orderStatus == 'Đang giao'" class="mr10"
-                    color="primary" mat-raised-button>
-              Đã giao
-            </button>
-            <!--        <button (click)="openDialog(element.orderId)" *ngIf="element.orderStatus == 'Chờ lấy hàng'" class="mr10"-->
-            <!--                color="primary" mat-raised-button>-->
-            <!--          Add shipper-->
-            <!--        </button>-->
-            <button (click)="handlerShow(element); $event.stopPropagation()"
-                    aria-label="expand row"
-                    mat-button>
-              Xem chi tiết
-              <i *ngIf="!element?.expanded" class='bx bx-up-arrow-alt' style="font-size: 20px"></i>
-              <i *ngIf="element?.expanded" class='bx bx-down-arrow-alt' style="font-size: 20px"></i>
-            </button>
-          </td>
-        </ng-container>
+    <!--      <th *matHeaderCellDef mat-header-cell> {{column}} </th>-->
+    <!--      <td *matCellDef="let element" mat-cell> {{element[column]}}-->
+    <!--      </td>-->
+    <!--    </ng-container>-->
+    <ng-container matColumnDef="action">
+      <th *matHeaderCellDef mat-header-cell>Action</th>
+      <td *matCellDef="let element" mat-cell>
+        <button (click)="receive(element.orderId)" *ngIf="element.orderStatus == 'Chờ lấy hàng'" class="mr10"
+                color="primary" mat-raised-button>
+          Nhận đơn
+        </button>
+        <button (click)="delivered(element.orderId)" *ngIf="element.orderStatus == 'Đang giao'" class="mr10"
+                color="primary" mat-raised-button>
+          Đã giao
+        </button>
+        <!--        <button (click)="openDialog(element.orderId)" *ngIf="element.orderStatus == 'Chờ lấy hàng'" class="mr10"-->
+        <!--                color="primary" mat-raised-button>-->
+        <!--          Add shipper-->
+        <!--        </button>-->
+        <button (click)="handlerShow(element); $event.stopPropagation()"
+                aria-label="expand row"
+                mat-button>
+          Xem chi tiết
+          <i *ngIf="!element?.expanded" class='bx bx-up-arrow-alt' style="font-size: 20px"></i>
+          <i *ngIf="element?.expanded" class='bx bx-down-arrow-alt' style="font-size: 20px"></i>
+        </button>
+      </td>
+    </ng-container>
 
-        <ng-container matColumnDef="expandedDetail">
-          <td *matCellDef="let element" [attr.colspan]="columnsToDisplayWithExpand.length" mat-cell>
-            <div *ngIf="element?.expanded" [@detailExpand]="element?.expanded" class="example-element-detail">
-              <div style="width: 100%;">
-                <table [dataSource]="element.orderDetails" mat-table matSort multiTemplateDataRows>
-                  <ng-container matColumnDef="pId">
-                    <th *matHeaderCellDef mat-header-cell> STT</th>
-                    <td *matCellDef="let element"
-                        mat-cell> {{element.product.pid}} </td>
-                  </ng-container>
-                  <ng-container matColumnDef="title">
-                    <th *matHeaderCellDef mat-header-cell> Tên SP</th>
-                    <td *matCellDef="let element"
-                        mat-cell> {{element.product.title}} </td>
-                  </ng-container>
-                  <ng-container matColumnDef="discountPrice">
-                    <th *matHeaderCellDef mat-header-cell> Giá tiền</th>
-                    <td *matCellDef="let element"
-                        mat-cell> {{element.product.discountPrice | currency: 'VND'}} </td>
-                  </ng-container>
-                  <ng-container matColumnDef="quantity">
-                    <th *matHeaderCellDef mat-header-cell> Số lượng</th>
-                    <td *matCellDef="let element"
-                        mat-cell> {{element.quantity}} </td>
-                  </ng-container>
+    <ng-container matColumnDef="expandedDetail">
+      <td *matCellDef="let element" [attr.colspan]="columnsToDisplayWithExpand.length" mat-cell>
+        <div *ngIf="element?.expanded" [@detailExpand]="element?.expanded" class="example-element-detail">
+          <div style="width: 100%;">
+            <table [dataSource]="element.orderDetails" mat-table matSort multiTemplateDataRows>
+              <ng-container matColumnDef="pId">
+                <th *matHeaderCellDef mat-header-cell> STT</th>
+                <td *matCellDef="let element"
+                    mat-cell> {{ element.product.pid }}
+                </td>
+              </ng-container>
+              <ng-container matColumnDef="title">
+                <th *matHeaderCellDef mat-header-cell> Tên SP</th>
+                <td *matCellDef="let element"
+                    mat-cell> {{ element.product.title }}
+                </td>
+              </ng-container>
+              <ng-container matColumnDef="discountPrice">
+                <th *matHeaderCellDef mat-header-cell> Giá tiền</th>
+                <td *matCellDef="let element"
+                    mat-cell> {{ element.product.discountPrice | currency: 'VND' }}
+                </td>
+              </ng-container>
+              <ng-container matColumnDef="quantity">
+                <th *matHeaderCellDef mat-header-cell> Số lượng</th>
+                <td *matCellDef="let element"
+                    mat-cell> {{ element.quantity }}
+                </td>
+              </ng-container>
 
-                  <ng-container matColumnDef="total">
-                    <th *matHeaderCellDef mat-header-cell> Tổng tiền</th>
-                    <td *matCellDef="let element"
-                        mat-cell> {{calculation(element.quantity, element.product.discountPrice)| currency: 'VND' }} </td>
-                  </ng-container>
-                  <!--    <tr *matHeaderRowDef="displayedColumns" mat-header-row></tr>-->
-                  <tr *matRowDef="let row; columns: innerDisplayedColumns;" mat-row></tr>
-                  <tr *matHeaderRowDef="innerDisplayedColumns" mat-header-row></tr>
+              <ng-container matColumnDef="total">
+                <th *matHeaderCellDef mat-header-cell> Tổng tiền</th>
+                <td *matCellDef="let element"
+                    mat-cell> {{ calculation(element.quantity, element.product.discountPrice)| currency: 'VND' }}
+                </td>
+              </ng-container>
+              <!--    <tr *matHeaderRowDef="displayedColumns" mat-header-row></tr>-->
+              <tr *matRowDef="let row; columns: innerDisplayedColumns;" mat-row></tr>
+              <tr *matHeaderRowDef="innerDisplayedColumns" mat-header-row></tr>
 
-                </table>
-              </div>
-            </div>
-          </td>
-        </ng-container>
-        <!-- Expanded Content Column - The detail row is made up of this one column that spans across all columns -->
+            </table>
+          </div>
+        </div>
+      </td>
+    </ng-container>
+    <!-- Expanded Content Column - The detail row is made up of this one column that spans across all columns -->
 
-        <tr *matHeaderRowDef="columnsToDisplay" mat-header-row></tr>
-        <tr *matRowDef="let row; columns: columnsToDisplay;" mat-row></tr>
+    <tr *matHeaderRowDef="columnsToDisplay" mat-header-row></tr>
+    <tr *matRowDef="let row; columns: columnsToDisplay;" mat-row></tr>
 
-        <!--  <tr-->
-        <!--    *matRowDef="let element; columns: columnsToDisplayWithExpand;"-->
-        <!--    [class.example-expanded-row]="element?.expanded"-->
-        <!--    class="example-element-row"-->
-        <!--    mat-row>-->
-        <!--  </tr>-->
-        <!--  <tr mat-row *matRowDef="let element; columns: columnsToDisplayWithExpand;"-->
-        <!--      class="example-element-row"-->
-        <!--      [class.example-element-row]="element.addresses?.length"-->
-        <!--      [class.example-expanded-row]="element?.expanded"-->
-        <!--      (click)="expandedElement = expandedElement === element.expanded ? null : element.expanded">-->
-        <!--  </tr>-->
-        <tr *matRowDef="let row; columns: ['expandedDetail']" class="example-detail-row" mat-row></tr>
-      </table>
-    </div>
-  </div>
-
-
+    <!--  <tr-->
+    <!--    *matRowDef="let element; columns: columnsToDisplayWithExpand;"-->
+    <!--    [class.example-expanded-row]="element?.expanded"-->
+    <!--    class="example-element-row"-->
+    <!--    mat-row>-->
+    <!--  </tr>-->
+    <!--  <tr mat-row *matRowDef="let element; columns: columnsToDisplayWithExpand;"-->
+    <!--      class="example-element-row"-->
+    <!--      [class.example-element-row]="element.addresses?.length"-->
+    <!--      [class.example-expanded-row]="element?.expanded"-->
+    <!--      (click)="expandedElement = expandedElement === element.expanded ? null : element.expanded">-->
+    <!--  </tr>-->
+    <tr *matRowDef="let row; columns: ['expandedDetail']" class="example-detail-row" mat-row></tr>
+  </table>
 </div>
+

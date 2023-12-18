@@ -63,3 +63,7 @@ mat-grid-list mat-grid-tile .home-page-product-image:hover {
   text-align: left;
   margin-bottom: 3px;
 }
+
+.manu {
+  background-color: #8a8585;
+}

@@ -19,6 +19,8 @@ export class CartComponent implements OnInit {
   @ViewChild("check") check!: ElementRef
   selectAll = false
 
+  checkCart = false;
+
   constructor(private _cart: CartService, private _router: Router,
               private _login: LoginService,
               private _route: ActivatedRoute) {
@@ -99,8 +101,13 @@ export class CartComponent implements OnInit {
     const index = this.cartId.indexOf(cartId);
     if (checked) {
       this.cartId.push(cartId);
+      this.checkCart = true;
     } else {
       this.cartId.splice(index, 1)
+      if (this.cartId.length == 0) {
+        this.checkCart = false;
+      }
+
     }
     console.log(this.cartId)
   }
@@ -116,14 +123,19 @@ export class CartComponent implements OnInit {
       this.cartDetails.forEach((c: any) =>
         this.cartId.push(c.cartId)
       )
-
+      this.checkCart = true;
     } else {
       this.cartId.splice(0, 1000)
+      this.checkCart = false;
     }
     console.log(this.cartId)
   }
 
   getCalculatedProduct(pid: number, discountPrice: any, quantity: any) {
     return discountPrice * quantity
+  }
+
+  navigate(pid: number) {
+    this._router.navigate(['productViewDetails', {pid: pid}])
   }
 }
