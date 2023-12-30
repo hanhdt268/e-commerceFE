@@ -82,6 +82,7 @@ export class UpdateProductComponent {
     },
     category: {
       cateId: '',
+
     }
   }
 

@@ -1,9 +1,9 @@
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, Validators } from '@angular/forms';
-import { MatDialog } from '@angular/material/dialog';
-import { MatSnackBar } from '@angular/material/snack-bar';
-import { Category } from 'src/app/_model/category.model';
-import { CategoryService } from 'src/app/service/category.service';
+import {Component, OnInit} from '@angular/core';
+import {FormBuilder, FormControl, Validators} from '@angular/forms';
+import {MatDialog} from '@angular/material/dialog';
+import {MatSnackBar} from '@angular/material/snack-bar';
+import {Category} from 'src/app/_model/category.model';
+import {CategoryService} from 'src/app/service/category.service';
 import Swal from 'sweetalert2';
 
 @Component({
@@ -12,7 +12,7 @@ import Swal from 'sweetalert2';
   styleUrls: ['./add-category.component.css']
 })
 export class AddCategoryComponent implements OnInit {
-  
+
   category: Category = {
     // @ts-ignore
     cId: null,
@@ -20,14 +20,18 @@ export class AddCategoryComponent implements OnInit {
   }
   // @ts-ignore
   form: FormGroup
+
   constructor(private _category: CategoryService, private _snack: MatSnackBar,
-    private _dialog: MatDialog,
-    private _fb: FormBuilder){}
+              private _dialog: MatDialog,
+              private _fb: FormBuilder) {
+  }
+
   ngOnInit(): void {
     this.form = this._fb.group({
       title: new FormControl('', [Validators.required])
     })
   }
+
   formSubmit() {
     if (this.category.title.trim() == '' || this.category.title == null) {
       this._snack.open('Title Required !!', '', {
@@ -45,7 +49,9 @@ export class AddCategoryComponent implements OnInit {
       },
       error: (error) => {
         console.log(error);
-        Swal.fire('Error', '', 'error')
+        this._snack.open('title already exists !!', '', {
+          duration: 3000
+        });
       }
     })
   }

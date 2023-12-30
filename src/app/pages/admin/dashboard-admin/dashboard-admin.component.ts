@@ -26,7 +26,7 @@ export class DashboardAdminComponent implements OnInit {
   statusPlaced: any;
   statusDelivered: any;
   statusCancel: any;
-  henry: any
+  category: any
   demo: any
 
   constructor(private _order: OrderService) {
@@ -36,7 +36,7 @@ export class DashboardAdminComponent implements OnInit {
     this._order.getPresentCategory().subscribe({
       next: (resp) => {
         console.log(resp)
-        this.henry = resp
+        this.category = resp
         const amount = [];
         const title = []
         for (const res of resp) {
@@ -50,7 +50,7 @@ export class DashboardAdminComponent implements OnInit {
           text: "Tổng tiền bán ra tính % của thể loại"
         }
         // @ts-ignore
-        this.series2 = [Math.round(this.henry[0].amount), Math.round(this.henry[1].amount), Math.round(this.henry[2].amount)]
+        this.series2 = [Math.round(this.category[0].amount), Math.round(this.category[1].amount), Math.round(this.category[2].amount)]
         this.chart1 = {
           type: "pie",
           toolbar: {show: true}
@@ -72,7 +72,7 @@ export class DashboardAdminComponent implements OnInit {
             },
           }
         }
-        this.xavis1 = [this.henry[0].title, this.henry[1].title, this.henry[2].title]
+        this.xavis1 = [this.category[0].title, this.category[1].title, this.category[2].title]
       }
     })
 

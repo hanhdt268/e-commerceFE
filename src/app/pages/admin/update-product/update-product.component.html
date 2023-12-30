@@ -79,32 +79,32 @@
             Active
           </mat-slide-toggle>
 
-          <mat-form-field appearance="fill" class="w100">
-            <mat-label>Cau hinh</mat-label>
-            <input [(ngModel)]="product.productEnum" formControlName="productEnum"
-                   matInput
-                   type="text">
-          </mat-form-field>
+          <!--  <mat-form-field appearance="fill" class="w100">
+              <mat-label>Cau hinh</mat-label>
+              <input [(ngModel)]="product.productEnum" formControlName="productEnum"
+                     matInput
+                     type="text">
+            </mat-form-field>-->
           <br>
           <!--          category select-->
           <mat-form-field appearance="fill" class="w100 mt10">
             <mat-label>Category</mat-label>
             <mat-select [(ngModel)]="product.category.cateId" formControlName="category">
-              <mat-option *ngFor="let item of categories" [value]="item.cateId">
-                {{item.title}}
+              <mat-option *ngFor="let item of categories" [disabled]="true" [value]="item.cateId">
+                {{ item.title }}
               </mat-option>
             </mat-select>
-            <mat-hint
-              *ngIf="(formProduct.controls['category'].dirty || formProduct.controls['category'].touched) && formProduct.hasError('required', 'category')"
-              class="text-danger">Vui lòng chọn thể loại !!
-            </mat-hint>
+            <!--            <mat-hint-->
+            <!--              *ngIf="(formProduct.controls['category'].dirty || formProduct.controls['category'].touched) && formProduct.hasError('required', 'category')"-->
+            <!--              class="text-danger">Vui lòng chọn thể loại !!-->
+            <!--            </mat-hint>-->
           </mat-form-field>
           <br>
           <mat-form-field appearance="fill" class="w100 mt10">
             <mat-label>Manufacturer</mat-label>
             <mat-select [(ngModel)]="product.manufacturer.manuId" formControlName="manufacturer">
               <mat-option *ngFor="let item of manufacturers" [value]="item.manuId">
-                {{item.title}}
+                {{ item.title }}
               </mat-option>
             </mat-select>
             <mat-hint

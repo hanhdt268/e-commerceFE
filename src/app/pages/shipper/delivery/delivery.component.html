@@ -77,7 +77,7 @@
     <!--      </td>-->
     <!--    </ng-container>-->
     <ng-container matColumnDef="action">
-      <th *matHeaderCellDef mat-header-cell>Action</th>
+      <th *matHeaderCellDef mat-header-cell>###</th>
       <td *matCellDef="let element" mat-cell>
         <button (click)="receive(element.orderId)" *ngIf="element.orderStatus == 'Chờ lấy hàng'" class="mr10"
                 color="primary" mat-raised-button>
@@ -107,9 +107,9 @@
           <div style="width: 100%;">
             <table [dataSource]="element.orderDetails" mat-table matSort multiTemplateDataRows>
               <ng-container matColumnDef="pId">
-                <th *matHeaderCellDef mat-header-cell> STT</th>
+                <th *matHeaderCellDef mat-header-cell> Hình ảnh</th>
                 <td *matCellDef="let element"
-                    mat-cell> {{ element.product.pid }}
+                    mat-cell><img alt="" height="100px" src="{{element.product.images}}" width="100px">
                 </td>
               </ng-container>
               <ng-container matColumnDef="title">

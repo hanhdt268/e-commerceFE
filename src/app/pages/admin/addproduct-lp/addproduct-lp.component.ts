@@ -54,6 +54,7 @@ export class AddproductLpComponent implements OnInit {
     },
     category: {
       cateId: 0,
+
     }
   }
   isNewProduct = true;

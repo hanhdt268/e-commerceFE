@@ -54,6 +54,18 @@
               Bao xài lỗi 1 đổi 1 trong 30 ngày với lỗi phần cứng do nhà sản xuất.
             </span>
           </div>
+          <div class="quantity mt10">
+            <button (click)="decrease()" [disabled]="quantityProduct == 1" class="quantity-btn"
+                    id="decrease" style="color: black; border: 1px solid gray"
+            >-
+            </button>
+            <input (keyup)="checkValue()" NumberOnly
+                   [(ngModel)]="quantityProduct" class="quantity-input" name="quantityProduct">
+            <button (click)="increase()" [disabled]="quantityProduct == product.quantum"
+                    class="quantity-btn"
+                    id="increase" style="color: black; border: 1px solid gray">+
+            </button>
+          </div>
           <div class="mt20 text-center">
             <button (click)="addToCart(product.pid)" [disabled]="product.quantum === 0" class="mr10" color="primary"
                     mat-raised-button

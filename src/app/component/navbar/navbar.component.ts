@@ -189,7 +189,7 @@ export class NavbarComponent implements OnInit, AfterViewInit {
     // item.push(valueInput)
 
     console.log(valueInput)
-    forkJoin([this._router.navigate([`homepage/search/${valueInput}`]).then(r => {
+    forkJoin([this._router.navigate([`homepage/search/${valueInput}/${0}`]).then(r => {
       window.location.reload()
     }),
       this.fondovalor.nativeElement.value = ""])

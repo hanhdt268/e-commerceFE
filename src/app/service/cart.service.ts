@@ -11,12 +11,16 @@ export class CartService {
   constructor(private _http: HttpClient) {
   }
 
+  public deleteByIdIn(cartId: any) {
+    return this._http.delete(`${this.apiBaseUrl}/cart/delete/${cartId}`)
+  }
+
   public countCart(id: any) {
     return this._http.get(`${this.apiBaseUrl}/cart/count/${id}`)
   }
 
-  public addToCart(pId: any) {
-    return this._http.get(`${this.apiBaseUrl}/cart/${pId}`)
+  public addToCart(cart: any, pId: any) {
+    return this._http.post(`${this.apiBaseUrl}/cart/${pId}`, cart)
   }
 
   public getCartDetails(userID: any) {

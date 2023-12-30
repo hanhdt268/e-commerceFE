@@ -59,7 +59,7 @@ export class CartComponent implements OnInit {
   delete(cartId: any) {
     Swal.fire({
       icon: 'warning',
-      title: 'Are you sure delete ?',
+      title: 'Bạn chắc chắn chưa?',
       confirmButtonText: 'Delete',
       showCancelButton: true
     }).then((result) => {
@@ -137,5 +137,33 @@ export class CartComponent implements OnInit {
 
   navigate(pid: number) {
     this._router.navigate(['productViewDetails', {pid: pid}])
+  }
+
+  deleteAll() {
+    Swal.fire({
+      icon: 'info',
+      title: 'Bạn chắc chắn chưa?',
+      confirmButtonText: 'Delete',
+      showCancelButton: true
+    }).then((result) => {
+      if (result.isConfirmed) {
+        this._cart.deleteByIdIn(this.cartId).subscribe({
+          next: (resp) => {
+            console.log(
+              resp
+            )
+            Swal.fire('Xoá thành công', 'Sản phẩm đã được xóa', 'success')
+
+            this.getCartDetails();
+            window.location.reload()
+
+          },
+          error: (error: any) => {
+            Swal.fire('Lỗi', 'Error in deleting cart', 'error')
+          }
+        })
+
+      }
+    })
   }
 }

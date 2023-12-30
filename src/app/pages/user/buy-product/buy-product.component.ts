@@ -45,6 +45,7 @@ export class BuyProductComponent implements OnInit {
   quantity: any = 1
   user: any
   id: any = []
+  tax = 0;
 
   constructor(private _activeRoute: ActivatedRoute,
               private _productService: ProductService,
@@ -114,6 +115,7 @@ export class BuyProductComponent implements OnInit {
   //     }
   //   })
   // }
+
 
   public notify() {
     this._http.post(`http://localhost:8080/notify/add`, this.notifications).subscribe({
@@ -213,7 +215,17 @@ export class BuyProductComponent implements OnInit {
     for (let i = 0; i < this.productDetails.length; i++) {
       total += this.productDetails[i].product.discountPrice * this.productDetails[i].quantity
     }
-    return total;
+    return total + this.tax;
+  }
+
+  getCalculatedGrandTax() {
+    let total = 0;
+
+    for (let i = 0; i < this.productDetails.length; i++) {
+      total += this.productDetails[i].product.discountPrice * this.productDetails[i].quantity
+    }
+    this.tax = total * 0.08;
+    return this.tax;
   }
 
   decrease(pid: number, quantityy: number) {

@@ -1,10 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, Validators } from '@angular/forms';
-import { MatDialog } from '@angular/material/dialog';
-import { Manufacturer } from 'src/app/_model/manufacturer.model';
-import { CategoryService } from 'src/app/service/category.service';
-import { ManufacturerService } from 'src/app/service/manufacturer.service';
+import {Component, OnInit} from '@angular/core';
+import {FormBuilder, FormControl, Validators} from '@angular/forms';
+import {MatDialog} from '@angular/material/dialog';
+import {CategoryService} from 'src/app/service/category.service';
+import {ManufacturerService} from 'src/app/service/manufacturer.service';
 import Swal from 'sweetalert2';
+import {MatSnackBar} from "@angular/material/snack-bar";
 
 @Component({
   selector: 'app-add-manufacturer',
@@ -22,9 +22,13 @@ export class AddManufacturerComponent implements OnInit {
   };
   // @ts-ignore
   form: FormGroup
+
   constructor(private _manufacturer: ManufacturerService, private _dialog: MatDialog,
-    private _fb: FormBuilder,
-    private _categoriess: CategoryService){}
+              private _fb: FormBuilder,
+              private _categoriess: CategoryService,
+              private _snack: MatSnackBar) {
+  }
+
   ngOnInit(): void {
     this.form = this._fb.group({
       title: new FormControl('', [Validators.required]),
@@ -41,6 +45,7 @@ export class AddManufacturerComponent implements OnInit {
       }
     });
   }
+
   formSubmit() {
     // @ts-ignore
     this._manufacturer.addManufacturer(this.manufacturer).subscribe({
@@ -51,7 +56,9 @@ export class AddManufacturerComponent implements OnInit {
         this.closeDialog();
       },
       error: (error) => {
-        console.log(error)
+        this._snack.open('title already exists !!', '', {
+          duration: 3000
+        });
       }
     })
   }

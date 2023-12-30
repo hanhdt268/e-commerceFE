@@ -3,7 +3,8 @@ import {ActivatedRoute, Router} from '@angular/router';
 import {Category} from 'src/app/_model/category.model';
 import Swal from 'sweetalert2';
 import {MAT_DIALOG_DATA, MatDialog} from "@angular/material/dialog";
-import { CategoryService } from 'src/app/service/category.service';
+import {CategoryService} from 'src/app/service/category.service';
+import {MatSnackBar} from "@angular/material/snack-bar";
 
 @Component({
   selector: 'app-update-category',
@@ -17,7 +18,8 @@ export class UpdateCategoryComponent implements OnInit {
 
 
   constructor(private _route: ActivatedRoute, private _category: CategoryService, private _router: Router,
-              @Inject(MAT_DIALOG_DATA) public data: any, private _dialog: MatDialog) {
+              @Inject(MAT_DIALOG_DATA) public data: any, private _dialog: MatDialog,
+              private _snack: MatSnackBar) {
   }
 
   ngOnInit(): void {
@@ -43,7 +45,9 @@ export class UpdateCategoryComponent implements OnInit {
       },
       error: (error: any) => {
         console.log(error);
-
+        this._snack.open('title already exists !!', '', {
+          duration: 3000
+        });
       }
     })
   }

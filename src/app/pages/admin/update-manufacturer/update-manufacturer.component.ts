@@ -3,8 +3,9 @@ import {Manufacturer} from "../../../_model/manufacturer.model";
 import {ActivatedRoute, Router} from "@angular/router";
 import Swal from "sweetalert2";
 import {MAT_DIALOG_DATA, MatDialog} from "@angular/material/dialog";
-import { ManufacturerService } from 'src/app/service/manufacturer.service';
-import { CategoryService } from 'src/app/service/category.service';
+import {ManufacturerService} from 'src/app/service/manufacturer.service';
+import {CategoryService} from 'src/app/service/category.service';
+import {MatSnackBar} from "@angular/material/snack-bar";
 
 @Component({
   selector: 'app-update-manufacturer',
@@ -20,7 +21,7 @@ export class UpdateManufacturerComponent implements OnInit {
   constructor(private _manufacturer: ManufacturerService, private _route: ActivatedRoute,
               private _router: Router,
               @Inject(MAT_DIALOG_DATA) public data: any, private _dialog: MatDialog,
-              private _categoriess: CategoryService,
+              private _categoriess: CategoryService, private _snack: MatSnackBar
   ) {
   }
 
@@ -59,7 +60,9 @@ export class UpdateManufacturerComponent implements OnInit {
       },
       error: (error) => {
         console.log(error)
-        Swal.fire('Error', 'Error Updating Manufacturer ', "error")
+        this._snack.open('title already exists !!', '', {
+          duration: 3000
+        });
 
       }
     })

@@ -139,7 +139,7 @@ export class ViewProductBySearchComponent implements OnInit {
 
   handlePriceAsc() {
     this._product.getProductOrderPriceAsc(this.pageNumber, this.search).subscribe({
-      next: (resp) => {
+      next: (resp: any) => {
         console.log(resp)
         this.productDetails = resp
       }
@@ -207,9 +207,9 @@ export class ViewProductBySearchComponent implements OnInit {
 
   handlerView(manuId: any) {
     this._manufacture.getProductByManufacturer(manuId, 0, "").subscribe({
-      next: (resp) => {
+      next: (resp: any) => {
         // console.log(resp)
-        this.productDetails = resp
+        this.productDetails = resp.reverse()
       }
     })
   }

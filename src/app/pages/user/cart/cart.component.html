@@ -1,7 +1,14 @@
 <div class="container mt10">
 
 
+  <div class="text-center delete" style="display: flex;justify-content: end">
+    <button (click)="deleteAll()" *ngIf="checkCart" color="primary" mat-raised-button>
+      <mat-icon>delete</mat-icon>
+      Delete
+    </button>
+  </div>
   <table [dataSource]="cartDetails" class="mat-elevation-z8" mat-table>
+
 
     <!--- Note that these columns can be defined in any order.
           The actual rendered columns are set as a property on the row definition" -->

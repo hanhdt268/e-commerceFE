@@ -73,6 +73,7 @@ import {DashboardShipperComponent} from './pages/shipper/dashboard-shipper/dashb
 import { CommonComponent } from './pages/shipper/common/common.component';
 import { StatisticsComponent } from './pages/shipper/statistics/statistics.component';
 import { ManageReviewComponent } from './pages/admin/manage-review/manage-review.component';
+import { NumberOnlyDirective } from './number-only.directive';
 
 @NgModule({
   declarations: [
@@ -118,7 +119,8 @@ import { ManageReviewComponent } from './pages/admin/manage-review/manage-review
     DashboardShipperComponent,
     CommonComponent,
     StatisticsComponent,
-    ManageReviewComponent
+    ManageReviewComponent,
+    NumberOnlyDirective
   ],
   imports: [
     BrowserModule,

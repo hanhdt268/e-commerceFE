@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {ActivatedRoute, Router} from "@angular/router";
 import {ProductService} from "../../../service/product.service";
 import {ImageProcessingService} from "../../../service/image-processing.service";
@@ -36,6 +36,14 @@ export class ProductViewDetaisComponent implements OnInit {
 
   isShowReview = false
 
+  quantityProduct: number = 1;
+  cart = {
+    quantity: 0
+  }
+  isDisable = true;
+
+  @ViewChild("input") input!: ElementRef
+
   constructor(private _activeRoute: ActivatedRoute, private _router: Router,
               private _productService: ProductService,
               private _imageProcessing: ImageProcessingService,
@@ -61,7 +69,8 @@ export class ProductViewDetaisComponent implements OnInit {
   }
 
   addToCart(pId: any) {
-    this._cart.addToCart(pId).subscribe({
+    this.cart.quantity = this.quantityProduct
+    this._cart.addToCart(this.cart, pId).subscribe({
       next: (response: any) => {
         window.location.reload();
         console.log(response)
@@ -162,5 +171,19 @@ export class ProductViewDetaisComponent implements OnInit {
         this.user = resp
       }
     })
+  }
+
+  decrease() {
+    this.quantityProduct = this.quantityProduct - 1
+  }
+
+  increase() {
+    this.quantityProduct = this.quantityProduct + 1
+  }
+
+  checkValue() {
+    if (this.quantityProduct > this.product.quantum) {
+      this.quantityProduct = this.product.quantum
+    }
   }
 }

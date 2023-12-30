@@ -101,7 +101,7 @@ export class OrderDetailsComponent implements OnInit, AfterViewInit {
       height: "220px",
     })
     dialogRef.afterClosed().subscribe(result => {
-      this.markOrderAsConfirm(orderId);
+      this.getAllOrderDetails(this.status);
     })
 
   }

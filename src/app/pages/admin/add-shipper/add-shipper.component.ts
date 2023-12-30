@@ -34,6 +34,12 @@ export class AddShipperComponent implements OnInit {
   handlerShipper(userID: any) {
     this._order.createShip(this.data.orderId, userID).subscribe({
       next: (resp) => {
+        this._order.markOrderAsConfirm(this.data.orderId).subscribe({
+          next: (resp) => {
+            console.log(resp)
+            
+          }
+        })
         Swal.fire('Đã phân công', '', "success")
         this.closeDialog();
       }
@@ -42,5 +48,13 @@ export class AddShipperComponent implements OnInit {
 
   closeDialog() {
     this._dialog.closeAll();
+  }
+
+  markOrderAsConfirm(oderId: any) {
+    this._order.markOrderAsConfirm(oderId).subscribe({
+      next: (resp) => {
+        console.log(resp)
+      }
+    })
   }
 }

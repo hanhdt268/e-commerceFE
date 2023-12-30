@@ -52,13 +52,20 @@
                 <!--                        class="quantity-btn" id="decrease">- -->
                 <!--                </button>-->
                 <input [(ngModel)]="cart.quantity"
-                       class="quantity-input" type="text">
+                       [disabled]="true" class="quantity-input" type="text">
                 <!--                <button (click)="increase(product.pid, product.quantum)"-->
                 <!--                        class="quantity-btn" id="increase">+-->
                 <!--                </button>-->
               </div>
             </td>
             <td>{{ getCalculatedProduct(cart.product.pid, cart.product.discountPrice, cart.quantity) | currency: 'VND' }}</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <th>Tiền thuế</th>
+            <th>{{ getCalculatedGrandTax() | currency: 'VND' }}</th>
           </tr>
           <tr>
             <td></td>
