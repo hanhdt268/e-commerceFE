@@ -5,6 +5,7 @@ export interface OderDetails {
   fullAddress: string;
   contactNumber: string;
   note: string;
+  paymentMethod: string,
   quantity: any;
   orderDate: Date
   oderProductQuantityList: OrderQuantity[];

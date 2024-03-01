@@ -7,7 +7,7 @@ import {MatButtonModule} from "@angular/material/button";
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatIconModule} from "@angular/material/icon";
-import {HttpClientModule} from "@angular/common/http";
+import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatListModule} from '@angular/material/list';
@@ -70,10 +70,16 @@ import {NgxPaginationModule} from "ngx-pagination";
 import {AddShipperComponent} from './pages/admin/add-shipper/add-shipper.component';
 import {UploadMutipleFileComponent} from './pages/upload-mutiple-file/upload-mutiple-file.component';
 import {DashboardShipperComponent} from './pages/shipper/dashboard-shipper/dashboard-shipper.component';
-import { CommonComponent } from './pages/shipper/common/common.component';
-import { StatisticsComponent } from './pages/shipper/statistics/statistics.component';
-import { ManageReviewComponent } from './pages/admin/manage-review/manage-review.component';
-import { NumberOnlyDirective } from './number-only.directive';
+import {CommonComponent} from './pages/shipper/common/common.component';
+import {StatisticsComponent} from './pages/shipper/statistics/statistics.component';
+import {ManageReviewComponent} from './pages/admin/manage-review/manage-review.component';
+import {NumberOnlyDirective} from './number-only.directive';
+import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
+import {TranslateHttpLoader} from "@ngx-translate/http-loader";
+
+export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
 
 @NgModule({
   declarations: [
@@ -151,10 +157,19 @@ import { NumberOnlyDirective } from './number-only.directive';
     MatSortModule,
     MatCheckboxModule,
     NgApexchartsModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: [authInterceptorProvides, WebSocketService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
 }
+
+

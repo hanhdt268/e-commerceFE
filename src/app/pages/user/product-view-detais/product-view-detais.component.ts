@@ -8,6 +8,7 @@ import {CommentModel} from "../../../_model/comment.model";
 import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
 import Swal from "sweetalert2";
 import {CommentService} from "../../../service/comment.service";
+import {TranslateService} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-product-view-detais',
@@ -48,11 +49,12 @@ export class ProductViewDetaisComponent implements OnInit {
               private _productService: ProductService,
               private _imageProcessing: ImageProcessingService,
               private _cart: CartService, private _fb: FormBuilder,
-              private _comment: CommentService
+              private _comment: CommentService, private translation: TranslateService
   ) {
   }
 
   ngOnInit(): void {
+    this.translation.setDefaultLang("vn")
     this.product = this._activeRoute.snapshot.data['product'];
     this.getProductOfCategory();
     this.getProductById()

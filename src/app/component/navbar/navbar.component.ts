@@ -8,6 +8,7 @@ import {Product} from "../../_model/product.model";
 import {ProductService} from "../../service/product.service";
 import {CartService} from "../../service/cart.service";
 import {WebSocketService} from "../../WebSocketService";
+import {TranslateService} from "@ngx-translate/core";
 
 
 @Component({
@@ -47,7 +48,8 @@ export class NavbarComponent implements OnInit, AfterViewInit {
               private _fb: FormBuilder,
               private _http: HttpClient, private _product: ProductService,
               private _cart: CartService,
-              private webSocketService: WebSocketService) {
+              private webSocketService: WebSocketService,
+              private translation: TranslateService) {
     this.width = window.innerWidth
     // this._http.get(`http://localhost:8080/notify/notify`).subscribe({
     //   next: (resp) => {
@@ -65,6 +67,7 @@ export class NavbarComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit(): void {
+    // this.translation.setDefaultLang('vn');
     this.localStorageValue = localStorage.getItem('valueInput')
     console.log(this.localStorageValue)
     if (this.localStorageValue === null) {
@@ -283,5 +286,9 @@ export class NavbarComponent implements OnInit, AfterViewInit {
     this._router.navigate(['/admin/orderDetails']).then(resp => {
       this.isShowNotifications = this.notify.nativeElement.classList.remove("showNotifications");
     })
+  }
+
+  changeLanguage(lang: any) {
+    this.translation.use(lang.value)
   }
 }

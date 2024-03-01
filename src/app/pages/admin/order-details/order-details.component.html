@@ -23,8 +23,8 @@
     <a (click)="getAllOrderDetails('Hoàn thành')" class="OFl2GI btn" mat-flat-button><span class="_20hgQK"
                                                                                            value="Hoàn thành">Hoàn thành</span>
     </a>
-    <a (click)="getAllOrderDetails('Đánh giá')" class="OFl2GI btn" mat-flat-button><span class="_20hgQK"
-                                                                                         value="Đánh giá">Đánh giá</span>
+    <a (click)="getAllOrderDetails('Trả hàng')" class="OFl2GI btn" mat-flat-button><span class="_20hgQK"
+                                                                                         value="Đánh giá">Trả hàng</span>
     </a>
     <a (click)="getAllOrderDetails('Đã hủy')" class="OFl2GI btn" mat-flat-button><span class="_20hgQK"
                                                                                        value="Đã hủy">Đã hủy</span></a>
@@ -71,7 +71,8 @@
          'Delivered' : element.orderStatus === 'Đang giao',
          'Cancel' : element.orderStatus === 'Đã hủy',
          'confirm' : element.orderStatus === 'Chờ xác nhận',
-         'receive' : element.orderStatus === 'Chờ lấy hàng'
+         'receive' : element.orderStatus === 'Chờ lấy hàng',
+         'returns' : element.orderStatus === 'Trả hàng'
          }"
 
           mat-cell> {{ element.orderStatus }}
@@ -100,10 +101,15 @@
                 color="primary" mat-raised-button>
           Phân công
         </button>
+        <button (click)="reasonReturn(element.orderId)" *ngIf="element.orderStatus == 'Trả hàng'" color="primary"
+                data-bs-target="#exampleModal"
+                data-bs-toggle="modal" mat-raised-button>
+          Lí do trả hàng
+        </button>
         <button (click)="handlerShow(element); $event.stopPropagation()"
                 aria-label="expand row"
                 mat-button>
-          Xem chi tiết
+          Chi tiết
           <i *ngIf="!element?.expanded" class='bx bx-up-arrow-alt' style="font-size: 20px"></i>
           <i *ngIf="element?.expanded" class='bx bx-down-arrow-alt' style="font-size: 20px"></i>
         </button>
@@ -185,4 +191,32 @@
   >
   </pagination-controls>
   <!--  <mat-paginator #paginator [pageSizeOptions]="[5, 10, 40]" showFirstLastButtons></mat-paginator>-->
+</div>
+
+
+<div *ngIf="clicked" aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal"
+     tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Lí do trả hàng</h5>
+        <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3 row">
+          <label class="col-sm-2 col-form-label" for="inputPassword">Lí do</label>
+          <div class="col-sm-10">
+            <input [disabled]="true" [ngModel]="return.note" class="form-control" id="inputPassword">
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label class="col-sm-2 col-form-label">Thời gian</label>
+          <div class="col-sm-10">
+            <input [disabled]="true" [ngModel]="return.dateReturn | date: 'dd-MM-yyyy'" class="form-control">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </div>

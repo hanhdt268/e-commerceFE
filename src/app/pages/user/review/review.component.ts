@@ -40,7 +40,7 @@ export class ReviewComponent implements OnInit {
 
   omSubmit() {
     // console.log(pId)
-    this._product.createRating(this.data.pid, this.reviews).subscribe({
+    this._product.createRating(this.data.pid, this.data.orderDetailsId, this.reviews).subscribe({
       next: (resp) => {
         // console.log(resp)
         // @ts-ignore

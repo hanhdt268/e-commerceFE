@@ -32,8 +32,8 @@ export class ProductService {
     return this._http.get<Product[]>(`${this.apiBaseUrl}/product/`)
   }
 
-  public createRating(pId: any, review: ReviewModel) {
-    return this._http.post(`${this.apiBaseUrl}/review/${pId}`, review)
+  public createRating(pId: any, orderDetailsId: any, review: ReviewModel) {
+    return this._http.post(`${this.apiBaseUrl}/review/${pId}/${orderDetailsId}`, review)
   }
 
   public getCountStartsByUser(pId: number) {

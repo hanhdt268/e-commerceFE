@@ -94,7 +94,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
     const timeOut = setTimeout(() => {
       this.showSlides()
     }, 2000)
-    console.log(timeOut)
   }
 
   public getAllProduct(searchKey: string = "") {

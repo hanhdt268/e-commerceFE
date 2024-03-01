@@ -37,7 +37,6 @@ export class AddShipperComponent implements OnInit {
         this._order.markOrderAsConfirm(this.data.orderId).subscribe({
           next: (resp) => {
             console.log(resp)
-            
           }
         })
         Swal.fire('Đã phân công', '', "success")

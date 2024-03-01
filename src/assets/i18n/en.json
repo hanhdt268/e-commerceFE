@@ -1,0 +1,3285 @@
+{
+  "product": [
+    {
+      "title": "Laptop Apple MacBook Air 13 inch M1 2020 8-core CPU8GB256GB7-core GPU (MGN63SAA)",
+      "description": "Laptop Apple MacBook Air M1 2020 thuộc dòng laptop cao cấp sang trọng có cấu hình mạnh mẽ, chinh phục được các tính năng văn phòng lẫn đồ hoạ mà bạn mong muốn, thời lượng pin dài, thiết kế mỏng nhẹ sẽ đáp ứng tốt các nhu cầu làm việc của bạn.\nChip Apple M1 tốc độ xử lý nhanh gấp 3.5 lần thế hệ trước\nChiếc MacBook này được trang bị con chip Apple M1 được sản xuất độc quyền bởi Nhà Táo trên tiến trình 5 nm, 8 lõi bao gồm 4 lõi tiết kiệm điện và 4 lõi hiệu suất cao, mang đến một hiệu năng kinh ngạc, xử lý mọi tác vụ văn phòng một cách mượt mà như Word, Excel, Powerpoint,... thực hiện tốt các nhiệm vụ chỉnh sửa hình ảnh, kết xuất 2D trên các phần mềm Photoshop, AI,... máy còn hỗ trợ tiết kiệm được điện năng cao.\n",
+      "config": "https://cdn.tgdd.vn/Products/Images/44/231244/apple-macbook-air-2020-mgn63saa-280323-125154.jpg",
+      "price": 1.899E7,
+      "discountPrice": 1.849E7,
+      "images": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/v2tc3c5raq?alt=media&token=ae95c7cc-c314-4996-b79a-32901775d6f6",
+      "active": true,
+      "quantum": 4,
+      "category": {
+        "cateId": 39,
+        "title": "Laptop"
+      },
+      "manufacturer": {
+        "manuId": 67,
+        "title": "Macbook",
+        "completed": false,
+        "category": {
+          "cateId": 39,
+          "title": "Laptop"
+        }
+      },
+      "imgChildren": [
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/jpv70s61t4g?alt=media&token=daaee6ba-d5d4-48d0-be33-445f660eab9e",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/qp2kqvb1vig?alt=media&token=10e070eb-4308-468b-9d43-e88152d5bdf6",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/u8fmdsltiqo?alt=media&token=026fa665-99e1-4452-b1ce-de91fb92e99f",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/87ch04u429?alt=media&token=41de3e0f-00b1-4dc1-8c75-e66cf645f76d",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/qu7tdi2hdk?alt=media&token=ffe10949-1de9-4944-ab34-95875cd0accc"
+      ],
+      "laptopConfig": {
+        "cpu": "Apple M1",
+        "ram": "8 GB",
+        "hardDrive": "256 GB SSD",
+        "screen": "13.3\"Retina (2560 x 1600)",
+        "graphic": "Card tích hợp7 nhân GPU",
+        "connector": "2 x Thunderbolt 3 (USB-C)Jack tai nghe 3.5 mm",
+        "special": "Có đèn bàn phím",
+        "operatingSystem": "Mac OS",
+        "design": "Vỏ kim loại nguyên khối",
+        "sizeMass": "Dài 304.1 mm - Rộng 212.4 mm - Dày 4.1 mm đến 16.1 mm - Nặng 1.29 kg",
+        "releaseTime": "2020",
+        "lid": 68
+      },
+      "smartPhoneConfig": null,
+      "accessoryConfig": null,
+      "comment": [
+        {
+          "comId": 570,
+          "content": "demo",
+          "date": "2023-12-17T08:11:50.292+00:00",
+          "user": {
+            "userID": 146,
+            "username": "ngocth4",
+            "fullName": "Trần Hồng Ngọc",
+            "password": "$2a$10$M9tai05VqcNp43K026/Zuuf9tERp7Zio.l6Z7xsHKZim4D/gINtoK",
+            "email": "ngocth4@fpt.com",
+            "phone": "0868935312",
+            "address": "120 Sông Cầu, Phú Yên",
+            "avatar": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/efpc0ulh14g?alt=media&token=8fceb39c-1cca-41f7-9994-546ccdb3c116",
+            "enabled": true,
+            "resetPasswordToken": null,
+            "authorities": [
+              {
+                "authority": "User"
+              }
+            ],
+            "accountNonExpired": true,
+            "credentialsNonExpired": true,
+            "accountNonLocked": true
+          }
+        },
+        {
+          "comId": 142,
+          "content": "san pham con hang ko vay?",
+          "date": "2023-10-24T17:00:20.170+00:00",
+          "user": {
+            "userID": 36,
+            "username": "test",
+            "fullName": "Demo123",
+            "password": "$2a$10$Repc4Fgf/aVTFPnyfCKp5uOgqaHxH.S1/HL1HBfYtD/AVESQZWmtm",
+            "email": "nguyenvanhanh06082@gmail.com",
+            "phone": "0905853259",
+            "address": "da nang",
+            "avatar": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/ha7h2hemik?alt=media&token=4c2a55b9-c642-4417-bd03-4eb58aba6a34",
+            "enabled": true,
+            "resetPasswordToken": null,
+            "authorities": [
+              {
+                "authority": "User"
+              }
+            ],
+            "accountNonExpired": true,
+            "credentialsNonExpired": true,
+            "accountNonLocked": true
+          }
+        },
+        {
+          "comId": 514,
+          "content": "Sản phẩm này còn hàng ko?",
+          "date": "2023-12-05T03:04:25.491+00:00",
+          "user": {
+            "userID": 457,
+            "username": "vanhung",
+            "fullName": "Lê Văn Hùng",
+            "password": "$2a$10$MgPCrgKnKI9elCiEz25nUusS7Q0hAH.Fkd/q3ubuMPmR7r0ml/A4G",
+            "email": "vanhung@gmail.com",
+            "phone": "0123456789",
+            "address": "390 Nguyễn Văn Thoại, Đà Nẵng",
+            "avatar": "https://udayananetworking.unud.ac.id/assets/frontend/images/user-m.png",
+            "enabled": true,
+            "resetPasswordToken": null,
+            "authorities": [
+              {
+                "authority": "User"
+              }
+            ],
+            "accountNonExpired": true,
+            "credentialsNonExpired": true,
+            "accountNonLocked": true
+          }
+        }
+      ],
+      "reviews": [
+        {
+          "reId": 246,
+          "content": "Sản phẩm đúng vớ mô tả!",
+          "value": 4.0,
+          "image": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/kkr8lthvuno?alt=media&token=8ac8113d-0f3a-4b24-90bd-08a2d53c0fc6",
+          "dateCreate": "2023-11-13T08:02:09.416+00:00",
+          "active": true,
+          "user": {
+            "userID": 192,
+            "username": "dacquang",
+            "fullName": "Trần Đắc Quang",
+            "password": "$2a$10$bcAXxjf14WnSJkJMkpiTCumndxmiMVgS2Neq3RAswYlC7eMOm7VGS",
+            "email": "dacquang@gmail.com",
+            "phone": "0369854721",
+            "address": "10 Phạm Hùng, Cẩm Lệ",
+            "avatar": "https://udayananetworking.unud.ac.id/assets/frontend/images/user-m.png",
+            "enabled": true,
+            "resetPasswordToken": null,
+            "authorities": [
+              {
+                "authority": "User"
+              }
+            ],
+            "accountNonExpired": true,
+            "credentialsNonExpired": true,
+            "accountNonLocked": true
+          }
+        },
+        {
+          "reId": 177,
+          "content": "Sản phẩm đẹp xài tốt đáng để mua!",
+          "value": 5.0,
+          "image": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/vomlibsh1t8?alt=media&token=cde8447c-a3da-479b-b998-f8e3b6767e21",
+          "dateCreate": "2023-11-03T09:55:27.999+00:00",
+          "active": true,
+          "user": {
+            "userID": 146,
+            "username": "ngocth4",
+            "fullName": "Trần Hồng Ngọc",
+            "password": "$2a$10$M9tai05VqcNp43K026/Zuuf9tERp7Zio.l6Z7xsHKZim4D/gINtoK",
+            "email": "ngocth4@fpt.com",
+            "phone": "0868935312",
+            "address": "120 Sông Cầu, Phú Yên",
+            "avatar": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/efpc0ulh14g?alt=media&token=8fceb39c-1cca-41f7-9994-546ccdb3c116",
+            "enabled": true,
+            "resetPasswordToken": null,
+            "authorities": [
+              {
+                "authority": "User"
+              }
+            ],
+            "accountNonExpired": true,
+            "credentialsNonExpired": true,
+            "accountNonLocked": true
+          }
+        }
+      ],
+      "pid": 68
+    },
+    {
+      "title": "Laptop Apple MacBook Air 13 inch M2 2022 8-core CPU8GB256GB8-core GPU (MLXY3SAA)",
+      "description": "Sau 14 năm, ba lần sửa đổi và hai kiến trúc bộ vi xử lý khác nhau, kiểu dáng mỏng dần mang tính biểu tượng của MacBook Air đã đi vào lịch sử. Thay vào đó là một chiếc MacBook Air M2 với thiết kế hoàn toàn mới, độ dày không thay đổi tương tự như MacBook Pro, đánh bật mọi rào cản với con chip Apple M2 đầy mạnh mẽ.\nLột xác ngoạn mục với thiết kế thời thượng, sang trọng \nSự đẳng cấp đến từ ngoại hình của chiếc MacBook Air nhà Apple là điều không thể phủ nhận và khó có dòng sản phẩm cùng phân khúc nào có thể qua mặt được.",
+      "config": "https://cdn.tgdd.vn/Products/Images/44/282827/apple-macbook-air-m2-2022-161122-112213.jpg",
+      "price": 2.709E7,
+      "discountPrice": 2.649E7,
+      "images": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/hhfcdfi3hkg?alt=media&token=dba3d91e-c60a-4fb4-96d6-71502c2f8c1d",
+      "active": true,
+      "quantum": 12,
+      "category": {
+        "cateId": 39,
+        "title": "Laptop"
+      },
+      "manufacturer": {
+        "manuId": 67,
+        "title": "Macbook",
+        "completed": false,
+        "category": {
+          "cateId": 39,
+          "title": "Laptop"
+        }
+      },
+      "imgChildren": [
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/pmu25lnbpl8?alt=media&token=31fb400f-fd1b-4198-852d-2735b4e3cbd0",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/6vlo9poehg8?alt=media&token=47fe992c-c6c6-4f77-8bd5-f315def7bc52",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/a2g728i4sog?alt=media&token=a0abb476-8f89-4e10-9a2d-8ad595c2d129",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/uefhtn860sg?alt=media&token=526b9465-c0aa-4b8b-951a-b00d832af11c",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/upkucb0rh1o?alt=media&token=c1767a98-7d46-401a-9994-7eb202c95d70"
+      ],
+      "laptopConfig": {
+        "cpu": "Apple M2, 100GB/s",
+        "ram": "8 GB",
+        "hardDrive": "256 GB SSD",
+        "screen": "13.6\", Liquid Retina (2560 x 1664)",
+        "graphic": "Card tích hợp, 8 nhân GPU",
+        "connector": "2 x Thunderbolt 3, Jack tai nghe 3.5 mmMagSafe 3",
+        "special": "Có đèn bàn phím",
+        "operatingSystem": "Mac OS",
+        "design": "Vỏ kim loại",
+        "sizeMass": "Dài 304.1 mm - Rộng 215 mm - Dày 11.3 mm - Nặng 1.24 kg",
+        "releaseTime": "6/2022",
+        "lid": 80
+      },
+      "smartPhoneConfig": null,
+      "accessoryConfig": null,
+      "comment": [
+        {
+          "comId": 203,
+          "content": "demo",
+          "date": "2023-11-08T02:10:03.487+00:00",
+          "user": {
+            "userID": 192,
+            "username": "dacquang",
+            "fullName": "Trần Đắc Quang",
+            "password": "$2a$10$bcAXxjf14WnSJkJMkpiTCumndxmiMVgS2Neq3RAswYlC7eMOm7VGS",
+            "email": "dacquang@gmail.com",
+            "phone": "0369854721",
+            "address": "10 Phạm Hùng, Cẩm Lệ",
+            "avatar": "https://udayananetworking.unud.ac.id/assets/frontend/images/user-m.png",
+            "enabled": true,
+            "resetPasswordToken": null,
+            "authorities": [
+              {
+                "authority": "User"
+              }
+            ],
+            "accountNonExpired": true,
+            "credentialsNonExpired": true,
+            "accountNonLocked": true
+          }
+        }
+      ],
+      "reviews": [
+        {
+          "reId": 238,
+          "content": "Laptop xài tốt đẹp đáng tiền mua!",
+          "value": 5.0,
+          "image": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/oo9embngej?alt=media&token=20acd6ff-4a83-44fb-b04c-caac0147f743",
+          "dateCreate": "2023-11-13T07:50:46.649+00:00",
+          "active": true,
+          "user": {
+            "userID": 36,
+            "username": "test",
+            "fullName": "Demo123",
+            "password": "$2a$10$Repc4Fgf/aVTFPnyfCKp5uOgqaHxH.S1/HL1HBfYtD/AVESQZWmtm",
+            "email": "nguyenvanhanh06082@gmail.com",
+            "phone": "0905853259",
+            "address": "da nang",
+            "avatar": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/ha7h2hemik?alt=media&token=4c2a55b9-c642-4417-bd03-4eb58aba6a34",
+            "enabled": true,
+            "resetPasswordToken": null,
+            "authorities": [
+              {
+                "authority": "User"
+              }
+            ],
+            "accountNonExpired": true,
+            "credentialsNonExpired": true,
+            "accountNonLocked": true
+          }
+        }
+      ],
+      "pid": 80
+    },
+    {
+      "title": "iPhone 15 Pro Max 256GB",
+      "description": "Lý do chọn mua iPhone 15 Pro Max tại Thế Giới Di Động\niPhone 15 Pro Max là một chiếc điện thoại thông minh cao cấp được mong đợi nhất năm 2023. Với nhiều tính năng mới và cải tiến, iPhone 15 Pro Max chắc chắn sẽ là một lựa chọn tuyệt vời cho những người dùng đang tìm kiếm một chiếc điện thoại có hiệu năng mạnh mẽ, camera chất lượng và thiết kế sang trọng.\n\n• Sản phẩm chính hãng, đảm bảo chất lượng: Thế Giới Di Động là nhà bán lẻ điện thoại di động lớn nhất Việt Nam, cam kết cung cấp sản phẩm chính hãng, đảm bảo chất lượng. Bạn có thể yên tâm về xuất xứ sản phẩm và có thể tận hưởng trải nghiệm sử dụng tốt nhất.\n\n• Ưu đãi và khuyến mãi hấp dẫn: Thế Giới Di Động thường xuyên có các chương trình khuyến mãi, giảm giá và tặng quà kèm, giúp bạn tiết kiệm được một khoản tiền khi mua iPhone 15 Pro Max.",
+      "config": "https://cdn.tgdd.vn/Products/Images/42/299033/iphone-15-pro-131023-034959.jpg",
+      "price": 3.499E7,
+      "discountPrice": 3.399E7,
+      "images": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/09j36ln7aso?alt=media&token=a88e692c-e867-412c-8142-0edfb8cc0176",
+      "active": true,
+      "quantum": 18,
+      "category": {
+        "cateId": 40,
+        "title": "SmartPhone"
+      },
+      "manufacturer": {
+        "manuId": 46,
+        "title": "iPhone",
+        "completed": false,
+        "category": {
+          "cateId": 40,
+          "title": "SmartPhone"
+        }
+      },
+      "imgChildren": [
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/hmdq37bkkkg?alt=media&token=24182bd3-60e9-4039-8fec-da37f7f85c16",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/l8ub6a8obn8?alt=media&token=3fbb0522-9828-48f3-9439-d58c9d6343a0",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/qumu6fe96v8?alt=media&token=856a1714-d853-4287-809e-39dafe05bb12",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/6411gbaa6b8?alt=media&token=93e37fbb-d2ad-41b6-ba14-3019277d07cb",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/t4em36h6q28?alt=media&token=9174c755-42ab-4f8f-a739-fe0d92d12188"
+      ],
+      "laptopConfig": null,
+      "smartPhoneConfig": {
+        "smart_id": 88,
+        "screen": "OLED, 6.7\", Super Retina XDR",
+        "beforeCamera": "12 MP",
+        "afterCamera": "Chính 48 MP & Phụ 12 MP, 12 MP",
+        "ram": "8 GB",
+        "sim": "1 Nano SIM & 1 eSIM, Hỗ trợ 5G",
+        "chip": "Apple A17 Pro 6 nhân",
+        "operatingSystem": "iOS 17",
+        "storage": "256 GB",
+        "pin": "4422 mAh, 20 W"
+      },
+      "accessoryConfig": null,
+      "comment": [
+        {
+          "comId": 143,
+          "content": "Sản phẩm này có hàng ở đà nẵng ko vậy?",
+          "date": "2023-10-25T14:16:43.135+00:00",
+          "user": {
+            "userID": 36,
+            "username": "test",
+            "fullName": "Demo123",
+            "password": "$2a$10$Repc4Fgf/aVTFPnyfCKp5uOgqaHxH.S1/HL1HBfYtD/AVESQZWmtm",
+            "email": "nguyenvanhanh06082@gmail.com",
+            "phone": "0905853259",
+            "address": "da nang",
+            "avatar": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/ha7h2hemik?alt=media&token=4c2a55b9-c642-4417-bd03-4eb58aba6a34",
+            "enabled": true,
+            "resetPasswordToken": null,
+            "authorities": [
+              {
+                "authority": "User"
+              }
+            ],
+            "accountNonExpired": true,
+            "credentialsNonExpired": true,
+            "accountNonLocked": true
+          }
+        }
+      ],
+      "reviews": [],
+      "pid": 88
+    },
+    {
+      "title": "iPhone 15 Plus 128GB",
+      "description": "iPhone 15 Plus thu hút mọi ánh nhìn ngay khi ra mắt nhờ có vẻ ngoài cao cấp, trang bị bộ xử lý mạnh mẽ, cụm camera kép đặc trưng cho khả năng chụp ảnh cực nét cùng màn hình chất lượng cao, để bạn tận hưởng trải nghiệm sử dụng tuyệt vời. \nDiện mạo vuông vắn sang trọng\nNăm nay, Apple vẫn sẽ tiếp tục sử dụng kiểu thiết kế vuông vắn dành cho thế hệ iPhone trong năm 2023, giúp tạo cảm giác cứng cáp và độc đáo. Màn hình của chiếc điện thoại này cũng được thiết kế phẳng, mang đến một cái nhìn thú vị và hiện đại hơn bao giờ hết. Thiết kế này không chỉ mang đến vẻ đẹp độc đáo, mà còn tối ưu hóa trải nghiệm người dùng khi cầm nắm sản phẩm.\n\niPhone 15 Plus tiếp tục thể hiện sự cố gắng của Apple trong việc sáng tạo và sử dụng chất liệu cao cấp. Chiếc điện thoại iPhone này có khung nhôm chắc chắn, tạo sự độc đáo và đẳng cấp.\n",
+      "config": "https://cdn.tgdd.vn/Products/Images/42/303812/iphone-15-512gb-131023-110624.jpg",
+      "price": 2.599E7,
+      "discountPrice": 2.499E7,
+      "images": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/2rjb93658qg?alt=media&token=0f42e8b0-a9c2-4380-a540-ff9f073f2257",
+      "active": true,
+      "quantum": 10,
+      "category": {
+        "cateId": 40,
+        "title": "SmartPhone"
+      },
+      "manufacturer": {
+        "manuId": 46,
+        "title": "iPhone",
+        "completed": false,
+        "category": {
+          "cateId": 40,
+          "title": "SmartPhone"
+        }
+      },
+      "imgChildren": [
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/m3qqot7ntr?alt=media&token=dbad2be0-c5ee-48dd-800b-bae429b19b94",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/ins5an485ug?alt=media&token=5698defb-bcb2-4079-83d3-cda8eb08e5fe",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/hml6uvi8sig?alt=media&token=9bd77797-ed8d-49d5-b72d-cd269d6821a0",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/ktr525kjp9g?alt=media&token=b3907538-66dc-4a78-b816-b98c1a83a93a",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/jj50sqvi6j?alt=media&token=c5f4a340-d811-4126-ac90-5e3a78c2d5e4"
+      ],
+      "laptopConfig": null,
+      "smartPhoneConfig": {
+        "smart_id": 92,
+        "screen": "OLED, 6.7\", Super Retina XDR",
+        "beforeCamera": "12 MP",
+        "afterCamera": "Chính 48 MP & Phụ 12 MP",
+        "ram": "6 GB",
+        "sim": "1 Nano SIM & 1 eSIM, Hỗ trợ 5G",
+        "chip": "Apple A16 Bionic",
+        "operatingSystem": "iOS 17",
+        "storage": "128 GB",
+        "pin": "4383 mAh20 W"
+      },
+      "accessoryConfig": null,
+      "comment": [],
+      "reviews": [
+        {
+          "reId": 242,
+          "content": "Shop đóng gói cẩn thận, điện thoại quá đẹp!",
+          "value": 5.0,
+          "image": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/gpe1u4qc0qo?alt=media&token=71efb556-5a8c-4614-bd8c-c8a23e04b9d5",
+          "dateCreate": "2023-11-13T07:56:36.122+00:00",
+          "active": true,
+          "user": {
+            "userID": 190,
+            "username": "vanhuy",
+            "fullName": "Lê Văn Huy",
+            "password": "$2a$10$MfKBBEne2jpH6LYjFYUTueBu8KcwZsKoxElvEu3/oOXjv4Ge3V9k.",
+            "email": "vanhuy@gmail.com",
+            "phone": "0908525236",
+            "address": "130 Phan Đăng Lưu, Khuê Trung",
+            "avatar": "https://udayananetworking.unud.ac.id/assets/frontend/images/user-m.png",
+            "enabled": true,
+            "resetPasswordToken": null,
+            "authorities": [
+              {
+                "authority": "User"
+              }
+            ],
+            "accountNonExpired": true,
+            "credentialsNonExpired": true,
+            "accountNonLocked": true
+          }
+        },
+        {
+          "reId": 237,
+          "content": "Điện thoại đẹp đáng tiền mua!",
+          "value": 5.0,
+          "image": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/us7o0urb6t8?alt=media&token=54341229-4178-4f44-bd51-3ed2cddb23c6",
+          "dateCreate": "2023-11-13T07:49:47.508+00:00",
+          "active": true,
+          "user": {
+            "userID": 36,
+            "username": "test",
+            "fullName": "Demo123",
+            "password": "$2a$10$Repc4Fgf/aVTFPnyfCKp5uOgqaHxH.S1/HL1HBfYtD/AVESQZWmtm",
+            "email": "nguyenvanhanh06082@gmail.com",
+            "phone": "0905853259",
+            "address": "da nang",
+            "avatar": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/ha7h2hemik?alt=media&token=4c2a55b9-c642-4417-bd03-4eb58aba6a34",
+            "enabled": true,
+            "resetPasswordToken": null,
+            "authorities": [
+              {
+                "authority": "User"
+              }
+            ],
+            "accountNonExpired": true,
+            "credentialsNonExpired": true,
+            "accountNonLocked": true
+          }
+        }
+      ],
+      "pid": 92
+    },
+    {
+      "title": "Laptop MacBook Air 15 inch M2 2023 8CPU8GB256GB10GPU (MQKU3SAA",
+      "description": "MacBook Air 15 inch M2 2023 đã có phiên bản cải tiến vừa được nhà Apple cho ra mắt, thêm không gian cho những điều bạn yêu với màn hình Liquid Retina 15 inch ấn tượng. Với người dùng yêu thích hiệu năng \"nhanh như chớp\" trong một thiết kế siêu gọn nhẹ của dòng Air thì đây chắc chắn là một sản phẩm bạn không nên bỏ qua.\nMàn hình Retina 15 inch lớn ấn tượng \nVới phiên bản 2023, Macbook Air được nâng cấp màn hình lên 15.3 inch, được trang bị tấm nền IPS cùng độ phân giải Liquid Retina (2880 x 1864) giúp những khung hình được tái hiện hoàn hảo",
+      "config": "https://cdn.tgdd.vn/Products/Images/44/309016/apple-macbook-air-m2-2023-070623-044421.jpg",
+      "price": 3.129E7,
+      "discountPrice": 3.029E7,
+      "images": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/bihelbdgre8?alt=media&token=effc23b9-8502-4f6d-8ae3-7edd37627e8a",
+      "active": true,
+      "quantum": 14,
+      "category": {
+        "cateId": 39,
+        "title": "Laptop"
+      },
+      "manufacturer": {
+        "manuId": 67,
+        "title": "Macbook",
+        "completed": false,
+        "category": {
+          "cateId": 39,
+          "title": "Laptop"
+        }
+      },
+      "imgChildren": [
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/n2pgrihi7b8?alt=media&token=136fac51-1038-406a-841c-447f6581c4b3",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/ap4de7nni0o?alt=media&token=7d46cda4-7fa7-4259-ba17-c9a19b528dc0",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/rvauhm88lfo?alt=media&token=bd906115-87b9-4f4e-8e1e-ef470c86e9ad",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/t1cg33imkb?alt=media&token=38950a62-eeb1-4b45-a5bc-90b95bcc9d53",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/1fheiqv6o7?alt=media&token=c1437549-4a0a-4605-8269-14028e411170"
+      ],
+      "laptopConfig": {
+        "cpu": "Apple M2, 100GB/s",
+        "ram": "8 GB",
+        "hardDrive": "256 GB SSD",
+        "screen": "15.3\", Liquid Retina (2880 x 1864)",
+        "graphic": "Card tích hợp, 10 nhân GPU",
+        "connector": "Thunderbolt 32 x Thunderbolt 3 / USB 4 (lên đến 40 Gb/s)Jack tai nghe 3.5 mmMagSafe 3",
+        "special": "Có đèn bàn phím",
+        "operatingSystem": "Mac OS",
+        "design": "Vỏ kim loại",
+        "sizeMass": "Dài 340.4 mm - Rộng 237.6 mm - Dày 11.5 mm - Nặng 1.51 kg",
+        "releaseTime": "06/2023",
+        "lid": 99
+      },
+      "smartPhoneConfig": null,
+      "accessoryConfig": null,
+      "comment": [],
+      "reviews": [],
+      "pid": 99
+    },
+    {
+      "title": "Chuột không dây Gaming Rapoo VT960s",
+      "description": "Chuột không dây Gaming Rapoo VT960s sở hữu thiết kế như siêu xe thời trang, chất liệu bền bỉ, trang bị đèn LED đẹp mắt, phù hợp với các bạn hay chơi game, hứa hẹn mang đến cho người dùng những trải nghiệm tối ưu.\n• Kiểu dáng chuột năng động và mạnh mẽ với các đường cắt được ghép với nhau một cách hoàn hảo, nâng cấp vẻ đẹp cho không gian giải trí và làm việc của bạn. \n\n• Tốc độ quét IPS 400 cho phản hồi nhạy bén, hỗ trợ tốt trải nghiệm chơi game hay các thao tác trong thiết kế đồ hoạ, tạo nên trải nghiệm sử dụng đã tay nhất cho người dùng.\n\n• Ngoài ra, độ phân giải từ 50 - 19000 DPI có thể thoải mái điều chỉnh sao cho phù hợp với nhu cầu sử dụng của bạn, nhờ vậy chuột không chỉ dành cho các game thủ mà những người dùng văn phòng cơ bản hay học sinh/sinh viên cũng có thể sử dụng.\n\n• Chuột Rapoo còn kết nối với laptop thông qua dây cắm USB với chiều dài 180 cm vô cùng tiện lợi.",
+      "config": "https://cdn.tgdd.vn/Products/Images/86/308679/chuot-khong-day-gaming-rapoo-vt960s-thumb-600x600.jpg",
+      "price": 1690000.0,
+      "discountPrice": 1590000.0,
+      "images": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/1avfjsmdi0g?alt=media&token=da0345e6-e6b7-481f-a8f0-7207f10f821f",
+      "active": true,
+      "quantum": 8,
+      "category": {
+        "cateId": 41,
+        "title": "Accessory"
+      },
+      "manufacturer": {
+        "manuId": 110,
+        "title": "Rappo",
+        "completed": false,
+        "category": {
+          "cateId": 41,
+          "title": "Accessory"
+        }
+      },
+      "imgChildren": [
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/bhj0q6jffq?alt=media&token=d5481f80-5cd9-4845-b073-b025d13015c7",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/2lkbi222ung?alt=media&token=cea9bcdf-a0e9-434a-8ac2-cc337aac7132",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/170uholep5o?alt=media&token=884d6a1e-29fd-49bf-ba97-4d90d025e4d3",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/j24676ivb5g?alt=media&token=aa26d443-388c-477b-9c56-2297ec37e90b",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/4jobq6hh3ao?alt=media&token=b2d4d473-1704-4857-a490-cef19a207fff"
+      ],
+      "laptopConfig": null,
+      "smartPhoneConfig": null,
+      "accessoryConfig": {
+        "access_id": 103,
+        "compatible": "Windows",
+        "resolution": "19000 DPI",
+        "howToConnect": "Đầu thu USB ReceiverDây cắm USB",
+        "wireLength": "Dây dài 180 cm, khoảng cách kết nối 10 m (với đầu thu USB)",
+        "typePin": "Pin sạc",
+        "weight": "113 g",
+        "brand": "Trung Quốc",
+        "madeIn": "Trung Quốc",
+        "manufacturer": "Rapoo."
+      },
+      "comment": [],
+      "reviews": [
+        {
+          "reId": 243,
+          "content": "Chuột đẹp xài ổn, giá tốt!",
+          "value": 5.0,
+          "image": "",
+          "dateCreate": "2023-11-13T07:59:35.368+00:00",
+          "active": true,
+          "user": {
+            "userID": 192,
+            "username": "dacquang",
+            "fullName": "Trần Đắc Quang",
+            "password": "$2a$10$bcAXxjf14WnSJkJMkpiTCumndxmiMVgS2Neq3RAswYlC7eMOm7VGS",
+            "email": "dacquang@gmail.com",
+            "phone": "0369854721",
+            "address": "10 Phạm Hùng, Cẩm Lệ",
+            "avatar": "https://udayananetworking.unud.ac.id/assets/frontend/images/user-m.png",
+            "enabled": true,
+            "resetPasswordToken": null,
+            "authorities": [
+              {
+                "authority": "User"
+              }
+            ],
+            "accountNonExpired": true,
+            "credentialsNonExpired": true,
+            "accountNonLocked": true
+          }
+        },
+        {
+          "reId": 239,
+          "content": "Lần đầu mua chuột này xài tốt lắm",
+          "value": 5.0,
+          "image": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/qjldvd9egmg?alt=media&token=6610f845-5454-47b0-84d4-a8aad9fadd6a",
+          "dateCreate": "2023-11-13T07:51:40.754+00:00",
+          "active": true,
+          "user": {
+            "userID": 36,
+            "username": "test",
+            "fullName": "Demo123",
+            "password": "$2a$10$Repc4Fgf/aVTFPnyfCKp5uOgqaHxH.S1/HL1HBfYtD/AVESQZWmtm",
+            "email": "nguyenvanhanh06082@gmail.com",
+            "phone": "0905853259",
+            "address": "da nang",
+            "avatar": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/ha7h2hemik?alt=media&token=4c2a55b9-c642-4417-bd03-4eb58aba6a34",
+            "enabled": true,
+            "resetPasswordToken": null,
+            "authorities": [
+              {
+                "authority": "User"
+              }
+            ],
+            "accountNonExpired": true,
+            "credentialsNonExpired": true,
+            "accountNonLocked": true
+          }
+        }
+      ],
+      "pid": 103
+    },
+    {
+      "title": "Chuột Không dây Bluetooth Silent Logitech Signature M650",
+      "description": "Chuột Không dây Bluetooth Silent Logitech Signature M650 sở hữu kiểu dáng công thái học cùng độ phân giải lớn, đáp ứng tốt gần như mọi nhu cầu từ sử dụng cơ bản tới những tác vụ chuyên nghiệp của người dùng.\n• Thiết kế gọn đẹp, vừa tay, màu sắc thời thượng, lịch lãm, viền bên được lót thêm miếng cao su giúp cầm và sử dụng chuột chắc chắn hơn.\n\n• Chuột không dây này có thể kết nối được với phần lớn các máy tính hiện nay nhờ tương thích với các hệ điều hành phổ biến: Windows và macOS.\n\n• Độ phân giải lên tới 4000 DPI, cho phản hồi cực kỳ nhanh chóng và chính xác.\n\n• Kích thước chuột cỡ vừa (size M), phù hợp với kích cỡ tay của phần đông người dùng (chiều dài tay khoảng 17.5 cm - 19 cm).\n\n• Phím nhấn và con lăn được chế tác chỉn chu, cuộn siêu nhanh, click dễ dàng. Thêm vào đó, công nghệ SilentTouch giúp giảm hiệu quả tiếng ồn khi nhấp chuột, cho phép bạn tập trung hơn vào công việc.\n",
+      "config": "https://cdn.tgdd.vn/Products/Images/86/299931/chuot-khong-day-logitech-silent-signature-m650-size-m-thumb2-1-600x600.jpeg",
+      "price": 850000.0,
+      "discountPrice": 765000.0,
+      "images": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/jlseifok1gg?alt=media&token=7dcd64fa-b807-4dc5-8861-47b8fe88d16f",
+      "active": true,
+      "quantum": 11,
+      "category": {
+        "cateId": 41,
+        "title": "Accessory"
+      },
+      "manufacturer": {
+        "manuId": 48,
+        "title": "Logitech",
+        "completed": false,
+        "category": {
+          "cateId": 41,
+          "title": "Accessory"
+        }
+      },
+      "imgChildren": [
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/fqiiresk39o?alt=media&token=782511af-5a63-4992-a263-8c7ecb61c949",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/43vvcdqk03?alt=media&token=18e9636b-25c5-44ed-a734-a28faac6cac1",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/62t6g4rhg6o?alt=media&token=7114bcc6-c2ff-4af0-8a82-986e0bc5b5a0",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/ifahi1p13o8?alt=media&token=bbac7096-5492-4c2d-b2e7-45ada692fadb",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/37uk4scc3cg?alt=media&token=0c930ca5-0e0d-43c3-9d3f-6f0a6981fb25"
+      ],
+      "laptopConfig": null,
+      "smartPhoneConfig": null,
+      "accessoryConfig": {
+        "access_id": 112,
+        "compatible": "macOS (MacBook, iMac)Windows",
+        "resolution": "4000 DPI",
+        "howToConnect": "Đầu thu USB ReceiverBluetooth",
+        "wireLength": "10 m",
+        "typePin": "1 viên pin AA",
+        "weight": "137 g (bao gồm hộp)",
+        "brand": "Thụy Sĩ",
+        "madeIn": "Trung Quốc",
+        "manufacturer": "Logitech. "
+      },
+      "comment": [],
+      "reviews": [
+        {
+          "reId": 240,
+          "content": "Chuột này xài tốt giá ổn!",
+          "value": 5.0,
+          "image": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/6m9p0lr7eu8?alt=media&token=128cb256-100f-46c0-95ff-49e9e0fd5fd0",
+          "dateCreate": "2023-11-13T07:52:19.849+00:00",
+          "active": true,
+          "user": {
+            "userID": 36,
+            "username": "test",
+            "fullName": "Demo123",
+            "password": "$2a$10$Repc4Fgf/aVTFPnyfCKp5uOgqaHxH.S1/HL1HBfYtD/AVESQZWmtm",
+            "email": "nguyenvanhanh06082@gmail.com",
+            "phone": "0905853259",
+            "address": "da nang",
+            "avatar": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/ha7h2hemik?alt=media&token=4c2a55b9-c642-4417-bd03-4eb58aba6a34",
+            "enabled": true,
+            "resetPasswordToken": null,
+            "authorities": [
+              {
+                "authority": "User"
+              }
+            ],
+            "accountNonExpired": true,
+            "credentialsNonExpired": true,
+            "accountNonLocked": true
+          }
+        }
+      ],
+      "pid": 112
+    },
+    {
+      "title": "Laptop Lenovo Yoga Duet 7 13ITL6 i7 1165G716GB1TBTouchPenWin11 (82MA009PVN)",
+      "description": "Laptop Lenovo Yoga Duet 7 13ITL6 i7 (82MA009PVN) độc đáo với thiết kế linh hoạt, cho phép bạn sử dụng máy như một chiếc laptop làm việc đầy năng suất hay một chiếc tablet giúp thỏa mãn mọi nhu cầu giải trí.\n• Bộ vi xử lý Intel Core i7 1165G7 và card tích hợp Intel Iris Xe Graphics hỗ trợ bạn vận hành mượt mà cho các công việc như lập trình, chỉnh sửa video và chơi game nhẹ. Đồng thời cho phép bạn chạy các tác vụ đồ họa ở mức trung bình.\n\n• RAM 16 GB giúp laptop Lenovo Yoga hoạt động mượt mà khi chạy nhiều tác vụ cùng lúc. SSD 1 TB hỗ trợ bạn lưu trữ hàng trăm hoặc hàng nghìn tập tin, video, nhạc, ảnh,... mà không lo bị hết không gian lưu trữ.",
+      "config": "https://cdn.tgdd.vn/Products/Images/44/302520/Kit/lenovo-yoga-duet-7-13itl6-i7-82ma009pvn-note.jpg",
+      "price": 3.649E7,
+      "discountPrice": 3.149E7,
+      "images": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/lnfa3jif8u?alt=media&token=a277d6ad-0465-4a23-8399-28f2e3c36ed3",
+      "active": true,
+      "quantum": 7,
+      "category": {
+        "cateId": 39,
+        "title": "Laptop"
+      },
+      "manufacturer": {
+        "manuId": 47,
+        "title": "Lenovo",
+        "completed": false,
+        "category": {
+          "cateId": 39,
+          "title": "Laptop"
+        }
+      },
+      "imgChildren": [
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/tj53qu78i08?alt=media&token=36d81033-377e-4887-bfbb-0a6150c470c6",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/mu1phuicer?alt=media&token=27f73054-18d5-4c4c-bda1-c82bcdc9cb73",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/js1jn24lcsg?alt=media&token=8c961b4a-42e8-4f6c-be35-f5b98372d71d",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/3jpj1tnqlsg?alt=media&token=f9ff7bb4-78f0-475d-a806-f26ad775bf8a",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/v26mu5k8k1?alt=media&token=195eb367-8050-48b3-a636-8236094a127c"
+      ],
+      "laptopConfig": {
+        "cpu": "i71165G72.8GHz",
+        "ram": "16 GBDDR4 (Onboard)3200 MHz",
+        "hardDrive": "1 TB SSD",
+        "screen": "13\"WQHD (2160x1350)",
+        "graphic": "Card tích hợpIntel Iris Xe",
+        "connector": "1 x Thunderbolt 4 (hỗ trợ Power Delivery 3.0 và DisplayPort 1.4)Jack tai nghe 3.5 mmUSB-C 3.2 Gen 1 (support data transfer and Power Delivery 3.0)1 x USB-C 3.2 Gen 1 (hỗ trợ truyền dữ liệu và Always On)",
+        "special": "Có màn hình cảm ứngCó đèn bàn phím",
+        "operatingSystem": "Windows 11 Home SL",
+        "design": "Mặt trên Magie Nhôm - Mặt dưới vải nhựa",
+        "sizeMass": "Dài 297.4 mm - Rộng 207.4 mm - Dày 9.19 mm - Nặng 1.168 kg",
+        "releaseTime": "2022",
+        "lid": 116
+      },
+      "smartPhoneConfig": null,
+      "accessoryConfig": null,
+      "comment": [
+        {
+          "comId": 631,
+          "content": "san pham con hang ko?\n",
+          "date": "2023-12-20T02:54:55.488+00:00",
+          "user": {
+            "userID": 473,
+            "username": "vanhanh",
+            "fullName": "Nguyễn Văn Hạnh",
+            "password": "$2a$10$QI/NlQuV2t1cKoQqGrc9t.o7zRHNQSYseX2VTJwA//6knmk1q39qq",
+            "email": "nguyenvanhanhadc1@gmail.com",
+            "phone": "0765387956",
+            "address": "120 Tế Hanh, Cẩm Lệ, Đà Nẵng",
+            "avatar": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/7hvq1581ot?alt=media&token=e9de3e78-24e7-4708-acad-2a8323225dd7",
+            "enabled": true,
+            "resetPasswordToken": null,
+            "authorities": [
+              {
+                "authority": "User"
+              }
+            ],
+            "accountNonExpired": true,
+            "credentialsNonExpired": true,
+            "accountNonLocked": true
+          }
+        }
+      ],
+      "reviews": [],
+      "pid": 116
+    },
+    {
+      "title": "Laptop Asus Gaming TUF Dash F15 FX517ZC i5 12450H8GB512GB4GB RTX3050144HzWin11",
+      "description": "Sở hữu ngoại hình ấn tượng thu hút mọi ánh nhìn cùng hiệu năng mạnh mẽ đến từ laptop CPU thế hệ 12 mới nhất,\n Asus Gaming TUF Dash F15 FX517ZC i5 (HN077W) là lựa chọn xứng tầm cho mọi nhu cầu chiến game giải trí hay đồ hoạ -\n kỹ thuật của người dùng.\n• Laptop Asus TUF mang hiệu năng vượt trội cho khả năng giải quyết trơn tru các tác vụ phức tạp như thiết kế hình ảnh,\n render video,... trên các ứng dụng nhà Adobe hay thoả sức chiến các tựa game hot như CS:GO, GTA V,... \nnhờ trang bị chip Intel Core i5 Alder Lake 12450H cùng card rời NVIDIA RTX 3050, 4 GB.",
+      "config": "https://cdn.tgdd.vn/Products/Images/44/274921/Kit/asus-tuf-gaming-fx517zc-i5-hn077w-note.jpg",
+      "price": 2.799E7,
+      "discountPrice": 2.469E7,
+      "images": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/ech5uf7vulo?alt=media&token=3f12e8d5-97d9-42aa-917a-9c20afadfa44",
+      "active": true,
+      "quantum": 17,
+      "category": {
+        "cateId": 39,
+        "title": "Laptop"
+      },
+      "manufacturer": {
+        "manuId": 45,
+        "title": "Asus",
+        "completed": false,
+        "category": {
+          "cateId": 39,
+          "title": "Laptop"
+        }
+      },
+      "imgChildren": [
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/13qsjht4c6g?alt=media&token=cb161c18-f495-4518-9ef9-c139099bebcf",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/t2j2rs92k7o?alt=media&token=7af412d8-8dde-4286-9cdd-daf8d4a94cd8",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/apd3q7i5pbg?alt=media&token=8a2f7758-33ff-4bdc-8fe2-24e13ace5ba8",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/67f9iai5v3g?alt=media&token=550fccc1-824b-4537-98d8-57e8c8ea2efc",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/nlur3dfi9ig?alt=media&token=ee1ba173-c63a-476f-85ca-25fad71f44db"
+      ],
+      "laptopConfig": {
+        "cpu": "i512450H2GHz",
+        "ram": "8 GBDDR5 2 khe (1 khe 8 GB + 1 khe trống)4800 MHz",
+        "hardDrive": "512 GB SSD NVMe PCIe (Có thể tháo ra, lắp thanh khác tối đa 1 TB)Hỗ trợ thêm 1 khe cắm SSD M.2 PCIe mở rộng (nâng cấp tối đa 1 TB)",
+        "screen": "15.6\"Full HD (1920 x 1080) 144Hz",
+        "graphic": "Card rờiRTX 3050 4GB",
+        "connector": "Thunderbolt 4HDMILAN (RJ45)Jack tai nghe 3.5 mm2 x USB 3.21x USB 3.2 Gen 2 Type-C support DisplayPort / power delivery / G-SYNC",
+        "special": "Có đèn bàn phím",
+        "operatingSystem": "Windows 11 Home SL",
+        "design": "Vỏ nhựa",
+        "sizeMass": "Dài 354 mm - Rộng 251 mm - Dày 20.7 mm - Nặng 2 kg",
+        "releaseTime": "2022",
+        "lid": 178
+      },
+      "smartPhoneConfig": null,
+      "accessoryConfig": null,
+      "comment": [],
+      "reviews": [
+        {
+          "reId": 241,
+          "content": "Laptop mạnh chơi game mượt không giật lag!",
+          "value": 5.0,
+          "image": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/vmrcljtn67g?alt=media&token=57b15882-7a90-4c0f-87df-08628041532f",
+          "dateCreate": "2023-11-13T07:55:05.743+00:00",
+          "active": true,
+          "user": {
+            "userID": 190,
+            "username": "vanhuy",
+            "fullName": "Lê Văn Huy",
+            "password": "$2a$10$MfKBBEne2jpH6LYjFYUTueBu8KcwZsKoxElvEu3/oOXjv4Ge3V9k.",
+            "email": "vanhuy@gmail.com",
+            "phone": "0908525236",
+            "address": "130 Phan Đăng Lưu, Khuê Trung",
+            "avatar": "https://udayananetworking.unud.ac.id/assets/frontend/images/user-m.png",
+            "enabled": true,
+            "resetPasswordToken": null,
+            "authorities": [
+              {
+                "authority": "User"
+              }
+            ],
+            "accountNonExpired": true,
+            "credentialsNonExpired": true,
+            "accountNonLocked": true
+          }
+        }
+      ],
+      "pid": 178
+    },
+    {
+      "title": "Laptop Asus TUF Gaming F15 FX506LHB i5 10300H8GB512GB4GB GTX1650144HzWin11",
+      "description": "Nếu bạn đang tìm kiếm một chiếc laptop gaming nhưng vẫn sở hữu một mức giá phải chăng thì laptop Asus TUF Gaming FX506LHB i5 (HN188W) \nsẽ là sự lựa chọn đáng cân nhắc với card đồ họa rời NVIDIA GeForce GTX mạnh mẽ cùng phong cách thiết kế cứng cáp, độc đáo. \n• Chạy mượt mà các ứng dụng văn phòng trên Word, Excel, PowerPoint,... đến chiến những con game đình đám nhờ bộ vi xử lý Intel Core i5 10300H \nkết hợp với card đồ họa rời NVIDIA GeForce GTX 1650 4 GB mạnh mẽ. ",
+      "config": "https://cdn.tgdd.vn/Products/Images/44/279259/Kit/asus-tuf-gaming-fx506lhb-i5-hn188w-note.jpg",
+      "price": 1.899E7,
+      "discountPrice": 1.619E7,
+      "images": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/9of20c7nl7?alt=media&token=9ef951c6-14e2-41a2-9db8-7ce824233650",
+      "active": true,
+      "quantum": 15,
+      "category": {
+        "cateId": 39,
+        "title": "Laptop"
+      },
+      "manufacturer": {
+        "manuId": 45,
+        "title": "Asus",
+        "completed": false,
+        "category": {
+          "cateId": 39,
+          "title": "Laptop"
+        }
+      },
+      "imgChildren": [
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/snq9uovgg4o?alt=media&token=9de992ca-355d-4b09-a86b-db94a4ae2de2",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/tddm4n6rtag?alt=media&token=33ed39da-7d4c-42a3-a80c-62fd5de2e86d",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/2jlm958n4e?alt=media&token=7bfc3a80-b170-4fa0-b783-a124ac19cbf1",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/83jp2qjngm?alt=media&token=27a65394-51c6-45ad-96a6-78af70ccab18",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/3q3km7ilt1g?alt=media&token=13dd8744-5fe2-4fc0-9b74-4b602181dac7"
+      ],
+      "laptopConfig": {
+        "cpu": "i510300H2.5GHz",
+        "ram": "8 GBDDR4 2 khe (1 khe 8 GB + 1 khe rời)2933 MHz",
+        "hardDrive": "512 GB SSD NVMe PCIe (Có thể tháo ra, lắp thanh khác tối đa 1 TB)",
+        "screen": "15.6\"Full HD (1920 x 1080) 144Hz",
+        "graphic": "Card rờiGTX 1650 4GB",
+        "connector": "HDMILAN (RJ45)USB 2.0Jack tai nghe 3.5 mm2 x USB 3.21x USB 3.2 Gen 2 Type-C support DisplayPort / power delivery / G-SYNC",
+        "special": "Có đèn bàn phím",
+        "operatingSystem": "Windows 11 Home SL",
+        "design": "Vỏ nhựa",
+        "sizeMass": "Dài 359 mm - Rộng 256 mm - Dày 24.9 mm - Nặng 2.3 kg",
+        "releaseTime": "2021",
+        "lid": 182
+      },
+      "smartPhoneConfig": null,
+      "accessoryConfig": null,
+      "comment": [
+        {
+          "comId": 643,
+          "content": "binh luan",
+          "date": "2023-12-20T03:26:13.138+00:00",
+          "user": {
+            "userID": 473,
+            "username": "vanhanh",
+            "fullName": "Nguyễn Văn Hạnh",
+            "password": "$2a$10$QI/NlQuV2t1cKoQqGrc9t.o7zRHNQSYseX2VTJwA//6knmk1q39qq",
+            "email": "nguyenvanhanhadc1@gmail.com",
+            "phone": "0765387956",
+            "address": "120 Tế Hanh, Cẩm Lệ, Đà Nẵng",
+            "avatar": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/7hvq1581ot?alt=media&token=e9de3e78-24e7-4708-acad-2a8323225dd7",
+            "enabled": true,
+            "resetPasswordToken": null,
+            "authorities": [
+              {
+                "authority": "User"
+              }
+            ],
+            "accountNonExpired": true,
+            "credentialsNonExpired": true,
+            "accountNonLocked": true
+          }
+        }
+      ],
+      "reviews": [
+        {
+          "reId": 536,
+          "content": "san pham tot",
+          "value": 5.0,
+          "image": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/agjt7eh4vio?alt=media&token=14c446ec-fd13-4a76-977b-382181396ff8",
+          "dateCreate": "2023-12-10T10:29:34.713+00:00",
+          "active": true,
+          "user": {
+            "userID": 192,
+            "username": "dacquang",
+            "fullName": "Trần Đắc Quang",
+            "password": "$2a$10$bcAXxjf14WnSJkJMkpiTCumndxmiMVgS2Neq3RAswYlC7eMOm7VGS",
+            "email": "dacquang@gmail.com",
+            "phone": "0369854721",
+            "address": "10 Phạm Hùng, Cẩm Lệ",
+            "avatar": "https://udayananetworking.unud.ac.id/assets/frontend/images/user-m.png",
+            "enabled": true,
+            "resetPasswordToken": null,
+            "authorities": [
+              {
+                "authority": "User"
+              }
+            ],
+            "accountNonExpired": true,
+            "credentialsNonExpired": true,
+            "accountNonLocked": true
+          }
+        },
+        {
+          "reId": 204,
+          "content": "Demo",
+          "value": 5.0,
+          "image": "",
+          "dateCreate": "2023-11-08T02:12:36.166+00:00",
+          "active": true,
+          "user": {
+            "userID": 192,
+            "username": "dacquang",
+            "fullName": "Trần Đắc Quang",
+            "password": "$2a$10$bcAXxjf14WnSJkJMkpiTCumndxmiMVgS2Neq3RAswYlC7eMOm7VGS",
+            "email": "dacquang@gmail.com",
+            "phone": "0369854721",
+            "address": "10 Phạm Hùng, Cẩm Lệ",
+            "avatar": "https://udayananetworking.unud.ac.id/assets/frontend/images/user-m.png",
+            "enabled": true,
+            "resetPasswordToken": null,
+            "authorities": [
+              {
+                "authority": "User"
+              }
+            ],
+            "accountNonExpired": true,
+            "credentialsNonExpired": true,
+            "accountNonLocked": true
+          }
+        }
+      ],
+      "pid": 182
+    },
+    {
+      "title": "Laptop Asus Zenbook 14 OLED UX3402ZA i7 1260P16GB512GBCápWin11",
+      "description": "Laptop Asus Zenbook 14 OLED UX3402ZA i7 (KM221W) sở hữu ngoại hình thanh lịch, màn hình OLED 2.8K tỷ lệ 16:10 và bộ vi xử lý Intel Core i7\n thế hệ thứ 12 mạnh mẽ, xứng danh một chiếc laptop học tập - văn phòng cùng mình chinh chiến trong suốt quãng đường đại học.\nCân mọi thể loại tác vụ từ chơi game cho đến thiết kế\nLaptop Asus Zenbook được trang bị bộ vi xử lý Intel Core i7 1260P với cấu trúc 12 nhân và 16 luồng cùng card đồ họa tích hợp \nIntel Iris Xe, không chỉ hỗ trợ mình xử lý mượt mà mọi tác vụ học tập, văn phòng từ cơ bản đến nâng cao mà còn cân luôn các công việc \nchỉnh ảnh, thiết kế trên Photoshop, Canva, Figma,...",
+      "config": "https://cdn.tgdd.vn/Products/Images/44/285771/Kit/asus-zenbook-14-oled-ux3402za-i7-km221w-note.jpg",
+      "price": 2.999E7,
+      "discountPrice": 2.619E7,
+      "images": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/6p3okent8gg?alt=media&token=d36d9f7f-ecd3-43b5-808c-3a3b8f812c3e",
+      "active": true,
+      "quantum": 17,
+      "category": {
+        "cateId": 39,
+        "title": "Laptop"
+      },
+      "manufacturer": {
+        "manuId": 45,
+        "title": "Asus",
+        "completed": false,
+        "category": {
+          "cateId": 39,
+          "title": "Laptop"
+        }
+      },
+      "imgChildren": [
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/7tq4fakd0g8?alt=media&token=8beba36c-a61a-4e10-869b-3cb7532414f2",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/70fkagm945?alt=media&token=362bd545-0072-4b68-a4bd-a3336fee87a0",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/jnspaj0vgp8?alt=media&token=f091e2f1-251e-4361-811d-0c9ae8bd870c",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/7pn4adohhu?alt=media&token=a91ba2d0-dd39-484c-9724-998c0e03ee32",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/0i10odk969?alt=media&token=d09d8d9e-124e-4d42-8b51-939b2c2b888d"
+      ],
+      "laptopConfig": {
+        "cpu": "i71260P2.1GHz",
+        "ram": "16 GBLPDDR5 (Onboard)4800 MHz",
+        "hardDrive": "512 GB SSD NVMe PCIe",
+        "screen": "14\"2.8K (2880 x 1800) - OLED 16:1090Hz",
+        "graphic": "Card tích hợpIntel Iris Xe",
+        "connector": "Jack tai nghe 3.5 mm2 x Thunderbolt 41 x USB 3.2HDMI",
+        "special": "Có đèn bàn phím",
+        "operatingSystem": "Windows 11 Home SL",
+        "design": "Vỏ kim loại",
+        "sizeMass": "Dài 313.6 mm - Rộng 220.6 mm - Dày 16.9 mm - Nặng 1.39 kg",
+        "releaseTime": "2022",
+        "lid": 186
+      },
+      "smartPhoneConfig": null,
+      "accessoryConfig": null,
+      "comment": [],
+      "reviews": [
+        {
+          "reId": 550,
+          "content": "Sản phẩm đẹp quá!",
+          "value": 5.0,
+          "image": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/dkldacbll3?alt=media&token=9ae6f069-e7b8-40fb-b65d-fa0a95d5210d",
+          "dateCreate": "2023-12-12T12:20:24.219+00:00",
+          "active": true,
+          "user": {
+            "userID": 473,
+            "username": "vanhanh",
+            "fullName": "Nguyễn Văn Hạnh",
+            "password": "$2a$10$QI/NlQuV2t1cKoQqGrc9t.o7zRHNQSYseX2VTJwA//6knmk1q39qq",
+            "email": "nguyenvanhanhadc1@gmail.com",
+            "phone": "0765387956",
+            "address": "120 Tế Hanh, Cẩm Lệ, Đà Nẵng",
+            "avatar": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/7hvq1581ot?alt=media&token=e9de3e78-24e7-4708-acad-2a8323225dd7",
+            "enabled": true,
+            "resetPasswordToken": null,
+            "authorities": [
+              {
+                "authority": "User"
+              }
+            ],
+            "accountNonExpired": true,
+            "credentialsNonExpired": true,
+            "accountNonLocked": true
+          }
+        }
+      ],
+      "pid": 186
+    },
+    {
+      "title": "iPhone14 Pro Max 128GB",
+      "description": "iPhone 14 Pro Max một siêu phẩm trong giới smartphone được nhà Táo tung ra thị trường vào tháng 09/2022. Máy trang bị con chip Apple A16 Bionic vô cùng mạnh mẽ, đi kèm theo đó là thiết kế hình màn hình mới, hứa hẹn mang lại những trải nghiệm đầy mới mẻ cho người dùng iPhone.\nThiết kế cao cấp bền bỉ\niPhone năm nay sẽ được thừa hưởng nét đặc trưng từ người anh iPhone 13 Pro Max, vẫn sẽ là khung thép không gỉ và mặt lưng kính cường lực kết hợp với tạo hình vuông vức hiện đại thông qua cách tạo hình phẳng ở các cạnh và phần mặt lưng.",
+      "config": "https://cdn.tgdd.vn/Products/Images/42/251192/Kit/iphone-14-pro-max-note.jpg",
+      "price": 2.599E7,
+      "discountPrice": 2.409E7,
+      "images": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/ilffa7mfms?alt=media&token=e4dae2ab-f693-46f2-bbb6-69e32790b6e9",
+      "active": true,
+      "quantum": 18,
+      "category": {
+        "cateId": 40,
+        "title": "SmartPhone"
+      },
+      "manufacturer": {
+        "manuId": 46,
+        "title": "iPhone",
+        "completed": false,
+        "category": {
+          "cateId": 40,
+          "title": "SmartPhone"
+        }
+      },
+      "imgChildren": [
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/9se0g89m0k?alt=media&token=f48b351e-85dc-42ce-9dac-dc63fcef2ad3",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/k6shagp5c98?alt=media&token=0e3f2d22-5382-438b-a5a4-01832e93968b",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/0g5e0kt6le8?alt=media&token=7f9857b0-81e7-48bc-9897-95e2c5fdeb4c",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/vov30222e9?alt=media&token=aa96a56b-59d0-455d-a4a5-51f7fc095dd0",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/voap8j855e8?alt=media&token=a3307269-f74f-4834-8e88-2bd1b26d2afb"
+      ],
+      "laptopConfig": null,
+      "smartPhoneConfig": {
+        "smart_id": 210,
+        "screen": "OLED6.7\"Super Retina XDR",
+        "beforeCamera": "12 MP",
+        "afterCamera": "Chính 48 MP & Phụ 12 MP, 12 MP",
+        "ram": "6 GB",
+        "sim": "1 Nano SIM & 1 eSIMHỗ trợ 5G",
+        "chip": "Apple A16 Bionic",
+        "operatingSystem": "iOS 16",
+        "storage": "128 GB",
+        "pin": "4323 mAh20 W"
+      },
+      "accessoryConfig": null,
+      "comment": [],
+      "reviews": [
+        {
+          "reId": 488,
+          "content": "Điện thoại đẹp xài tốt!",
+          "value": 5.0,
+          "image": "",
+          "dateCreate": "2023-11-29T16:01:30.565+00:00",
+          "active": true,
+          "user": {
+            "userID": 146,
+            "username": "ngocth4",
+            "fullName": "Trần Hồng Ngọc",
+            "password": "$2a$10$M9tai05VqcNp43K026/Zuuf9tERp7Zio.l6Z7xsHKZim4D/gINtoK",
+            "email": "ngocth4@fpt.com",
+            "phone": "0868935312",
+            "address": "120 Sông Cầu, Phú Yên",
+            "avatar": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/efpc0ulh14g?alt=media&token=8fceb39c-1cca-41f7-9994-546ccdb3c116",
+            "enabled": true,
+            "resetPasswordToken": null,
+            "authorities": [
+              {
+                "authority": "User"
+              }
+            ],
+            "accountNonExpired": true,
+            "credentialsNonExpired": true,
+            "accountNonLocked": true
+          }
+        },
+        {
+          "reId": 486,
+          "content": "Điện thoại đẹp xài tốt!",
+          "value": 5.0,
+          "image": "",
+          "dateCreate": "2023-11-29T16:01:25.074+00:00",
+          "active": true,
+          "user": {
+            "userID": 146,
+            "username": "ngocth4",
+            "fullName": "Trần Hồng Ngọc",
+            "password": "$2a$10$M9tai05VqcNp43K026/Zuuf9tERp7Zio.l6Z7xsHKZim4D/gINtoK",
+            "email": "ngocth4@fpt.com",
+            "phone": "0868935312",
+            "address": "120 Sông Cầu, Phú Yên",
+            "avatar": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/efpc0ulh14g?alt=media&token=8fceb39c-1cca-41f7-9994-546ccdb3c116",
+            "enabled": true,
+            "resetPasswordToken": null,
+            "authorities": [
+              {
+                "authority": "User"
+              }
+            ],
+            "accountNonExpired": true,
+            "credentialsNonExpired": true,
+            "accountNonLocked": true
+          }
+        },
+        {
+          "reId": 490,
+          "content": "Điện thoại đẹp xài tốt!",
+          "value": 5.0,
+          "image": "",
+          "dateCreate": "2023-11-29T16:04:14.658+00:00",
+          "active": true,
+          "user": {
+            "userID": 146,
+            "username": "ngocth4",
+            "fullName": "Trần Hồng Ngọc",
+            "password": "$2a$10$M9tai05VqcNp43K026/Zuuf9tERp7Zio.l6Z7xsHKZim4D/gINtoK",
+            "email": "ngocth4@fpt.com",
+            "phone": "0868935312",
+            "address": "120 Sông Cầu, Phú Yên",
+            "avatar": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/efpc0ulh14g?alt=media&token=8fceb39c-1cca-41f7-9994-546ccdb3c116",
+            "enabled": true,
+            "resetPasswordToken": null,
+            "authorities": [
+              {
+                "authority": "User"
+              }
+            ],
+            "accountNonExpired": true,
+            "credentialsNonExpired": true,
+            "accountNonLocked": true
+          }
+        },
+        {
+          "reId": 487,
+          "content": "Điện thoại đẹp xài tốt!",
+          "value": 5.0,
+          "image": "",
+          "dateCreate": "2023-11-29T16:01:26.068+00:00",
+          "active": true,
+          "user": {
+            "userID": 146,
+            "username": "ngocth4",
+            "fullName": "Trần Hồng Ngọc",
+            "password": "$2a$10$M9tai05VqcNp43K026/Zuuf9tERp7Zio.l6Z7xsHKZim4D/gINtoK",
+            "email": "ngocth4@fpt.com",
+            "phone": "0868935312",
+            "address": "120 Sông Cầu, Phú Yên",
+            "avatar": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/efpc0ulh14g?alt=media&token=8fceb39c-1cca-41f7-9994-546ccdb3c116",
+            "enabled": true,
+            "resetPasswordToken": null,
+            "authorities": [
+              {
+                "authority": "User"
+              }
+            ],
+            "accountNonExpired": true,
+            "credentialsNonExpired": true,
+            "accountNonLocked": true
+          }
+        },
+        {
+          "reId": 311,
+          "content": "Điện thoại mạnh chụp hình đẹp!",
+          "value": 5.0,
+          "image": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/aghc7sltlpg?alt=media&token=8c6570e6-4766-4ebb-8363-cee2710d50a1",
+          "dateCreate": "2023-11-16T09:03:41.357+00:00",
+          "active": true,
+          "user": {
+            "userID": 293,
+            "username": "binhyen",
+            "fullName": "Bình Yên",
+            "password": "$2a$10$rMqHVyNcsKD7TB9ZGDNjK.X43B/2BEHf5ztIv5YAJXohOv3BE1X76",
+            "email": "bginhyen@gmail.com",
+            "phone": "0687956325",
+            "address": "120 Tế Hanh",
+            "avatar": "https://udayananetworking.unud.ac.id/assets/frontend/images/user-m.png",
+            "enabled": true,
+            "resetPasswordToken": null,
+            "authorities": [
+              {
+                "authority": "User"
+              }
+            ],
+            "accountNonExpired": true,
+            "credentialsNonExpired": true,
+            "accountNonLocked": true
+          }
+        },
+        {
+          "reId": 489,
+          "content": "Điện thoại đẹp xài tốt!",
+          "value": 5.0,
+          "image": "",
+          "dateCreate": "2023-11-29T16:02:34.914+00:00",
+          "active": true,
+          "user": {
+            "userID": 146,
+            "username": "ngocth4",
+            "fullName": "Trần Hồng Ngọc",
+            "password": "$2a$10$M9tai05VqcNp43K026/Zuuf9tERp7Zio.l6Z7xsHKZim4D/gINtoK",
+            "email": "ngocth4@fpt.com",
+            "phone": "0868935312",
+            "address": "120 Sông Cầu, Phú Yên",
+            "avatar": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/efpc0ulh14g?alt=media&token=8fceb39c-1cca-41f7-9994-546ccdb3c116",
+            "enabled": true,
+            "resetPasswordToken": null,
+            "authorities": [
+              {
+                "authority": "User"
+              }
+            ],
+            "accountNonExpired": true,
+            "credentialsNonExpired": true,
+            "accountNonLocked": true
+          }
+        }
+      ],
+      "pid": 210
+    },
+    {
+      "title": "Iphone 14 Pro 128Gb",
+      "description": "iPhone 14 Pro 128GB - Mẫu smartphone đến từ nhà Apple được mong đợi nhất năm 2022, lần này nhà Táo mang đến cho chúng ta một phiên bản với kiểu thiết kế hình notch mới, cấu hình mạnh mẽ nhờ con chip Apple A16 Bionic và cụm camera có độ phân giải được nâng cấp lên đến 48 MP.\nThiết kế mang dáng vẻ sang trọng và đặc trưng\nĐến với thiết kế của iPhone 14 Pro năm nay, hãng vẫn giữ lại nét đặc trưng vốn có từ các đời trước, vẫn mang trong mình ngoại hình vuông vức với các cạnh và mặt lưng vát phẳng. Hiện tại thị hiếu của người dùng về kiểu thiết kế này vẫn đang rất cao, vậy nên theo mình thấy thì đây vẫn sẽ là chiếc điện thoại bắt trend cho trong nhiều năm tiếp theo.\n",
+      "config": "https://cdn.tgdd.vn/Products/Images/42/247508/Kit/iphone-14-pro-note.jpg",
+      "price": 2.499E7,
+      "discountPrice": 2.299E7,
+      "images": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/2ifkjb32m38?alt=media&token=eaa0c587-c61e-4925-829b-5e7d9edb78a1",
+      "active": true,
+      "quantum": 17,
+      "category": {
+        "cateId": 40,
+        "title": "SmartPhone"
+      },
+      "manufacturer": {
+        "manuId": 46,
+        "title": "iPhone",
+        "completed": false,
+        "category": {
+          "cateId": 40,
+          "title": "SmartPhone"
+        }
+      },
+      "imgChildren": [
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/ecvhe9t11o?alt=media&token=68a5f7fa-123c-4e8b-8864-9c1fb102369b",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/ah38r8emnv8?alt=media&token=e2d81bef-d92c-4d49-8e2b-43fe9079b178",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/7ohpvjqd1jg?alt=media&token=f66903eb-ff95-4d1a-a03b-71544c6bbefb",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/v16fq92jmj8?alt=media&token=9c9cd7bb-84eb-466a-b7ed-5d7fc9ee5765",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/671l6esitc?alt=media&token=8cbd435a-96f5-4af2-9f27-ae8bc473fbe4"
+      ],
+      "laptopConfig": null,
+      "smartPhoneConfig": {
+        "smart_id": 214,
+        "screen": "OLED6.1\"Super Retina XDR",
+        "beforeCamera": "12 MP",
+        "afterCamera": " Chính 48 MP & Phụ 12 MP, 12 MP",
+        "ram": "6 GB",
+        "sim": "1 Nano SIM & 1 eSIMHỗ trợ 5G",
+        "chip": "Apple A16 Bionic",
+        "operatingSystem": "iOS 16",
+        "storage": "128 GB",
+        "pin": "3200 mAh20 W"
+      },
+      "accessoryConfig": null,
+      "comment": [],
+      "reviews": [
+        {
+          "reId": 312,
+          "content": "Điện thoại đẹp chụp hình nét!",
+          "value": 5.0,
+          "image": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/phloafb5fho?alt=media&token=9ddc152f-2e69-4d97-ab0f-7820de3e4447",
+          "dateCreate": "2023-11-16T09:04:10.174+00:00",
+          "active": true,
+          "user": {
+            "userID": 293,
+            "username": "binhyen",
+            "fullName": "Bình Yên",
+            "password": "$2a$10$rMqHVyNcsKD7TB9ZGDNjK.X43B/2BEHf5ztIv5YAJXohOv3BE1X76",
+            "email": "bginhyen@gmail.com",
+            "phone": "0687956325",
+            "address": "120 Tế Hanh",
+            "avatar": "https://udayananetworking.unud.ac.id/assets/frontend/images/user-m.png",
+            "enabled": true,
+            "resetPasswordToken": null,
+            "authorities": [
+              {
+                "authority": "User"
+              }
+            ],
+            "accountNonExpired": true,
+            "credentialsNonExpired": true,
+            "accountNonLocked": true
+          }
+        }
+      ],
+      "pid": 214
+    },
+    {
+      "title": "Iphone 14 128GB",
+      "description": "iPhone 14 128GB được xem là mẫu smartphone bùng nổ của nhà táo trong năm 2022, ấn tượng với ngoại hình trẻ trung, màn hình chất lượng đi kèm với những cải tiến về hệ điều hành và thuật toán xử lý hình ảnh, giúp máy trở thành cái tên thu hút được đông đảo người dùng quan tâm tại thời điểm ra mắt.\niPhone 14 sở hữu thiết kế cao cấp\nVới phiên bản tiêu chuẩn thì nhà Apple vẫn giữ nguyên kiểu dáng thiết kế so với thế hệ tiền nhiệm, vẫn là mặt lưng phẳng cùng bộ khung vuông giúp máy trở nên hiện đại hơn",
+      "config": "https://cdn.tgdd.vn/Products/Images/42/240259/Kit/iphone-14-note.jpg",
+      "price": 1.999E7,
+      "discountPrice": 1.749E7,
+      "images": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/kulqs455i78?alt=media&token=56d1f844-2b7f-4727-8f06-f29a274191a4",
+      "active": true,
+      "quantum": 18,
+      "category": {
+        "cateId": 40,
+        "title": "SmartPhone"
+      },
+      "manufacturer": {
+        "manuId": 46,
+        "title": "iPhone",
+        "completed": false,
+        "category": {
+          "cateId": 40,
+          "title": "SmartPhone"
+        }
+      },
+      "imgChildren": [
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/3cv75u61svo?alt=media&token=d32c038e-ce72-4a68-9854-a10f54e6ad59",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/3jfiv2bmql?alt=media&token=e7416bf2-1b08-45ba-b5a3-049469828553",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/odd5nl666co?alt=media&token=5b3e7ae4-f644-4907-9b57-dcb4e6073e56",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/ereamkljc68?alt=media&token=57e67664-b6b5-4820-9211-7e537a3c2a16",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/vsm4uaivvn8?alt=media&token=e07853c1-688c-4f7a-9892-b30763e8ce7b"
+      ],
+      "laptopConfig": null,
+      "smartPhoneConfig": {
+        "smart_id": 218,
+        "screen": "OLED,6.1,\"Super Retina XDR",
+        "beforeCamera": "12 MP",
+        "afterCamera": "2 camera 12 MP",
+        "ram": "6 GB",
+        "sim": "1 Nano SIM & 1 eSIMHỗ trợ 5G",
+        "chip": "Apple A15 Bionic",
+        "operatingSystem": "iOS 16",
+        "storage": "128 GB",
+        "pin": "3279 mAh,20 W"
+      },
+      "accessoryConfig": null,
+      "comment": [],
+      "reviews": [
+        {
+          "reId": 309,
+          "content": "Điện thoại đẹp cầm vừa tay!",
+          "value": 5.0,
+          "image": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/m08u3td96dg?alt=media&token=fe3d8f3c-c45b-435d-b941-19ce12c1ad39",
+          "dateCreate": "2023-11-16T09:02:40.011+00:00",
+          "active": true,
+          "user": {
+            "userID": 293,
+            "username": "binhyen",
+            "fullName": "Bình Yên",
+            "password": "$2a$10$rMqHVyNcsKD7TB9ZGDNjK.X43B/2BEHf5ztIv5YAJXohOv3BE1X76",
+            "email": "bginhyen@gmail.com",
+            "phone": "0687956325",
+            "address": "120 Tế Hanh",
+            "avatar": "https://udayananetworking.unud.ac.id/assets/frontend/images/user-m.png",
+            "enabled": true,
+            "resetPasswordToken": null,
+            "authorities": [
+              {
+                "authority": "User"
+              }
+            ],
+            "accountNonExpired": true,
+            "credentialsNonExpired": true,
+            "accountNonLocked": true
+          }
+        }
+      ],
+      "pid": 218
+    },
+    {
+      "title": "Điện thoại Samsung Galaxy S20 FE (8GB256GB)",
+      "description": "Samsung đã giới thiệu đến người dùng thành viên mới của dòng S20 Series đó chính là điện thoại Samsung Galaxy S20 FE. Đây là mẫu flagship cao cấp quy tụ nhiều tính năng mà Samfan yêu thích, hứa hẹn sẽ mang lại trải nghiệm cao cấp của dòng Galaxy S với mức giá dễ tiếp cận hơn.\nNhiếp ảnh chuyên nghiệp với cụm camera đẳng cấp\nCamera trên S20 FE là 3 cảm biến chất lượng nằm gọn trong mô đun chữ nhật độc đáo ở mặt lưng bao gồm: Camera chính 12 MP cho chất lượng ảnh sắc nét, camera góc siêu rộng 12 MP cung cấp góc chụp tối đa và cuối cùng camera tele 8 MP hỗ trợ zoom quang học 3X.",
+      "config": "https://cdn.tgdd.vn/Products/Images/42/224859/Kit/samsung-galaxy-s20-fan-edition-note.jpg",
+      "price": 1.149E7,
+      "discountPrice": 7790000.0,
+      "images": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/8l9m2tgn4kg?alt=media&token=6064790f-b55d-4f55-9f1e-ec7371dc59f2",
+      "active": true,
+      "quantum": 19,
+      "category": {
+        "cateId": 40,
+        "title": "SmartPhone"
+      },
+      "manufacturer": {
+        "manuId": 251,
+        "title": "Samsung",
+        "completed": false,
+        "category": {
+          "cateId": 40,
+          "title": "SmartPhone"
+        }
+      },
+      "imgChildren": [
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/i2p3f0ka8io?alt=media&token=10ccbab4-d33d-4801-b5a0-ad3e48fa6eb4",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/irl4pieea2?alt=media&token=24b9d057-74a0-4bf0-925d-9f83265b108a",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/6k86ot6k478?alt=media&token=b022b9e4-7224-4549-a405-5228c789e315",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/2m67ggc3dao?alt=media&token=6348f685-6655-4f0b-aa52-4c4364e320b0",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/osen3jo2tdo?alt=media&token=ea96a098-c339-4b72-a5da-af6121339f67"
+      ],
+      "laptopConfig": null,
+      "smartPhoneConfig": {
+        "smart_id": 247,
+        "screen": "Super AMOLED6.5\"Full HD+",
+        "beforeCamera": "12 MP",
+        "afterCamera": "Chính 12 MP & Phụ 12 MP, 8 MP",
+        "ram": "8 GB",
+        "sim": "2 Nano SIM (SIM 2 chung khe thẻ nhớ)Hỗ trợ 4G",
+        "chip": "Snapdragon 865",
+        "operatingSystem": "Android 12",
+        "storage": "256 GB",
+        "pin": "4500 mAh25 W"
+      },
+      "accessoryConfig": null,
+      "comment": [],
+      "reviews": [
+        {
+          "reId": 307,
+          "content": "Điện thoài xài ổn vừa túi tiền!",
+          "value": 5.0,
+          "image": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/q0v4rtviepg?alt=media&token=ab8de2e7-2047-4fe0-85d7-409d5d9e9b8f",
+          "dateCreate": "2023-11-16T08:57:02.278+00:00",
+          "active": true,
+          "user": {
+            "userID": 285,
+            "username": "thanhhai",
+            "fullName": "Đinh Thanh Hải",
+            "password": "$2a$10$DfY7GmjBxuFT5GJtJoLsN.BMk7th6XgSgLywonxfZBuA4jQN7f2oa",
+            "email": "thanhhai@gmail.com",
+            "phone": "0905853259",
+            "address": "dien ban, quan nam",
+            "avatar": "https://udayananetworking.unud.ac.id/assets/frontend/images/user-m.png",
+            "enabled": true,
+            "resetPasswordToken": null,
+            "authorities": [
+              {
+                "authority": "User"
+              }
+            ],
+            "accountNonExpired": true,
+            "credentialsNonExpired": true,
+            "accountNonLocked": true
+          }
+        }
+      ],
+      "pid": 247
+    },
+    {
+      "title": "Điện thoại Samsung Galaxy S21 FE 5G (6GB128GB)",
+      "description": "Samsung Galaxy S21 FE 5G (6GB/128GB) được Samsung ra mắt với dáng dấp thời thượng, cấu hình khỏe, chụp ảnh đẹp với bộ 3 camera chất lượng, thời lượng pin đủ dùng hằng ngày và còn gì nữa? Mời bạn khám phá qua nội dung sau ngay.\nVẻ ngoài sang trọng, màu sắc thời trang\nGalaxy S21 FE 5G thiết kế mỏng nhẹ với độ dày 7.9 mm, khối lượng chỉ 177 gram, các góc cạnh bo tròn cho cảm giác hài hòa, mềm mại, kết hợp các tông màu thời thượng gồm tím, xanh lá, xám và trắng giúp bạn dễ dàng tạo nên phong cách riêng đầy cá tính.",
+      "config": "https://cdn.tgdd.vn/Products/Images/42/267211/Kit/samsung-galaxy-s21-fe--n.jpg",
+      "price": 1.199E7,
+      "discountPrice": 8990000.0,
+      "images": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/tkioftaicn8?alt=media&token=a7dad1c3-24d6-4eb2-8675-13a8cb61250c",
+      "active": true,
+      "quantum": 19,
+      "category": {
+        "cateId": 40,
+        "title": "SmartPhone"
+      },
+      "manufacturer": {
+        "manuId": 251,
+        "title": "Samsung",
+        "completed": false,
+        "category": {
+          "cateId": 40,
+          "title": "SmartPhone"
+        }
+      },
+      "imgChildren": [
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/hma8tugbmlo?alt=media&token=e5f46c99-a500-46c3-b02a-813745468f88",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/gee00mshmn?alt=media&token=9a736bd2-d8c5-4659-91d8-cdf0eee2eecf",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/9phnjrrsa3g?alt=media&token=c4e6e114-f4b3-40c8-8318-2f5a7e2a13b6",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/s0rv8hs0olo?alt=media&token=d6c4c3fc-a43c-4486-8710-6eb8675a96e0",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/jne8fv7eggg?alt=media&token=b6600c06-0801-41ac-9545-81550c076854"
+      ],
+      "laptopConfig": null,
+      "smartPhoneConfig": {
+        "smart_id": 253,
+        "screen": "Dynamic AMOLED 2X6.4\"Full HD+",
+        "beforeCamera": "12 MP",
+        "afterCamera": "Chính 12 MP & Phụ 12 MP, 8 MP",
+        "ram": "6 GB",
+        "sim": "2 Nano SIMHỗ trợ 5G",
+        "chip": "Exynos 2100",
+        "operatingSystem": "Android 12",
+        "storage": "128 GB",
+        "pin": "4500 mAh25 W"
+      },
+      "accessoryConfig": null,
+      "comment": [],
+      "reviews": [
+        {
+          "reId": 306,
+          "content": "Điện thoài rẻ xài tốt!",
+          "value": 5.0,
+          "image": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/0i2v1t5acrg?alt=media&token=5514e21a-7e3e-49e6-8f47-a7c75a480dc8",
+          "dateCreate": "2023-11-16T08:56:27.883+00:00",
+          "active": true,
+          "user": {
+            "userID": 285,
+            "username": "thanhhai",
+            "fullName": "Đinh Thanh Hải",
+            "password": "$2a$10$DfY7GmjBxuFT5GJtJoLsN.BMk7th6XgSgLywonxfZBuA4jQN7f2oa",
+            "email": "thanhhai@gmail.com",
+            "phone": "0905853259",
+            "address": "dien ban, quan nam",
+            "avatar": "https://udayananetworking.unud.ac.id/assets/frontend/images/user-m.png",
+            "enabled": true,
+            "resetPasswordToken": null,
+            "authorities": [
+              {
+                "authority": "User"
+              }
+            ],
+            "accountNonExpired": true,
+            "credentialsNonExpired": true,
+            "accountNonLocked": true
+          }
+        }
+      ],
+      "pid": 253
+    },
+    {
+      "title": "Điện thoại Samsung Galaxy S23 Ultra 5G 256GB",
+      "description": "Samsung Galaxy S23 Ultra 5G 256GB là chiếc smartphone cao cấp nhất của nhà Samsung, sở hữu cấu hình không tưởng với con chip khủng được Qualcomm tối ưu riêng cho dòng Galaxy và camera lên đến 200 MP, xứng danh là chiếc flagship Android được mong đợi nhất trong năm 2023.\nTạo hình sang trọng đầy tinh tế\nVề thiết kế thì Samsung Galaxy S23 Ultra sẽ tiếp tục thừa hưởng kiểu dáng sang trọng đến từ thế hệ trước, vẫn là bộ khung kim loại, mặt lưng kính cùng kiểu tạo hình bo cong nhẹ ở cạnh bên và màn hình.",
+      "config": "https://cdn.tgdd.vn/Products/Images/42/249948/Kit/samsung-galaxy-s23-ultra-note.jpg",
+      "price": 2.899E7,
+      "discountPrice": 2.399E7,
+      "images": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/df79k33lr6?alt=media&token=cea9a16b-0a09-47fc-b61e-ae7e067f3213",
+      "active": true,
+      "quantum": 17,
+      "category": {
+        "cateId": 40,
+        "title": "SmartPhone"
+      },
+      "manufacturer": {
+        "manuId": 251,
+        "title": "Samsung",
+        "completed": false,
+        "category": {
+          "cateId": 40,
+          "title": "SmartPhone"
+        }
+      },
+      "imgChildren": [
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/54nd618t4m?alt=media&token=b2e0853b-5310-43a2-9b85-fb95cc4f8856",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/u6a3i7rrsd?alt=media&token=af734139-812f-45ba-af43-b2966f35ef7e",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/murtjkjucq8?alt=media&token=2cec1ddc-11d2-49c7-82bc-7315d9737244",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/lsefprqcukg?alt=media&token=307aa3f4-2f72-4f41-af7f-5e55a3f4239e",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/cal4lt02otg?alt=media&token=02085ed2-851e-411d-9f92-355cf97e8e7a"
+      ],
+      "laptopConfig": null,
+      "smartPhoneConfig": {
+        "smart_id": 257,
+        "screen": "Dynamic AMOLED 2X6.8\"Quad HD+ (2K+)",
+        "beforeCamera": "12 MP",
+        "afterCamera": "Chính 200 MP & Phụ 12 MP, 10 MP, 10 MP",
+        "ram": "8 GB",
+        "sim": "2 Nano SIM hoặc 1 Nano SIM + 1 eSIMHỗ trợ 5G",
+        "chip": "Snapdragon 8 Gen 2 8 nhân",
+        "operatingSystem": "Android 13",
+        "storage": "256 GB",
+        "pin": "5000 mAh45 W"
+      },
+      "accessoryConfig": null,
+      "comment": [],
+      "reviews": [
+        {
+          "reId": 310,
+          "content": "Điện thoại đẹp xài tốt!",
+          "value": 5.0,
+          "image": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/oja349jh63?alt=media&token=9861adab-3da8-42ae-bac6-77f40cf1deb1",
+          "dateCreate": "2023-11-16T09:03:08.234+00:00",
+          "active": true,
+          "user": {
+            "userID": 293,
+            "username": "binhyen",
+            "fullName": "Bình Yên",
+            "password": "$2a$10$rMqHVyNcsKD7TB9ZGDNjK.X43B/2BEHf5ztIv5YAJXohOv3BE1X76",
+            "email": "bginhyen@gmail.com",
+            "phone": "0687956325",
+            "address": "120 Tế Hanh",
+            "avatar": "https://udayananetworking.unud.ac.id/assets/frontend/images/user-m.png",
+            "enabled": true,
+            "resetPasswordToken": null,
+            "authorities": [
+              {
+                "authority": "User"
+              }
+            ],
+            "accountNonExpired": true,
+            "credentialsNonExpired": true,
+            "accountNonLocked": true
+          }
+        }
+      ],
+      "pid": 257
+    },
+    {
+      "title": "Điện thoại OPPO Find N2 Flip 5G",
+      "description": "OPPO Find N2 Flip 5G - chiếc điện thoại gập đầu tiên của OPPO đã được giới thiệu chính thức tại Việt Nam vào tháng 03/2023. Sở hữu cấu hình mạnh mẽ cùng thiết kế siêu nhỏ gọn giúp tối ưu kích thước, chiếc điện thoại sẽ cùng bạn nổi bật trong mọi không gian với vẻ ngoài đầy cá tính.\nSử dụng ngôn ngữ thiết kế gập hiện đại\nLà mẫu điện thoại gập dọc đầu tiên của OPPO, vì thế Find N2 Flip mang đến cho mình khá nhiều sự tò mò cũng như cảm hứng về phần thiết kế, điều này giúp quá trình sử dụng trở nên thú vị hơn so với đại đa số những mẫu máy thông thường khác.\n",
+      "config": "https://cdn.tgdd.vn/Products/Images/42/299034/Kit/oppo-n2-flip-tim-note.jpg",
+      "price": 1.799E7,
+      "discountPrice": 1.59E7,
+      "images": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/9aulkpit2o?alt=media&token=f9f84f93-2530-4094-af69-a435f075ea3e",
+      "active": true,
+      "quantum": 17,
+      "category": {
+        "cateId": 40,
+        "title": "SmartPhone"
+      },
+      "manufacturer": {
+        "manuId": 252,
+        "title": "Oppo",
+        "completed": false,
+        "category": {
+          "cateId": 40,
+          "title": "SmartPhone"
+        }
+      },
+      "imgChildren": [
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/9p6i8u1sqe?alt=media&token=238a769f-4261-4132-8126-3cc3425b0064",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/9d9apuo93s8?alt=media&token=ba0b231e-b8b3-4b23-8395-0e7dfcf898aa",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/39orcoboh7g?alt=media&token=9905a903-9116-4bce-a32c-5b7acf32f25d",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/q1tsfvept4g?alt=media&token=ea79884c-e618-4aec-ab7d-8596fe03f9a3",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/740tgvcp758?alt=media&token=f4aa996c-1d56-4194-bd06-dc3ec5437a6f"
+      ],
+      "laptopConfig": null,
+      "smartPhoneConfig": {
+        "smart_id": 261,
+        "screen": "AMOLED, Chính 6.8\" & Phụ 3.26\", Full HD+",
+        "beforeCamera": "8 MP",
+        "afterCamera": "Chính 50 MP & Phụ 8 MP",
+        "ram": "8 GB",
+        "sim": "2 Nano SIM, Hỗ trợ 5G",
+        "chip": "MediaTek Dimensity 9000+ 8 nhân",
+        "operatingSystem": "Android 13",
+        "storage": "256 GB",
+        "pin": "4300 mAh44 W"
+      },
+      "accessoryConfig": null,
+      "comment": [],
+      "reviews": [
+        {
+          "reId": 308,
+          "content": "Điện thoại quá đẹp!",
+          "value": 5.0,
+          "image": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/fkvf1255e78?alt=media&token=5b6618b9-5167-47cb-b39d-41e661b9716b",
+          "dateCreate": "2023-11-16T09:02:10.172+00:00",
+          "active": true,
+          "user": {
+            "userID": 293,
+            "username": "binhyen",
+            "fullName": "Bình Yên",
+            "password": "$2a$10$rMqHVyNcsKD7TB9ZGDNjK.X43B/2BEHf5ztIv5YAJXohOv3BE1X76",
+            "email": "bginhyen@gmail.com",
+            "phone": "0687956325",
+            "address": "120 Tế Hanh",
+            "avatar": "https://udayananetworking.unud.ac.id/assets/frontend/images/user-m.png",
+            "enabled": true,
+            "resetPasswordToken": null,
+            "authorities": [
+              {
+                "authority": "User"
+              }
+            ],
+            "accountNonExpired": true,
+            "credentialsNonExpired": true,
+            "accountNonLocked": true
+          }
+        }
+      ],
+      "pid": 261
+    },
+    {
+      "title": "Điện thoại OPPO Reno10 5G 128GB",
+      "description": "Đến hẹn lại lên, hãng điện thoại OPPO tiếp tục cho ra mắt sản phẩm OPPO Reno10 5G 128GB tại thị trường Việt Nam trong năm 2023. Điện thoại mang trong mình lối thiết kế đẹp mắt, hiệu năng mượt mà xử lý tốt mọi tác vụ, đi cùng bộ ba camera mang đến những bức ảnh đẹp mắt.\nThiết kế trẻ trung thu hút mọi ánh nhìn\nMang đến cho người dùng lối thiết kế trẻ trung hiện đại, khi Reno10 5G được làm nguyên khối kèm với đó sẽ là kiểu phối màu gradient cực kỳ bắt mắt và sang trọng. Từ đó cho bạn cái nhìn cao cấp và sang trọng hơn, giúp bạn tự tin sử dụng ở bất cứ đâu và luôn nhận được sự chú ý của mọi người khi sử dụng Reno 10 5G trên tay.",
+      "config": "https://cdn.tgdd.vn/Products/Images/42/309722/Kit/oppo-reno10-note-3.jpg",
+      "price": 7990000.0,
+      "discountPrice": 6900000.0,
+      "images": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/dgll91eitbo?alt=media&token=2b3f8bb9-db4f-4df2-a784-46ca763591d6",
+      "active": true,
+      "quantum": 19,
+      "category": {
+        "cateId": 40,
+        "title": "SmartPhone"
+      },
+      "manufacturer": {
+        "manuId": 252,
+        "title": "Oppo",
+        "completed": false,
+        "category": {
+          "cateId": 40,
+          "title": "SmartPhone"
+        }
+      },
+      "imgChildren": [
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/ot0mgpnh6rg?alt=media&token=2af05f87-7e8d-4cf8-8c6e-4d0e39f0ab98",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/2pm0q2u82o8?alt=media&token=9458184e-e37f-4c70-b3a9-2b3b1f225b98",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/pnlpf59cfio?alt=media&token=feb2b2d2-8f96-485f-bec7-2231812255a4",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/s9ao8199l1o?alt=media&token=e375adc2-a453-4b38-b03b-f43cc04c5fc1",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/o0uc48h3jv8?alt=media&token=1a1213a8-04d3-439f-afcc-e5d08d813a2d"
+      ],
+      "laptopConfig": null,
+      "smartPhoneConfig": {
+        "smart_id": 265,
+        "screen": "AMOLED, 6.7\", Full HD+",
+        "beforeCamera": "8 MP",
+        "afterCamera": "Chính 64 MP & Phụ 32 MP, 8 MP",
+        "ram": "8 GB",
+        "sim": "2 Nano SIM (SIM 2 chung khe thẻ nhớ), Hỗ trợ 5G",
+        "chip": "MediaTek Dimensity 7050 5G 8 nhân",
+        "operatingSystem": "Android 13",
+        "storage": "128 GB",
+        "pin": "5000 mAh67 W"
+      },
+      "accessoryConfig": null,
+      "comment": [],
+      "reviews": [
+        {
+          "reId": 305,
+          "content": "Điện thoại rẻ xài tốt!",
+          "value": 5.0,
+          "image": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/ejq799nrt7g?alt=media&token=9a608e85-a562-49e5-b0b7-7021a70302fc",
+          "dateCreate": "2023-11-16T08:56:00.127+00:00",
+          "active": true,
+          "user": {
+            "userID": 285,
+            "username": "thanhhai",
+            "fullName": "Đinh Thanh Hải",
+            "password": "$2a$10$DfY7GmjBxuFT5GJtJoLsN.BMk7th6XgSgLywonxfZBuA4jQN7f2oa",
+            "email": "thanhhai@gmail.com",
+            "phone": "0905853259",
+            "address": "dien ban, quan nam",
+            "avatar": "https://udayananetworking.unud.ac.id/assets/frontend/images/user-m.png",
+            "enabled": true,
+            "resetPasswordToken": null,
+            "authorities": [
+              {
+                "authority": "User"
+              }
+            ],
+            "accountNonExpired": true,
+            "credentialsNonExpired": true,
+            "accountNonLocked": true
+          }
+        }
+      ],
+      "pid": 265
+    },
+    {
+      "title": "Laptop Dell Inspiron 16 5620 i7 1255U8GB512GBOfficeHSWin11",
+      "description": "Khi nhắc đến dòng laptop học tập - văn phòng thì bạn không thể nào bỏ qua laptop Dell Inspiron 16 5620 i7 (N6I7110W1) \nvới hiệu năng vượt trội, thiết kế hiện đại và gọn nhẹ phù hợp với nhu cầu sử dụng của sinh viên và nhân viên văn phòng cần phải di chuyển thường xuyên.\nMượt mà đa tác vụ văn phòng\nLaptop Dell sở hữu bộ vi xử lý Intel thế hệ 12, chính xác hơn đó là Intel Core i7 1255U với khả năng tối ưu để vừa cung cấp hiệu năng \nmạnh mẽ có thể cân hoàn hảo các tác vụ văn phòng vừa hạn chế mức độ tiêu thụ điện năng. Card đồ họa tích hợp Intel UHD cũng đủ tốt để \nđáp ứng cho các nhu cầu chỉnh sửa hình ảnh 2D, file thiết kế cơ bản trên các ứng dụng nhà Adobe.",
+      "config": "https://cdn.tgdd.vn/Products/Images/44/292396/Kit/note.jpg",
+      "price": 2.319E7,
+      "discountPrice": 2.119E7,
+      "images": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/jpadlsutqeg?alt=media&token=9fd3878d-f862-42b8-b331-06bd51b1cdb7",
+      "active": true,
+      "quantum": 18,
+      "category": {
+        "cateId": 39,
+        "title": "Laptop"
+      },
+      "manufacturer": {
+        "manuId": 269,
+        "title": "Dell",
+        "completed": false,
+        "category": {
+          "cateId": 39,
+          "title": "Laptop"
+        }
+      },
+      "imgChildren": [
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/u4261l93qlg?alt=media&token=0d6e15ce-6cc0-497a-b97a-5f73e8af4d1e",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/q7s3a7eb24g?alt=media&token=6e4847f4-ef78-45e0-9ced-c3c718e5336c",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/5s5hpqi6m0g?alt=media&token=fbc65653-4d61-458c-8147-683a2ecf8302",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/99mv519cv8g?alt=media&token=910448ce-1ab1-4f0d-93fb-3d7ab06961a0",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/lcm0i5t0j4o?alt=media&token=121da3fd-654b-47f4-9e2e-7cf2a7ea3815"
+      ],
+      "laptopConfig": {
+        "cpu": "i71255U1.7GHz",
+        "ram": "8 GBDDR4 2 khe (1 khe 8 GB + 1 khe rời)3200 MHz",
+        "hardDrive": "512 GB SSD NVMe PCIe",
+        "screen": "16\"Full HD+ (1920 x 1200)",
+        "graphic": "Card tích hợpIntel UHD",
+        "connector": "HDMIJack tai nghe 3.5 mm2 x USB 3.2USB Type-C (Power Delivery and DisplayPort)",
+        "special": "Có đèn bàn phím",
+        "operatingSystem": "Windows 11 Home SL + Office Home & Student vĩnh viễn",
+        "design": "Vỏ kim loại",
+        "sizeMass": "Dài 356.7 mm - Rộng 251.9 mm - Dày 17.95 mm - Nặng 1.87 kg",
+        "releaseTime": "2022",
+        "lid": 270
+      },
+      "smartPhoneConfig": null,
+      "accessoryConfig": null,
+      "comment": [],
+      "reviews": [],
+      "pid": 270
+    },
+    {
+      "title": "Laptop Dell Vostro 3510 i5 1135G78GB512GB2GB MX350OfficeHSWin11",
+      "description": "Laptop Dell Vostro 3510 i5 (P112F002BBL) sở hữu cấu hình mạnh mẽ, đa nhiệm mượt mà trên sức mạnh của bộ vi xử lý Intel thế hệ 11, \ncùng một thiết kế đơn giản mà sang đẹp, sẽ là lựa chọn đắt giá đáp ứng nhu cầu học tập, làm việc hay giải trí của bạn.\nHiệu năng mạnh mẽ, ổn định\nĐược trang bị dòng chip Intel Core i5 Tiger Lake 1135G7 mạnh mẽ, hoạt động trên xung nhịp cơ bản 2.4 GHz và ép xung lên đến 4.2 GHz ở chế độ Turbo Boost, \nDell Vostro 3510 dễ dàng giải quyết mượt mà các tác vụ như soạn thảo hợp đồng trên Word, nhập liệu và thống kê qua Excel, \ntạo bảng thuyết trình cùng PowerPoint,... hay thiết kế đồ hoạ cơ bản trên các ứng dụng nhà Adobe cũng hiệu quả không kém.",
+      "config": "https://cdn.tgdd.vn/Products/Images/44/266280/Kit/dell-vostro-3510-i5-p112f002bbl-fix-note.jpg",
+      "price": 2.099E7,
+      "discountPrice": 1.799E7,
+      "images": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/hpjfepv3t2?alt=media&token=25a5204a-0d0a-40fd-bade-201f4c6b6ef6",
+      "active": true,
+      "quantum": 16,
+      "category": {
+        "cateId": 39,
+        "title": "Laptop"
+      },
+      "manufacturer": {
+        "manuId": 269,
+        "title": "Dell",
+        "completed": false,
+        "category": {
+          "cateId": 39,
+          "title": "Laptop"
+        }
+      },
+      "imgChildren": [
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/98gtt9qkerg?alt=media&token=d1d4298f-28b1-47db-a3bb-e00cb0d3e630",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/3vmnh222s7g?alt=media&token=7293ec40-c506-4c75-a5ac-0ca6720506aa",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/is5t1f5gl8g?alt=media&token=4e5673f9-e6df-4df1-8464-8f77248b9885",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/bmlb809trb8?alt=media&token=c23e54d5-a5df-48a1-8cb9-ed744203cdaa",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/0pj936cf43?alt=media&token=1d41405e-46f5-423a-b97f-503751243e21"
+      ],
+      "laptopConfig": {
+        "cpu": "i51135G72.4GHz",
+        "ram": "8 GBDDR4 2 khe (1 khe 8 GB + 1 khe rời)3200 MHz",
+        "hardDrive": "512 GB SSD NVMe PCIe (Có thể tháo ra, lắp thanh khác tối đa 2 TB (2280) / 1 TB (2230))Hỗ trợ khe cắm HDD SATA (nâng cấp tối đa 2 TB)",
+        "screen": "15.6\"Full HD (1920 x 1080)",
+        "graphic": "Card rời MX350 2GB",
+        "connector": "HDMILAN (RJ45)USB 2.0Jack tai nghe 3.5 mm2 x USB 3.2 / 1 x USB 3.2 và 1 x USB Type-C (Tuỳ thuộc vào lô hàng)",
+        "special": "Có đèn bàn phím",
+        "operatingSystem": "Windows 11 Home SL + Office Home & Student vĩnh viễn",
+        "design": "Vỏ nhựa",
+        "sizeMass": "Dài 358.5 mm - Rộng 235.5 mm - Dày 18.9 mm - Nặng 1.69 kg",
+        "releaseTime": "2021",
+        "lid": 274
+      },
+      "smartPhoneConfig": null,
+      "accessoryConfig": null,
+      "comment": [],
+      "reviews": [
+        {
+          "reId": 526,
+          "content": "Sản phẩm ngon bổ rẻ!",
+          "value": 5.0,
+          "image": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/rkt3nls7pl?alt=media&token=19b0708a-81aa-43cc-9eb3-8ce86a5f3765",
+          "dateCreate": "2023-12-10T09:16:28.421+00:00",
+          "active": true,
+          "user": {
+            "userID": 192,
+            "username": "dacquang",
+            "fullName": "Trần Đắc Quang",
+            "password": "$2a$10$bcAXxjf14WnSJkJMkpiTCumndxmiMVgS2Neq3RAswYlC7eMOm7VGS",
+            "email": "dacquang@gmail.com",
+            "phone": "0369854721",
+            "address": "10 Phạm Hùng, Cẩm Lệ",
+            "avatar": "https://udayananetworking.unud.ac.id/assets/frontend/images/user-m.png",
+            "enabled": true,
+            "resetPasswordToken": null,
+            "authorities": [
+              {
+                "authority": "User"
+              }
+            ],
+            "accountNonExpired": true,
+            "credentialsNonExpired": true,
+            "accountNonLocked": true
+          }
+        }
+      ],
+      "pid": 274
+    },
+    {
+      "title": "Laptop Lenovo Ideapad Gaming 3 15IAH7 i5 12500H8GB512GB4GB RTX3050120HzWin11 (82S9007TVN)",
+      "description": "Laptop Lenovo Ideapad Gaming 3 15IAH7 i5 (82S9007TVN) thuộc dòng laptop gaming mang vẻ đẹp ấn tượng, cuốn hút nhưng không kém phần mạnh mẽ nhờ vào CPU Intel Gen 12, sẵn sàng đồng hành cùng bạn trên mọi đấu trường game hiện nay.\nThiết kế hầm hố, cá tính với gam màu trắng cuốn hút\nLenovo IdeaPad Gaming 3 sở hữu một thiết kế góc cạnh cùng gam màu trắng pha lẫn các chi tiết xanh tạo nên một tổng thể vô cùng mạnh mẽ, hầm hố nhưng không kém phần sang trọng. Tuy có lớp vỏ từ nhựa nhưng cảm giác cầm nắm, xách lên di chuyển rất chắc chắn và không ọp ẹp.",
+      "config": "https://cdn.tgdd.vn/Products/Images/44/288201/Kit/lenovo-ideapad-5-pro-14iap7-i5-82sh000svn-note.jpg",
+      "price": 2.499E7,
+      "discountPrice": 2.019E7,
+      "images": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/e7vnps3oiho?alt=media&token=91d35e67-81f0-46b4-ba76-21948183d5fd",
+      "active": true,
+      "quantum": 17,
+      "category": {
+        "cateId": 39,
+        "title": "Laptop"
+      },
+      "manufacturer": {
+        "manuId": 47,
+        "title": "Lenovo",
+        "completed": false,
+        "category": {
+          "cateId": 39,
+          "title": "Laptop"
+        }
+      },
+      "imgChildren": [
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/34dnnlelufg?alt=media&token=c6af8e22-54c9-48cc-8d01-e4aa1e0e35de",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/ci4nhgmet3g?alt=media&token=b5c67f3f-a523-4f22-aac6-0504bac9d615",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/6ugqt5374qg?alt=media&token=a1159167-f671-4d1a-bdbc-9a63167bcfd1",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/57t9ttd4o9o?alt=media&token=5ac0b7b0-8e93-4d79-a646-5d0688ea9824",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/kagguufkc1o?alt=media&token=fefadf86-6881-48bd-9a7f-d9e543c6da57"
+      ],
+      "laptopConfig": {
+        "cpu": "i512500H2.5GHz",
+        "ram": "8 GBDDR4 2 khe (1 khe 8 GB + 1 khe rời)3200 MHz",
+        "hardDrive": "512 GB SSD NVMe PCIe (Có thể tháo ra, lắp thanh khác tối đa 1 TB)",
+        "screen": "15.6\"Full HD (1920 x 1080) 120Hz",
+        "graphic": "Card rờiRTX 3050 4GB",
+        "connector": "1 x Thunderbolt 4 (hỗ trợ Power Delivery 3.0 và DisplayPort 1.4)HDMILAN (RJ45)Jack tai nghe 3.5 mm2 x USB 3.2",
+        "special": "Có đèn bàn phím",
+        "operatingSystem": "Windows 11 Home SL",
+        "design": "Vỏ nhựa",
+        "sizeMass": "Dài 359.6 mm - Rộng 266.4 mm - Dày 21.8 mm - Nặng 2.315 kg",
+        "releaseTime": "2022",
+        "lid": 278
+      },
+      "smartPhoneConfig": null,
+      "accessoryConfig": null,
+      "comment": [],
+      "reviews": [],
+      "pid": 278
+    },
+    {
+      "title": "Điện thoại OPPO Find N3 Flip 5G Hồng",
+      "description": "OPPO Find N3 Flip 5G Hồng được OPPO cho ra mắt chính thức tại thị trường Việt Nam vào tháng 10/2023. Sản phẩm được hãng đầu tư mạnh mẽ về camera với độ phân giải lên đến 50 MP, cấu hình sử dụng chip Dimensity 9200 5G và thiết kế được thay đổi với bản lề gập mở tốt hơn cùng màu hồng sang trọng và nữ tính.\nBảng so sánh thông số kỹ thuật giữa OPPO Find N3 Flip 5G Hồng và OPPO Find N2 Flip\n\nDưới đây sẽ là bảng tổng hợp thông số kỹ thuật giữa hai thế hệ điện thoại gập của OPPO:",
+      "config": "https://cdn.tgdd.vn/Products/Images/42/317981/Kit/oppo-find-n3-flip-bbh-1.jpg",
+      "price": 2.399E7,
+      "discountPrice": 2.299E7,
+      "images": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/2lqavamk0c8?alt=media&token=0d702ef0-fe9e-4ede-a27b-5b6efc3e24e4",
+      "active": true,
+      "quantum": 18,
+      "category": {
+        "cateId": 40,
+        "title": "SmartPhone"
+      },
+      "manufacturer": {
+        "manuId": 252,
+        "title": "Oppo",
+        "completed": false,
+        "category": {
+          "cateId": 40,
+          "title": "SmartPhone"
+        }
+      },
+      "imgChildren": [
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/k92n0s1moc?alt=media&token=d19a993f-64aa-4c1d-95d6-693df6a9b52f",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/qpttt1eis0g?alt=media&token=deab186a-0e37-49a0-b5e0-1a6db2e7ae93",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/r2rmd9upcl8?alt=media&token=12a79527-a6f5-4d30-a55f-2bf742a2730b",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/jp95nl6pjog?alt=media&token=6231faa1-5af4-45f4-9761-3eebbf7fc362",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/9gio4r37lk8?alt=media&token=69df7dd1-89e2-483d-8d21-e8739f44f54a"
+      ],
+      "laptopConfig": null,
+      "smartPhoneConfig": {
+        "smart_id": 323,
+        "screen": "AMOLED, Chính 6.8\" & Phụ 3.26\", Full HD+",
+        "beforeCamera": "32 MP",
+        "afterCamera": "Chính 50 MP & Phụ 48 MP, 32 MP",
+        "ram": "12 GB",
+        "sim": "2 Nano SIM, Hỗ trợ 5G",
+        "chip": "MediaTek Dimensity 9200 5G 8 nhân",
+        "operatingSystem": "Android 13",
+        "storage": "256 GB",
+        "pin": "4300 mAh, 44 W"
+      },
+      "accessoryConfig": null,
+      "comment": [],
+      "reviews": [],
+      "pid": 323
+    },
+    {
+      "title": "Điện thoại OPPO Reno10 Pro+ 5G",
+      "description": "OPPO Reno10 Pro+ 5G là một sản phẩm tiếp nối sự thành công của thế hệ trước đó, với thiết kế đẹp mắt, cấu hình mạnh mẽ và máy ảnh chất lượng cao. Máy đáp ứng được nhu cầu giải trí, chụp ảnh và làm việc của người dùng, là lựa chọn hoàn hảo cho những ai đang tìm kiếm một chiếc điện thoại đa năng và hiện đại.\nTỏa sáng với diện mạo đẹp mắt\nReno10 Pro+ 5G là một sản phẩm đẳng cấp với kiểu dáng nguyên khối “sang - xịn - mịn”. Máy có viền màn hình mỏng và hình notch dạng nốt ruồi tối ưu diện tích hiển thị, mang lại trải nghiệm xem phim và chơi game tuyệt vời.",
+      "config": "https://cdn.tgdd.vn/Products/Images/42/306980/Kit/oppo-reno-10-pro-plus-note.jpg",
+      "price": 2.199E7,
+      "discountPrice": 1.999E7,
+      "images": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/bgsfje3vl6o?alt=media&token=f09dfe12-1ac5-476a-b32d-b9be80f8d447",
+      "active": true,
+      "quantum": 18,
+      "category": {
+        "cateId": 40,
+        "title": "SmartPhone"
+      },
+      "manufacturer": {
+        "manuId": 252,
+        "title": "Oppo",
+        "completed": false,
+        "category": {
+          "cateId": 40,
+          "title": "SmartPhone"
+        }
+      },
+      "imgChildren": [
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/nul6eg5thpg?alt=media&token=c2b26d6a-40b0-4c13-ba47-9c7479983811",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/ur1brc4gu1o?alt=media&token=4448cd80-c5f7-4659-ac06-e19c5ba0258a",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/t4r141g7d7?alt=media&token=37d8454e-6a7b-4ee7-8c4e-81ecfb486ef2",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/c0j2g10bq9?alt=media&token=d3a598df-3412-43fc-8ee9-ce0ce9ada87e",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/v95depi4a88?alt=media&token=998c4608-d0a9-451d-a5c1-0ad42fb3d138"
+      ],
+      "laptopConfig": null,
+      "smartPhoneConfig": {
+        "smart_id": 327,
+        "screen": "AMOLED, 6.7\", 1.5K+",
+        "beforeCamera": "8 MP",
+        "afterCamera": "Chính 50 MP & Phụ 64 MP, 8 MP",
+        "ram": "12 GB",
+        "sim": " 2 Nano SIM, Hỗ trợ 5G",
+        "chip": "Snapdragon 8+ Gen 1",
+        "operatingSystem": "Android 13",
+        "storage": "256 GB",
+        "pin": "4700 mAh, 100 W"
+      },
+      "accessoryConfig": null,
+      "comment": [],
+      "reviews": [
+        {
+          "reId": 521,
+          "content": "Điện thoại xài tốt hợp lí về giá cả",
+          "value": 4.0,
+          "image": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/pg3iebm5htg?alt=media&token=9c71e7ff-6e2f-4bff-afbc-da6a630c7c47",
+          "dateCreate": "2023-12-08T09:02:22.430+00:00",
+          "active": false,
+          "user": {
+            "userID": 146,
+            "username": "ngocth4",
+            "fullName": "Trần Hồng Ngọc",
+            "password": "$2a$10$M9tai05VqcNp43K026/Zuuf9tERp7Zio.l6Z7xsHKZim4D/gINtoK",
+            "email": "ngocth4@fpt.com",
+            "phone": "0868935312",
+            "address": "120 Sông Cầu, Phú Yên",
+            "avatar": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/efpc0ulh14g?alt=media&token=8fceb39c-1cca-41f7-9994-546ccdb3c116",
+            "enabled": true,
+            "resetPasswordToken": null,
+            "authorities": [
+              {
+                "authority": "User"
+              }
+            ],
+            "accountNonExpired": true,
+            "credentialsNonExpired": true,
+            "accountNonLocked": true
+          }
+        }
+      ],
+      "pid": 327
+    },
+    {
+      "title": "Laptop Asus TUF Gaming F15 FX506HC i5 11400H16GB512GB4GB RTX3050144HzWin11",
+      "description": "Một sản phẩm laptop gaming đến từ nhà Asus sở hữu thông số cấu hình mạnh mẽ từ card RTX 30 series, tần số quét 144 Hz cùng thiết kế mạnh mẽ, nam tính. Laptop Asus TUF Gaming F15 FX506HC i5 11400H (HN949W) chắc chắn sẽ là trợ thủ đắc lực cùng bạn trong mọi chiến trường ảo.\n• Laptop Asus TUF Gaming được trang bị bộ vi xử lý Intel Core i5 11400H kết hợp cùng card rời NVIDIA GeForce RTX 3050 với 4 GB VRAM cho hiệu năng mạnh mẽ giúp người dùng có thể thao tác thoải mái với các phần mềm thiết kế đồ họa hay chiến các tựa game thịnh hành ở mức cấu hình cao.",
+      "config": "https://cdn.tgdd.vn/Products/Images/44/309373/Kit/asus-tuf-gaming-f15-fx506hc-i5-hn949w-note.jpg",
+      "price": 2.299E7,
+      "discountPrice": 1.899E7,
+      "images": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/h2p43cqougg?alt=media&token=d4b12b12-e82a-43bb-aa8d-2461a8c0cd01",
+      "active": true,
+      "quantum": 18,
+      "category": {
+        "cateId": 39,
+        "title": "Laptop"
+      },
+      "manufacturer": {
+        "manuId": 45,
+        "title": "Asus",
+        "completed": false,
+        "category": {
+          "cateId": 39,
+          "title": "Laptop"
+        }
+      },
+      "imgChildren": [
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/mimsgu36ijo?alt=media&token=97b43c63-679d-4b90-a738-8bce66e3d20b",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/f0j406pvh4o?alt=media&token=b62c362c-b6c6-4b86-a780-263bb3480c86",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/9ss5m1r7d88?alt=media&token=18e51504-08cf-40a6-bc6b-42d612d4466a",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/cqqn6ei17co?alt=media&token=a368e317-e8b7-4b28-bd60-18f6bc2237a0",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/u2s8cj281r8?alt=media&token=403c8ff8-9ad0-4bda-849e-8645b6831e89"
+      ],
+      "laptopConfig": {
+        "cpu": "i5, 11400H, 2.7GHz",
+        "ram": "16 GBDDR4 2 khe (1 khe 8 GB + 1 khe 8 GB)3200 MHz",
+        "hardDrive": "Hỗ trợ thêm 1 khe cắm SSD M.2 PCIe mở rộng (nâng cấp tối đa 1 TB)512 GB SSD NVMe PCIe",
+        "screen": "15.6\", Full HD (1920 x 1080) 144Hz",
+        "graphic": "Card rời, RTX 3050 4GB",
+        "connector": "1 x Thunderbolt 4 (hỗ trợ DisplayPort)HDMILAN (RJ45)3 x USB 3.2Jack tai nghe 3.5 mm",
+        "special": "Có đèn bàn phím",
+        "operatingSystem": "Windows 11 Home SL",
+        "design": "Vỏ nhựa",
+        "sizeMass": "Dài 359 mm - Rộng 256 mm - Dày 22.8 ~ 24.5 mm - Nặng 2.3 kg",
+        "releaseTime": "2022",
+        "lid": 331
+      },
+      "smartPhoneConfig": null,
+      "accessoryConfig": null,
+      "comment": [],
+      "reviews": [
+        {
+          "reId": 485,
+          "content": "Laptop chơi game ngon!",
+          "value": 5.0,
+          "image": "",
+          "dateCreate": "2023-11-29T10:04:08.352+00:00",
+          "active": true,
+          "user": {
+            "userID": 473,
+            "username": "vanhanh",
+            "fullName": "Nguyễn Văn Hạnh",
+            "password": "$2a$10$QI/NlQuV2t1cKoQqGrc9t.o7zRHNQSYseX2VTJwA//6knmk1q39qq",
+            "email": "nguyenvanhanhadc1@gmail.com",
+            "phone": "0765387956",
+            "address": "120 Tế Hanh, Cẩm Lệ, Đà Nẵng",
+            "avatar": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/7hvq1581ot?alt=media&token=e9de3e78-24e7-4708-acad-2a8323225dd7",
+            "enabled": true,
+            "resetPasswordToken": null,
+            "authorities": [
+              {
+                "authority": "User"
+              }
+            ],
+            "accountNonExpired": true,
+            "credentialsNonExpired": true,
+            "accountNonLocked": true
+          }
+        }
+      ],
+      "pid": 331
+    },
+    {
+      "title": "Laptop Asus Vivobook 16 X1605VA i5 1335U16GB512GBWin11",
+      "description": "Laptop Asus Vivobook 16 X1605VA i5 1335U (MB360W) là một chiếc laptop đa năng, phục vụ cho nhu cầu làm việc và giải trí hàng ngày của bạn. Với sức mạnh xử lý tốt từ chip Intel Gen 13, bộ nhớ RAM 16 GB, màn hình rộng 16 inch, sản phẩm này đáng xem xét cho những người muốn nâng cao trải nghiệm làm việc và giải trí của mình.\n• Vivobook 16 X1605VA được trang bị bộ vi xử lý Intel Core i5 1335U với 10 nhân và 12 luồng, cung cấp sức mạnh xử lý tốt các tác vụ đa nhiệm nhanh chóng và hiệu quả. Với tốc độ tối đa lên đến 4.6 GHz nhờ công nghệ Turbo Boost, bạn có thể thực hiện các tác vụ đa nhiệm mượt mà và xử lý các ứng dụng nặng một cách hiệu quả.\n",
+      "config": "https://cdn.tgdd.vn/Products/Images/44/309375/Kit/asus-vivobook-16-x1605va-i5-mb360w-glr-note.jpg",
+      "price": 1.899E7,
+      "discountPrice": 1.599E7,
+      "images": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/sal3nn69rvg?alt=media&token=867b78da-ffe8-404e-9a16-8b04438a12a4",
+      "active": true,
+      "quantum": 19,
+      "category": {
+        "cateId": 39,
+        "title": "Laptop"
+      },
+      "manufacturer": {
+        "manuId": 45,
+        "title": "Asus",
+        "completed": false,
+        "category": {
+          "cateId": 39,
+          "title": "Laptop"
+        }
+      },
+      "imgChildren": [
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/ekrs8e1kut?alt=media&token=2512f2bb-d3ab-4f18-a0d4-2fdccee563d1",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/r3rhrvb535g?alt=media&token=533c4f10-9922-484b-ad4c-96b4ce52b8c9",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/u8kctfuggc?alt=media&token=bfa7273b-3b80-4b35-a183-6c52d9e41d23",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/m7d9dgfictg?alt=media&token=9df5b8b1-1280-482b-a3b4-6af7d0fdc7ad",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/fosufsidbm?alt=media&token=80c12d1f-5bd6-457c-a47b-7d256da24e94"
+      ],
+      "laptopConfig": {
+        "cpu": "i5, 1335U, 1.3GHz",
+        "ram": "16 GBDDR4 2 khe (8 GB onboard + 1 khe 8 GB)3200 MHz",
+        "hardDrive": "512 GB SSD NVMe PCIe",
+        "screen": "16\", WUXGA (1920 x 1200)",
+        "graphic": "Card tích hợp, Intel Iris Xe",
+        "connector": "1 x USB Type-C (chỉ hỗ trợ Power Delivery)HDMI1 x USB 2.02 x USB 3.2Jack tai nghe 3.5 mm",
+        "special": "Có đèn bàn phím",
+        "operatingSystem": "Windows 11 Home SL",
+        "design": "Vỏ nhựa",
+        "sizeMass": "Dài 358.7 mm - Rộng 249.5 mm - Dày 19.9 mm - Nặng 1.88 kg",
+        "releaseTime": "2023",
+        "lid": 335
+      },
+      "smartPhoneConfig": null,
+      "accessoryConfig": null,
+      "comment": [],
+      "reviews": [],
+      "pid": 335
+    },
+    {
+      "title": "Chuột Bluetooth Apple MK2E3",
+      "description": "Chuột Apple MK2E3 làm việc hiệu quả cùng các thiết bị vận hành trên hệ điều hành MacOS\nTương thích tốt với hệ điều hành MacOS - Chuột Bluetooth Apple \nThiết kế chuột mỏng nhẹ, tinh tế, thêm sang trọng cho bàn làm việc\nChuột Bluetooth này nhẹ chỉ 80 g, kích thước gọn tay cầm, tạo tư thế cầm nắm thoải mái, chắc chắn, tránh gây mỏi cổ tay khi dùng lâu.\n\nPhần chân đế được tối ưu để dùng tốt trên mọi chất liệu mặt bàn, giúp chuột di chuyển nhanh nhạy và chuẩn xác theo từng lệnh thao tác.\n",
+      "config": "https://cdn.tgdd.vn/Products/Images/86/251787/chuot-bluetooth-apple-mk2e3-trang-10.jpg",
+      "price": 2490000.0,
+      "discountPrice": 1990000.0,
+      "images": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/rru3tmcku08?alt=media&token=8d12427c-c32a-4e32-ad63-51096bc325c9",
+      "active": true,
+      "quantum": 9,
+      "category": {
+        "cateId": 41,
+        "title": "Accessory"
+      },
+      "manufacturer": {
+        "manuId": 343,
+        "title": "Apple",
+        "completed": false,
+        "category": {
+          "cateId": 41,
+          "title": "Accessory"
+        }
+      },
+      "imgChildren": [
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/luufmm8a138?alt=media&token=5260486e-5f63-4390-b610-91f5a16fab56",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/59bf3p4cm1?alt=media&token=5509d87c-9f12-4551-aad2-939342880f2a",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/55ngugdijl?alt=media&token=6357a0b5-a897-450c-ac63-9d1a29ce2bda",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/9msd74556vg?alt=media&token=5c1a115b-6424-4760-ba19-89bb3bed9200",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/sofmk21mcug?alt=media&token=dcc4d835-79db-4f29-b9be-e157d128798c"
+      ],
+      "laptopConfig": null,
+      "smartPhoneConfig": null,
+      "accessoryConfig": {
+        "access_id": 339,
+        "compatible": "macOS (MacBook, iMac)",
+        "resolution": "1500 DPI",
+        "howToConnect": "Bluetooth",
+        "wireLength": "10 m",
+        "typePin": "Pin sạc",
+        "weight": "80 g",
+        "brand": "Mỹ",
+        "madeIn": "Việt Nam/Trung Quốc (tùy lô hàng)",
+        "manufacturer": "Apple."
+      },
+      "comment": [],
+      "reviews": [
+        {
+          "reId": 417,
+          "content": "Chuột xài tốt",
+          "value": 5.0,
+          "image": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/kavm8ii41e?alt=media&token=69ecb05c-0d97-44ae-8a95-7162e99e6fd7",
+          "dateCreate": "2023-11-21T09:27:30.139+00:00",
+          "active": true,
+          "user": {
+            "userID": 313,
+            "username": "nhimap",
+            "fullName": "Trần Hồng Nhi",
+            "password": "$2a$10$E9xlkfMEvOlAZ8.59zXvguXV8CufiHlKxsF1oB8DxFDESg0sO/bAK",
+            "email": "ngocth34@gmail.com",
+            "phone": "0869935347",
+            "address": "Phú Yên",
+            "avatar": "https://udayananetworking.unud.ac.id/assets/frontend/images/user-m.png",
+            "enabled": true,
+            "resetPasswordToken": null,
+            "authorities": [
+              {
+                "authority": "User"
+              }
+            ],
+            "accountNonExpired": true,
+            "credentialsNonExpired": true,
+            "accountNonLocked": true
+          }
+        },
+        {
+          "reId": 626,
+          "content": "",
+          "value": 4.0,
+          "image": "",
+          "dateCreate": "2023-12-20T00:39:07.604+00:00",
+          "active": false,
+          "user": {
+            "userID": 473,
+            "username": "vanhanh",
+            "fullName": "Nguyễn Văn Hạnh",
+            "password": "$2a$10$QI/NlQuV2t1cKoQqGrc9t.o7zRHNQSYseX2VTJwA//6knmk1q39qq",
+            "email": "nguyenvanhanhadc1@gmail.com",
+            "phone": "0765387956",
+            "address": "120 Tế Hanh, Cẩm Lệ, Đà Nẵng",
+            "avatar": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/7hvq1581ot?alt=media&token=e9de3e78-24e7-4708-acad-2a8323225dd7",
+            "enabled": true,
+            "resetPasswordToken": null,
+            "authorities": [
+              {
+                "authority": "User"
+              }
+            ],
+            "accountNonExpired": true,
+            "credentialsNonExpired": true,
+            "accountNonLocked": true
+          }
+        },
+        {
+          "reId": 621,
+          "content": "demo",
+          "value": 4.0,
+          "image": "",
+          "dateCreate": "2023-12-19T14:45:38.337+00:00",
+          "active": true,
+          "user": {
+            "userID": 473,
+            "username": "vanhanh",
+            "fullName": "Nguyễn Văn Hạnh",
+            "password": "$2a$10$QI/NlQuV2t1cKoQqGrc9t.o7zRHNQSYseX2VTJwA//6knmk1q39qq",
+            "email": "nguyenvanhanhadc1@gmail.com",
+            "phone": "0765387956",
+            "address": "120 Tế Hanh, Cẩm Lệ, Đà Nẵng",
+            "avatar": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/7hvq1581ot?alt=media&token=e9de3e78-24e7-4708-acad-2a8323225dd7",
+            "enabled": true,
+            "resetPasswordToken": null,
+            "authorities": [
+              {
+                "authority": "User"
+              }
+            ],
+            "accountNonExpired": true,
+            "credentialsNonExpired": true,
+            "accountNonLocked": true
+          }
+        }
+      ],
+      "pid": 339
+    },
+    {
+      "title": "Chuột Không dây Bluetooth Silent Rapoo M650 Lucky Cat",
+      "description": "Nổi bật với thiết kế đậm chất \"Xuân 2023'' cùng độ nhạy cao, chuột Không dây Bluetooth Silent Rapoo M650 hứa hẹn sẽ là món phụ kiện đáng đầu tư, đáp ứng hầu hết các yêu cầu khi làm việc và học tập hàng ngày của bạn.\n• Thiết kế bên ngoài vô cùng gọn gàng, màu đỏ chủ đạo nổi bật cùng hoạ tiết chú mèo thần tài dễ thương đem sắc xuân ngập tràn đến cho không gian làm việc của bạn.\n\n• Chuột được chế tác tỉ mỉ, vỏ ngoài chắc chắn cùng kiểu thiết kế mỏng giúp quá trình cất giữ thêm phần tiện lợi.\n\n• Chuột Rapoo với độ phân giải đạt 1300 DPI, cho phép chơi game hay thực hiện các tác vụ chỉnh sửa hình ảnh thông thường vô cùng tốt, đáp ứng yêu cầu cơ bản hàng ngày của bạn.\n\n• Kết nối không dây với 2 cách sau: Sử dụng đầu thu USB hoặc kết nối qua Bluetooth hiện đại, đa dạng sự lựa chọn cho người dùng. Kết nối dễ dàng cho hầu hết các dòng máy trên thị trường nhờ khả năng tương thích với các thiết bị sử dụng hệ điều hành Windows và macOS.",
+      "config": "https://cdn.tgdd.vn/Products/Images/86/299933/chuot-khong-day-bluetooth-silent-rapoo-m650-tet-2023-thumb-01-600x600.jpg",
+      "price": 700000.0,
+      "discountPrice": 600000.0,
+      "images": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/bq3fpllqq2o?alt=media&token=ebcbaae0-de6f-49c6-88bc-04cc523c01e6",
+      "active": true,
+      "quantum": 15,
+      "category": {
+        "cateId": 41,
+        "title": "Accessory"
+      },
+      "manufacturer": {
+        "manuId": 110,
+        "title": "Rappo",
+        "completed": false,
+        "category": {
+          "cateId": 41,
+          "title": "Accessory"
+        }
+      },
+      "imgChildren": [
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/3olnbeisrr8?alt=media&token=57458db9-56a9-49ba-817c-86cbda19d5db",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/ro3fnvut3go?alt=media&token=24438617-16c5-4779-a882-07af9735227b",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/pacgmqol7u?alt=media&token=34c74266-ded6-4fb2-83b9-4778c9d13d61",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/16e70eg72mg?alt=media&token=813ccb03-5d01-40b0-b1a0-5f11dc826612"
+      ],
+      "laptopConfig": null,
+      "smartPhoneConfig": null,
+      "accessoryConfig": {
+        "access_id": 347,
+        "compatible": "macOS (MacBook, iMac)Windows",
+        "resolution": "1300 DPI",
+        "howToConnect": "Đầu thu USB ReceiverBluetooth",
+        "wireLength": "10 m",
+        "typePin": "1 viên pin AA",
+        "weight": "60 g (bao gồm hộp)",
+        "brand": "Trung Quốc",
+        "madeIn": "Trung Quốc",
+        "manufacturer": "Rapoo"
+      },
+      "comment": [],
+      "reviews": [],
+      "pid": 347
+    },
+    {
+      "title": "iPhone 13 128GB",
+      "description": "Trong khi sức hút đến từ bộ 4 phiên bản iPhone 12 vẫn chưa nguội đi, thì hãng điện thoại Apple đã mang đến cho người dùng một siêu phẩm mới iPhone 13 với nhiều cải tiến thú vị sẽ mang lại những trải nghiệm hấp dẫn nhất cho người dùng.\nHiệu năng vượt trội nhờ chip Apple A15 Bionic\nCon chip Apple A15 Bionic siêu mạnh được sản xuất trên quy trình 5 nm giúp iPhone 13 đạt hiệu năng ấn tượng, với CPU nhanh hơn 50%, GPU nhanh hơn 30% so với các đối thủ trong cùng phân khúc.",
+      "config": "https://cdn.tgdd.vn/Products/Images/42/223602/Kit/iphone-13-n.jpg",
+      "price": 1.699E7,
+      "discountPrice": 1.509E7,
+      "images": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/b4fnkec1b98?alt=media&token=4dd92cff-4ebe-424a-9027-87b4042c9a94",
+      "active": true,
+      "quantum": 17,
+      "category": {
+        "cateId": 40,
+        "title": "SmartPhone"
+      },
+      "manufacturer": {
+        "manuId": 46,
+        "title": "iPhone",
+        "completed": false,
+        "category": {
+          "cateId": 40,
+          "title": "SmartPhone"
+        }
+      },
+      "imgChildren": [
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/ci1k28tk95g?alt=media&token=fe82dece-9a10-4961-8439-92afde67573b",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/orr7bgcn9uo?alt=media&token=285382bc-7803-4d94-bccb-400910cbaedd",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/mvjpu5nlf2o?alt=media&token=bec6dd05-7f2d-46c9-95e5-7ae5392b3480",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/8av80fh1beo?alt=media&token=89127064-9135-49c7-9d23-d2fa6687ff41",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/j4m94tljtso?alt=media&token=e474f4dc-dbdb-42ad-bb58-24ebda16c80c"
+      ],
+      "laptopConfig": null,
+      "smartPhoneConfig": {
+        "smart_id": 351,
+        "screen": "OLED, 6.1\", Super Retina XDR",
+        "beforeCamera": "12 MP",
+        "afterCamera": "2 camera 12 MP",
+        "ram": "4 GB",
+        "sim": "1 Nano SIM & 1 eSIMHỗ trợ 5G",
+        "chip": "Apple A15 Bionic",
+        "operatingSystem": "iOS 16",
+        "storage": "128 GB",
+        "pin": "3240 mAh, 20 W"
+      },
+      "accessoryConfig": null,
+      "comment": [],
+      "reviews": [
+        {
+          "reId": 671,
+          "content": "Sản phẩm đẹp quá",
+          "value": 5.0,
+          "image": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/lnnrhctln68?alt=media&token=84fe183c-aaa0-4e2c-b2f0-c1ccf07d4dcf",
+          "dateCreate": "2024-01-05T08:52:55.807+00:00",
+          "active": true,
+          "user": {
+            "userID": 473,
+            "username": "vanhanh",
+            "fullName": "Nguyễn Văn Hạnh",
+            "password": "$2a$10$QI/NlQuV2t1cKoQqGrc9t.o7zRHNQSYseX2VTJwA//6knmk1q39qq",
+            "email": "nguyenvanhanhadc1@gmail.com",
+            "phone": "0765387956",
+            "address": "120 Tế Hanh, Cẩm Lệ, Đà Nẵng",
+            "avatar": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/7hvq1581ot?alt=media&token=e9de3e78-24e7-4708-acad-2a8323225dd7",
+            "enabled": true,
+            "resetPasswordToken": null,
+            "authorities": [
+              {
+                "authority": "User"
+              }
+            ],
+            "accountNonExpired": true,
+            "credentialsNonExpired": true,
+            "accountNonLocked": true
+          }
+        },
+        {
+          "reId": 483,
+          "content": "Sản phẩm đẹp dùng tốt!",
+          "value": 5.0,
+          "image": "",
+          "dateCreate": "2023-11-29T10:03:42.340+00:00",
+          "active": true,
+          "user": {
+            "userID": 473,
+            "username": "vanhanh",
+            "fullName": "Nguyễn Văn Hạnh",
+            "password": "$2a$10$QI/NlQuV2t1cKoQqGrc9t.o7zRHNQSYseX2VTJwA//6knmk1q39qq",
+            "email": "nguyenvanhanhadc1@gmail.com",
+            "phone": "0765387956",
+            "address": "120 Tế Hanh, Cẩm Lệ, Đà Nẵng",
+            "avatar": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/7hvq1581ot?alt=media&token=e9de3e78-24e7-4708-acad-2a8323225dd7",
+            "enabled": true,
+            "resetPasswordToken": null,
+            "authorities": [
+              {
+                "authority": "User"
+              }
+            ],
+            "accountNonExpired": true,
+            "credentialsNonExpired": true,
+            "accountNonLocked": true
+          }
+        }
+      ],
+      "pid": 351
+    },
+    {
+      "title": "iPhone 12 64GB",
+      "description": "Trong những tháng cuối năm 2020, Apple đã chính thức giới thiệu đến người dùng cũng như iFan thế hệ iPhone 12 series mới với hàng loạt tính năng bứt phá, thiết kế được lột xác hoàn toàn, hiệu năng đầy mạnh mẽ và một trong số đó chính là iPhone 12 64GB.\nHiệu năng vượt xa mọi giới hạn\nApple đã trang bị con chip mới nhất của hãng (tính đến 11/2020) cho iPhone 12 đó là A14 Bionic, được sản xuất trên tiến trình 5 nm với hiệu suất ổn định hơn so với chip A13 được trang bị trên phiên bản tiền nhiệm iPhone 11.",
+      "config": "https://cdn.tgdd.vn/Products/Images/42/213031/Kit/iphone-12-note.jpg",
+      "price": 1.599E7,
+      "discountPrice": 1.299E7,
+      "images": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/td45pmmuum?alt=media&token=aaf1c479-8fad-434c-a002-ec892b57d66a",
+      "active": true,
+      "quantum": 17,
+      "category": {
+        "cateId": 40,
+        "title": "SmartPhone"
+      },
+      "manufacturer": {
+        "manuId": 46,
+        "title": "iPhone",
+        "completed": false,
+        "category": {
+          "cateId": 40,
+          "title": "SmartPhone"
+        }
+      },
+      "imgChildren": [
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/jv8q3g91img?alt=media&token=890fcead-a3b9-4aff-9b01-4edabeb61092",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/d23vpgc5oro?alt=media&token=2c681a2c-6283-4bb6-af11-3936a23e9130",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/gj3dppp1uig?alt=media&token=0935986f-372e-402e-b734-ed3493cd827a",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/84ldqmmn2ro?alt=media&token=3f56f938-5ae4-424d-b616-cb94a57f57f4",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/b6bpue7nv3?alt=media&token=0df26c20-70f1-4dc7-99f6-262a45d848e5"
+      ],
+      "laptopConfig": null,
+      "smartPhoneConfig": {
+        "smart_id": 355,
+        "screen": "OLED, 6.1\", Super Retina XDR",
+        "beforeCamera": "12 MP",
+        "afterCamera": "2 camera 12 MP",
+        "ram": "4 GB",
+        "sim": "1 Nano SIM & 1 eSIMHỗ trợ 5G",
+        "chip": "Apple A14 Bionic",
+        "operatingSystem": "iOS 16",
+        "storage": "64 GB",
+        "pin": "2815 mAh20 W"
+      },
+      "accessoryConfig": null,
+      "comment": [],
+      "reviews": [
+        {
+          "reId": 484,
+          "content": "Sản phẩm đẹp đáng tiền mua!",
+          "value": 5.0,
+          "image": "",
+          "dateCreate": "2023-11-29T10:03:55.951+00:00",
+          "active": true,
+          "user": {
+            "userID": 473,
+            "username": "vanhanh",
+            "fullName": "Nguyễn Văn Hạnh",
+            "password": "$2a$10$QI/NlQuV2t1cKoQqGrc9t.o7zRHNQSYseX2VTJwA//6knmk1q39qq",
+            "email": "nguyenvanhanhadc1@gmail.com",
+            "phone": "0765387956",
+            "address": "120 Tế Hanh, Cẩm Lệ, Đà Nẵng",
+            "avatar": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/7hvq1581ot?alt=media&token=e9de3e78-24e7-4708-acad-2a8323225dd7",
+            "enabled": true,
+            "resetPasswordToken": null,
+            "authorities": [
+              {
+                "authority": "User"
+              }
+            ],
+            "accountNonExpired": true,
+            "credentialsNonExpired": true,
+            "accountNonLocked": true
+          }
+        }
+      ],
+      "pid": 355
+    },
+    {
+      "title": "Laptop Lenovo Yoga Duet 7 13ITL6 i5 1135G78GB512GBTouchPenWin11 (82MA009NVN)",
+      "description": "Laptop Lenovo Yoga Duet 7 13ITL6 i5 (82MA009NVN) thuộc dòng laptop cao cấp 2 trong 1, vừa có thể sử dụng như máy tính thông thường vừa là tablet mỏng nhẹ, kết hợp hiệu năng ổn định giúp bạn hoàn thành mọi công việc một cách nhanh chóng.\n• Chiếc laptop Lenovo Yoga được trang bị con chip Intel Core i5 1135G7 mang đến hiệu năng vượt trội, kết hợp cùng card tích hợp Intel Iris Xe Graphics giúp bạn xử lý nhanh chóng các tác vụ văn phòng trên Office như Word, Excel,... cũng như chỉnh ảnh, video,... trên Canva, Lightroom, Photoshop,... \n",
+      "config": "https://cdn.tgdd.vn/Products/Images/44/292394/Kit/lenovo-yoga-duet-7-13itl6-i5-82ma009nvn-note.jpg",
+      "price": 2.849E7,
+      "discountPrice": 2.749E7,
+      "images": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/trnv6csdsmg?alt=media&token=ae8a8b70-09c5-467f-b1f6-4dc4297862bd",
+      "active": true,
+      "quantum": 15,
+      "category": {
+        "cateId": 39,
+        "title": "Laptop"
+      },
+      "manufacturer": {
+        "manuId": 47,
+        "title": "Lenovo",
+        "completed": false,
+        "category": {
+          "cateId": 39,
+          "title": "Laptop"
+        }
+      },
+      "imgChildren": [
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/t3gov9rnk2o?alt=media&token=b8e11d52-8a09-422c-ae78-288a7e8ec221",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/pbhu1beddeg?alt=media&token=1e2f37fe-ba97-481d-831d-3922a2e16ab5",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/ba1ded1v3o8?alt=media&token=f2dca08f-2bae-4c28-bf5b-a00f69e8dc20",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/fs6lrorjpd8?alt=media&token=aec8b6a1-6391-48f7-a19c-224a02e70914",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/8hbhva3co1g?alt=media&token=38416b59-758a-4f05-9d88-fe9ec52c24c4"
+      ],
+      "laptopConfig": {
+        "cpu": "i5, 1135G7, 2.4GHz",
+        "ram": "8 GB, DDR4 (Onboard)3200 MHz",
+        "hardDrive": "512 GB SSD NVMe PCIe (Có thể tháo ra, lắp thanh khác tối đa 1 TB)",
+        "screen": "13\", WQHD (2160x1350)",
+        "graphic": "Card tích hợp, Intel Iris Xe",
+        "connector": "1 x Thunderbolt 4 (hỗ trợ DisplayPort)1 x USB-C 3.2 Gen 1 (hỗ trợ truyền dữ liệu và Always On)Jack tai nghe 3.5 mm1 x USB-C 3.2 Gen 1 (hỗ trợ truyền dữ liệu và Power Delivery 3.0)",
+        "special": "Có màn hình cảm ứng, Có đèn bàn phím",
+        "operatingSystem": "Windows 11 Home SL",
+        "design": "Mặt trên Magie Nhôm - Mặt dưới vải nhựa",
+        "sizeMass": "Dài 297.4 mm - Rộng 207.4 mm - Dày 9.19 mm - Nặng 1.168 kg",
+        "releaseTime": "2022",
+        "lid": 537
+      },
+      "smartPhoneConfig": null,
+      "accessoryConfig": null,
+      "comment": [],
+      "reviews": [],
+      "pid": 537
+    },
+    {
+      "title": "Điện thoại Samsung Galaxy S23+ 5G 256GB",
+      "description": "Samsung Galaxy S23+ 5G 256GB là chiếc điện thoại thuộc dòng cao cấp nhất của Samsung được giới thiệu vào tháng 02/2023. Máy sở hữu một vài điểm ấn tượng như camera có khả năng quay video 8K, cùng với đó là con chip Snapdragon 8 Gen 2 mạnh mẽ hàng đầu giới điện thoại Android.\nVẻ ngoài đẳng cấp xứng danh flagship\nẤn tượng đầu tiên của mình khi trên tay chiếc Galaxy S23+ là cái nhìn vuông vắn sang trọng, tổng thể máy được hoàn thiện từ các loại chất liệu cao cấp giúp mang đến trải nghiệm cầm nắm đầm tay hơn. ",
+      "config": "https://cdn.tgdd.vn/Products/Images/42/290829/Kit/samsung-galaxy-s23-plus-note-new.jpg",
+      "price": 2.699E7,
+      "discountPrice": 1.829E7,
+      "images": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/alatndqmreg?alt=media&token=c6230188-cb02-44ab-bba0-1ade3b402eba",
+      "active": true,
+      "quantum": 15,
+      "category": {
+        "cateId": 39,
+        "title": "Laptop"
+      },
+      "manufacturer": {
+        "manuId": 251,
+        "title": "Samsung",
+        "completed": false,
+        "category": {
+          "cateId": 40,
+          "title": "SmartPhone"
+        }
+      },
+      "imgChildren": [
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/fbd7h8pah5o?alt=media&token=9bfbef7e-7629-47e3-ab1a-2439ccc290d1",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/84ofmh1lnao?alt=media&token=29d164b1-9b11-40f7-bd22-d5172772f8fc",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/j7o2udds4do?alt=media&token=5af5e5a1-4057-47c1-9810-7b2cf75eb19a",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/7hidg3oshg8?alt=media&token=83ba5efe-b19c-4f59-ac10-2047d223913d",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/ctjmcd36uuo?alt=media&token=9c0438dd-ff1f-4111-b330-3885fca6fba1"
+      ],
+      "laptopConfig": null,
+      "smartPhoneConfig": {
+        "smart_id": 538,
+        "screen": "Dynamic AMOLED 2X, 6.6\", Full HD+",
+        "beforeCamera": "12 MP",
+        "afterCamera": "Chính 50 MP & Phụ 12 MP, 10 MP",
+        "ram": "8 GB",
+        "sim": "2 Nano SIM hoặc 1 Nano SIM + 1 eSIM, Hỗ trợ 5G",
+        "chip": "Snapdragon 8 Gen 2 for Galaxy",
+        "operatingSystem": "Android 13",
+        "storage": "256 GB",
+        "pin": "4700 mAh, 45 W"
+      },
+      "accessoryConfig": null,
+      "comment": [],
+      "reviews": [],
+      "pid": 538
+    },
+    {
+      "title": "Laptop Lenovo ThinkPad E15 Gen 4 i7 1260P16GB512GBWin11 (21E600CPVN)",
+      "description": "Laptop Lenovo ThinkPad E15 Gen 4 i7 (21E600CPVN) sở hữu những đặc điểm thiết kế hướng đến người dùng doanh nhân cần một chiếc laptop sang trọng - cao cấp có thân hình mỏng nhẹ nhưng vẫn được trang bị thông số kỹ thuật mạnh mẽ, có thể hoàn thành công việc nhanh chóng kể cả khi đang di chuyển.\nThân hình cứng cáp, bền bỉ trong mọi chuyến đi\nE15 Gen 4 có những đặc điểm thiết kế tương tự những thiết bị khác thuộc dòng Lenovo ThinkPad với lớp vỏ được làm từ chất liệu nhựa cứng, riêng nắp lưng được làm bằng kim loại để tăng thêm sự bền bỉ kể cả khi người dùng có nhu cầu thường xuyên di chuyển. Toàn bộ vỏ máy đều được sơn màu đen với một lớp hoàn thiện dạng nhám nhằm tránh bám dấu vân tay trong quá trình sử dụng.",
+      "config": "https://cdn.tgdd.vn/Products/Images/44/299799/Kit/lenovo-thinkpad-e15-gen-4-i7-21e600cpvn-note.jpg",
+      "price": 2.969E7,
+      "discountPrice": 2.869E7,
+      "images": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/govudnpi25g?alt=media&token=e6451f34-617a-4bae-9435-e6c8f32e47ec",
+      "active": true,
+      "quantum": 15,
+      "category": {
+        "cateId": 39,
+        "title": "Laptop"
+      },
+      "manufacturer": {
+        "manuId": 47,
+        "title": "Lenovo",
+        "completed": false,
+        "category": {
+          "cateId": 39,
+          "title": "Laptop"
+        }
+      },
+      "imgChildren": [
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/54urv6u47qg?alt=media&token=f5863aae-1aef-49c2-ba16-2e597c9212b1",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/qq1lrr4p708?alt=media&token=352e6e03-2e45-4c55-9a42-7ed17774c883",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/tkmrpcjkr2g?alt=media&token=2040ff1b-f398-4f27-a883-ac9b72ce8e7a",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/17p6s4o7jfg?alt=media&token=dcb6231a-13d4-4054-a12e-6998225c17fa",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/tle1ul3hrqg?alt=media&token=fe59764c-caba-4c52-86ec-00c025aba5ef"
+      ],
+      "laptopConfig": {
+        "cpu": "i7, 1260P, 2.1GHz",
+        "ram": "16 GB, DDR4 2 khe (8 GB onboard + 1 khe 8 GB)3200 MHz",
+        "hardDrive": "Hỗ trợ thêm 1 khe cắm SSD M.2 PCIe mở rộng (nâng cấp tối đa 1 TB)512 GB SSD NVMe PCIe (Có thể tháo ra, lắp thanh khác tối đa 1 TB)",
+        "screen": "15.6\", Full HD (1920 x 1080)",
+        "graphic": "Card tích hợp, Intel Iris Xe",
+        "connector": "1 x Thunderbolt 4 (hỗ trợ Power Delivery 3.0 và DisplayPort 1.4)HDMILAN (RJ45)1 x USB 2.01 x USB 3.2Jack tai nghe 3.5 mm",
+        "special": "Có đèn bàn phím",
+        "operatingSystem": "Windows 11 Home SL",
+        "design": "Vỏ nhựa - nắp lưng bằng kim loại",
+        "sizeMass": "Dài 365 mm - Rộng 240 mm - Dày 18.9 mm - Nặng 1.7 kg",
+        "releaseTime": "2022",
+        "lid": 539
+      },
+      "smartPhoneConfig": null,
+      "accessoryConfig": null,
+      "comment": [],
+      "reviews": [],
+      "pid": 539
+    },
+    {
+      "title": "Điện thoại Samsung Galaxy Z Fold4 5G 256GB",
+      "description": "Tại sự kiện Samsung Unpacked thường niên, Samsung Galaxy Z Fold4 256GB chính thức được trình làng thị trường công nghệ, mang trên mình nhiều cải tiến đáng giá giúp Galaxy Z Fold trở thành dòng điện thoại gập đã tốt nay càng tốt hơn.\nKiểu dáng gập mở tinh tế tạo nên sự khác biệt\nGalaxy Z Fold4 (2022) ra mắt với ngoại hình gần như là không đổi khi so với Galaxy Z Fold3, nếu bạn chỉ nhìn bề ngoài thì bạn sẽ khó lòng phân biệt được 2 sản phẩm này. Máy vẫn sử dụng khung viền Armor Aluminum bền bỉ, mặt kính màn hình phụ là Corning Gorilla Glass Victus+, mặt kính màn hình chính là Ultra Thin Glass.",
+      "config": "https://cdn.tgdd.vn/Products/Images/42/250625/Kit/samsung-galaxy-z-fold4-note-new.jpg",
+      "price": 4.099E7,
+      "discountPrice": 2.199E7,
+      "images": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/tt4k66pi6rg?alt=media&token=5dd030b1-de81-42f8-a3c4-527cfc424020",
+      "active": true,
+      "quantum": 15,
+      "category": {
+        "cateId": 40,
+        "title": "SmartPhone"
+      },
+      "manufacturer": {
+        "manuId": 251,
+        "title": "Samsung",
+        "completed": false,
+        "category": {
+          "cateId": 40,
+          "title": "SmartPhone"
+        }
+      },
+      "imgChildren": [
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/9uf9hjss4s8?alt=media&token=10804773-fcf8-4da1-8dcb-475a53d07ee3",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/55atrgrnlp?alt=media&token=1108c644-e361-41ff-8071-dac1cde1ce34",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/qjbjup1oi8o?alt=media&token=b832a50e-6ee9-4a7d-8958-007afb03e471",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/p7lioc3gafg?alt=media&token=081cf955-6442-4f47-9579-a6d078165a53",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/042k587prrg?alt=media&token=1b3ae7f5-17d0-43be-bcc7-71f56d6d7769"
+      ],
+      "laptopConfig": null,
+      "smartPhoneConfig": {
+        "smart_id": 540,
+        "screen": "Dynamic AMOLED 2X, Chính 7.6\" & Phụ 6.2\", Quad HD+ (2K+)",
+        "beforeCamera": "10 MP & 4 MP",
+        "afterCamera": "Chính 50 MP & Phụ 12 MP, 10 MP",
+        "ram": "12 GB",
+        "sim": "1 Nano SIM & 1 eSIM, Hỗ trợ 5G",
+        "chip": "Snapdragon 8+ Gen 1",
+        "operatingSystem": "Android 12",
+        "storage": "256 GB",
+        "pin": "4400 mAh, 25 W"
+      },
+      "accessoryConfig": null,
+      "comment": [],
+      "reviews": [],
+      "pid": 540
+    },
+    {
+      "title": "Chuột Không Dây Gaming Rapoo VT960 Pro",
+      "description": "Chuột Không Dây Gaming Rapoo VT960 Pro được giới game thủ xem là trợ lý đắc lực cho những trận game, với kiểu dáng hầm hố, gam màu mạnh mẽ, hệ thống đèn LED RGB phong phú, thời lượng pin khủng, độ cảm biến cao, mang đến cho bạn những khoảnh khắc hoàn hảo.\n• Chuột không dây mang đến độ cảm biến quang học lên đến 26000 DPI, cho phép người dùng dễ dàng điều chỉnh phù hợp với từng tựa game.\n\n• Thiết kế chuột vô cùng ấn tượng, phù hợp cho người thuận tay trái và cả tay phải. Chất liệu cứng cáp và bền bỉ, hoạ tiết đẹp mắt, cầm nắm và di chuyển mượt mà.",
+      "config": "https://cdn.tgdd.vn/Products/Images/86/314638/chuot-khong-day-gaming-rapoo-vt960-pro-9.jpg",
+      "price": 1690000.0,
+      "discountPrice": 1350000.0,
+      "images": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/fr3uut4fij8?alt=media&token=3bb367ee-0746-4eaf-94d2-38f6402c12b0",
+      "active": true,
+      "quantum": 13,
+      "category": {
+        "cateId": 41,
+        "title": "Accessory"
+      },
+      "manufacturer": {
+        "manuId": 110,
+        "title": "Rappo",
+        "completed": false,
+        "category": {
+          "cateId": 41,
+          "title": "Accessory"
+        }
+      },
+      "imgChildren": [
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/fr484llco7g?alt=media&token=165f235b-8f1d-4d58-8d62-eebd3df1b061",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/8us0m2uk5so?alt=media&token=c7a403cc-db80-4f7c-b5eb-52ffb5811651",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/lq71i9n6mu?alt=media&token=2ecd92ed-2e10-4851-9b92-e748eacd9af2",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/mk7ehmdo22?alt=media&token=f9459849-c3e9-430a-89fe-8504912b826c",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/ete9ajhkphg?alt=media&token=32cbe36e-07cf-4ffb-b2a2-e6ecc8c320a3"
+      ],
+      "laptopConfig": null,
+      "smartPhoneConfig": null,
+      "accessoryConfig": {
+        "access_id": 541,
+        "compatible": "Windows",
+        "resolution": "26000 DPI",
+        "howToConnect": "Đầu thu USB Receiver, Dây cắm USB",
+        "wireLength": "Dây dài 180 cm, khoảng cách kết nối 10 m (với đầu thu USB)",
+        "typePin": "Pin sạc",
+        "weight": "113 g",
+        "brand": "Trung Quốc",
+        "madeIn": "Trung Quốc",
+        "manufacturer": "Rapoo."
+      },
+      "comment": [],
+      "reviews": [],
+      "pid": 541
+    },
+    {
+      "title": "Chuột Có Dây Gaming Rapoo V25S",
+      "description": "Chuột Có Dây Gaming Rapoo V25S sở hữu thiết kế đối xứng, độ phân giải lớn phù hợp với mọi game thủ, cảm biến mượt mà, dễ dàng điều khiển khi sử dụng, mang đến cho người dùng những trải nghiệm tốt nhất.\n• Kiểu dáng chuột mang hơi hướng gaming độc đáo, thiết kế công thái học cho phép cầm thoải mái và dễ chịu khi sử dụng lâu dài.\n\n• Hệ thống LED RGB 16 triệu màu cho phép bạn tùy chỉnh màu sắc đèn theo sở thích của bạn, nổi bật cả góc phòng khi sử dụng trong điều kiện thiếu sáng.\n\n• Độ phân giải 200 - 6200 DPI cho phản hồi nhanh chóng và chính xác, sản phẩm phù hợp để sử dụng nhiều mục đích, từ các tác vụ văn phòng cơ bản tới đồ hoạ hay chiến game yêu cầu độ nhạy và chính xác cao.",
+      "config": "https://cdn.tgdd.vn/Products/Images/86/307841/chuot-co-day-gaming-rapoo-v25s-5.jpg",
+      "price": 450000.0,
+      "discountPrice": 405000.0,
+      "images": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/si53nui90tg?alt=media&token=519704ce-12d2-4ec1-8326-2125419629c2",
+      "active": true,
+      "quantum": 18,
+      "category": {
+        "cateId": 41,
+        "title": "Accessory"
+      },
+      "manufacturer": {
+        "manuId": 110,
+        "title": "Rappo",
+        "completed": false,
+        "category": {
+          "cateId": 41,
+          "title": "Accessory"
+        }
+      },
+      "imgChildren": [
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/0h4sd2skeqo?alt=media&token=f5d8437f-8788-4a4f-89eb-573a5fe49f4f",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/nm9um7e72o?alt=media&token=dd4a6cdc-73ac-4253-bf9d-40f802f197f4",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/6ssru9qq0fg?alt=media&token=b6b14d8d-cdbc-41a5-a786-64f1f92e6327",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/k3eik5irtuo?alt=media&token=d3d596a4-d64e-4a9d-9dcf-ea59e4337cc5",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/s5ffeae772g?alt=media&token=2b005fd4-904f-4473-8b88-8c1cd10145ca"
+      ],
+      "laptopConfig": null,
+      "smartPhoneConfig": null,
+      "accessoryConfig": {
+        "access_id": 542,
+        "compatible": "macOS (MacBook, iMac), Windows",
+        "resolution": "6200 DPI",
+        "howToConnect": "Dây cắm USB",
+        "wireLength": "Dây dài 180 cm",
+        "typePin": "RapooGameDevDriver",
+        "weight": "130 g",
+        "brand": "Trung Quốc",
+        "madeIn": "Trung Quốc",
+        "manufacturer": "Rapoo."
+      },
+      "comment": [],
+      "reviews": [],
+      "pid": 542
+    },
+    {
+      "title": "Laptop Dell Inspiron 14 T7430 i5 1335U8GB512GBTouchPenOfficeHSWin11 (N7430I58W1)",
+      "description": "Laptop Dell Inspiron 14 7430 i5 1335U (N7430I58W1) sở hữu hiệu năng vượt trội từ con chip Intel gen 13 hiện đại, tính năng gập mở 360 độ độc đáo, đây sẽ là trợ thủ đắc lực sẵn sàng cùng bạn xử lý mọi tác vụ học tập, văn phòng, giải trí khó nhằn.\n• Laptop Dell Inspiron sở hữu CPU Intel Core i5 1335U tân tiến kết hợp cùng card Intel Iris Xe Graphics cung cấp cho máy một hiệu năng mạnh mẽ, không chỉ xử lý dễ dàng mọi tác vụ học tập, văn phòng trên Word, Excel,... mà còn giúp bạn giải trí hay chỉnh sửa hình ảnh, video ngắn với Photoshop, AI,... một cách trơn tru, mượt mà.",
+      "config": "https://cdn.tgdd.vn/Products/Images/44/314840/Kit/dell-inspiron-14-7430-i5-n7430i58w1-glr-note.jpg",
+      "price": 2.419E7,
+      "discountPrice": 2.349E7,
+      "images": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/12mont1pa4?alt=media&token=86e8b1e1-2ea2-4af9-a11e-823562e1f771",
+      "active": true,
+      "quantum": 15,
+      "category": {
+        "cateId": 39,
+        "title": "Laptop"
+      },
+      "manufacturer": {
+        "manuId": 269,
+        "title": "Dell",
+        "completed": false,
+        "category": {
+          "cateId": 39,
+          "title": "Laptop"
+        }
+      },
+      "imgChildren": [
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/kj4s80lam6o?alt=media&token=322c3730-26d3-40e6-b2ff-220240395284",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/61jt4fh7cgo?alt=media&token=760c13e0-81bc-4e04-b091-c4b920c551ef",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/oag0ld8ddeg?alt=media&token=de5de886-bfd1-4a60-bf46-4153ec9dc1f2",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/tna7q5rr05?alt=media&token=bcc4a312-b327-4485-9241-342c35fdba4e",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/p1gvcat4dug?alt=media&token=f839feba-5607-40b0-9e12-f9d9b66180f5"
+      ],
+      "laptopConfig": {
+        "cpu": "i5, 1335U, 1.3GHz",
+        "ram": "8 GB, LPDDR5 (Onboard)4800 MHz",
+        "hardDrive": "512 GB SSD NVMe PCIe (Có thể tháo ra, lắp thanh khác tối đa 2 TB)",
+        "screen": "14\", Full HD+ (1920 x 1200)",
+        "graphic": "Card tích hợp, Intel Iris Xe",
+        "connector": "2 x Thunderbolt 4 (hỗ trợ Power Delivery)HDMI1 x USB 3.2Jack tai nghe 3.5 mm",
+        "special": "Có màn hình cảm ứng, Có đèn bàn phím",
+        "operatingSystem": "Windows 11 Home SL + Office Home & Student vĩnh viễn",
+        "design": "Vỏ kim loại - Nhôm",
+        "sizeMass": "Dài 314 mm - Rộng 226.56 mm - Dày 18.55 mm - Nặng 1.58 kg",
+        "releaseTime": "2023",
+        "lid": 543
+      },
+      "smartPhoneConfig": null,
+      "accessoryConfig": null,
+      "comment": [],
+      "reviews": [],
+      "pid": 543
+    },
+    {
+      "title": "Laptop Lenovo Yoga 7 14IRL8 i7 1360P16GB512GBTouchPenOfficeHSWin11 (82YL006BVN)",
+      "description": "Dòng laptop Yoga từ nhà Lenovo luôn nổi tiếng với thiết kế mỏng nhẹ, kiểu dáng thanh lịch, sang trọng, tính năng xoay gập và cảm ứng độc đáo mang đến tính tiện lợi trong sử dụng. Laptop Lenovo Yoga 7 14IRL8 i7 1360P (82YL006BVN) được trang bị những tiện ích tân tiến cùng hiệu năng mạnh mẽ, sẽ mang đến cho người dùng những trải nghiệm sử dụng tối ưu nhất.\n• Laptop Lenovo Yoga được trang bị chip Intel Core i7 1360P thuộc thế hệ 13 hoàn toàn mới với xung nhịp tối đa lên đến 5.0 GHz kết hợp cùng card Intel Iris Xe Graphics giúp người dùng vận hành trơn tru các tác vụ từ văn phòng, học tập đến việc thiết kế các ấn phẩm 2D, 3D, render video,... cũng như giải trí với những tựa game nhẹ.",
+      "config": "https://cdn.tgdd.vn/Products/Images/44/313619/Kit/lenovo-yoga-7-14irl8-i7-82yl006bvn-glr-fix-note.jpg",
+      "price": 2.899E7,
+      "discountPrice": 2.649E7,
+      "images": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/vs51psbk5mg?alt=media&token=e60175d5-c828-4d9f-b69a-81fff1cef2d1",
+      "active": true,
+      "quantum": 14,
+      "category": {
+        "cateId": 39,
+        "title": "Laptop"
+      },
+      "manufacturer": {
+        "manuId": 47,
+        "title": "Lenovo",
+        "completed": false,
+        "category": {
+          "cateId": 39,
+          "title": "Laptop"
+        }
+      },
+      "imgChildren": [
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/msjcfp5pl3?alt=media&token=6e15978b-2111-4de8-9a6d-0ba0eecbbec6",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/atvfvo5udmg?alt=media&token=69c3ff43-256a-4dde-9ea3-3922038e7ebc",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/sk87k2kgchg?alt=media&token=0ba4ac61-ec02-4be0-89c9-bdc633ca4f26",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/203lqruaduo?alt=media&token=c4f78840-905d-4831-b291-7477fc46017e",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/alumok7pqco?alt=media&token=d0e6df59-d8df-4760-8209-8b4d2f7bdf6d"
+      ],
+      "laptopConfig": {
+        "cpu": "i7, 1360P, 2.2GHz",
+        "ram": "16 GB, LPDDR5 (Onboard)5200 MHz",
+        "hardDrive": "512 GB SSD NVMe PCIe 4.0 (Có thể tháo ra, lắp thanh khác tối đa 1 TB)",
+        "screen": "14\", WUXGA (1920 x 1200) - OLED",
+        "graphic": "Card tích hợp, Intel Iris Xe",
+        "connector": "2 x Thunderbolt 4 (hỗ trợ truyền dữ liệu, Power Delivery 3.0 and DisplayPort 1.4)HDMI1 x USB 3.2 (Always on)Jack tai nghe 3.5 mm",
+        "special": "Có màn hình cảm ứng, Có đèn bàn phím",
+        "operatingSystem": "Windows 11 Home SL + Office Home & Student vĩnh viễn",
+        "design": "Vỏ kim loại",
+        "sizeMass": "Dài 317.87 mm - Rộng 222.5 mm - Dày 16.49 mm - Nặng 1.49 kg",
+        "releaseTime": "2023",
+        "lid": 544
+      },
+      "smartPhoneConfig": null,
+      "accessoryConfig": null,
+      "comment": [],
+      "reviews": [],
+      "pid": 544
+    },
+    {
+      "title": "Laptop Apple MacBook Air 13 inch M2 2022 8-core CPU8GB256GB8-core GPU (MLY13SAA)",
+      "description": "Sau 14 năm, ba lần sửa đổi và hai kiến trúc bộ vi xử lý khác nhau, kiểu dáng mỏng dần mang tính biểu tượng của MacBook Air đã đi vào lịch sử. Thay vào đó là một chiếc MacBook Air M2 với thiết kế hoàn toàn mới, độ dày không thay đổi tương tự như MacBook Pro, đánh bật mọi rào cản với con chip Apple M2 đầy mạnh mẽ.\nLột xác ngoạn mục với thiết kế thời thượng, sang trọng \nSự đẳng cấp đến từ ngoại hình của chiếc MacBook Air nhà Apple là điều không thể phủ nhận và khó có dòng sản phẩm cùng phân khúc nào có thể qua mặt được.",
+      "config": "https://cdn.tgdd.vn/Products/Images/44/282827/apple-macbook-air-m2-2022-161122-112213.jpg",
+      "price": 2.709E7,
+      "discountPrice": 2.659E7,
+      "images": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/9lnqbjppvj?alt=media&token=c535b6f2-f1e0-4cc5-a6ba-0cbc503f05fa",
+      "active": true,
+      "quantum": 12,
+      "category": {
+        "cateId": 39,
+        "title": "Laptop"
+      },
+      "manufacturer": {
+        "manuId": 67,
+        "title": "Macbook",
+        "completed": false,
+        "category": {
+          "cateId": 39,
+          "title": "Laptop"
+        }
+      },
+      "imgChildren": [
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/plv7msu7q8?alt=media&token=78595572-f358-459d-93ed-2e30428a7a62",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/fgcsqu8vi9o?alt=media&token=2f46bf41-a784-48c0-9f1c-cb6d42eb7fce",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/hehbuph1gi?alt=media&token=ebfb1b23-a7bf-4fef-9d18-4b23bbe04111",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/8ilqo6ugev8?alt=media&token=c700e54f-1bd8-43f3-b606-58dd59e9fa82",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/ggusg07p5og?alt=media&token=fda313b3-e230-4cd6-85dd-0e0f57b2a652"
+      ],
+      "laptopConfig": {
+        "cpu": "Apple M2, 100GB/s",
+        "ram": "8 GB",
+        "hardDrive": "256 GB SSD",
+        "screen": "13.6\", Liquid Retina (2560 x 1664)",
+        "graphic": "Card tích hợp, 8 nhân GPU",
+        "connector": "2 x Thunderbolt 3Jack tai nghe 3.5 mmMagSafe 3",
+        "special": "Có đèn bàn phím",
+        "operatingSystem": "macOS",
+        "design": "Vỏ kim loại",
+        "sizeMass": "Dài 304.1 mm - Rộng 215 mm - Dày 11.3 mm - Nặng 1.24 kg",
+        "releaseTime": "6/2022",
+        "lid": 545
+      },
+      "smartPhoneConfig": null,
+      "accessoryConfig": null,
+      "comment": [],
+      "reviews": [
+        {
+          "reId": 641,
+          "content": "demo",
+          "value": 4.0,
+          "image": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/h16aa81arfg?alt=media&token=bbc36e26-3f19-4496-85b7-9826eb837932",
+          "dateCreate": "2023-12-20T03:22:07.639+00:00",
+          "active": true,
+          "user": {
+            "userID": 473,
+            "username": "vanhanh",
+            "fullName": "Nguyễn Văn Hạnh",
+            "password": "$2a$10$QI/NlQuV2t1cKoQqGrc9t.o7zRHNQSYseX2VTJwA//6knmk1q39qq",
+            "email": "nguyenvanhanhadc1@gmail.com",
+            "phone": "0765387956",
+            "address": "120 Tế Hanh, Cẩm Lệ, Đà Nẵng",
+            "avatar": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/7hvq1581ot?alt=media&token=e9de3e78-24e7-4708-acad-2a8323225dd7",
+            "enabled": true,
+            "resetPasswordToken": null,
+            "authorities": [
+              {
+                "authority": "User"
+              }
+            ],
+            "accountNonExpired": true,
+            "credentialsNonExpired": true,
+            "accountNonLocked": true
+          }
+        },
+        {
+          "reId": 637,
+          "content": "san pham dep qua",
+          "value": 5.0,
+          "image": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/b9jtl18436o?alt=media&token=6056e111-1a54-4aee-9bf7-5909673da739",
+          "dateCreate": "2023-12-20T02:59:28.814+00:00",
+          "active": true,
+          "user": {
+            "userID": 473,
+            "username": "vanhanh",
+            "fullName": "Nguyễn Văn Hạnh",
+            "password": "$2a$10$QI/NlQuV2t1cKoQqGrc9t.o7zRHNQSYseX2VTJwA//6knmk1q39qq",
+            "email": "nguyenvanhanhadc1@gmail.com",
+            "phone": "0765387956",
+            "address": "120 Tế Hanh, Cẩm Lệ, Đà Nẵng",
+            "avatar": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/7hvq1581ot?alt=media&token=e9de3e78-24e7-4708-acad-2a8323225dd7",
+            "enabled": true,
+            "resetPasswordToken": null,
+            "authorities": [
+              {
+                "authority": "User"
+              }
+            ],
+            "accountNonExpired": true,
+            "credentialsNonExpired": true,
+            "accountNonLocked": true
+          }
+        },
+        {
+          "reId": 642,
+          "content": "demo 1",
+          "value": 3.0,
+          "image": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/mqith5h3mb8?alt=media&token=eac53328-2630-4d3e-b8fc-578e175571cd",
+          "dateCreate": "2023-12-20T03:22:32.188+00:00",
+          "active": false,
+          "user": {
+            "userID": 473,
+            "username": "vanhanh",
+            "fullName": "Nguyễn Văn Hạnh",
+            "password": "$2a$10$QI/NlQuV2t1cKoQqGrc9t.o7zRHNQSYseX2VTJwA//6knmk1q39qq",
+            "email": "nguyenvanhanhadc1@gmail.com",
+            "phone": "0765387956",
+            "address": "120 Tế Hanh, Cẩm Lệ, Đà Nẵng",
+            "avatar": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/7hvq1581ot?alt=media&token=e9de3e78-24e7-4708-acad-2a8323225dd7",
+            "enabled": true,
+            "resetPasswordToken": null,
+            "authorities": [
+              {
+                "authority": "User"
+              }
+            ],
+            "accountNonExpired": true,
+            "credentialsNonExpired": true,
+            "accountNonLocked": true
+          }
+        }
+      ],
+      "pid": 545
+    },
+    {
+      "title": "iPhone 15 128GB",
+      "description": "Thế Giới Di Động là một trong những nhà bán lẻ điện thoại di động lớn nhất Việt Nam, cung cấp đa dạng các sản phẩm iPhone 15 chính hãng với mức giá cạnh tranh. Dưới đây là một số lý do khiến bạn nên chọn mua iPhone 15 tại Thế Giới Di Động:\n\n• Chất lượng sản phẩm: Thế Giới Di Động cam kết cung cấp sản phẩm iPhone 15 chính hãng. Điều này giúp bạn yên tâm về chất lượng sản phẩm và được hưởng đầy đủ các quyền lợi bảo hành của Apple.\n\n• Ưu đãi và khuyến mãi: Thế Giới Di Động thường xuyên có các chương trình khuyến mãi, giảm giá và tặng quà kèm theo, giúp bạn tiết kiệm chi phí khi mua sắm.\n",
+      "config": "https://cdn.tgdd.vn/Products/Images/42/303812/iphone-15-512gb-131023-110624.jpg",
+      "price": 2.299E7,
+      "discountPrice": 2.199E7,
+      "images": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/bn7urgr7bug?alt=media&token=1727f3c0-e3eb-462f-b0c4-858b9126f3a0",
+      "active": true,
+      "quantum": 14,
+      "category": {
+        "cateId": 40,
+        "title": "SmartPhone"
+      },
+      "manufacturer": {
+        "manuId": 46,
+        "title": "iPhone",
+        "completed": false,
+        "category": {
+          "cateId": 40,
+          "title": "SmartPhone"
+        }
+      },
+      "imgChildren": [
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/vmskbtg78p?alt=media&token=a4f73c0a-736d-4348-820b-835621055717",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/u9jkflsqbt8?alt=media&token=ccec1989-575a-4cdc-9629-ba858ce54598",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/43a1760p0fo?alt=media&token=f9a116ad-87bd-4488-9b9b-4c857e0a2f4a",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/c9hgmvgscso?alt=media&token=f5a640a3-c6f3-468f-8d47-f3cf60b93f21",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/ff4mvi16rlg?alt=media&token=ca3dd0f7-8d6d-4ae9-933b-4f4716beb178"
+      ],
+      "laptopConfig": null,
+      "smartPhoneConfig": {
+        "smart_id": 546,
+        "screen": "OLED, 6.1\", Super Retina XDRR",
+        "beforeCamera": "6 GB",
+        "afterCamera": "Chính 48 MP & Phụ 12 MP",
+        "ram": "6 GB",
+        "sim": "1 Nano SIM & 1 eSIM, Hỗ trợ 5G",
+        "chip": "Apple A16 Bionic",
+        "operatingSystem": "iOS 17",
+        "storage": "128 GB",
+        "pin": "3349 mAh, 20 W"
+      },
+      "accessoryConfig": null,
+      "comment": [
+        {
+          "comId": 674,
+          "content": "demo",
+          "date": "2024-01-09T07:35:21.035+00:00",
+          "user": {
+            "userID": 473,
+            "username": "vanhanh",
+            "fullName": "Nguyễn Văn Hạnh",
+            "password": "$2a$10$QI/NlQuV2t1cKoQqGrc9t.o7zRHNQSYseX2VTJwA//6knmk1q39qq",
+            "email": "nguyenvanhanhadc1@gmail.com",
+            "phone": "0765387956",
+            "address": "120 Tế Hanh, Cẩm Lệ, Đà Nẵng",
+            "avatar": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/7hvq1581ot?alt=media&token=e9de3e78-24e7-4708-acad-2a8323225dd7",
+            "enabled": true,
+            "resetPasswordToken": null,
+            "authorities": [
+              {
+                "authority": "User"
+              }
+            ],
+            "accountNonExpired": true,
+            "credentialsNonExpired": true,
+            "accountNonLocked": true
+          }
+        }
+      ],
+      "reviews": [],
+      "pid": 546
+    },
+    {
+      "title": "iPhone 15 Pro 128GB",
+      "description": "iPhone 15 Pro là một trong những chiếc điện thoại thông minh được mong đợi nhất năm 2023. Với nhiều tính năng mới và cải tiến, iPhone 15 Pro chắc chắn sẽ là một lựa chọn tuyệt vời cho những người dùng đang tìm kiếm một chiếc điện thoại cao cấp.\n\n• Chất lượng sản phẩm: Thế Giới Di Động cam kết cung cấp sản phẩm iPhone 15 Pro chính hãng và đảm bảo chất lượng. Điều này giúp bạn yên tâm về xuất xứ sản phẩm và có thể tận hưởng trải nghiệm sử dụng tốt nhất.\n\n• Ưu đãi và khuyến mãi: Thế Giới Di Động thường xuyên có các chương trình khuyến mãi, giảm giá và tặng quà kèm, giúp bạn tiết kiệm được một khoản tiền khi mua iPhone 15 Pro\n",
+      "config": "https://cdn.tgdd.vn/Products/Images/42/299033/iphone-15-pro-131023-034959.jpg",
+      "price": 2.899E7,
+      "discountPrice": 2.829E7,
+      "images": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/6ddj2kn2dc8?alt=media&token=c2c20fc7-0deb-4c94-b0e6-a500806b3f4e",
+      "active": true,
+      "quantum": 13,
+      "category": {
+        "cateId": 40,
+        "title": "SmartPhone"
+      },
+      "manufacturer": {
+        "manuId": 46,
+        "title": "iPhone",
+        "completed": false,
+        "category": {
+          "cateId": 40,
+          "title": "SmartPhone"
+        }
+      },
+      "imgChildren": [
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/rokmdmionf8?alt=media&token=04044853-fd65-4437-9241-e349761799ab",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/cfc79h24i3?alt=media&token=f33a76a0-4f6a-4525-b3b2-1cf2528d90fd",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/3rfmk9ucli?alt=media&token=0ad9c916-bb2d-42df-a21e-aa9bd0383658",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/qsqhour6de8?alt=media&token=5a7133a2-ff63-47b6-8755-b43be410ada2",
+        "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/d8mbphj1gmo?alt=media&token=6e35988a-b353-4ab5-b98e-a4b0fb643078"
+      ],
+      "laptopConfig": null,
+      "smartPhoneConfig": {
+        "smart_id": 547,
+        "screen": "OLED, 6.1\", Super Retina XDR",
+        "beforeCamera": "8 GB",
+        "afterCamera": "Chính 48 MP & Phụ 12 MP, 12 MP",
+        "ram": "8 GB",
+        "sim": "1 Nano SIM & 1 eSIM, Hỗ trợ 5G",
+        "chip": "Apple A17 Pro 6 nhân",
+        "operatingSystem": "iOS 17",
+        "storage": "128 GB",
+        "pin": "3274 mAh, 20 W"
+      },
+      "accessoryConfig": null,
+      "comment": [
+        {
+          "comId": 622,
+          "content": "binh luân",
+          "date": "2023-12-19T14:48:04.550+00:00",
+          "user": {
+            "userID": 473,
+            "username": "vanhanh",
+            "fullName": "Nguyễn Văn Hạnh",
+            "password": "$2a$10$QI/NlQuV2t1cKoQqGrc9t.o7zRHNQSYseX2VTJwA//6knmk1q39qq",
+            "email": "nguyenvanhanhadc1@gmail.com",
+            "phone": "0765387956",
+            "address": "120 Tế Hanh, Cẩm Lệ, Đà Nẵng",
+            "avatar": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/7hvq1581ot?alt=media&token=e9de3e78-24e7-4708-acad-2a8323225dd7",
+            "enabled": true,
+            "resetPasswordToken": null,
+            "authorities": [
+              {
+                "authority": "User"
+              }
+            ],
+            "accountNonExpired": true,
+            "credentialsNonExpired": true,
+            "accountNonLocked": true
+          }
+        }
+      ],
+      "reviews": [
+        {
+          "reId": 565,
+          "content": "san pham tot",
+          "value": 5.0,
+          "image": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/v9cqdtcp4a?alt=media&token=2d4f56e1-7864-4185-a3e3-9b3275f4cede",
+          "dateCreate": "2023-12-14T08:10:49.084+00:00",
+          "active": true,
+          "user": {
+            "userID": 146,
+            "username": "ngocth4",
+            "fullName": "Trần Hồng Ngọc",
+            "password": "$2a$10$M9tai05VqcNp43K026/Zuuf9tERp7Zio.l6Z7xsHKZim4D/gINtoK",
+            "email": "ngocth4@fpt.com",
+            "phone": "0868935312",
+            "address": "120 Sông Cầu, Phú Yên",
+            "avatar": "https://firebasestorage.googleapis.com/v0/b/graduation-f97dc.appspot.com/o/efpc0ulh14g?alt=media&token=8fceb39c-1cca-41f7-9994-546ccdb3c116",
+            "enabled": true,
+            "resetPasswordToken": null,
+            "authorities": [
+              {
+                "authority": "User"
+              }
+            ],
+            "accountNonExpired": true,
+            "credentialsNonExpired": true,
+            "accountNonLocked": true
+          }
+        }
+      ],
+      "pid": 547
+    }
+  ]
+}
+

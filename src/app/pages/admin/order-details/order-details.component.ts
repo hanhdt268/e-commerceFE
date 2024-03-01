@@ -13,6 +13,7 @@ import {MatListModule} from "@angular/material/list";
 import {MatCardModule} from "@angular/material/card";
 import {AddShipperComponent} from "../add-shipper/add-shipper.component";
 import {NgxPaginationModule} from "ngx-pagination";
+import {FormsModule} from "@angular/forms";
 
 @Component({
   selector: 'app-order-details',
@@ -25,7 +26,7 @@ import {NgxPaginationModule} from "ngx-pagination";
     ]),
   ],
   standalone: true,
-  imports: [MatTableModule, NgFor, MatButtonModule, NgIf, MatIconModule, RouterLink, MatListModule, MatCardModule, CurrencyPipe, NgClass, DatePipe, RouterLinkActive, NgxPaginationModule],
+  imports: [MatTableModule, NgFor, MatButtonModule, NgIf, MatIconModule, RouterLink, MatListModule, MatCardModule, CurrencyPipe, NgClass, DatePipe, RouterLinkActive, NgxPaginationModule, FormsModule],
 })
 
 export class OrderDetailsComponent implements OnInit, AfterViewInit {
@@ -45,6 +46,9 @@ export class OrderDetailsComponent implements OnInit, AfterViewInit {
   count: number = 0;
   tableSize: number = 10;
   pageNumber = 0
+  reasonId: any
+  return: any;
+  clicked = false;
 
   constructor(private _order: OrderService, private _dialog: MatDialog) {
   }
@@ -103,7 +107,6 @@ export class OrderDetailsComponent implements OnInit, AfterViewInit {
     dialogRef.afterClosed().subscribe(result => {
       this.getAllOrderDetails(this.status);
     })
-
   }
 
   onTableDataChange(event: any) {
@@ -134,5 +137,19 @@ export class OrderDetailsComponent implements OnInit, AfterViewInit {
     return quantity * discount
   }
 
+  getReasonReturns() {
+    this._order.getReasonReturns(this.reasonId).subscribe({
+      next: (resp) => {
+        this.return = resp
+        console.log(resp)
+      }
+    })
+  }
 
+  reasonReturn(orderId: any) {
+    this.reasonId = orderId;
+    console.log(this.reasonId)
+    this.clicked = true;
+    this.getReasonReturns();
+  }
 }

@@ -103,12 +103,12 @@
                 </div>
               </div>
               <div class="mt10">
-                <span>{{product1.title}}</span>
+                <span>{{ product1.title }}</span>
               </div>
               <div *ngIf="product1.quantum > 0" class="mt10">
 
-                <b style="color: red">{{product1.discountPrice | currency: 'VND'}}</b> &nbsp; <b
-                style="text-decoration: line-through;color: #aaaaaa">{{product1.price | currency: 'VND'}}</b>
+                <b style="color: red">{{ product1.discountPrice | currency: 'VND' }}</b> &nbsp; <b
+                style="text-decoration: line-through;color: #aaaaaa">{{ product1.price | currency: 'VND' }}</b>
 
               </div>
               <div *ngIf="product1.quantum <= 0" class="mt10">

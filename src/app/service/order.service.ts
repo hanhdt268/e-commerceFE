@@ -11,10 +11,19 @@ import {MyOrderDetails} from "../_model/order.model";
 export class OrderService {
 
   apiBaseUrl = environment.apiBaseUrl
+  private apiUrl = 'https://api.exchangerate-api.com/v4/latest/USD';
 
   constructor(private _http: HttpClient) {
   }
 
+  getExchangeRates(): Observable<any> {
+    return this._http.get(this.apiUrl);
+  }
+
+  convertVndToUsd(vndAmount: number, exchangeRate: number): number {
+    // Convert VND to USD
+    return vndAmount / exchangeRate;
+  }
 
   public placeOder(oderDetails: OderDetails, isCartCheckout: any) {
     return this._http.post(`${this.apiBaseUrl}/order/${isCartCheckout}`, oderDetails)
@@ -34,6 +43,10 @@ export class OrderService {
 
   public getOrderForShipper(userId: any, status: any) {
     return this._http.get(`${this.apiBaseUrl}/order/shipper/${userId}/${status}`)
+  }
+
+  public getOrderForShipping(userId: any) {
+    return this._http.get(`${this.apiBaseUrl}/order/shipping/${userId}`)
   }
 
   public getShipper() {
@@ -89,8 +102,8 @@ export class OrderService {
     return this._http.get(`${this.apiBaseUrl}/order/delivering/${orderId}`)
   }
 
-  public markOrderAsDelivered(orderId: any) {
-    return this._http.get(`${this.apiBaseUrl}/order/delivered/${orderId}`)
+  public markOrderAsDelivered(orderId: any, userId: any) {
+    return this._http.get(`${this.apiBaseUrl}/order/delivered/${orderId}/${userId}`)
   }
 
   public markOrderAsReceived(orderId: any) {
@@ -99,5 +112,17 @@ export class OrderService {
 
   public markOrderAsReviewsProduct(oder: any) {
     return this._http.get(`${this.apiBaseUrl}/order/markOrderAsReviewsProduct/${oder}`)
+  }
+
+  public returnsOrder(returns: any, orderId: any) {
+    return this._http.post(`${this.apiBaseUrl}/returns/${orderId}`, returns);
+  }
+
+  public getReasonReturns(orderId: any) {
+    return this._http.get(`${this.apiBaseUrl}/returns/${orderId}`)
+  }
+
+  public getCountCancel() {
+    return this._http.get(`${this.apiBaseUrl}/order/countCancel`)
   }
 }

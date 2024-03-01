@@ -42,6 +42,9 @@ export class MyOrdersComponent implements OnInit {
   showReview: any = false
   statusReview: any = []
   expandedElement: any | null;
+  reasonId: any
+  return: any;
+  clicked = false;
 
   constructor(private _productService: ProductService, private _dialog: MatDialog,
               private _activeRoute: ActivatedRoute,
@@ -128,7 +131,7 @@ export class MyOrdersComponent implements OnInit {
 
   handlerShow(element: any) {
     element.expanded = !element?.expanded
-    
+
   }
 
   cancel(orderId: any) {
@@ -154,9 +157,9 @@ export class MyOrdersComponent implements OnInit {
 
   }
 
-  openDialogReview(pid: number) {
+  openDialogReview(pid: number, orderDetailsId: any) {
     this._dialog.open(ReviewComponent, {
-      data: {pid: pid},
+      data: {pid: pid, orderDetailsId: orderDetailsId},
       width: '55%',
       height: '650px'
     })

@@ -32,7 +32,7 @@
             </div>
           </div>
           <span *ngFor="let item of this.valueSearchInput | slice: 0 : 5;" class="select">
-              <a (click)="handlerSearch(item)">{{item}}</a>
+              <a (click)="handlerSearch(item)">{{ item }}</a>
             </span>
         </div>
         <div *ngIf="isShowSearch" class="select-box">
@@ -47,8 +47,8 @@
               </div>
               <div class="col-9">
                 <div style="display: flex;flex-direction: column;">
-                  <span style="display: block;text-wrap: wrap;line-height: 20px">{{ i.title}}</span>
-                  <span style="color: #ec0e0e;margin-bottom: 10px">{{i.discountPrice | currency: 'VND'}}</span>
+                  <span style="display: block;text-wrap: wrap;line-height: 20px">{{ i.title }}</span>
+                  <span style="color: #ec0e0e;margin-bottom: 10px">{{ i.discountPrice | currency: 'VND' }}</span>
                 </div>
               </div>
             </div>
@@ -61,6 +61,7 @@
         <mat-icon mat-list-icon>shopping_cart</mat-icon>
       </button>
     </div>
+
 
     <!--  <button *ngIf="isLoggedIn" [attr.data-product-count]="shopping" mat-stroked-button-->
     <!--          routerLink="/cart" class="shopping_cart">-->
@@ -80,6 +81,11 @@
     </div>
 
 
+    <!--    <select (change)="changeLanguage($event.target)">-->
+    <!--      <option value="en">English</option>-->
+    <!--      <option value="vn">vn</option>-->
+    <!--      <option value="es">Spanish</option>-->
+    <!--    </select>-->
     <nav *ngIf="isLoggedIn && user" class="navbar navbar-expand-lg navbar-light">
       <!--  <a class="navbar-brand" href="#">Navbar</a>-->
       <div (clickOutside)="clickOutside1()" *ngIf="isLoggedIn && isClient()"
@@ -101,9 +107,9 @@
               </div>
               <div class="col-9">
                 <div style="display: flex;flex-direction: column;">
-                  <span style="display: block;text-wrap: wrap;line-height: 20px">{{ item.product.title}}</span>
+                  <span style="display: block;text-wrap: wrap;line-height: 20px">{{ item.product.title }}</span>
                   <span
-                    style="color: #ec0e0e;margin-bottom: 10px; display: flex; justify-content: end">{{item.date | date: 'dd-MM-yyyy'}}</span>
+                    style="color: #ec0e0e;margin-bottom: 10px; display: flex; justify-content: end">{{ item.date | date: 'dd-MM-yyyy' }}</span>
                 </div>
               </div>
             </div>
@@ -135,7 +141,7 @@
                     data-toggle="dropdown"
                     id="navbarDropdown"
                     mat-button style="color: white" type="button">
-              {{user.fullName}}
+              {{ user.fullName | translate }}
             </button>
             <div aria-labelledby="navbarDropdown" class="dropdown-menu dropdown-menu-right"
                  style="border: none">

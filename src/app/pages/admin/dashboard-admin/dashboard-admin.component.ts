@@ -145,7 +145,7 @@ export class DashboardAdminComponent implements OnInit {
         console.log(resp)
       }
     })
-    this._order.getStatusOrder("Đã hủy").subscribe({
+    this._order.getCountCancel().subscribe({
       next: (resp) => {
         this.statusCancel = resp;
         console.log(resp)
